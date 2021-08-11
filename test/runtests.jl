@@ -1,6 +1,6 @@
 using DeepUncertainty
 using Test
 
-@testset "DeepUncertainty.jl" begin
-    # Write your tests here.
+@testset "Ensemble" begin
+    include("ensemble_test.jl")
 end
