@@ -1,6 +1,7 @@
 using Flux
 using Test 
 using Random
+using Formatting
 using Flux, Statistics
 using Flux.Data:DataLoader
 using Flux: onehotbatch, onecold, @epochs
@@ -8,6 +9,7 @@ using Flux.Losses:logitcrossentropy
 using Base:@kwdef
 using MLDatasets
 using BenchmarkTools 
+using TensorBoardLogger: TBLogger, tb_overwrite, set_step!, set_step_increment!
 include("../src/ensemble.jl")
 
 # arguments for the `train` function 
@@ -22,6 +24,7 @@ include("../src/ensemble.jl")
     tblogger = true             # log training with tensorboard
     savepath = "runs"           # results path
     model_name = "simple_mlp"   # model name
+    ensemble_size::Int = 3      # Ensemble size 
 end
 
 function getdata(args)
@@ -68,20 +71,30 @@ function loss_and_accuracy(data_loader, model)
     return ls / num, acc / num
 end
 
-function train(; kws...)
-    args = Args(; kws...) # collect options in a struct for convenience
 
+function train(args::Args, savename, savedir)
     # Create test and train dataloaders
     train_loader, test_loader = getdata(args)
 
     # Construct model
     model = build_model()
     ps = Flux.params(model) # model's trainable parameters
+    # Check if model directory is created 
+    !ispath(savedir) && mkpath(savedir)
+    modelpath = joinpath(savedir, savename) 
     
     ## Optimizer
     opt = ADAM(args.η)
+
+    # TB logger
+    if args.tblogger 
+        tblogger = TBLogger(savedir, tb_overwrite)
+        set_step_increment!(tblogger, 0) # 0 auto increment since we manually set_step!
+        # @info "TensorBoard logging at \"$(savedir)\""
+        @info format("TensorBoard logging at {}", savedir)
+    end
     
-    ## Training
+    training_complete = false 
     ## Training
     for epoch in 1:args.epochs
         for (x, y) in train_loader
@@ -95,12 +108,23 @@ function train(; kws...)
         println("Epoch=$epoch")
         println("  train_loss = $train_loss, train_accuracy = $train_acc")
         println("  test_loss = $test_loss, test_accuracy = $test_acc")
+        
+        # Save the model
+        BSON.@save modelpath model
+        # @info "\"$(model_name))\" at epoch  \"$(epoch)\" saved in \"$(model_dir)\""
+        @info format("Model at epoch {} saved.", epoch)
     end
-    return model
+
+    # Mark training as done 
+    training_complete = true 
+    @info format("Finished training")
+    # Save the model and epoch and if training is done -- to resume 
+    BSON.@save modelpath model
+
+    return nothing 
 end
 
 @testset "Ensemble Train" begin
-    args = Args() 
-    ensemble_obj = Ensemble(args, args.savepath, 3)
-    ensemble_train(ensemble_obj, train)
+    args = Args() # collect options in a struct for convenience
+    ensemble_train(args, train)
 end 
