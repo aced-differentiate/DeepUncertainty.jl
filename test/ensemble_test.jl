@@ -71,6 +71,21 @@ function loss_and_accuracy(data_loader, model)
     return ls / num, acc / num
 end
 
+function get_predictions(model, test_loader)
+    function predict(x, y)
+        y_hat = model(x) 
+        probs = softmax(y_hat;dims=1)
+        return probs 
+    end 
+    predictions = [predict(x, y) for (x, y) in test_loader]
+    targets = [y for (x, y) in test_loader]
+    # Batch the predictions and targets  
+    predictions = reduce(hcat, predictions) 
+    targets = reduce(hcat, targets) 
+
+    return predictions, targets 
+end 
+
 
 function train(args::Args, savename, savedir)
     # Create test and train dataloaders
@@ -108,6 +123,7 @@ function train(args::Args, savename, savedir)
         println("Epoch=$epoch")
         println("  train_loss = $train_loss, train_accuracy = $train_acc")
         println("  test_loss = $test_loss, test_accuracy = $test_acc")
+        @test (test_acc * 100) > 15.0
         
         # Save the model
         BSON.@save modelpath model
@@ -126,5 +142,11 @@ end
 
 @testset "Ensemble Train" begin
     args = Args() # collect options in a struct for convenience
-    ensemble_train(args, train)
+    # ensemble_train(args, train)
+    # Create test and train dataloaders
+    train_loader, test_loader = getdata(args)
+
+    # Construct model
+    model = build_model()
+    ensemble_evaluate(args, test_loader, get_predictions)
 end 

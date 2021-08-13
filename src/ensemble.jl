@@ -2,25 +2,6 @@ using Flux
 using BSON
 using Formatting
 
-"""
-    Ensemble(args, save_dir, ensemble_size = 10)
-
-Train and evaluate an ensemble of models given the dataset 
-and the training/testing loops. 
-
-# Parameters 
-- Experiment argumens ('args'): All the command line arguments as a dict to be 
-                                stored and used during training/testing.
-- Save directory ('save_dir'):  The directory where logs and trained models are 
-                                stored. The trained models are stored in the 
-                                following fashion -- save_dir/run_no/tb_events, model.bson
-- Ensemble size ('ensemble_size'):  The total number of models in the ensemble 
-"""
-mutable struct Ensemble 
-    args 
-    save_dir::String 
-    ensemble_size::Int
-end 
 
 """
     ensemble_train(ensemble_obj, model, trainloder, train_function)
@@ -32,20 +13,51 @@ with a different random seed and saved in the given directory.
 The train function is expected to have the logic for logging, evaluation 
 and such as you would usually write to train a single model 
 """
-function ensemble_train(obj::Ensemble, train_function)
-    for ensemble_model in 1:obj.ensemble_size
-        model = train_function() 
-
-        model_name = format("model_{}.bson", ensemble_model)
-        model_path = format("{}/{}/model_{}",
-                            obj.args.savepath,
-                            obj.args.model_name, 
+function ensemble_train(args, train_function)
+    for ensemble_model in 1:args.ensemble_size
+        # Alter save path and model name to include model id 
+        savepath = format("{}/{}_{}/",
+                            args.savepath,
+                            args.model_name, 
                             ensemble_model) 
-
-        # Check if model directory is created 
-        !ispath(model_path) && mkpath(model_path)
-        modelpath = joinpath(model_path, model_name) 
-        BSON.@save modelpath model
-        @info "Model \"$(ensemble_model)\" saved in \"$(modelpath)\""
+        savename = format("{}_{}.BSON", args.model_name, ensemble_model)
+        # Make sure the directory exists 
+        !ispath(savepath) && mkpath(savepath)
+        # Train the model 
+        train_function(args, savename, savepath)
     end 
 end
+
+function ensemble_evaluate(args, testloader, prediction_function)
+    predictions = [] 
+    targets = nothing 
+    # Individual model's metrics 
+    model_metrics = [] 
+    for ensemble_model in 1:args.ensemble_size
+        # Alter save path and model name to include model id
+        savepath = format("{}/{}_{}/",
+                            args.savepath,
+                            args.model_name, 
+                            ensemble_model) 
+        savename = format("{}_{}.BSON", args.model_name, ensemble_model)
+        modelpath = format("{}{}", savepath, savename)
+        # Try loading the model 
+        model = nothing 
+        try 
+            BSON.@load modelpath model
+            @info format("Loaded model {} successfully", ensemble_model)
+        catch exception 
+            @error format("Loading model {} failed: {}", ensemble_model, exception)
+        end 
+
+        # Get the predictions 
+        model_predictions, model_targets = prediction_function(model, testloader)
+        push!(predictions, model_predictions)
+        targets = model_targets
+    end 
+    # Batch all model preductions 
+    predictions = Flux.batch(predictions)
+    println(size(targets))
+    exit()
+end 
+    
