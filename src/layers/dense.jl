@@ -57,16 +57,18 @@ function (a::DenseBatchEnsemble)(x::AbstractVecOrMat)
     ensemble_size = size(α)[2]
     samples_per_model = batch_size ÷ ensemble_size 
 
+    # TODO: Implement Rank > 1 computations 
     # Reshape the inputs, α and γ
     x = reshape(x, (in_size, samples_per_model, ensemble_size))
     α = reshape(α, (in_size, 1, ensemble_size))
     γ = reshape(γ, (out_size, 1, ensemble_size))
+    e_b = reshape(e_b, (out_size, 1, ensemble_size))
     # Perturb the inputs 
     perturbed_x = x .* α;
     # Dense layer forward pass 
     outputs = layer(perturbed_x)
     outputs = outputs .* γ
-    outputs = e_σ(outputs)
+    outputs = e_σ(outputs .+ e_b)
     outputs = reshape(outputs, (out_size, batch_size))
     return outputs
 end
@@ -80,8 +82,3 @@ function Base.show(io::IO, l::DenseBatchEnsemble)
     l.bias == Zeros() && print(io, "; bias=false")
     print(io, ")")
 end
-
-input = rand(Float32, (8, 32))
-layer = DenseBatchEnsemble(8, 16, 1, 4)
-output = layer(input) 
-print(size(output))
