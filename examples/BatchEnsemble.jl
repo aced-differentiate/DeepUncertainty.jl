@@ -1,102 +1,166 @@
-using Flux, Statistics
+using CUDA:CU_GL_MAP_RESOURCE_FLAGS_WRITE_DISCARD
+## Classification of MNIST dataset 
+## with the convolutional neural network known as LeNet5.
+## This script also combines various
+## packages from the Julia ecosystem with Flux.
+using Flux
 using Flux.Data:DataLoader
-using Flux: onehotbatch, onecold, @epochs
+using Flux.Optimise: Optimiser, WeightDecay
+using Flux: onehotbatch, onecold, glorot_normal
 using Flux.Losses:logitcrossentropy
-using Base:@kwdef
+using Statistics, Random
+using Logging:with_logger
+using TensorBoardLogger: TBLogger, tb_overwrite, set_step!, set_step_increment!
+using ProgressMeter:@showprogress
+import MLDatasets
+import BSON
 using CUDA
-using MLDatasets
+
 include("../src/layers/dense.jl")
+include("../src/layers/conv.jl")
 
-function getdata(args, device)
-    ENV["DATADEPS_ALWAYS_ACCEPT"] = "true"
+# LeNet5 "constructor". 
+# The model can be adapted to any image size
+# and any number of output classes.
+function LeNet5(args; imgsize=(28, 28, 1), nclasses=10) 
+    out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
+    
+    return Chain(
+            ConvBatchEnsemble((5, 5), imgsize[end] => 6, args.rank, args.ensemble_size, relu),
+            MaxPool((2, 2)),
+            ConvBatchEnsemble((5, 5), 6 => 16, args.rank, args.ensemble_size, relu),
+            MaxPool((2, 2)),
+            flatten,
+            DenseBatchEnsemble(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu), 
+            DenseBatchEnsemble(120, 84, args.rank, args.ensemble_size, relu), 
+            DenseBatchEnsemble(84, nclasses, args.rank, args.ensemble_size)
+          )
+end
 
-    # Loading Dataset	
+function get_data(args)
     xtrain, ytrain = MLDatasets.MNIST.traindata(Float32)
     xtest, ytest = MLDatasets.MNIST.testdata(Float32)
-	
-    # Reshape Data in order to flatten each image into a linear array
-    xtrain = Flux.flatten(xtrain)
-    xtest = Flux.flatten(xtest)
 
-    # One-hot-encode the labels
+    xtrain = reshape(xtrain, 28, 28, 1, :)
+    xtest = reshape(xtest, 28, 28, 1, :)
+
     ytrain, ytest = onehotbatch(ytrain, 0:9), onehotbatch(ytest, 0:9)
 
-    # Create DataLoaders (mini-batch iterators)
     train_loader = DataLoader((xtrain, ytrain), batchsize=args.batchsize, shuffle=true)
-    test_loader = DataLoader((xtest, ytest), batchsize=args.batchsize)
-
+    test_loader = DataLoader((xtest, ytest),  batchsize=args.batchsize)
+    
     return train_loader, test_loader
 end
 
-function build_model(args; imgsize=(28, 28, 1), nclasses=10)
-    return Chain(
- 	        DenseBatchEnsemble(prod(imgsize), 32, args.rank, args.ensemble_size, relu),
-            DenseBatchEnsemble(32, nclasses, args.rank, args.ensemble_size))
-end
+loss(ŷ, y) = logitcrossentropy(ŷ, y)
 
-function loss_and_accuracy(data_loader, model, device)
+function eval_loss_accuracy(loader, model, device)
+    l = 0f0
     acc = 0
-    ls = 0.0f0
-    num = 0
-    for (x, y) in data_loader
-        x, y = device(x), device(y)
+    ntot = 0
+    for (x, y) in loader
+        x, y = x |> device, y |> device
         ŷ = model(x)
-        ls += logitcrossentropy(ŷ, y, agg=sum)
-        acc += sum(onecold(cpu(ŷ)) .== onecold(cpu(y)))
-        num +=  size(x, 2)
+        l += loss(ŷ, y) * size(x)[end]        
+        acc += sum(onecold(ŷ |> cpu) .== onecold(y |> cpu))
+        ntot += size(x)[end]
     end
-    return ls / num, acc / num
+    return (loss = l / ntot |> round4, acc = acc / ntot * 100 |> round4)
 end
 
+## utility functions
+num_params(model) = sum(length, Flux.params(model)) 
+round4(x) = round(x, digits=4)
 
-@kwdef mutable struct Args
-    η::Float64 = 3e-4       # learning rate
-    batchsize::Int = 256    # batch size
-    ensemble_size::Int = 4  # ensemble size in batch E
-    rank::Int = 1           # rank 
-    epochs::Int = 10        # number of epochs
-    use_cuda::Bool = true   # use gpu (if cuda available)
+# arguments for the `train` function 
+Base.@kwdef mutable struct Args
+    η = 3e-4             # learning rate
+    λ = 0                # L2 regularizer param, implemented as weight decay
+    batchsize = 128      # batch size
+    epochs = 10          # number of epochs
+    seed = 0             # set seed > 0 for reproducibility
+    use_cuda = true      # if true use cuda (if available)
+    infotime = 1 	     # report every `infotime` epochs
+    checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
+    tblogger = true      # log training with tensorboard
+    savepath = "runs/"    # results path
+    rank::Integer = 1
+    ensemble_size::Integer = 4  
 end
 
 function train(; kws...)
-    args = Args(; kws...) # collect options in a struct for convenience
-
-    if CUDA.functional() && args.use_cuda
-        @info "Training on CUDA GPU"
-        CUDA.allowscalar(false)
+    args = Args(; kws...)
+    args.seed > 0 && Random.seed!(args.seed)
+    use_cuda = args.use_cuda && CUDA.functional()
+    
+    if use_cuda
         device = gpu
+        @info "Training on GPU"
     else
-        @info "Training on CPU"
         device = cpu
+        @info "Training on CPU"
     end
 
-    # Create test and train dataloaders
-    train_loader, test_loader = getdata(args, device)
+    ## DATA
+    train_loader, test_loader = get_data(args)
+    @info "Dataset MNIST: $(train_loader.nobs) train and $(test_loader.nobs) test examples"
 
-    # Construct model
-    model = build_model(args) |> device
-    ps = Flux.params(model) # model's trainable parameters
+    ## MODEL AND OPTIMIZER
+    model = LeNet5(args) |> device
+    @info "LeNet5 model: $(num_params(model)) trainable params"    
     
-    ## Optimizer
-    opt = ADAM(args.η)
+    ps = Flux.params(model)  
+
+    opt = ADAM(args.η) 
+    if args.λ > 0 # add weight decay, equivalent to L2 regularization
+        opt = Optimiser(WeightDecay(args.λ), opt)
+    end
     
-    ## Training
+    ## LOGGING UTILITIES
+    if args.tblogger 
+        tblogger = TBLogger(args.savepath, tb_overwrite)
+        set_step_increment!(tblogger, 0) # 0 auto increment since we manually set_step!
+        @info "TensorBoard logging at \"$(args.savepath)\""
+    end
+    
+    function report(epoch)
+        train = eval_loss_accuracy(train_loader, model, device)
+        test = eval_loss_accuracy(test_loader, model, device)        
+        println("Epoch: $epoch   Train: $(train)   Test: $(test)")
+        if args.tblogger
+            set_step!(tblogger, epoch)
+            with_logger(tblogger) do
+                @info "train" loss = train.loss  acc = train.acc
+                @info "test"  loss = test.loss   acc = test.acc
+            end
+        end
+    end
+    
+    ## TRAINING
+    @info "Start Training"
+    report(0)
     for epoch in 1:args.epochs
-        for (x, y) in train_loader
-            x, y = device(x), device(y) # transfer data to device
-            gs = gradient(() -> logitcrossentropy(model(x), y), ps) # compute gradient
-            Flux.Optimise.update!(opt, ps, gs) # update parameters
+        @showprogress for (x, y) in train_loader
+            x, y = x |> device, y |> device
+            gs = Flux.gradient(ps) do
+                ŷ = model(x)
+                loss(ŷ, y)
+            end
+
+            Flux.Optimise.update!(opt, ps, gs)
         end
         
-        # Report on train and test
-        train_loss, train_acc = loss_and_accuracy(train_loader, model, device)
-        test_loss, test_acc = loss_and_accuracy(test_loader, model, device)
-        println("Epoch=$epoch")
-        println("  train_loss = $train_loss, train_accuracy = $train_acc")
-        println("  test_loss = $test_loss, test_accuracy = $test_acc")
+        ## Printing and logging
+        epoch % args.infotime == 0 && report(epoch)
+        if args.checktime > 0 && epoch % args.checktime == 0
+            !ispath(args.savepath) && mkpath(args.savepath)
+            modelpath = joinpath(args.savepath, "model.bson") 
+            let model = cpu(model) # return model to cpu before serialization
+                BSON.@save modelpath model epoch
+            end
+            @info "Model saved in \"$(modelpath)\""
+        end
     end
 end
 
-### Run training 
 train()
-# train(η=0.01) # can change hyperparameters

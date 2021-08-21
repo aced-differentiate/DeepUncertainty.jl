@@ -60,11 +60,12 @@ function (a::DenseBatchEnsemble)(x::AbstractVecOrMat)
     # TODO: Merge these implementations 
     if rank > 1 
         # Alpha, gamma shapes - [units, ensembles, rank]
-        alpha = repeat(alpha, outer=[samples_per_model, 1, 1])
-        gamma = repeat(gamma, outer=[samples_per_model, 1, 1])
+        alpha = repeat(alpha, samples_per_model)
+        gamma = repeat(gamma, samples_per_model)
         # Reshape alpha, gamma to [units, batch_size, rank]
         alpha = reshape(alpha, (in_size, batch_size, rank))
         gamma = reshape(gamma, (out_size, batch_size, rank))
+        # Reshape inputs to [units, batch_size, 1] for broadcasting
         x = reshape(x, (in_size, batch_size, 1))
         # Perturb the inputs 
         perturbed_x = x .* alpha;
@@ -92,10 +93,3 @@ end
   
 (a::DenseBatchEnsemble)(x::AbstractArray) = 
     reshape(a(reshape(x, size(x, 1), :)), :, size(x)[2:end]...)
-  
-function Base.show(io::IO, l::DenseBatchEnsemble)
-    print(io, "DenseBatchEnsemble(", size(l.layer.weight, 2), ", ", size(l.layer.weight, 1))
-    l.layer.σ == identity || print(io, ", ", l.layer.σ)
-    l.layer.bias == Zeros() && print(io, "; bias=false")
-    print(io, ")")
-end
