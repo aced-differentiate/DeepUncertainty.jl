@@ -1,4 +1,3 @@
-using CUDA:CU_GL_MAP_RESOURCE_FLAGS_WRITE_DISCARD
 ## Classification of MNIST dataset 
 ## with the convolutional neural network known as LeNet5.
 ## This script also combines various
@@ -6,7 +5,7 @@ using CUDA:CU_GL_MAP_RESOURCE_FLAGS_WRITE_DISCARD
 using Flux
 using Flux.Data:DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
-using Flux: onehotbatch, onecold, glorot_normal
+using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
 using Flux.Losses:logitcrossentropy
 using Statistics, Random
 using Logging:with_logger
@@ -15,6 +14,7 @@ using ProgressMeter:@showprogress
 import MLDatasets
 import BSON
 using CUDA
+using Formatting
 
 include("../src/layers/dense.jl")
 include("../src/layers/conv.jl")
@@ -46,26 +46,60 @@ function get_data(args)
 
     ytrain, ytest = onehotbatch(ytrain, 0:9), onehotbatch(ytest, 0:9)
 
-    train_loader = DataLoader((xtrain, ytrain), batchsize=args.batchsize, shuffle=true)
-    test_loader = DataLoader((xtest, ytest),  batchsize=args.batchsize)
+    train_loader = DataLoader((xtrain, ytrain), batchsize=args.batchsize, shuffle=true, partial=false)
+    test_loader = DataLoader((xtest, ytest),  batchsize=args.batchsize, partial=false)
     
     return train_loader, test_loader
 end
 
 loss(ŷ, y) = logitcrossentropy(ŷ, y)
 
-function eval_loss_accuracy(loader, model, device)
-    l = 0f0
-    acc = 0
+function accuracy(preds, labels)
+    acc = sum(onecold(preds |> cpu) .== onecold(labels |> cpu))
+    return acc
+end
+
+function eval_loss_accuracy(args, loader, model, device)
+    l = [0f0 for x in 1:args.ensemble_size]
+    acc = [0 for x in 1:args.ensemble_size]
     ntot = 0
+    mean_l = 0
+    mean_acc = 0 
     for (x, y) in loader
+        x = repeat(x, 1, 1, 1, args.ensemble_size)
         x, y = x |> device, y |> device
+        # Perform the forward pass 
         ŷ = model(x)
-        l += loss(ŷ, y) * size(x)[end]        
-        acc += sum(onecold(ŷ |> cpu) .== onecold(y |> cpu))
-        ntot += size(x)[end]
+        # Reshape the predictions into [classes, batch_size, ensemble_size
+        reshaped_ŷ = reshape(ŷ, size(ŷ)[1], args.batchsize, args.ensemble_size)
+        # Loop through each model's predictions 
+        for ensemble in 1:args.ensemble_size
+            model_predictions = reshaped_ŷ[:, :, ensemble]
+            # Calculate individual loss 
+            l[ensemble] += loss(model_predictions, y) *  size(model_predictions)[end]
+            acc[ensemble] += accuracy(model_predictions, y)
+        end 
+        # Get the mean predictions
+        mean_predictions = mean(reshaped_ŷ, dims=ndims(reshaped_ŷ))
+        mean_predictions = dropdims(mean_predictions, dims=ndims(mean_predictions))
+        mean_l += loss(mean_predictions, y) *  size(mean_predictions)[end]
+        mean_acc += accuracy(mean_predictions, y)
+        ntot += size(mean_predictions)[end]
     end
-    return (loss = l / ntot |> round4, acc = acc / ntot * 100 |> round4)
+    # Normalize the loss 
+    losses = [loss / ntot |> round4 for loss in l]
+    acc = [a / ntot * 100 |> round4 for a in acc]
+    # Calculate mean loss 
+    mean_l = mean_l / ntot |> round4 
+    mean_acc = mean_acc / ntot * 100 |> round4
+
+    # Print the per ensemble mode loss and accuracy 
+    for ensemble in 1:args.ensemble_size
+        @info (format("Model {} Loss: {} Accuracy: {}", ensemble, losses[ensemble], acc[ensemble]))
+    end 
+    @info (format("Mean Loss: {} Accuracy: {}", mean_l, mean_acc))
+    @info "==========================================================="        
+    return nothing 
 end
 
 ## utility functions
@@ -76,7 +110,7 @@ round4(x) = round(x, digits=4)
 Base.@kwdef mutable struct Args
     η = 3e-4             # learning rate
     λ = 0                # L2 regularizer param, implemented as weight decay
-    batchsize = 128      # batch size
+    batchsize = 32      # batch size
     epochs = 10          # number of epochs
     seed = 0             # set seed > 0 for reproducibility
     use_cuda = true      # if true use cuda (if available)
@@ -124,16 +158,10 @@ function train(; kws...)
     end
     
     function report(epoch)
-        train = eval_loss_accuracy(train_loader, model, device)
-        test = eval_loss_accuracy(test_loader, model, device)        
-        println("Epoch: $epoch   Train: $(train)   Test: $(test)")
-        if args.tblogger
-            set_step!(tblogger, epoch)
-            with_logger(tblogger) do
-                @info "train" loss = train.loss  acc = train.acc
-                @info "test"  loss = test.loss   acc = test.acc
-            end
-        end
+        @info "Train Metrics"
+        eval_loss_accuracy(args, train_loader, model, device)
+        @info "Test metrics"
+        eval_loss_accuracy(args, test_loader, model, device)        
     end
     
     ## TRAINING
@@ -141,6 +169,9 @@ function train(; kws...)
     report(0)
     for epoch in 1:args.epochs
         @showprogress for (x, y) in train_loader
+            # Make copies of batches for ensembles 
+            x = repeat(x, 1, 1, 1, args.ensemble_size)
+            y = repeat(y, 1, args.ensemble_size)
             x, y = x |> device, y |> device
             gs = Flux.gradient(ps) do
                 ŷ = model(x)
