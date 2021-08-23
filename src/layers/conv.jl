@@ -1,5 +1,43 @@
 using Flux 
-using Flux:@functor, glorot_uniform, create_bias, batch
+using Random 
+using Flux:@functor, glorot_uniform, glorot_normal, create_bias, batch
+
+
+struct MCConv{L,F}
+    layer::L 
+    dropout_rate::F 
+    function MCConv(layer::L, dropout_rate::F) where {L,F}
+        new{typeof(layer),F}(layer, dropout_rate)
+    end
+end
+
+function MCConv(k::NTuple{N,Integer},
+                ch::Pair{<:Integer,<:Integer},
+                dropout_rate::F, 
+                σ=identity;
+                init=glorot_uniform,
+                stride=1, 
+                pad=0, dilation=1,
+                groups=1, bias=true) where {N,F}
+                            
+    layer = Flux.Conv(k, ch, σ;
+                    init=init, 
+                    stride=stride, pad=pad, 
+                    dilation=dilation, 
+                    groups=groups, 
+                    bias=bias)
+    return MCConv(layer, dropout_rate)
+end
+
+@functor MCConv 
+
+function (c::MCConv)(x::AbstractArray;dropout::Bool=true)
+    # Conv Batch Ensemble params 
+    output = c.layer(x)
+    output = Flux.dropout(output, c.dropout_rate;active=dropout)
+    return output
+end
+
 
 struct ConvBatchEnsemble{L,F,M,B}
     layer::L 
@@ -15,8 +53,7 @@ struct ConvBatchEnsemble{L,F,M,B}
         ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
         new{typeof(layer),F,M,typeof(ensemble_bias)}(layer, alpha, gamma, 
                                                     ensemble_bias, 
-                                                    ensemble_act, 
-                                                    rank)
+                                                    ensemble_act, rank)
     end
 end
 

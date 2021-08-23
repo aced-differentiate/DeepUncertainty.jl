@@ -1,5 +1,32 @@
 using Flux 
+using Random 
 using Flux:@functor, glorot_uniform, create_bias
+
+struct MCDense{L,F}
+    layer::L 
+    dropout_rate::F
+    function MCDense(layer::L, dropout_rate::F) where {L,F}
+        new{typeof(layer),typeof(dropout_rate)}(layer, dropout_rate)
+    end 
+end 
+
+function MCDense(in::Integer,
+                out::Integer, 
+                dropout_rate::AbstractFloat, 
+                σ=identity;
+                init=glorot_uniform, 
+                bias=true)
+    layer = Flux.Dense(in, out; init=init, bias=bias)
+    return MCDense(layer, dropout_rate)
+end 
+
+@functor MCDense 
+
+function (a::MCDense)(x::AbstractVecOrMat; dropout=true)
+    output = a.layer(x) 
+    output = Flux.dropout(output, a.dropout_rate;active=dropout)
+    return output
+end 
 
 struct DenseBatchEnsemble{L,F,M,B}
     layer::L 
@@ -15,8 +42,7 @@ struct DenseBatchEnsemble{L,F,M,B}
         ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
         new{typeof(layer),F,M,typeof(ensemble_bias)}(layer, alpha, gamma, 
                                                     ensemble_bias, 
-                                                    ensemble_act, 
-                                                    rank)
+                                                    ensemble_act, rank)
     end
 end
   
