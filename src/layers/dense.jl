@@ -49,7 +49,9 @@ end
 function DenseBatchEnsemble(in::Integer, out::Integer, 
                             rank::Integer, ensemble_size::Integer, 
                             σ=identity;
-                            init=glorot_uniform, 
+                            init=glorot_uniform,
+                            alpha_init=glorot_uniform, 
+                            gamma_init=glorot_uniform, 
                             bias=true)
     layer = Flux.Dense(in, out; init=init, bias=bias)
     if rank > 1 
@@ -61,8 +63,8 @@ function DenseBatchEnsemble(in::Integer, out::Integer,
     else
         error("Rank must be >= 1.")
     end 
-    alpha = init(alpha_shape) 
-    gamma = init(gamma_shape)
+    alpha = alpha_init(alpha_shape) 
+    gamma = gamma_init(gamma_shape)
   
     return DenseBatchEnsemble(layer, alpha, gamma, bias, σ, rank)
 end
@@ -116,6 +118,3 @@ function (a::DenseBatchEnsemble)(x::AbstractVecOrMat)
     outputs = reshape(outputs, (out_size, batch_size))
     return outputs
 end
-  
-(a::DenseBatchEnsemble)(x::AbstractArray) = 
-    reshape(a(reshape(x, size(x, 1), :)), :, size(x)[2:end]...)

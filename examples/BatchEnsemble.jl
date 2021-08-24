@@ -64,9 +64,11 @@ end
 function eval_loss_accuracy(args, loader, model, device)
     l = [0f0 for x in 1:args.ensemble_size]
     acc = [0 for x in 1:args.ensemble_size]
+    ece_list = [0f0 for x in 1:args.ensemble_size]
     ntot = 0
     mean_l = 0
     mean_acc = 0 
+    mean_ece = 0 
     for (x, y) in loader
         x = repeat(x, 1, 1, 1, args.ensemble_size)
         x, y = x |> device, y |> device
@@ -81,27 +83,33 @@ function eval_loss_accuracy(args, loader, model, device)
             # Calculate individual loss 
             l[ensemble] += loss(model_predictions, y) *  size(model_predictions)[end]
             acc[ensemble] += accuracy(model_predictions, y)
-            # ece = ExpectedCalibrationError(model_predictions |> cpu, onecold(y |> cpu))
+            ece_list[ensemble] += ExpectedCalibrationError(model_predictions |> cpu, onecold(y |> cpu)) *  args.batchsize
         end 
         # Get the mean predictions
         mean_predictions = mean(reshaped_ŷ, dims=ndims(reshaped_ŷ))
         mean_predictions = dropdims(mean_predictions, dims=ndims(mean_predictions))
         mean_l += loss(mean_predictions, y) *  size(mean_predictions)[end]
         mean_acc += accuracy(mean_predictions, y)
+        mean_ece += ExpectedCalibrationError(mean_predictions |> cpu, onecold(y |> cpu)) * args.batchsize
         ntot += size(mean_predictions)[end]
     end
     # Normalize the loss 
     losses = [loss / ntot |> round4 for loss in l]
     acc = [a / ntot * 100 |> round4 for a in acc]
+    ece_list = [x / ntot |> round4 for x in ece_list]
     # Calculate mean loss 
     mean_l = mean_l / ntot |> round4 
     mean_acc = mean_acc / ntot * 100 |> round4
+    mean_ece = mean_ece / ntot |> round4 
 
     # Print the per ensemble mode loss and accuracy 
     for ensemble in 1:args.ensemble_size
-        @info (format("Model {} Loss: {} Accuracy: {}", ensemble, losses[ensemble], acc[ensemble]))
+        @info (format("Model {} Loss: {} Accuracy: {} ECE: {}", ensemble, 
+                                                            losses[ensemble],
+                                                            acc[ensemble], 
+                                                            ece_list[ensemble]))
     end 
-    @info (format("Mean Loss: {} Mean Accuracy: {}", mean_l, mean_acc))
+    @info (format("Mean Loss: {} Mean Accuracy: {} Mean ECE: {}", mean_l, mean_acc, mean_ece))
     @info "==========================================================="        
     return nothing 
 end

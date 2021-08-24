@@ -64,7 +64,7 @@ function ConvBatchEnsemble(k::NTuple{N,Integer},
                             σ=identity;
                             init=glorot_uniform,
                             alpha_init=glorot_normal, 
-                            gamma_normal=glorot_normal, 
+                            gamma_init=glorot_normal, 
                             stride=1, 
                             pad=0, dilation=1,
                             groups=1, bias=true) where N
@@ -72,6 +72,7 @@ function ConvBatchEnsemble(k::NTuple{N,Integer},
     layer = Flux.Conv(k, ch, σ;
                     stride=stride, pad=pad, 
                     dilation=dilation, 
+                    init=init, 
                     groups=groups, 
                     bias=bias)
     in_dim = ch[1] 
@@ -82,8 +83,8 @@ function ConvBatchEnsemble(k::NTuple{N,Integer},
     else
         error("Rank must be >= 1.")
     end 
-    alpha = init(alpha_shape) 
-    gamma = init(gamma_shape)
+    alpha = alpha_init(alpha_shape) 
+    gamma = gamma_init(gamma_shape)
 
     return ConvBatchEnsemble(layer, alpha, gamma, bias, σ, rank)
 end
