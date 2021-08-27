@@ -1,17 +1,17 @@
-using Base:Bool
+using Base: Bool
 ## Classification of MNIST dataset 
 ## with the convolutional neural network known as LeNet5.
 ## This script also combines various
 ## packages from the Julia ecosystem with Flux.
 using Flux
-using Flux.Data:DataLoader
+using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
 using Flux: onehotbatch, onecold, dropout
-using Flux.Losses:logitcrossentropy
+using Flux.Losses: logitcrossentropy
 using Statistics, Random
-using Logging:with_logger
+using Logging: with_logger
 using TensorBoardLogger: TBLogger, tb_overwrite, set_step!, set_step_increment!
-using ProgressMeter:@showprogress
+using ProgressMeter: @showprogress
 import MLDatasets
 import BSON
 using CUDA
@@ -22,19 +22,19 @@ include("../src/layers/conv.jl")
 # LeNet5 "constructor". 
 # The model can be adapted to any image size
 # and any number of output classes.
-function LeNet5(args; imgsize=(28, 28, 1), nclasses=10) 
+function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
-    
+
     return Chain(
-            MCConv((5, 5), imgsize[end] => 6, args.dropout, relu),
-            MaxPool((2, 2)),
-            MCConv((5, 5), 6 => 16, args.dropout, relu),
-            MaxPool((2, 2)),
-            flatten,
-            MCDense(prod(out_conv_size), 120, args.dropout, relu), 
-            MCDense(120, 84, args.dropout, relu), 
-            MCDense(84, nclasses, args.dropout)
-          )
+        MCConv((5, 5), imgsize[end] => 6, args.dropout, relu),
+        MaxPool((2, 2)),
+        MCConv((5, 5), 6 => 16, args.dropout, relu),
+        MaxPool((2, 2)),
+        flatten,
+        MCDense(prod(out_conv_size), 120, args.dropout, relu),
+        MCDense(120, 84, args.dropout, relu),
+        MCDense(84, nclasses, args.dropout),
+    )
 end
 
 function get_data(args)
@@ -46,22 +46,22 @@ function get_data(args)
 
     ytrain, ytest = onehotbatch(ytrain, 0:9), onehotbatch(ytest, 0:9)
 
-    train_loader = DataLoader((xtrain, ytrain), batchsize=args.batchsize, shuffle=true)
-    test_loader = DataLoader((xtest, ytest),  batchsize=args.batchsize)
-    
+    train_loader = DataLoader((xtrain, ytrain), batchsize = args.batchsize, shuffle = true)
+    test_loader = DataLoader((xtest, ytest), batchsize = args.batchsize)
+
     return train_loader, test_loader
 end
 
 loss(ŷ, y) = logitcrossentropy(ŷ, y)
 
 function eval_loss_accuracy(loader, model, device)
-    l = 0f0
+    l = 0.0f0
     acc = 0
     ntot = 0
     for (x, y) in loader
         x, y = x |> device, y |> device
         ŷ = model(x)
-        l += loss(ŷ, y) * size(x)[end]        
+        l += loss(ŷ, y) * size(x)[end]
         acc += sum(onecold(ŷ |> cpu) .== onecold(y |> cpu))
         ntot += size(x)[end]
     end
@@ -69,8 +69,8 @@ function eval_loss_accuracy(loader, model, device)
 end
 
 ## utility functions
-num_params(model) = sum(length, Flux.params(model)) 
-round4(x) = round(x, digits=4)
+num_params(model) = sum(length, Flux.params(model))
+round4(x) = round(x, digits = 4)
 
 # arguments for the `train` function 
 Base.@kwdef mutable struct Args
@@ -80,18 +80,18 @@ Base.@kwdef mutable struct Args
     epochs = 10          # number of epochs
     seed = 0             # set seed > 0 for reproducibility
     use_cuda = true      # if true use cuda (if available)
-    infotime = 1 	     # report every `infotime` epochs
+    infotime = 1      # report every `infotime` epochs
     checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
     tblogger = true      # log training with tensorboard
     savepath = "runs/"    # results path
-    dropout::Float32 = 0.1 
+    dropout::Float32 = 0.1
 end
 
 function train(; kws...)
     args = Args(; kws...)
     args.seed > 0 && Random.seed!(args.seed)
     use_cuda = args.use_cuda && CUDA.functional()
-    
+
     if use_cuda
         device = gpu
         @info "Training on GPU"
@@ -106,39 +106,39 @@ function train(; kws...)
 
     ## MODEL AND OPTIMIZER
     model = LeNet5(args) |> device
-    @info "LeNet5 model: $(num_params(model)) trainable params"    
-    
-    ps = Flux.params(model)  
+    @info "LeNet5 model: $(num_params(model)) trainable params"
 
-    opt = ADAM(args.η) 
+    ps = Flux.params(model)
+
+    opt = ADAM(args.η)
     if args.λ > 0 # add weight decay, equivalent to L2 regularization
         opt = Optimiser(WeightDecay(args.λ), opt)
     end
-    
+
     ## LOGGING UTILITIES
-    if args.tblogger 
+    if args.tblogger
         tblogger = TBLogger(args.savepath, tb_overwrite)
         set_step_increment!(tblogger, 0) # 0 auto increment since we manually set_step!
         @info "TensorBoard logging at \"$(args.savepath)\""
     end
-    
+
     function report(epoch)
         train = eval_loss_accuracy(train_loader, model, device)
-        test = eval_loss_accuracy(test_loader, model, device)        
+        test = eval_loss_accuracy(test_loader, model, device)
         println("Epoch: $epoch   Train: $(train)   Test: $(test)")
         if args.tblogger
             set_step!(tblogger, epoch)
             with_logger(tblogger) do
-                @info "train" loss = train.loss  acc = train.acc
-                @info "test"  loss = test.loss   acc = test.acc
+                @info "train" loss = train.loss acc = train.acc
+                @info "test" loss = test.loss acc = test.acc
             end
         end
     end
-    
+
     ## TRAINING
     @info "Start Training"
     report(0)
-    for epoch in 1:args.epochs
+    for epoch = 1:args.epochs
         @showprogress for (x, y) in train_loader
             x, y = x |> device, y |> device
             gs = Flux.gradient(ps) do
@@ -148,12 +148,12 @@ function train(; kws...)
 
             Flux.Optimise.update!(opt, ps, gs)
         end
-        
+
         ## Printing and logging
         epoch % args.infotime == 0 && report(epoch)
         if args.checktime > 0 && epoch % args.checktime == 0
             !ispath(args.savepath) && mkpath(args.savepath)
-            modelpath = joinpath(args.savepath, "model.bson") 
+            modelpath = joinpath(args.savepath, "model.bson")
             let model = cpu(model) # return model to cpu before serialization
                 BSON.@save modelpath model epoch
             end

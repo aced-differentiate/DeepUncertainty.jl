@@ -1,4 +1,4 @@
-using Base:String
+using Base: String
 using ArgParse
 
 """
@@ -14,15 +14,15 @@ function getargs()
         "--model"
         help = "Model to use"
         "--dataset"
-            help = "Dataset to use"
-            arg_type = String
-            default = "MNIST"
+        help = "Dataset to use"
+        arg_type = String
+        default = "MNIST"
         "--batch_size"
-            help = "Training and testing batch size"
-            arg_type = Int 
-            default = 128
+        help = "Training and testing batch size"
+        arg_type = Int
+        default = 128
         "arg1"
-            help = "a positional argument"
+        help = "a positional argument"
     end
 
     parsed_args = parse_args(ARGS, s) # the result is a Dict{String,Any}
@@ -36,4 +36,3 @@ function printargs(args::Dict)
     end
     return nothing
 end
-    

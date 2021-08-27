@@ -1,11 +1,11 @@
 using Flux
 using BSON
-using Flux:gradient
-using Flux.Optimise:update!
+using Flux: gradient
+using Flux.Optimise: update!
 using DelimitedFiles, Statistics
-using Parameters:@with_kw
+using Parameters: @with_kw
 
-using Formatting 
+using Formatting
 
 include("../src/ensemble.jl")
 
@@ -16,35 +16,36 @@ include("../src/ensemble.jl")
 
 # Struct to define hyperparameters
 @with_kw mutable struct Hyperparams
-    lr::Float64 = 0.1		# learning rate
-    split_ratio::Float64 = 0.1	# Train Test split ratio, define percentage of data to be used as Test data
+    lr::Float64 = 0.1# learning rate
+    split_ratio::Float64 = 0.1# Train Test split ratio, define percentage of data to be used as Test data
     savepath::String = "runs"
     model_name::String = "housing_predictor"
-    ensemble_size::Int = 3 
+    ensemble_size::Int = 3
 end
 
 function get_processed_data(args)
-    isfile("housing.data") ||
-        download("https://raw.githubusercontent.com/MikeInnes/notebooks/master/housing.data",
-            "housing.data")
+    isfile("housing.data") || download(
+        "https://raw.githubusercontent.com/MikeInnes/notebooks/master/housing.data",
+        "housing.data",
+    )
 
     rawdata = readdlm("housing.data")'
 
     # The last feature is our target -- the price of the house.
     split_ratio = args.split_ratio # For the train test split
 
-    x = rawdata[1:13,:]
-    y = rawdata[14:14,:]
+    x = rawdata[1:13, :]
+    y = rawdata[14:14, :]
 
     # Normalise the data
-    x = (x .- mean(x, dims=2)) ./ std(x, dims=2)
+    x = (x .- mean(x, dims = 2)) ./ std(x, dims = 2)
 
     # Split into train and test sets
     split_index = floor(Int, size(x, 2) * split_ratio)
-    x_train = x[:,1:split_index]
-    y_train = y[:,1:split_index]
-    x_test = x[:,split_index + 1:size(x, 2)]
-    y_test = y[:,split_index + 1:size(x, 2)]
+    x_train = x[:, 1:split_index]
+    y_train = y[:, 1:split_index]
+    x_test = x[:, split_index+1:size(x, 2)]
+    y_test = y[:, split_index+1:size(x, 2)]
 
     train_data = (x_train, y_train)
     test_data = (x_test, y_test)
@@ -60,27 +61,27 @@ end
 
 # Function to predict output from given parameters
 function predict(model; x)
-    return  model.W * x .+ model.b
-end 
+    return model.W * x .+ model.b
+end
 
 # Define the mean squared error function to be used in the loss 
 # function. An implementation is also available in the Flux package
 # (https://fluxml.ai/Flux.jl/stable/models/losses/#Flux.Losses.mse).
-meansquarederror(ŷ, y) = sum((ŷ .- y).^2) / size(y, 2)
+meansquarederror(ŷ, y) = sum((ŷ .- y) .^ 2) / size(y, 2)
 
 function train(args, savename, savedir)
-    
+
     # Check if model directory is created 
     !ispath(savedir) && mkpath(savedir)
-    modelpath = joinpath(savedir, savename) 
+    modelpath = joinpath(savedir, savename)
 
     # Load the data
     (x_train, y_train), (x_test, y_test) = get_processed_data(args)
-    
+
     # The model
-    m = model((randn(1, 13)), [0.])
-    
-    loss(x, y) = meansquarederror(predict(model; x), y) 
+    m = model((randn(1, 13)), [0.0])
+
+    loss(x, y) = meansquarederror(predict(model; x), y)
 
     ## Training
     η = args.lr
@@ -95,7 +96,7 @@ function train(args, savename, savedir)
             @show loss(x_train, y_train)
         end
     end
-    
+
     # Predict the RMSE on the test set
     err = meansquarederror(predict(m; x_test), y_test)
     println(format("Test error {}", err))
