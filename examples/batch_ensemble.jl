@@ -17,7 +17,8 @@ import BSON
 using CUDA
 using Formatting
 
-include("../src/layers/MClayers.jl")
+include("../src/layers/batchensemble/dense.jl")
+include("../src/layers/batchensemble/conv.jl")
 include("../src/metrics.jl")
 
 # LeNet5 "constructor". 
@@ -27,14 +28,14 @@ function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
 
     return Chain(
-        MCConv((5, 5), imgsize[end] => 6, args.dropout, relu),
+        ConvBatchEnsemble((5, 5), imgsize[end] => 6, args.rank, args.ensemble_size, relu),
         MaxPool((2, 2)),
-        MCConv((5, 5), 6 => 16, args.dropout, relu),
+        ConvBatchEnsemble((5, 5), 6 => 16, args.rank, args.ensemble_size, relu),
         MaxPool((2, 2)),
         flatten,
-        MCDense(prod(out_conv_size), 120, args.dropout, relu),
-        MCDense(120, 84, args.dropout, relu),
-        MCDense(84, nclasses, args.dropout),
+        DenseBatchEnsemble(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu),
+        DenseBatchEnsemble(120, 84, args.rank, args.ensemble_size, relu),
+        DenseBatchEnsemble(84, nclasses, args.rank, args.ensemble_size),
     )
 end
 
@@ -66,24 +67,24 @@ function accuracy(preds, labels)
 end
 
 function eval_loss_accuracy(args, loader, model, device)
-    l = [0.0f0 for x = 1:args.sample_size]
-    acc = [0 for x = 1:args.sample_size]
-    ece_list = [0.0f0 for x = 1:args.sample_size]
+    l = [0.0f0 for x = 1:args.ensemble_size]
+    acc = [0 for x = 1:args.ensemble_size]
+    ece_list = [0.0f0 for x = 1:args.ensemble_size]
     ntot = 0
     mean_l = 0
     mean_acc = 0
     mean_ece = 0
     for (x, y) in loader
-        predictions = []
+        x = repeat(x, 1, 1, 1, args.ensemble_size)
         x, y = x |> device, y |> device
-        # # Perform the forward pass 
-        # ŷ = model(x)
-        # ŷ = softmax(ŷ, dims=1)
+        # Perform the forward pass 
+        ŷ = model(x)
+        ŷ = softmax(ŷ, dims = 1)
+        # Reshape the predictions into [classes, batch_size, ensemble_size
+        reshaped_ŷ = reshape(ŷ, size(ŷ)[1], args.batchsize, args.ensemble_size)
         # Loop through each model's predictions 
-        for ensemble = 1:args.sample_size
-            model_predictions = model(x)
-            model_predictions = softmax(model_predictions, dims = 1)
-            push!(predictions, model_predictions)
+        for ensemble = 1:args.ensemble_size
+            model_predictions = reshaped_ŷ[:, :, ensemble]
             # Calculate individual loss 
             l[ensemble] += loss(model_predictions, y) * size(model_predictions)[end]
             acc[ensemble] += accuracy(model_predictions, y)
@@ -92,8 +93,7 @@ function eval_loss_accuracy(args, loader, model, device)
                 args.batchsize
         end
         # Get the mean predictions
-        predictions = Flux.batch(predictions)
-        mean_predictions = mean(predictions, dims = ndims(predictions))
+        mean_predictions = mean(reshaped_ŷ, dims = ndims(reshaped_ŷ))
         mean_predictions = dropdims(mean_predictions, dims = ndims(mean_predictions))
         mean_l += loss(mean_predictions, y) * size(mean_predictions)[end]
         mean_acc += accuracy(mean_predictions, y)
@@ -112,9 +112,9 @@ function eval_loss_accuracy(args, loader, model, device)
     mean_ece = mean_ece / ntot |> round4
 
     # Print the per ensemble mode loss and accuracy 
-    for ensemble = 1:args.sample_size
+    for ensemble = 1:args.ensemble_size
         @info (format(
-            "Sample {} Loss: {} Accuracy: {} ECE: {}",
+            "Model {} Loss: {} Accuracy: {} ECE: {}",
             ensemble,
             losses[ensemble],
             acc[ensemble],
@@ -147,8 +147,8 @@ Base.@kwdef mutable struct Args
     checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
     tblogger = true      # log training with tensorboard
     savepath = "runs/"    # results path
-    dropout::AbstractFloat = 0.1
-    sample_size::Integer = 10
+    rank::Integer = 1
+    ensemble_size::Integer = 4
 end
 
 function train(; kws...)
@@ -199,8 +199,8 @@ function train(; kws...)
     for epoch = 1:args.epochs
         @showprogress for (x, y) in train_loader
             # Make copies of batches for ensembles 
-            x = repeat(x, 1, 1, 1, args.sample_size)
-            y = repeat(y, 1, args.sample_size)
+            x = repeat(x, 1, 1, 1, args.ensemble_size)
+            y = repeat(y, 1, args.ensemble_size)
             x, y = x |> device, y |> device
             gs = Flux.gradient(ps) do
                 ŷ = model(x)

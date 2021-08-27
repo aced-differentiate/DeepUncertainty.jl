@@ -3,33 +3,35 @@ using Random, Distributions
 using Flux: @functor, glorot_normal, glorot_uniform
 
 """
-    TrainableGlorotNormal(shape, loc_initializer, scale_initializer)
-    TrainableGlorotNormal(loc, scale)
+    TrainableGlorotNormal(shape, mean_initializer, stddev_initializer)
+    TrainableGlorotNormal(mean, stddev)
 A trainable layer which samples from a glorot normal distribution when called. 
 During each forward pass, a random noise tensor is sampled from a normal distribution. 
-The noise is multipltied but the log of exp of scale and added to loc. This is the 
+The noise is multipltied but the log of exp of stddev and added to mean. This is the 
 famous reparameterization trick. 
 
 # Fields 
-- `loc`: The loc of the distribution 
-- `scale`: The standard deviation of the RVs 
+- `mean`: The mean of the distribution 
+- `stddev`: The standard deviation of the RVs 
 """
 struct TrainableGlorotNormal{M}
-    loc::M
-    scale::M
-    function TrainableGlorotNormal(loc::M, scale::M) where {M}
-        new{M}(loc, scale)
+    mean::M
+    stddev::M
+    shape::Tuple
+    function TrainableGlorotNormal(mean::M, stddev::M, shape::Tuple) where {M}
+        new{M}(mean, stddev, shape)
     end
 end
 
 function TrainableGlorotNormal(
     shape::NTuple{N,Integer};
-    loc_initializer = glorot_normal,
-    scale_initializer = glorot_normal,
+    mean_initializer = glorot_normal,
+    stddev_initializer = glorot_normal,
 ) where {N}
-    loc = loc_initializer(shape)
-    scale = scale_initializer(shape)
-    return TrainableGlorotNormal(loc, scale)
+    # total_weights = prod(shape)
+    mean = mean_initializer(shape)
+    stddev = stddev_initializer(shape)
+    return TrainableGlorotNormal(mean, stddev, shape)
 end
 
 @functor TrainableGlorotNormal
@@ -38,9 +40,13 @@ function (l::TrainableGlorotNormal)()
     # TODO: compare this implementation with 
     # tfp one and see if it's mathematically equivalent 
     # sample random unit from gaussian dist 
-    loc, scale = l.loc, l.scale
-    epsilon = rand(Normal(), size(loc))
-    sigma = log.(1 .+ exp.(scale))
-    sample = loc .+ (sigma .* epsilon)
+    mean, stddev, shape = l.mean, l.stddev, l.shape
+    # TODO: Get this to run on GPU 
+    # dist = MvNormal(mean, stddev)
+    # sample = rand(dist, 1)
+    sigma = log.(1 .+ exp.(stddev))
+    epsilon = rand(Normal(), shape)
+    sample = mean .+ (sigma .* epsilon)
+    # sample = reshape(sample, shape)
     return sample
 end

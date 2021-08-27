@@ -1,80 +1,8 @@
 using Flux
 using Random
-using Flux: @functor, glorot_uniform, glorot_normal, create_bias, batch
+using Flux: @functor, glorot_uniform, create_bias
 
-include("../initializers.jl")
-
-"""
-    MCConv(filter, in => out, σ = identity;
-            stride = 1, pad = 0, dilation = 1, groups = 1, [bias, weight, init])
-    MCConv(layer, dropout_rate)
-
-Creates a traditional Conv layer with MC dropout functionality. 
-MC Dropout simply means that dropout is activated in both train and test times 
-
-Reference - Dropout as a bayesian approximation - https://arxiv.org/abs/1506.02142 
-
-The traditional conv layer is a field in the struct MCConv, so all the 
-arguments required for the conv layer can be provided, or the layer can 
-be provided too. The forward pass is the conv operation of the conv
-layer followed by dropout applied on the resulting activations. 
-
-    y = dropout(Conv(x), dropout_rate)
-
-# Fields
-- `layer`: A traditional conv layer 
-- `dropout_rate::AbstractFloat`: Dropout rate 
-
-# Arguments 
-- `filter::NTuple{N,Integer}`: Kernel dimensions, eg, (5, 5) 
-- `ch::Pair{<:Integer,<:Integer}`: Input channels => output channels 
-- `dropout_rate::AbstractFloat`: Dropout rate 
-- `σ::F=identity`: Activation function, defaults to identity
-- `init=glorot_normal`: Initialization function, defaults to glorot_normal 
-"""
-struct MCConv{L,F}
-    layer::L
-    dropout_rate::F
-    function MCConv(layer::L, dropout_rate::F) where {L,F}
-        new{typeof(layer),F}(layer, dropout_rate)
-    end
-end
-
-function MCConv(
-    k::NTuple{N,Integer},
-    ch::Pair{<:Integer,<:Integer},
-    dropout_rate::F,
-    σ = identity;
-    init = glorot_uniform,
-    stride = 1,
-    pad = 0,
-    dilation = 1,
-    groups = 1,
-    bias = true,
-) where {N,F}
-
-    layer = Flux.Conv(
-        k,
-        ch,
-        σ;
-        init = init,
-        stride = stride,
-        pad = pad,
-        dilation = dilation,
-        groups = groups,
-        bias = bias,
-    )
-    return MCConv(layer, dropout_rate)
-end
-
-@functor MCConv
-
-function (c::MCConv)(x::AbstractArray; dropout::Bool = true)
-    # Conv Batch Ensemble params 
-    output = c.layer(x)
-    output = Flux.dropout(output, c.dropout_rate; active = dropout)
-    return output
-end
+include("../../initializers.jl")
 
 """
     ConvBatchEnsemble(filter, in => out, rank, 
@@ -287,7 +215,7 @@ struct ConvBayesianBatchEnsemble{L,I,F,B}
         ensemble_act::F = identity,
         rank::Integer = 1,
     ) where {I,F,L}
-        gamma_shape = size(gamma_sampler.mean)
+        gamma_shape = gamma_sampler.shape
         ensemble_bias =
             create_bias(gamma_sampler.mean, ensemble_bias, gamma_shape[1], gamma_shape[2])
         new{typeof(layer),typeof(alpha_sampler),F,typeof(ensemble_bias)}(
@@ -337,16 +265,8 @@ function ConvBayesianBatchEnsemble(
         error("Rank must be >= 1.")
     end
     # Initialize alpha and gamma samplers 
-    alpha_sampler = TrainableGlorotNormal(
-        alpha_shape,
-        mean_initializer = alpha_init,
-        stddev_initializer = alpha_init,
-    )
-    gamma_sampler = TrainableGlorotNormal(
-        gamma_shape,
-        mean_initializer = gamma_init,
-        stddev_initializer = gamma_init,
-    )
+    alpha_sampler = alpha_init(alpha_shape)
+    gamma_sampler = gamma_init(gamma_shape)
 
     return ConvBayesianBatchEnsemble(layer, alpha_sampler, gamma_sampler, bias, σ, rank)
 end

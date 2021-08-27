@@ -17,8 +17,8 @@ import BSON
 using CUDA
 using Formatting
 
-include("../src/layers/dense.jl")
-include("../src/layers/conv.jl")
+include("../src/layers/batchensemble/dense.jl")
+include("../src/layers/batchensemble/conv.jl")
 include("../src/metrics.jl")
 
 # LeNet5 "constructor". 
@@ -28,14 +28,26 @@ function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
 
     return Chain(
-        ConvBatchEnsemble((5, 5), imgsize[end] => 6, args.rank, args.ensemble_size, relu),
+        ConvBayesianBatchEnsemble(
+            (5, 5),
+            imgsize[end] => 6,
+            args.rank,
+            args.ensemble_size,
+            relu,
+        ),
         MaxPool((2, 2)),
-        ConvBatchEnsemble((5, 5), 6 => 16, args.rank, args.ensemble_size, relu),
+        ConvBayesianBatchEnsemble((5, 5), 6 => 16, args.rank, args.ensemble_size, relu),
         MaxPool((2, 2)),
         flatten,
-        DenseBatchEnsemble(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu),
-        DenseBatchEnsemble(120, 84, args.rank, args.ensemble_size, relu),
-        DenseBatchEnsemble(84, nclasses, args.rank, args.ensemble_size),
+        DenseBayesianBatchEnsemble(
+            prod(out_conv_size),
+            120,
+            args.rank,
+            args.ensemble_size,
+            relu,
+        ),
+        DenseBayesianBatchEnsemble(120, 84, args.rank, args.ensemble_size, relu),
+        DenseBayesianBatchEnsemble(84, nclasses, args.rank, args.ensemble_size),
     )
 end
 
@@ -156,13 +168,13 @@ function train(; kws...)
     args.seed > 0 && Random.seed!(args.seed)
     use_cuda = args.use_cuda && CUDA.functional()
 
-    if use_cuda
-        device = gpu
-        @info "Training on GPU"
-    else
-        device = cpu
-        @info "Training on CPU"
-    end
+    # if use_cuda
+    #     device = gpu
+    #     @info "Training on GPU"
+    # else
+    device = cpu
+    @info "Training on CPU"
+    # end
 
     ## DATA
     train_loader, test_loader = get_data(args)
