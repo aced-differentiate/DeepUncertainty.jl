@@ -3,9 +3,9 @@ using Statistics
 using CalibrationErrors
 using ReliabilityDiagrams
 
-function get_mean_std_dev(x::AbstractArray; dims=ndims(x))
-    μ = mean(x, dims=dims)
-    σ = std(x, dims=dims, corrected=false)
+function get_mean_std_dev(x::AbstractArray; dims = ndims(x))
+    μ = mean(x, dims = dims)
+    σ = std(x, dims = dims, corrected = false)
     return μ, σ
 end
 
@@ -15,11 +15,12 @@ end
 
 function brier_score(preds, labels)
     return mean(
-        sum(abs2(pi - (i == s)) for (i, pi) in enumerate(p)) for (s, p) in zip(labels, preds)
+        sum(abs2(pi - (i == s)) for (i, pi) in enumerate(p)) for
+        (s, p) in zip(labels, preds)
     )
 end
 
-function ExpectedCalibrationError(preds, labels, num_bins=10;)
+function ExpectedCalibrationError(preds, labels, num_bins = 10;)
     preds = [x for x in eachcol(preds)]
     ece_estimator = ECE(UniformBinning(num_bins), (μ, y) -> kl_divergence(y, μ))
     ece = ece_estimator(preds, labels)

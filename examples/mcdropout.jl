@@ -1,27 +1,26 @@
-using Base:AbstractFloat
+using Base: AbstractFloat
 ## Classification of MNIST dataset 
 ## with the convolutional neural network known as LeNet5.
 ## This script also combines various
 ## packages from the Julia ecosystem with Flux.
 using Flux
-using Flux.Data:DataLoader
+using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
 using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
-using Flux.Losses:logitcrossentropy
+using Flux.Losses: logitcrossentropy
 using Statistics, Random
-using Logging:with_logger
-using ProgressMeter:@showprogress
+using Logging: with_logger
+using ProgressMeter: @showprogress
 import MLDatasets
 using CUDA
 using Formatting
 
-include("../src/layers/mclayers.jl")
-include("../src/metrics.jl")
+using DeepUncertainty
 
 # LeNet5 "constructor". 
 # The model can be adapted to any image size
 # and any number of output classes.
-function LeNet5(args; imgsize=(28, 28, 1), nclasses=10)
+function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
 
     return Chain(
@@ -47,11 +46,11 @@ function get_data(args)
 
     train_loader = DataLoader(
         (xtrain, ytrain),
-        batchsize=args.batchsize,
-        shuffle=true,
-        partial=false,
+        batchsize = args.batchsize,
+        shuffle = true,
+        partial = false,
     )
-    test_loader = DataLoader((xtest, ytest), batchsize=args.batchsize, partial=false)
+    test_loader = DataLoader((xtest, ytest), batchsize = args.batchsize, partial = false)
 
     return train_loader, test_loader
 end
@@ -78,7 +77,7 @@ function eval_loss_accuracy(args, loader, model, device)
         # Loop through each model's predictions 
         for ensemble = 1:args.sample_size
             model_predictions = model(x)
-            model_predictions = softmax(model_predictions, dims=1)
+            model_predictions = softmax(model_predictions, dims = 1)
             push!(predictions, model_predictions)
             # Calculate individual loss 
             l[ensemble] += loss(model_predictions, y) * size(model_predictions)[end]
@@ -89,8 +88,8 @@ function eval_loss_accuracy(args, loader, model, device)
         end
         # Get the mean predictions
         predictions = Flux.batch(predictions)
-        mean_predictions = mean(predictions, dims=ndims(predictions))
-        mean_predictions = dropdims(mean_predictions, dims=ndims(mean_predictions))
+        mean_predictions = mean(predictions, dims = ndims(predictions))
+        mean_predictions = dropdims(mean_predictions, dims = ndims(mean_predictions))
         mean_l += loss(mean_predictions, y) * size(mean_predictions)[end]
         mean_acc += accuracy(mean_predictions, y)
         mean_ece +=
@@ -129,7 +128,7 @@ end
 
 ## utility functions
 num_params(model) = sum(length, Flux.params(model))
-round4(x) = round(x, digits=4)
+round4(x) = round(x, digits = 4)
 
 # arguments for the `train` function 
 Base.@kwdef mutable struct Args
