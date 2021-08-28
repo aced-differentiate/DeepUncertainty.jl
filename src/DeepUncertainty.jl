@@ -1,5 +1,7 @@
 module DeepUncertainty
 
-# Write your package code here.
+include("layers/Layers.jl")
+using Layers
+export MCDense, MCConv
 
 end
