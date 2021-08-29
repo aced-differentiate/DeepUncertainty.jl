@@ -14,10 +14,6 @@ struct MCLayer{L,F}
     dropout_rate::F
 end
 
-function MCLayer(layer::L, dropout_rate::F) where {L,F}
-    MCLayer(layer, dropout_rate)
-end
-
 @functor MCLayer
 
 """
