@@ -90,8 +90,8 @@ end
 
 function MCConv(
     w::AbstractArray{T,N},
+    bias,
     dropout_rate,
-    bias = true,
     σ = identity,
     kwargs...,
 ) where {T,N}
