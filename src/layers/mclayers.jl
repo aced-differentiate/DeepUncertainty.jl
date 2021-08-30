@@ -1,17 +1,17 @@
 using Flux
 using Random
 using Test
-using Flux: @functor, dropout
+using Flux: @functor
 
 """
-    MCLayer(layer, dropout_rate)
+    MCLayer(layer, dropout)
 A generic Monte Carlo dropout layer. Takes in any "traditional" flux 
-layer and dropout rate. Performs the usual layer forward pass and then 
-passes the acitvations through a dropout layer.     
+layer and a function that implements dropout. Performs the usual layer 
+forward pass and then passes the acitvations through the given dropout function.  
 """
 struct MCLayer{L,F}
     layer::L
-    dropout_rate::F
+    dropout::F
 end
 
 @functor MCLayer
@@ -34,7 +34,7 @@ layer followed by dropout applied on the resulting activations.
 
 # Fields
 - `layer`: A traditional dense layer 
-- `dropout_rate::AbstractFloat`: Dropout rate 
+- `dropout`: A function that implements dropout  
 
 # Arguments 
 - `in::Integer`: Input dimension of features 
@@ -44,9 +44,9 @@ layer followed by dropout applied on the resulting activations.
 - `init=glorot_normal`: Initialization function, defaults to glorot_normal 
 """
 function MCDense(in::Integer, out::Integer, dropout_rate, σ = identity, kwargs...)
-
     layer = Flux.Dense(in, out, σ; kwargs...)
-    return MCLayer(layer, dropout_rate)
+    dropout = (x; k...) -> Flux.dropout(x, dropout_rate; k...)
+    return MCLayer(layer, dropout)
 end
 
 """
@@ -85,7 +85,8 @@ function MCConv(
     kwargs...,
 ) where {N}
     layer = Flux.Conv(k, ch, σ; kwargs...)
-    return MCLayer(layer, dropout_rate)
+    dropout = (x; k...) -> Flux.dropout(x, dropout_rate; k...)
+    return MCLayer(layer, dropout)
 end
 
 function MCConv(
@@ -96,7 +97,8 @@ function MCConv(
     kwargs...,
 ) where {T,N}
     layer = Flux.Conv(w, bias, σ, kwargs...)
-    return MCLayer(layer, dropout_rate)
+    dropout = (x; k...) -> Flux.dropout(x, dropout_rate; k...)
+    return MCLayer(layer, dropout)
 end
 
 """
@@ -108,10 +110,9 @@ usual layer first and then through a dropout layer.
 - `dropout=true`: Toggle to control dropout, it's preferred to keep 
 dropout always on, but just in case if it's needed. 
 """
-function (a::MCLayer)(x; dropout = true)
+function (mc::MCLayer)(x; dropout = true)
     # Layer forward pass 
-    output = a.layer(x)
     # Dropout on activations 
-    output = Flux.dropout(output, a.dropout_rate; active = dropout)
+    output = mc.dropout(mc.layer(x); active = dropout)
     return output
 end

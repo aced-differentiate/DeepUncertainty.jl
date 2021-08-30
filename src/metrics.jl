@@ -3,6 +3,8 @@ using Statistics
 using CalibrationErrors
 using ReliabilityDiagrams
 
+# TODO: Work on GPU friendly implementations of these metrics 
+
 function get_mean_std_dev(x::AbstractArray; dims = ndims(x))
     μ = mean(x, dims = dims)
     σ = std(x, dims = dims, corrected = false)
@@ -10,6 +12,7 @@ function get_mean_std_dev(x::AbstractArray; dims = ndims(x))
 end
 
 function mean_loglikelihood(preds, labels)
+
     return mean(log(p[s]) for (s, p) in zip(labels, preds))
 end
 
