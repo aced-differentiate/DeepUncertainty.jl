@@ -1,6 +1,7 @@
 using DeepUncertainty
 using Test
 
-@testset "DeepUncertainty.jl" begin
-    # Write your tests here.
+@testset "Layers" begin
+    # Test the layers 
+    include("./layers/mclayers_test.jl")
 end
