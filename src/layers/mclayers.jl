@@ -95,7 +95,7 @@ function MCConv(
     σ = identity,
     kwargs...,
 ) where {T,N}
-    layer = Flux.Conv(σ, w, bias, kwargs...)
+    layer = Flux.Conv(w, bias, σ, kwargs...)
     return MCLayer(layer, dropout_rate)
 end
 
