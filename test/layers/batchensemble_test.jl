@@ -4,7 +4,7 @@ using Flux
 using DeepUncertainty
 
 @testset "Dense batchensemble" begin
-    ensemble_size = 3
+    ensemble_size = 4
     samples_per_model = 4
     input_dim = 5
     output_dim = 5
@@ -31,18 +31,25 @@ using DeepUncertainty
     loop_outputs = Flux.batch(loop_outputs)
     loop_outputs = reshape(loop_outputs, (output_dim, samples_per_model * ensemble_size))
     @test size(batch_outputs) == size(loop_outputs)
-    @test isapprox(batch_outputs, loop_outputs)
+    @test isapprox(batch_outputs, loop_outputs, atol = 0.05)
 end
 
 @testset "ConvBatchEnsemble" begin
-    ensemble_size = 3
+    ensemble_size = 4
     samples_per_model = 4
     input_dim = 5
     output_dim = 10
     rank = 1
     inputs = rand(Float32, 10, 10, input_dim, samples_per_model)
-    beconv =
-        ConvBatchEnsemble((5, 5), 5 => 10, 1, 4, relu; alpha_init = ones, gamma_init = ones)
+    beconv = ConvBatchEnsemble(
+        (5, 5),
+        5 => 10,
+        rank,
+        ensemble_size,
+        relu;
+        alpha_init = ones,
+        gamma_init = ones,
+    )
     batch_inputs = repeat(inputs, 1, 1, 1, ensemble_size)
     batch_outputs = beconv(batch_inputs)
 
@@ -66,5 +73,5 @@ end
         ),
     )
     @test size(batch_outputs) == size(loop_outputs)
-    @test isapprox(batch_outputs, loop_outputs)
+    @test isapprox(batch_outputs, loop_outputs, atol = 0.05)
 end

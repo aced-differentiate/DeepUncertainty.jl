@@ -56,14 +56,14 @@ struct DenseBatchEnsemble{L,F,M,B}
     gamma::M
     ensemble_bias::B
     ensemble_act::F
-    rank::Integer
+    rank::Any
     function DenseBatchEnsemble(
         layer::L,
         alpha::M,
         gamma::M,
         ensemble_bias = true,
         ensemble_act::F = identity,
-        rank::Integer = 1,
+        rank = 1,
     ) where {M,F,L}
         ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
         new{typeof(layer),F,M,typeof(ensemble_bias)}(
@@ -92,12 +92,9 @@ function DenseBatchEnsemble(
 )
 
     layer = Flux.Dense(in, out, σ; init = init, bias = bias)
-    if rank > 1
+    if rank >= 1
         alpha_shape = (in, ensemble_size, rank)
         gamma_shape = (out, ensemble_size, rank)
-    elseif rank == 1
-        alpha_shape = (in, ensemble_size)
-        gamma_shape = (out, ensemble_size)
     else
         error("Rank must be >= 1.")
     end
@@ -131,35 +128,27 @@ function (be::DenseBatchEnsemble)(x)
     ensemble_size = size(alpha)[2]
     samples_per_model = batch_size ÷ ensemble_size
 
-    # TODO: Merge these implementations 
-    if rank > 1
-        # Alpha, gamma shapes - [units, ensembles, rank]
-        alpha = repeat(alpha, samples_per_model)
-        gamma = repeat(gamma, samples_per_model)
-        # Reshape alpha, gamma to [units, batch_size, rank]
-        alpha = reshape(alpha, (in_size, batch_size, rank))
-        gamma = reshape(gamma, (out_size, batch_size, rank))
-        # Reshape inputs to [units, batch_size, 1] for broadcasting
-        x = reshape(x, (in_size, batch_size, 1))
-        # Perturb the inputs 
-        perturbed_x = x .* alpha
-        # Dense layer forward pass 
-        outputs = layer(perturbed_x) .* gamma
-        # Reduce the rank dimension through summing it up
-        outputs = sum(outputs, dims = 3)
-        outputs = reshape(outputs, (out_size, samples_per_model, ensemble_size))
-    else
-        # Reshape the inputs, alpha and gamma
-        x = reshape(x, (in_size, samples_per_model, ensemble_size))
-        alpha = reshape(alpha, (in_size, 1, ensemble_size))
-        gamma = reshape(gamma, (out_size, 1, ensemble_size))
-        # Perturb the inputs 
-        perturbed_x = x .* alpha
-        # Dense layer forward pass 
-        outputs = layer(perturbed_x) .* gamma
-    end
+    # Alpha, gamma shapes - [units, ensembles, rank]
+    alpha = reshape(alpha, (in_size, ensemble_size * rank))
+    gamma = reshape(gamma, (out_size, ensemble_size * rank))
+    # Repeat breaks on GPU when input dims > 2 
+    alpha = repeat(alpha, samples_per_model)
+    gamma = repeat(gamma, samples_per_model)
+    # Reshape alpha, gamma to [units, batch_size, rank]
+    alpha = reshape(alpha, (in_size, batch_size, rank))
+    gamma = reshape(gamma, (out_size, batch_size, rank))
+    # Reshape inputs to [units, batch_size, 1] for broadcasting
+    x = Flux.unsqueeze(x, (ndims(x) + 1))
+    # Perturb the inputs 
+    perturbed_x = x .* alpha
+    # Dense layer forward pass 
+    outputs = layer(perturbed_x) .* gamma
+    # Reduce the rank dimension through summing it up
+    outputs = sum(outputs, dims = 3)
+    outputs = reshape(outputs, (out_size, samples_per_model, ensemble_size))
     # Reshape ensemble bias 
-    e_b = reshape(e_b, (out_size, 1, ensemble_size))
+    e_b = Flux.unsqueeze(e_b, ndims(e_b))
+
     outputs = e_σ.(outputs .+ e_b)
     outputs = reshape(outputs, (out_size, batch_size))
     return outputs

@@ -53,14 +53,14 @@ struct ConvBatchEnsemble{L,F,M,B}
     gamma::M
     ensemble_bias::B
     ensemble_act::F
-    rank::Integer
+    rank::Any
     function ConvBatchEnsemble(
         layer::L,
         alpha::M,
         gamma::M,
         ensemble_bias = true,
         ensemble_act::F = identity,
-        rank::Integer = 1,
+        rank = 1,
     ) where {M,F,L}
         ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
         new{typeof(layer),F,M,typeof(ensemble_bias)}(
@@ -91,7 +91,6 @@ function ConvBatchEnsemble(
     ensemble_bias = true,
     ensemble_act = identity,
 ) where {N}
-
     layer = Flux.Conv(
         k,
         ch,

@@ -7,7 +7,7 @@ export mean_loglikelihood, brier_score, ExpectedCalibrationError, prediction_met
 
 include("metrics.jl")
 include("layers/mclayers.jl")
-include("layers/batchensemble/dense.jl")
-include("layers/batchensemble/conv.jl")
+include("layers/BatchEnsemble/dense.jl")
+include("layers/BatchEnsemble/conv.jl")
 
 end
