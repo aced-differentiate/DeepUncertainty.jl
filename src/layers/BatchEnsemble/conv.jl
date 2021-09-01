@@ -1,7 +1,3 @@
-using Flux
-using Random
-using Flux: @functor, glorot_normal, create_bias
-
 """
     ConvBatchEnsemble(filter, in => out, rank, 
                     ensemble_size, σ = identity;

@@ -1,8 +1,3 @@
-using Test
-using Flux
-
-using DeepUncertainty
-
 @testset "Dense batchensemble" begin
     ensemble_size = 4
     samples_per_model = 4
@@ -18,9 +13,11 @@ using DeepUncertainty
         alpha_init = ones,
         gamma_init = ones,
     )
-    batch_inputs = repeat(inputs, 1, ensemble_size)
+    layer = layer |> gpu
+    batch_inputs = gpu(repeat(inputs, 1, ensemble_size))
     batch_outputs = layer(batch_inputs)
     # Do the computation in for loop to compare outputs 
+    layer = layer |> cpu
     loop_outputs = []
     for i = 1:ensemble_size
         perturbed_inputs = inputs .* layer.alpha[i]
@@ -30,8 +27,9 @@ using DeepUncertainty
     end
     loop_outputs = Flux.batch(loop_outputs)
     loop_outputs = reshape(loop_outputs, (output_dim, samples_per_model * ensemble_size))
+    @test batch_outputs isa CuArray
     @test size(batch_outputs) == size(loop_outputs)
-    @test isapprox(batch_outputs, loop_outputs, atol = 0.05)
+    @test isapprox(cpu(batch_outputs), loop_outputs, atol = 0.05)
 end
 
 @testset "ConvBatchEnsemble" begin
@@ -50,10 +48,11 @@ end
         alpha_init = ones,
         gamma_init = ones,
     )
-    batch_inputs = repeat(inputs, 1, 1, 1, ensemble_size)
+    beconv = beconv |> gpu
+    batch_inputs = gpu(repeat(inputs, 1, 1, 1, ensemble_size))
     batch_outputs = beconv(batch_inputs)
-
     # Do the computation in for loop to compare outputs 
+    beconv = beconv |> cpu
     loop_outputs = []
     for i = 1:ensemble_size
         perturbed_inputs = inputs .* beconv.alpha[i]
@@ -72,6 +71,7 @@ end
             samples_per_model * ensemble_size,
         ),
     )
+    @test batch_outputs isa CuArray
     @test size(batch_outputs) == size(loop_outputs)
-    @test isapprox(batch_outputs, loop_outputs, atol = 0.05)
+    @test isapprox(cpu(batch_outputs), loop_outputs, atol = 0.05)
 end

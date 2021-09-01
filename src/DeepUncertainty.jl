@@ -1,5 +1,9 @@
 module DeepUncertainty
 
+using Flux
+using Random
+using Flux: @functor, glorot_normal, create_bias
+
 # Export layers 
 export MCLayer, MCDense, MCConv
 export DenseBatchEnsemble, ConvBatchEnsemble
