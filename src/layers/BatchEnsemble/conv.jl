@@ -49,25 +49,19 @@ struct ConvBatchEnsemble{L,F,M,B}
     gamma::M
     ensemble_bias::B
     ensemble_act::F
-    rank::Any
-    function ConvBatchEnsemble(
-        layer::L,
-        alpha::M,
-        gamma::M,
-        ensemble_bias = true,
-        ensemble_act::F = identity,
-        rank = 1,
-    ) where {M,F,L}
-        ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
-        new{typeof(layer),F,M,typeof(ensemble_bias)}(
-            layer,
-            alpha,
-            gamma,
-            ensemble_bias,
-            ensemble_act,
-            rank,
-        )
-    end
+    rank
+end
+
+function ConvBatchEnsemble(
+    layer::L,
+    alpha::M,
+    gamma::M,
+    ensemble_bias = true,
+    ensemble_act::F = identity,
+    rank = 1,
+) where {M,F,L}
+    ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
+    ConvBatchEnsemble(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
 end
 
 function ConvBatchEnsemble(
@@ -108,6 +102,7 @@ function ConvBatchEnsemble(
     end
     alpha = alpha_init(alpha_shape)
     gamma = gamma_init(gamma_shape)
+    ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
 
     return ConvBatchEnsemble(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
 end
@@ -128,6 +123,7 @@ function (be::ConvBatchEnsemble)(x)
     ensemble_size = size(alpha)[2]
     samples_per_model = batch_size ÷ ensemble_size
 
+    # TODO: Do we really need repeat? Or can we use broadcast?
     # Alpha, gamma shapes - [units, ensembles, rank]
     e_b = repeat(e_b, samples_per_model)
     alpha = repeat(alpha, samples_per_model)

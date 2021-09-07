@@ -27,6 +27,18 @@
     loop_outputs = reshape(loop_outputs, (output_dim, samples_per_model * ensemble_size))
     @test size(batch_outputs) == size(loop_outputs)
     @test isapprox(batch_outputs, loop_outputs, atol = 0.05)
+
+    # Test gradients 
+    layer = DenseBatchEnsemble(2, 5, 1, 2)
+    i = rand(2, 4)
+    y = ones(5, 4)
+    grads = gradient(params(layer)) do
+        ŷ = layer(i)
+        return Flux.logitcrossentropy(ŷ, y)
+    end
+    for param in params(layer)
+        @test size(param) == size(grads[param])
+    end
 end
 
 @testset "ConvBatchEnsemble" begin
@@ -69,4 +81,16 @@ end
     )
     @test size(batch_outputs) == size(loop_outputs)
     @test isapprox(batch_outputs, loop_outputs, atol = 0.05)
+
+    # Test gradients 
+    layer = ConvBatchEnsemble((5, 5), 3 => 6, 1, 4, relu)
+    i = rand(32, 32, 3, 4)
+    y = rand(28, 28, 6, 4)
+    grads = gradient(params(layer)) do
+        ŷ = layer(i)
+        return Flux.logitcrossentropy(ŷ, y)
+    end
+    for param in params(layer)
+        @test size(param) == size(grads[param])
+    end
 end
