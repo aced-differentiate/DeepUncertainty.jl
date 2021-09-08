@@ -12,6 +12,7 @@ ReliabilityDiagrams = "e5f51471-6270-49e4-a15a-f1cfbff4f856"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [compat]
+ReliabilityDiagrams = "0.2"
 julia = "1"
 
 [extras]
