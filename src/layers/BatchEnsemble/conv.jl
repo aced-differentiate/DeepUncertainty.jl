@@ -53,13 +53,13 @@ struct ConvBatchEnsemble{L,F,M,B}
 end
 
 function ConvBatchEnsemble(
-    layer::L,
-    alpha::M,
-    gamma::M,
+    layer,
+    alpha,
+    gamma,
     ensemble_bias = true,
-    ensemble_act::F = identity,
+    ensemble_act = identity,
     rank = 1,
-) where {M,F,L}
+)
     ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
     ConvBatchEnsemble(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
 end
@@ -102,7 +102,7 @@ function ConvBatchEnsemble(
     end
     alpha = alpha_init(alpha_shape)
     gamma = gamma_init(gamma_shape)
-    ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
+    ensemble_bias = create_bias(gamma, ensemble_bias, out_dim, ensemble_size)
 
     return ConvBatchEnsemble(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
 end

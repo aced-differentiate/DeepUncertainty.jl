@@ -1,12 +1,12 @@
 """
-DenseBatchEnsemble(in, out, rank, 
-                    ensemble_size, 
-                    σ=identity; 
-                    bias=true,
-                    init=glorot_normal, 
-                    alpha_init=glorot_normal, 
-                    gamma_init=glorot_normal)
-DenseBatchEnsemble(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
+    DenseBatchEnsemble(in, out, rank, 
+                        ensemble_size, 
+                        σ=identity; 
+                        bias=true,
+                        init=glorot_normal, 
+                        alpha_init=glorot_normal, 
+                        gamma_init=glorot_normal)
+    DenseBatchEnsemble(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
 
 Creates a dense BatchEnsemble layer. Batch ensemble is a memory efficient alternative 
 for deep ensembles. In deep ensembles, if the ensemble size is N, N different models 
@@ -56,13 +56,13 @@ struct DenseBatchEnsemble{L,F,M,B}
 end
 
 function DenseBatchEnsemble(
-    layer::L,
-    alpha::M,
-    gamma::M,
+    layer,
+    alpha,
+    gamma,
     ensemble_bias = true,
-    ensemble_act::F = identity,
+    ensemble_act = identity,
     rank = 1,
-) where {M,F,L}
+)
     ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
     DenseBatchEnsemble(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
 end
@@ -136,7 +136,7 @@ function (be::DenseBatchEnsemble)(x)
     # Dense layer forward pass 
     outputs = layer(perturbed_x) .* gamma
     # Reduce the rank dimension through summing it up
-    outputs = sum(outputs, dims = 3)
+    outputs = sum(outputs, dims = ndims(outputs))
     outputs = reshape(outputs, (out_size, samples_per_model, ensemble_size))
     # Reshape ensemble bias 
     e_b = Flux.unsqueeze(e_b, ndims(e_b))

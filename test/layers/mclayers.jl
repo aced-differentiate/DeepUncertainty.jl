@@ -1,3 +1,4 @@
+# TODO: https://github.com/aced-differentiate/DeepUncertainty.jl/pull/15#discussion_r704125806
 function test_sparsity(x, target_sparsity; atol = 0.05)
     number_of_zeros = count(ele -> (ele == 0.0), x)
     sparsity = number_of_zeros / sum(length, x)
