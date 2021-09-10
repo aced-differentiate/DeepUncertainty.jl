@@ -1,10 +1,11 @@
 module DeepUncertainty
 
-using Random 
+using Random
 using DistributionsAD
 
 using Flux
-using Flux: @functor, glorot_normal, create_bias
+using Flux: @functor, create_bias, params
+using Flux: glorot_uniform, glorot_normal
 
 export KLDivergence
 export TrainableDistribution

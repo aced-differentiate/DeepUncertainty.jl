@@ -11,6 +11,10 @@ using Flux: cpu, gpu
     include("./layers/batchensemble.jl")
 end
 
+@testset "Bayesian utils" begin
+    include("bayesian.jl")
+end
+
 @testset "CUDA" begin
     if CUDA.functional()
         include("cuda/runtests.jl")

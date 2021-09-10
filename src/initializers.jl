@@ -1,3 +1,5 @@
+include("regularizers.jl")
+
 abstract type AbstractTrainableDist end
 
 """
@@ -7,6 +9,7 @@ abstract type AbstractTrainableDist end
                         complexity_weight=1e-5)
 A distribution with trainable parameters. The mean and stddev are trainable parameters.
 The prior and posterior are by default multivariate norml distribution. 
+
 # Fields 
 - `mean`: Trainable mean vector of the distribution 
 - `stddev`: Trainable standard deviation vector of the distibution 
@@ -17,6 +20,7 @@ The prior and posterior are by default multivariate norml distribution.
 - `mean_constraint`: Constraint on the mean of the distribution, defaults to identity
 - `stddev_constraint`: Constrain on the stddev of the distrbution, defaults to softplus 
 - `complexity_weight`: The regularization constant for KL divergence
+
 # Arguments 
 - `shape::Tuple`: The shape of the sample to returned from the distribution 
 - `prior`: The prior distribution, defaults to Multivariate Normal 
@@ -25,43 +29,56 @@ The prior and posterior are by default multivariate norml distribution.
 - `stddev_constraint`: Constraint on stddev, defaults to softplus 
 - `complexity_weight`: Regularization constant for KL divergence 
 """
-mutable struct TrainableDistribution{M,S,N,MF,SF,F} <: AbstractTrainableDist
-    mean::M 
-    stddev::M 
+mutable struct TrainableDistribution{M,S,N,MF,SF,F,PD,POSD} <: AbstractTrainableDist
+    mean::M
+    stddev::M
     sample::S
     shape::NTuple{N,Integer}
-    mean_constraint::MF 
-    stddev_constraint::SF 
     complexity_weight::F
-end 
+    mean_constraint::MF
+    stddev_constraint::SF
+    prior_distribution::PD
+    posterior_distribution::POSD
+end
 
-function TrainableDistribution(shape; 
-                                mean_init=glorot_normal, 
-                                stddev_init=glorot_normal, 
-                                complexity_weight=1e-5)
+function TrainableDistribution(
+    shape;
+    complexity_weight = 1e-5,
+    mean_init = glorot_normal,
+    stddev_init = glorot_normal,
+    mean_constraint = identity,
+    stddev_constraint = softplus,
+    prior_distribution = DistributionsAD.TuringMvNormal,
+    posterior_distribution = DistributionsAD.TuringMvNormal,
+)
     # Create the mean and stddev 
-    total_params = prod(shape) 
-    mean = mean_init(total_params)
-    stddev = stddev_init(total_params)
-    sample = zeros(total_params)
-    mean_constraint = identity 
-    stddev_constraint = softplus
-    return TrainableDistribution(mean, stddev, sample, shape,
-                            mean_constraint, 
-                            stddev_constraint, 
-                            complexity_weight) 
-end 
+    total_params = prod(shape)
+    mean = gpu(mean_init(total_params))
+    stddev = gpu(stddev_init(total_params))
+    sample = gpu(zeros(total_params))
+    return TrainableDistribution(
+        mean,
+        stddev,
+        sample,
+        shape,
+        complexity_weight,
+        mean_constraint,
+        stddev_constraint,
+        prior_distribution,
+        posterior_distribution,
+    )
+end
 
 # Don't backprop through the sample stored for loss calc 
 @functor TrainableDistribution (mean, stddev)
 
-function (tn::TrainableDistribution)()
-    mean = tn.mean_constraint.(tn.mean) 
-    stddev = tn.stddev_constraint.(tn.stddev) 
-    dist = DistributionsAD.TuringMvNormal(mean, stddev)
+function (td::TrainableDistribution)()
+    mean = td.mean_constraint.(td.mean)
+    stddev = td.stddev_constraint.(td.stddev)
+    dist = td.posterior_distribution(mean, stddev)
     # Sample from the dist 
-    sample = gpu(rand(dist))
-    # Assigning sample to struct moves it to CPU, even though its a CuArray 
-    tn.sample = sample 
-    return reshape(sample, tn.shape) 
+    # Put it on zygote.ignore to supress mutation errors 
+    # copyto!(tn.sample, gpu(rand(dist)))
+    td.sample = gpu(rand(dist))
+    return reshape(td.sample, td.shape)
 end
