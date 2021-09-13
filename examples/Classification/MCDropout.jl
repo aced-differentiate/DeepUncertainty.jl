@@ -52,7 +52,25 @@ function get_data(args)
     )
     test_loader = DataLoader((xtest, ytest), batchsize = args.batchsize, partial = false)
 
-    return train_loader, test_loader
+    # Fashion mnist for uncertainty testing 
+    xtrain, ytrain = MLDatasets.FashionMNIST.traindata(Float32)
+    xtest, ytest = MLDatasets.FashionMNIST.testdata(Float32)
+
+    xtrain = reshape(xtrain, 28, 28, 1, :)
+    xtest = reshape(xtest, 28, 28, 1, :)
+
+    ytrain, ytest = onehotbatch(ytrain, 0:9), onehotbatch(ytest, 0:9)
+
+    ood_train_loader = DataLoader(
+        (xtrain, ytrain),
+        batchsize = args.batchsize,
+        shuffle = true,
+        partial = false,
+    )
+    ood_test_loader =
+        DataLoader((xtest, ytest), batchsize = args.batchsize, partial = false)
+
+    return train_loader, test_loader, ood_train_loader, ood_test_loader
 end
 
 loss(ŷ, y) = logitcrossentropy(ŷ, y)
@@ -158,7 +176,7 @@ function train(; kws...)
     end
 
     ## DATA
-    train_loader, test_loader = get_data(args)
+    train_loader, test_loader, ood_train_loader, ood_test_loader = get_data(args)
     @info "Dataset MNIST: $(train_loader.nobs) train and $(test_loader.nobs) test examples"
 
     ## MODEL AND OPTIMIZER
@@ -175,6 +193,8 @@ function train(; kws...)
     function report(epoch)
         @info "Test metrics"
         eval_loss_accuracy(args, test_loader, model, device)
+        @info "Test OOD metrics"
+        eval_loss_accuracy(args, ood_test_loader, model, device)
     end
 
     ## TRAINING

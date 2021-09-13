@@ -25,14 +25,14 @@ function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
 
     return Chain(
-        ConvBatchEnsemble((5, 5), imgsize[end] => 6, args.rank, args.ensemble_size, relu),
+        ConvBE((5, 5), imgsize[end] => 6, args.rank, args.ensemble_size, relu),
         MaxPool((2, 2)),
-        ConvBatchEnsemble((5, 5), 6 => 16, args.rank, args.ensemble_size, relu),
+        ConvBE((5, 5), 6 => 16, args.rank, args.ensemble_size, relu),
         MaxPool((2, 2)),
         flatten,
-        DenseBatchEnsemble(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu),
-        DenseBatchEnsemble(120, 84, args.rank, args.ensemble_size, relu),
-        DenseBatchEnsemble(84, nclasses, args.rank, args.ensemble_size),
+        DenseBE(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu),
+        DenseBE(120, 84, args.rank, args.ensemble_size, relu),
+        DenseBE(84, nclasses, args.rank, args.ensemble_size),
     )
 end
 

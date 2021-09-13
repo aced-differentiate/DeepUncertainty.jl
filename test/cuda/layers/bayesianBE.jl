@@ -1,18 +1,11 @@
-@testset "Dense batchensemble" begin
+@testset "Variational Dense BatchEnsemble" begin
     ensemble_size = 4
     samples_per_model = 4
     input_dim = 5
     output_dim = 5
     rank = 1
     inputs = rand(Float32, input_dim, samples_per_model)
-    layer = DenseBatchEnsemble(
-        input_dim,
-        output_dim,
-        rank,
-        ensemble_size;
-        alpha_init = ones,
-        gamma_init = ones,
-    )
+    layer = VariationalDenseBE(input_dim, output_dim, rank, ensemble_size)
     layer = layer |> gpu
     batch_inputs = gpu(repeat(inputs, 1, ensemble_size))
     batch_outputs = layer(batch_inputs)
@@ -32,7 +25,7 @@
     @test isapprox(cpu(batch_outputs), loop_outputs, atol = 0.05)
 
     # Test gradients 
-    layer = gpu(DenseBatchEnsemble(2, 5, 1, 2))
+    layer = gpu(DenseBE(2, 5, 1, 2))
     i = gpu(rand(2, 4))
     y = gpu(ones(5, 4))
     grads = gradient(params(layer)) do
@@ -41,25 +34,18 @@
     end
     for param in params(layer)
         @test size(param) == size(grads[param])
+        @test grads[param] isa CuArray
     end
 end
 
-@testset "ConvBatchEnsemble" begin
+@testset "Variational Conv BatchEnsemble" begin
     ensemble_size = 4
     samples_per_model = 4
     input_dim = 5
     output_dim = 10
     rank = 1
     inputs = rand(Float32, 10, 10, input_dim, samples_per_model)
-    beconv = ConvBatchEnsemble(
-        (5, 5),
-        5 => 10,
-        rank,
-        ensemble_size,
-        relu;
-        alpha_init = ones,
-        gamma_init = ones,
-    )
+    beconv = VariationalConvBE((5, 5), 5 => 10, rank, ensemble_size, relu)
     beconv = beconv |> gpu
     batch_inputs = gpu(repeat(inputs, 1, 1, 1, ensemble_size))
     batch_outputs = beconv(batch_inputs)
@@ -88,7 +74,7 @@ end
     @test isapprox(cpu(batch_outputs), loop_outputs, atol = 0.05)
 
     # Test gradients 
-    layer = gpu(ConvBatchEnsemble((5, 5), 3 => 6, 1, 4, relu))
+    layer = gpu(ConvBE((5, 5), 3 => 6, 1, 4, relu))
     i = gpu(rand(32, 32, 3, 4))
     y = gpu(rand(28, 28, 6, 4))
     grads = gradient(params(layer)) do
@@ -97,5 +83,6 @@ end
     end
     for param in params(layer)
         @test size(param) == size(grads[param])
+        @test grads[param] isa CuArray
     end
 end

@@ -13,9 +13,11 @@
         alpha_init = ones,
         gamma_init = ones,
     )
-    batch_inputs = repeat(inputs, 1, ensemble_size)
+    layer = layer |> gpu
+    batch_inputs = gpu(repeat(inputs, 1, ensemble_size))
     batch_outputs = layer(batch_inputs)
     # Do the computation in for loop to compare outputs 
+    layer = layer |> cpu
     loop_outputs = []
     for i = 1:ensemble_size
         perturbed_inputs = inputs .* layer.alpha[i]
@@ -25,19 +27,21 @@
     end
     loop_outputs = Flux.batch(loop_outputs)
     loop_outputs = reshape(loop_outputs, (output_dim, samples_per_model * ensemble_size))
+    @test batch_outputs isa CuArray
     @test size(batch_outputs) == size(loop_outputs)
-    @test isapprox(batch_outputs, loop_outputs, atol = 0.05)
+    @test isapprox(cpu(batch_outputs), loop_outputs, atol = 0.05)
 
     # Test gradients 
-    layer = DenseBE(2, 5, 1, 2)
-    i = rand(2, 4)
-    y = ones(5, 4)
+    layer = gpu(DenseBE(2, 5, 1, 2))
+    i = gpu(rand(2, 4))
+    y = gpu(ones(5, 4))
     grads = gradient(params(layer)) do
         ŷ = layer(i)
         return Flux.logitcrossentropy(ŷ, y)
     end
     for param in params(layer)
         @test size(param) == size(grads[param])
+        @test grads[param] isa CuArray
     end
 end
 
@@ -57,10 +61,11 @@ end
         alpha_init = ones,
         gamma_init = ones,
     )
-    batch_inputs = repeat(inputs, 1, 1, 1, ensemble_size)
+    beconv = beconv |> gpu
+    batch_inputs = gpu(repeat(inputs, 1, 1, 1, ensemble_size))
     batch_outputs = beconv(batch_inputs)
-
     # Do the computation in for loop to compare outputs 
+    beconv = beconv |> cpu
     loop_outputs = []
     for i = 1:ensemble_size
         perturbed_inputs = inputs .* beconv.alpha[i]
@@ -79,18 +84,20 @@ end
             samples_per_model * ensemble_size,
         ),
     )
+    @test batch_outputs isa CuArray
     @test size(batch_outputs) == size(loop_outputs)
-    @test isapprox(batch_outputs, loop_outputs, atol = 0.05)
+    @test isapprox(cpu(batch_outputs), loop_outputs, atol = 0.05)
 
     # Test gradients 
-    layer = ConvBE((5, 5), 3 => 6, 1, 4, relu)
-    i = rand(32, 32, 3, 4)
-    y = rand(28, 28, 6, 4)
+    layer = gpu(ConvBE((5, 5), 3 => 6, 1, 4, relu))
+    i = gpu(rand(32, 32, 3, 4))
+    y = gpu(rand(28, 28, 6, 4))
     grads = gradient(params(layer)) do
         ŷ = layer(i)
         return Flux.logitcrossentropy(ŷ, y)
     end
     for param in params(layer)
         @test size(param) == size(grads[param])
+        @test grads[param] isa CuArray
     end
 end

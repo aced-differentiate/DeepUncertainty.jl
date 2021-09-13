@@ -12,7 +12,8 @@ export TrainableDistribution, AbstractTrainableDist
 # Export layers 
 export MCLayer, MCDense, MCConv
 export VariationalConv, VariationalDense
-export DenseBatchEnsemble, ConvBatchEnsemble
+export DenseBE, ConvBE
+export VariationalConvBE, VariationalDenseBE
 export ExpectedCalibrationError, prediction_metrics
 export mean_loglikelihood, brier_score, calculate_entropy
 
@@ -26,5 +27,7 @@ include("layers/BatchEnsemble/dense.jl")
 include("layers/BatchEnsemble/conv.jl")
 include("layers/Variational/conv.jl")
 include("layers/Variational/dense.jl")
+include("layers/BayesianBE/conv.jl")
+include("layers/BayesianBE/dense.jl")
 
 end

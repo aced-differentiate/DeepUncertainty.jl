@@ -1,21 +1,25 @@
 """
-    DenseBE(in, out, rank, 
-            ensemble_size, 
-            σ=identity; 
-            bias=true,
-            init=glorot_normal, 
-            alpha_init=glorot_normal, 
-            gamma_init=glorot_normal)
-    DenseBE(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
+    VariationalDenseBE(in, out, rank, 
+                        ensemble_size, 
+                        σ=identity; 
+                        bias=true,
+                        init=glorot_normal, 
+                        alpha_init=glorot_normal, 
+                        gamma_init=glorot_normal)
+    VariationalDenseBE(layer, alpha_sampler, gamma_sampler,
+                        ensemble_bias, ensemble_act, rank)
 
-Creates a dense BatchEnsemble layer. Batch ensemble is a memory efficient alternative 
-for deep ensembles. In deep ensembles, if the ensemble size is N, N different models 
-are trained, making the time and memory complexity O(N * complexity of one network). 
+Creates a bayesian dense BatchEnsemble layer. 
+Batch ensemble is a memory efficient alternative for deep ensembles. In deep ensembles, 
+if the ensemble size is N, N different models are trained, making the time and memory 
+complexity O(N * complexity of one network). 
 BatchEnsemble generates weight matrices for each member in the ensemble using a 
 couple of rank 1 vectors R (alpha), S (gamma), RS' and multiplying the result with 
-weight matrix W element wise. We also call R and S as fast weights. 
+weight matrix W element wise. We also call R and S as fast weights. In the bayesian 
+version of batch ensemble, instead of having point estimates of the fast weights, we 
+sample them form a trainable parameterized distribution. 
 
-Reference - https://arxiv.org/abs/2002.06715 
+Reference - https://arxiv.org/abs/2005.07186
 
 During both training and testing, we repeat the samples along the batch dimension 
 N times, where N is the ensemble_size. For example, if each mini batch has 10 samples 
@@ -25,8 +29,8 @@ as the output of an esnemble member.
 
 # Fields 
 - `layer`: The dense layer which transforms the pertubed input to output 
-- `alpha`: The first Fast weight of size (in_dim, ensemble_size)
-- `gamma`: The second Fast weight of size (out_dim, ensemble_size)
+- `alpha_sampler`: Sampler for the first Fast weight of size (in_dim, ensemble_size)
+- `gamma_sampler`: Sampler for the second Fast weight of size (out_dim, ensemble_size)
 - `ensemble_bias`: Bias added to the ensemble output, separate from dense layer bias 
 - `ensemble_act`: The activation function to be applied on ensemble output 
 - `rank`: Rank of the fast weights (rank > 1 doesn't work on GPU for now)
@@ -39,46 +43,39 @@ as the output of an esnemble member.
 - `σ::F=identity`: Activation of the dense layer, defaults to identity
 - `init=glorot_normal`: Initialization function, defaults to glorot_normal 
 - `alpha_init=glorot_normal`: Initialization function for the alpha fast weight,
-                        defaults to glorot_normal 
+                        defaults to TrainableGlorotNormal 
 - `gamma_init=glorot_normal`: Initialization function for the gamma fast weight, 
-                        defaults to glorot_normal 
+                        defaults to TrainableGlorotNormal 
 - `bias::Bool=true`: Toggle the usage of bias in the dense layer 
 - `ensemble_bias::Bool=true`: Toggle the usage of ensemble bias 
 - `ensemble_act::F=identity`: Activation function for enseble outputs 
 """
-struct DenseBE{L,F,M,B}
+struct VariationalDenseBE{L,F,M,B}
     layer::L
-    alpha::M
-    gamma::M
+    alpha_sampler::M
+    gamma_sampler::M
     ensemble_bias::B
     ensemble_act::F
     rank
 end
 
-function DenseBE(
-    layer,
-    alpha,
-    gamma,
-    ensemble_bias = true,
-    ensemble_act = identity,
-    rank = 1,
-)
-    ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
-    DenseBE(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
-end
-
-function DenseBE(
+function VariationalDenseBE(
     in::Integer,
     out::Integer,
     rank::Integer,
     ensemble_size::Integer,
     σ = identity;
     init = glorot_normal,
-    alpha_init = glorot_normal,
-    gamma_init = glorot_normal,
     bias = true,
     ensemble_bias = true,
     ensemble_act = identity,
+    alpha_init = TrainableDistribution,
+    gamma_init = TrainableDistribution,
+    complexity_weight = 1e-5,
+    mean_constraint = identity,
+    stddev_constraint = softplus,
+    prior_distribution = DistributionsAD.TuringMvNormal,
+    posterior_distribution = DistributionsAD.TuringMvNormal,
 )
 
     layer = Flux.Dense(in, out, σ; init = init, bias = bias)
@@ -88,27 +85,55 @@ function DenseBE(
     else
         error("Rank must be >= 1.")
     end
-    alpha = alpha_init(alpha_shape)
-    gamma = gamma_init(gamma_shape)
-    ensemble_bias = create_bias(gamma, ensemble_bias, size(gamma)[1], size(gamma)[2])
+    alpha_sampler = alpha_init(
+        alpha_shape,
+        complexity_weight = complexity_weight,
+        mean_init = init,
+        stddev_init = init,
+        mean_constraint = mean_constraint,
+        stddev_constraint = stddev_constraint,
+        prior_distribution = prior_distribution,
+        posterior_distribution = posterior_distribution,
+    )
 
-    return DenseBE(layer, alpha, gamma, ensemble_bias, ensemble_act, rank)
+    gamma_sampler = gamma_init(
+        gamma_shape,
+        complexity_weight = complexity_weight,
+        mean_init = init,
+        stddev_init = init,
+        mean_constraint = mean_constraint,
+        stddev_constraint = stddev_constraint,
+        prior_distribution = prior_distribution,
+        posterior_distribution = posterior_distribution,
+    )
+
+    gamma = cpu(gamma_sampler())
+    ensemble_bias = create_bias(gamma, ensemble_bias, out, ensemble_size)
+
+    return VariationalDenseBE(
+        layer,
+        alpha_sampler,
+        gamma_sampler,
+        ensemble_bias,
+        ensemble_act,
+        rank,
+    )
 end
 
-@functor DenseBE
+@functor VariationalDenseBE
 
 """
-The forward pass for a DenseBE layer. The input is initially perturbed 
+The forward pass for a VariationalDenseBE layer. The input is initially perturbed 
 using the first fast weight, then passed through the dense layer, and finall 
 multiplied by the second fast weight.
 
 # Arguments 
-- `x::AbstractVecOrMat`: Input tensors 
+- `x`: Input tensors 
 """
-function (be::DenseBE)(x)
+function (be::VariationalDenseBE)(x)
     layer = be.layer
-    alpha = be.alpha
-    gamma = be.gamma
+    alpha = be.alpha_sampler()
+    gamma = be.gamma_sampler()
     e_b = be.ensemble_bias
     e_σ = be.ensemble_act
     rank = be.rank
