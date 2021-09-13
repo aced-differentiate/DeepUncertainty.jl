@@ -1,5 +1,3 @@
-include("regularizers.jl")
-
 abstract type AbstractTrainableDist end
 
 """
@@ -29,7 +27,7 @@ The prior and posterior are by default multivariate norml distribution.
 - `stddev_constraint`: Constraint on stddev, defaults to softplus 
 - `complexity_weight`: Regularization constant for KL divergence 
 """
-mutable struct TrainableDistribution{M,S,N,MF,SF,F,PD,POSD} <: AbstractTrainableDist
+struct TrainableDistribution{M,S,N,MF,SF,F,PD,POSD} <: AbstractTrainableDist
     mean::M
     stddev::M
     sample::S
@@ -78,7 +76,9 @@ function (td::TrainableDistribution)()
     dist = td.posterior_distribution(mean, stddev)
     # Sample from the dist 
     # Put it on zygote.ignore to supress mutation errors 
-    # copyto!(tn.sample, gpu(rand(dist)))
-    td.sample = gpu(rand(dist))
-    return reshape(td.sample, td.shape)
+    sample = rand(dist)
+    # Ignore the mutation array error while backprop
+    Flux.Zygote.@ignore copyto!(td.sample, sample)
+    sample = gpu(sample)
+    return reshape(sample, td.shape)
 end

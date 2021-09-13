@@ -107,15 +107,15 @@ function eval_loss_accuracy(args, loader, model, device)
     mean_ece = mean_ece / ntot |> round4
 
     # Print the per ensemble mode loss and accuracy 
-    for ensemble = 1:args.sample_size
-        @info (format(
-            "Sample {} Loss: {} Accuracy: {} ECE: {}",
-            ensemble,
-            losses[ensemble],
-            acc[ensemble],
-            ece_list[ensemble],
-        ))
-    end
+    # for ensemble = 1:args.sample_size
+    #     @info (format(
+    #         "Sample {} Loss: {} Accuracy: {} ECE: {}",
+    #         ensemble,
+    #         losses[ensemble],
+    #         acc[ensemble],
+    #         ece_list[ensemble],
+    #     ))
+    # end
     @info (format(
         "Mean Loss: {} Mean Accuracy: {} Mean ECE: {}",
         mean_l,
@@ -140,8 +140,8 @@ Base.@kwdef mutable struct Args
     use_cuda = true      # if true use cuda (if available)
     infotime = 1      # report every `infotime` epochs
     checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
-    dropout = 0.1
-    sample_size = 10
+    dropout = 0.2
+    sample_size = 25
 end
 
 function train(; kws...)

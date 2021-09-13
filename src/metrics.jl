@@ -12,7 +12,7 @@ function get_mean_std_dev(x::AbstractArray; dims = ndims(x))
 end
 
 function calculate_entropy(probs, eps = 1e-6)
-    return sum(probs .* log.(probs .+ eps), dims = 1)
+    return -sum(probs .* log.(probs .+ eps), dims = 1)
 end
 
 function mean_loglikelihood(preds, labels)
@@ -28,7 +28,7 @@ end
 
 function ExpectedCalibrationError(preds, labels, num_bins = 10;)
     preds = [x for x in eachcol(preds)]
-    ece_estimator = ECE(UniformBinning(num_bins), (μ, y) -> kl_divergence(y, μ))
+    ece_estimator = ECE(UniformBinning(num_bins), SqEuclidean())
     ece = ece_estimator(preds, labels)
     return ece
 end

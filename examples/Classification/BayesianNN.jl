@@ -16,6 +16,7 @@ using CUDA
 using Formatting
 
 using DeepUncertainty
+using DistributionsAD
 
 # LeNet5 "constructor". 
 # The model can be adapted to any image size

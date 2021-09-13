@@ -1,5 +1,3 @@
-include("../../initializers.jl")
-
 """
     VariationalDense(in, out, σ=identity;
                     weight_init=TrainableDistribution, 

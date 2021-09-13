@@ -1,6 +1,6 @@
 function KLDivergence(layer)
     # dist = DistributionsAD.TuringMvNormal(layer.mean, layer.stddev)
-    sample = layer.sample
+    sample = gpu(layer.sample)
     mean = layer.mean_constraint.(layer.mean)
     stddev = layer.stddev_constraint.(layer.stddev)
     posterior = layer.posterior_distribution(mean, stddev)
