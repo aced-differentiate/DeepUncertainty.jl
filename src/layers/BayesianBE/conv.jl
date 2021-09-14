@@ -39,10 +39,6 @@ as the output of an esnemble member.
 - `ensemble_size::Integer`: Number of models in the ensemble 
 - `σ::F=identity`: Activation of the dense layer, defaults to identity
 - `init=glorot_normal`: Initialization function, defaults to glorot_normal 
-- `alpha_init=glorot_normal`: Initialization function for the alpha fast weight,
-                        defaults to TrainableGlorotNormal 
-- `gamma_init=glorot_normal`: Initialization function for the gamma fast weight, 
-                        defaults to TrainableGlorotNormal 
 - `bias::Bool=true`: Toggle the usage of bias in the dense layer 
 - `ensemble_bias::Bool=true`: Toggle the usage of ensemble bias 
 - `ensemble_act::F=identity`: Activation function for enseble outputs 
@@ -70,13 +66,9 @@ function VariationalConvBE(
     bias = true,
     ensemble_bias = true,
     ensemble_act = identity,
-    alpha_init = TrainableDistribution,
-    gamma_init = TrainableDistribution,
+    alpha_init = TrainableMvNormal,
+    gamma_init = TrainableMvNormal,
     complexity_weight = 1e-5,
-    mean_constraint = identity,
-    stddev_constraint = softplus,
-    prior_distribution = DistributionsAD.TuringMvNormal,
-    posterior_distribution = DistributionsAD.TuringMvNormal,
 ) where {N}
     layer = Flux.Conv(
         k,
@@ -98,27 +90,11 @@ function VariationalConvBE(
         error("Rank must be >= 1.")
     end
     # Alpha fast weight sampler 
-    alpha_sampler = alpha_init(
-        alpha_shape,
-        complexity_weight = complexity_weight,
-        mean_init = init,
-        stddev_init = init,
-        mean_constraint = mean_constraint,
-        stddev_constraint = stddev_constraint,
-        prior_distribution = prior_distribution,
-        posterior_distribution = posterior_distribution,
-    )
+    alpha_sampler =
+        alpha_init(alpha_shape, complexity_weight = complexity_weight, init = init)
     # Gamma fast weight sampler 
-    gamma_sampler = gamma_init(
-        gamma_shape,
-        complexity_weight = complexity_weight,
-        mean_init = init,
-        stddev_init = init,
-        mean_constraint = mean_constraint,
-        stddev_constraint = stddev_constraint,
-        prior_distribution = prior_distribution,
-        posterior_distribution = posterior_distribution,
-    )
+    gamma_sampler =
+        gamma_init(gamma_shape, complexity_weight = complexity_weight, init = init)
     gamma = gamma_sampler()
 
     ensemble_bias = create_bias(gamma, ensemble_bias, out_dim, ensemble_size)

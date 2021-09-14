@@ -177,7 +177,7 @@ function kldivergence(model)
     modules = Flux.modules(model)
     for layer in modules
         if layer isa AbstractTrainableDist
-            loss += KLDivergence(layer)
+            loss += NormalKLDivergence(layer)
         end
     end
     return loss

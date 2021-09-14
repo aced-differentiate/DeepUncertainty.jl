@@ -9,10 +9,8 @@ using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
 using Flux.Losses: logitcrossentropy
 using Statistics, Random
 using Logging: with_logger
-using TensorBoardLogger: TBLogger, tb_overwrite, set_step!, set_step_increment!
 using ProgressMeter: @showprogress
 import MLDatasets
-import BSON
 using CUDA
 using Formatting
 
@@ -30,9 +28,9 @@ function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
         VariationalConvBE((5, 5), 6 => 16, args.rank, args.ensemble_size, relu),
         MaxPool((2, 2)),
         flatten,
-        VariationalDenseBE(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu),
-        VariationalDenseBE(120, 84, args.rank, args.ensemble_size, relu),
-        VariationalDenseBE(84, nclasses, args.rank, args.ensemble_size),
+        DenseBE(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu),
+        DenseBE(120, 84, args.rank, args.ensemble_size, relu),
+        DenseBE(84, nclasses, args.rank, args.ensemble_size),
     )
 end
 
@@ -152,7 +150,7 @@ function kldivergence(model)
     modules = Flux.modules(model)
     for layer in modules
         if layer isa AbstractTrainableDist
-            loss += KLDivergence(layer)
+            loss += NormalKLDivergence(layer)
         end
     end
     return loss

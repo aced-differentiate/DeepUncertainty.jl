@@ -1,16 +1,14 @@
-function KLDivergence(layer)
-    # dist = DistributionsAD.TuringMvNormal(layer.mean, layer.stddev)
-    sample = gpu(layer.sample)
-    mean = layer.mean_constraint.(layer.mean)
-    stddev = layer.stddev_constraint.(layer.stddev)
-    posterior = layer.posterior_distribution(mean, stddev)
-    posterior_loglikelihood = DistributionsAD.loglikelihood(posterior, sample)
+function NormalKLDivergence(layer)
+    μ1 = layer.mean_constraint.(layer.mean)
+    σ1 = layer.stddev_constraint.(layer.stddev)
 
     # Calculate prior loglikelihood 
-    mean = gpu(zeros(prod(layer.shape)))
-    stddev = gpu(ones(prod(layer.shape)))
-    prior = layer.prior_distribution(mean, stddev)
-    prior_loglikelihood = DistributionsAD.loglikelihood(prior, sample)
+    μ2 = gpu(zeros(prod(layer.shape)))
+    σ2 = gpu(ones(prod(layer.shape)))
 
-    return layer.complexity_weight * (posterior_loglikelihood - prior_loglikelihood)
+    # compute the KL 
+    kl = log.(σ2 ./ σ1)
+    kl += (σ1 .^ 2 .+ (μ1 .- μ2) .^ 2) ./ 2 .* (σ2) .^ 2
+    kl = sum(kl) - 0.5
+    return layer.complexity_weight * kl
 end

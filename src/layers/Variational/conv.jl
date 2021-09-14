@@ -42,22 +42,18 @@ to help us with backprop.
                     in every forward pass 
 - `bias_sampler`: A trainable distribution from which biases are sampled in 
                     every forward pass 
+- `stride`: Convolution stride 
+- `pad`
+- `dilation`
+- `groups`
 
 # Arguments 
 - `filter::NTuple{N,Integer}`: Kernel dimensions, eg, (5, 5) 
 - `ch::Pair{<:Integer,<:Integer}`: Input channels => output channels 
 - `σ::F=identity`: Activation of the dense layer, defaults to identity
-- `weight_init=TrainableDistribution`: Initialization function for weights.  
-- `bias_init=TrainableDistribution`: Initialization function for biases. 
-- `complexity_weight=1e-5`: The reguralization constant to be multiplied with 
-                            KL Divergence between prior and posterior distributions. 
-- `mean_init=glorot_normal`: Initialization function for mean tensor. 
-- `stddev_init=glorot_normal`: Initialization function for stddev tensor. 
-- `mean_constraint=identity`: Constraint to be applied on mean tensor. 
-- `stddev_constraint=softplus`: Constraint to be applied on mean tensor. 
-- `prior_distribution=TuringMvNormal`: Prior distribution on the parameters. 
-- `posterior_distribution=TuringMvNormal`: Poterior distribution on the parameters.
-- `bias::Bool=true`: Toggle the usage of bias in the dense layer 
+- `weight_dist=TrainableMvNormal`: Initialization function for weights.  
+- `bias_dist=TrainableMvNormal`: Initialization function for biases. 
+- `complexity_weight=1e-5`: Regularization constant for the KL term
 
 """
 struct VariationalConv{N,M,F,A,V}
@@ -78,16 +74,11 @@ function VariationalConv(
     pad = 0,
     dilation = 1,
     groups = 1,
-    weight_init = TrainableDistribution,
-    bias_init = TrainableDistribution,
-    complexity_weight = 1e-5,
-    mean_init = glorot_normal,
-    stddev_init = glorot_normal,
-    mean_constraint = identity,
-    stddev_constraint = softplus,
-    prior_distribution = DistributionsAD.TuringMvNormal,
-    posterior_distribution = DistributionsAD.TuringMvNormal,
-    weight = convfilter(k, (ch[1] ÷ groups => ch[2]); init = glorot_normal),
+    init = glorot_normal,
+    weight_dist = TrainableMvNormal,
+    bias_dist = TrainableMvNormal,
+    complexity_weight = 1e-3,
+    weight = convfilter(k, (ch[1] ÷ groups => ch[2])),
     bias = true,
 ) where {N}
 
@@ -96,27 +87,10 @@ function VariationalConv(
     pad = calc_padding(VariationalConv, pad, size(weight)[1:N], dilation, stride)
     bias = create_bias(weight, bias, size(weight, N + 2))
     # Distribution from which weights are sampled 
-    weight_sampler = weight_init(
-        (k..., ch...),
-        complexity_weight = complexity_weight,
-        mean_init = mean_init,
-        stddev_init = stddev_init,
-        mean_constraint = mean_constraint,
-        stddev_constraint = stddev_constraint,
-        prior_distribution = prior_distribution,
-        posterior_distribution = posterior_distribution,
-    )
+    weight_sampler =
+        weight_dist((k..., ch...), complexity_weight = complexity_weight, init = init)
     # Distribution from which biases are sampled 
-    bias_sampler = bias_init(
-        size(bias),
-        complexity_weight = complexity_weight,
-        mean_init = mean_init,
-        stddev_init = stddev_init,
-        mean_constraint = mean_constraint,
-        stddev_constraint = stddev_constraint,
-        prior_distribution = prior_distribution,
-        posterior_distribution = posterior_distribution,
-    )
+    bias_sampler = bias_dist(size(bias), complexity_weight = complexity_weight, init = init)
     return VariationalConv(σ, weight_sampler, bias_sampler, stride, pad, dilation, groups)
 end
 
@@ -126,7 +100,7 @@ convfilter(
     init = glorot_uniform,
 ) where {N} = init(filter..., ch...)
 
-@functor VariationalConv
+@functor VariationalConv (weight_sampler, bias_sampler)
 
 function (c::VariationalConv)(x)
     # Sample weights and biases 

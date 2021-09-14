@@ -26,9 +26,11 @@ to help us with backprop.
 - `in::Integer`: Input dimension size 
 - `out::Integer`: Output dimension size 
 - `σ`: Acivation function, defaults to identity 
-- `weight_init`: Weight initializer, defaults to a trainable multivariate normal
-- `bias_init`: Bias initializer, defaults to trainable multivariate normal 
-- `bias`: Use bias or not 
+- `init`: Distribution parameters Initialization, defaults to glorot_normal
+- `weight_dist`: Weight distribution, defaults to a trainable multivariate normal
+- `bias_dist`: Bias distribution, defaults to trainable multivariate normal 
+- `complexity_weight`: Regularization constant for the KL term
+
 """
 struct VariationalDense{WS,BS,F}
     weight_sampler::WS
@@ -40,43 +42,20 @@ function VariationalDense(
     in::Integer,
     out::Integer,
     σ = identity;
-    weight_init = TrainableDistribution,
-    bias_init = TrainableDistribution,
-    complexity_weight = 1e-5,
-    mean_init = glorot_normal,
-    stddev_init = glorot_normal,
-    mean_constraint = identity,
-    stddev_constraint = softplus,
-    prior_distribution = DistributionsAD.TuringMvNormal,
-    posterior_distribution = DistributionsAD.TuringMvNormal,
-    bias = true,
+    init = glorot_normal,
+    weight_dist = TrainableMvNormal,
+    bias_dist = TrainableMvNormal,
+    complexity_weight = 1e-3,
 )
     # Initialize alpha and gamma samplers 
-    weight_sampler = weight_init(
-        (out, in),
-        complexity_weight = complexity_weight,
-        mean_init = mean_init,
-        stddev_init = stddev_init,
-        mean_constraint = mean_constraint,
-        stddev_constraint = stddev_constraint,
-        prior_distribution = prior_distribution,
-        posterior_distribution = posterior_distribution,
-    )
-    bias_sampler = bias_init(
-        (out,),
-        complexity_weight = complexity_weight,
-        mean_init = mean_init,
-        stddev_init = stddev_init,
-        mean_constraint = mean_constraint,
-        stddev_constraint = stddev_constraint,
-        prior_distribution = prior_distribution,
-        posterior_distribution = posterior_distribution,
-    )
+    weight_sampler =
+        weight_dist((out, in), complexity_weight = complexity_weight, init = init)
+    bias_sampler = bias_dist((out,), complexity_weight = complexity_weight, init = init)
 
     return VariationalDense(weight_sampler, bias_sampler, σ)
 end
 
-@functor VariationalDense
+@functor VariationalDense (weight_sampler, bias_sampler)
 
 function (dv::VariationalDense)(x)
     weight = dv.weight_sampler()

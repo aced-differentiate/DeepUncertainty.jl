@@ -7,8 +7,8 @@ using Flux
 using Flux: @functor, create_bias, params
 using Flux: glorot_uniform, glorot_normal
 
-export KLDivergence
-export TrainableDistribution, AbstractTrainableDist
+export NormalKLDivergence
+export TrainableMvNormal, AbstractTrainableDist
 # Export layers 
 export MCLayer, MCDense, MCConv
 export VariationalConv, VariationalDense
