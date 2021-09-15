@@ -71,7 +71,6 @@ function VariationalDenseBE(
     ensemble_act = identity,
     alpha_init = TrainableMvNormal,
     gamma_init = TrainableMvNormal,
-    complexity_weight = 1e-5,
 )
 
     layer = Flux.Dense(in, out, σ; init = init, bias = bias)
@@ -81,11 +80,9 @@ function VariationalDenseBE(
     else
         error("Rank must be >= 1.")
     end
-    alpha_sampler =
-        alpha_init(alpha_shape, complexity_weight = complexity_weight, init = init)
+    alpha_sampler = alpha_init(alpha_shape, init = init)
 
-    gamma_sampler =
-        gamma_init(gamma_shape, complexity_weight = complexity_weight, init = init)
+    gamma_sampler = gamma_init(gamma_shape, init = init)
 
     gamma = cpu(gamma_sampler())
     ensemble_bias = create_bias(gamma, ensemble_bias, out, ensemble_size)

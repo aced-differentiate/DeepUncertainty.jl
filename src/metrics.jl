@@ -26,7 +26,7 @@ function brier_score(preds, labels)
     )
 end
 
-function ExpectedCalibrationError(preds, labels, num_bins = 10;)
+function expected_calibration_error(preds, labels, num_bins = 10;)
     preds = [x for x in eachcol(preds)]
     ece_estimator = ECE(UniformBinning(num_bins), SqEuclidean())
     ece = ece_estimator(preds, labels)

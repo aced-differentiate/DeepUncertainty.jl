@@ -68,7 +68,6 @@ function VariationalConvBE(
     ensemble_act = identity,
     alpha_init = TrainableMvNormal,
     gamma_init = TrainableMvNormal,
-    complexity_weight = 1e-5,
 ) where {N}
     layer = Flux.Conv(
         k,
@@ -90,11 +89,9 @@ function VariationalConvBE(
         error("Rank must be >= 1.")
     end
     # Alpha fast weight sampler 
-    alpha_sampler =
-        alpha_init(alpha_shape, complexity_weight = complexity_weight, init = init)
+    alpha_sampler = alpha_init(alpha_shape, init = init)
     # Gamma fast weight sampler 
-    gamma_sampler =
-        gamma_init(gamma_shape, complexity_weight = complexity_weight, init = init)
+    gamma_sampler = gamma_init(gamma_shape, init = init)
     gamma = gamma_sampler()
 
     ensemble_bias = create_bias(gamma, ensemble_bias, out_dim, ensemble_size)

@@ -7,14 +7,15 @@ using Flux
 using Flux: @functor, create_bias, params
 using Flux: glorot_uniform, glorot_normal
 
-export NormalKLDivergence
-export TrainableMvNormal, AbstractTrainableDist
+export TrainableMvNormal
+export normal_kl_divergence, scale_mixture_kl_divergence
+
 # Export layers 
 export MCLayer, MCDense, MCConv
 export VariationalConv, VariationalDense
 export DenseBE, ConvBE
 export VariationalConvBE, VariationalDenseBE
-export ExpectedCalibrationError, prediction_metrics
+export expected_calibration_error, prediction_metrics
 export mean_loglikelihood, brier_score, calculate_entropy
 
 include("metrics.jl")
