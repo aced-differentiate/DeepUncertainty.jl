@@ -31,7 +31,6 @@ to help us with backprop.
 - `σ::F=identity`: Activation of the dense layer, defaults to identity
 - `weight_dist=TrainableMvNormal`: Initialization function for weights.  
 - `bias_dist=TrainableMvNormal`: Initialization function for biases. 
-- `complexity_weight=1e-5`: Regularization constant for the KL term
 
 """
 struct VariationalConv{N,M,F,A,V}

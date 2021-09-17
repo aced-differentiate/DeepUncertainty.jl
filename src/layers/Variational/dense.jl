@@ -28,8 +28,7 @@ to help us with backprop.
 - `σ`: Acivation function, defaults to identity 
 - `init`: Distribution parameters Initialization, defaults to glorot_normal
 - `weight_dist`: Weight distribution, defaults to a trainable multivariate normal
-- `bias_dist`: Bias distribution, defaults to trainable multivariate normal 
-- `complexity_weight`: Regularization constant for the KL term
+- `bias_dist`: Bias distribution, defaults to trainable multivariate normal
 
 """
 struct VariationalDense{WS,BS,F}
@@ -53,7 +52,7 @@ function VariationalDense(
     return VariationalDense(weight_sampler, bias_sampler, σ)
 end
 
-@functor VariationalDense (weight_sampler, bias_sampler)
+@functor VariationalDense
 
 function (dv::VariationalDense)(x)
     weight = dv.weight_sampler()

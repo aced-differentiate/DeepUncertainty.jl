@@ -28,9 +28,9 @@ function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
         VariationalConvBE((5, 5), 6 => 16, args.rank, args.ensemble_size, relu),
         MaxPool((2, 2)),
         flatten,
-        DenseBE(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu),
-        DenseBE(120, 84, args.rank, args.ensemble_size, relu),
-        DenseBE(84, nclasses, args.rank, args.ensemble_size),
+        VariationalDenseBE(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu),
+        VariationalDenseBE(120, 84, args.rank, args.ensemble_size, relu),
+        VariationalDenseBE(84, nclasses, args.rank, args.ensemble_size),
     )
 end
 
@@ -132,9 +132,9 @@ round4(x) = round(x, digits = 4)
 
 # arguments for the `train` function 
 Base.@kwdef mutable struct Args
-    η = 3e-4             # learning rate
+    η = 0.01             # learning rate
     λ = 0                # L2 regularizer param, implemented as weight decay
-    batchsize = 32      # batch size
+    batchsize = 128      # batch size
     epochs = 10          # number of epochs
     seed = 0             # set seed > 0 for reproducibility
     use_cuda = true      # if true use cuda (if available)
@@ -143,6 +143,8 @@ Base.@kwdef mutable struct Args
     savepath = "runs/"    # results path
     rank = 1
     ensemble_size = 4
+    sample_size = 10
+    complexity_constant = 1e-8
 end
 
 function kldivergence(model)
@@ -179,7 +181,7 @@ function train(; kws...)
 
     ps = Flux.params(model)
 
-    opt = ADAM(args.η)
+    opt = Nesterov(args.η)
     if args.λ > 0 # add weight decay, equivalent to L2 regularization
         opt = Optimiser(WeightDecay(args.λ), opt)
     end
@@ -201,9 +203,14 @@ function train(; kws...)
             y = repeat(y, 1, args.ensemble_size)
             x, y = x |> device, y |> device
             gs = Flux.gradient(ps) do
-                ŷ = model(x)
-                kld = kldivergence(model)
-                total_loss = loss(ŷ, y) + kld
+                total_loss = 0
+                for sample in args.sample_size
+                    ŷ = model(x)
+                    total_loss += loss(ŷ, y)
+                    kl_loss = sum(normal_kl_divergence.(Flux.modules(model)))
+                    total_loss += args.complexity_constant * kl_loss
+                end
+                total_loss /= args.sample_size
                 return total_loss
             end
 

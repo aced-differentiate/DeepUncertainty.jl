@@ -160,16 +160,16 @@ round4(x) = round(x, digits = 4)
 
 # arguments for the `train` function 
 Base.@kwdef mutable struct Args
-    η = 3e-4             # learning rate
+    η = 0.1            # learning rate
     λ = 0                # L2 regularizer param, implemented as weight decay
-    batchsize = 32      # batch size
-    epochs = 10          # number of epochs
+    batchsize = 256      # batch size
+    epochs = 100          # number of epochs
     seed = 0             # set seed > 0 for reproducibility
     use_cuda = true      # if true use cuda (if available)
     infotime = 1      # report every `infotime` epochs
     checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
     dropout = 0.1
-    sample_size = 5
+    sample_size = 10
     complexity_constant = 1e-8
 end
 
@@ -198,9 +198,6 @@ function train(; kws...)
     ps = Flux.params(model)
 
     opt = Nesterov(args.η)
-    if args.λ > 0 # add weight decay, equivalent to L2 regularization
-        opt = Optimiser(WeightDecay(args.λ), opt)
-    end
 
     function report(epoch)
         @info "Test metrics"
@@ -219,7 +216,7 @@ function train(; kws...)
                 for sample in args.sample_size
                     ŷ = model(x)
                     total_loss += loss(ŷ, y)
-                    kl_loss = sum(scale_mixture_kl_divergence.(Flux.modules(model)))
+                    kl_loss = sum(normal_kl_divergence.(Flux.modules(model)))
                     total_loss += args.complexity_constant * kl_loss
                 end
                 total_loss /= args.sample_size

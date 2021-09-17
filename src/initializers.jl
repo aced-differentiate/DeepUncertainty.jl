@@ -13,9 +13,6 @@ The prior and posterior are by default multivariate norml distribution.
 - `stddev`: Trainable standard deviation vector of the distibution 
 - `sample`: The latest sample from the distribution, used in calculating log likelhoods
 - `shape::Tuple`: The shape of the sample to be returned
-- `complexity_weight`: The regularization constant for KL divergence
-- `mean_constraint`: Constraint on the mean, defaults to identity 
-- `stddev_constraint`: Constraint on stddev, defaults to softplus 
 
 # Arguments 
 - `shape::Tuple`: The shape of the sample to returned from the distribution 
@@ -23,43 +20,27 @@ The prior and posterior are by default multivariate norml distribution.
 - `posterior`: The posterior distribution, defaults to Multivariate Normal 
 - `complexity_weight`: Regularization constant for KL divergence 
 """
-struct TrainableMvNormal{M,S,N,MF,SF} <: AbstractTrainableDist
+struct TrainableMvNormal{M,S,N} <: AbstractTrainableDist
     mean::M
     stddev::M
     sample::S
     shape::NTuple{N,Integer}
-    mean_constraint::MF
-    stddev_constraint::SF
 end
 
-function TrainableMvNormal(
-    shape;
-    init = glorot_normal,
-    mean_constraint = identity,
-    stddev_constraint = softplus,
-)
+function TrainableMvNormal(shape; init = glorot_normal)
     # Create the mean and stddev 
     total_params = prod(shape)
     mean = gpu(init(total_params))
     stddev = gpu(init(total_params))
     sample = gpu(zeros(total_params))
-    return TrainableMvNormal(
-        mean,
-        stddev,
-        sample,
-        shape,
-        mean_constraint,
-        stddev_constraint,
-    )
+    return TrainableMvNormal(mean, stddev, sample, shape)
 end
 
 # Don't backprop through the sample stored for loss calc 
 @functor TrainableMvNormal (mean, stddev)
 
 function (tmv::TrainableMvNormal)()
-    mean = tmv.mean_constraint.(tmv.mean)
-    stddev = tmv.stddev_constraint.(tmv.stddev)
-    dist = DistributionsAD.TuringMvNormal(mean, stddev)
+    dist = DistributionsAD.TuringMvNormal(tmv.mean, tmv.stddev)
     # Sample from the dist 
     # Put it on zygote.ignore to supress mutation errors 
     sample = gpu(rand(dist))
