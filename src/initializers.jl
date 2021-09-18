@@ -40,7 +40,7 @@ end
 @functor TrainableMvNormal (mean, stddev)
 
 function (tmv::TrainableMvNormal)()
-    dist = DistributionsAD.TuringMvNormal(tmv.mean, tmv.stddev)
+    dist = DistributionsAD.TuringMvNormal(tmv.mean, abs.(tmv.stddev))
     # Sample from the dist 
     # Put it on zygote.ignore to supress mutation errors 
     sample = gpu(rand(dist))
