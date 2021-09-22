@@ -3,6 +3,7 @@ using Test
 using Flux
 using Flux.CUDA
 using Flux: cpu, gpu
+using DistributionsAD
 
 @testset "Layers" begin
     # MC layers 
