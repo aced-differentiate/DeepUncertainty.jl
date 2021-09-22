@@ -84,13 +84,13 @@ function ensembles_evaluation(args, loader, model, device)
         ntot += size(mean_predictions)[end]
     end
     # Normalize the loss 
-    losses = [loss / ntot |> round4 for loss in l]
-    acc = [a / ntot * 100 |> round4 for a in acc]
-    ece_list = [x / ntot |> round4 for x in ece_list]
+    losses = round4(l ./ ntot)
+    acc = round4((acc ./ ntot) .* 100)
+    ece_list = round4(ece_list ./ ntot)
     # Calculate mean loss 
-    mean_l = mean_l / ntot |> round4
-    mean_acc = mean_acc / ntot * 100 |> round4
-    mean_ece = mean_ece / ntot |> round4
+    mean_l = round4(mean_l / ntot)
+    mean_acc = round4((mean_acc / ntot) .* 100)
+    mean_ece = round4(mean_ece / ntot)
 
     # Print the per ensemble mode loss and accuracy 
     for ensemble = 1:args.ensemble_size

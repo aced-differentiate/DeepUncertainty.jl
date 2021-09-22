@@ -42,13 +42,13 @@ as the output of an esnemble member.
 - `ensemble_size::Integer`: Number of models in the ensemble 
 - `σ::F=identity`: Activation of the dense layer, defaults to identity
 - `init=glorot_normal`: Initialization function, defaults to glorot_normal 
-- `alpha_init=glorot_normal`: Initialization function for the alpha fast weight,
-                        defaults to TrainableGlorotNormal 
-- `gamma_init=glorot_normal`: Initialization function for the gamma fast weight, 
-                        defaults to TrainableGlorotNormal 
 - `bias::Bool=true`: Toggle the usage of bias in the dense layer 
 - `ensemble_bias::Bool=true`: Toggle the usage of ensemble bias 
 - `ensemble_act::F=identity`: Activation function for enseble outputs 
+- `alpha_init=TrainableMvNormal`: Initialization function for the alpha fast weight,
+                        defaults to TrainableMvNormal 
+- `gamma_init=TrainableMvNormal`: Initialization function for the gamma fast weight, 
+                        defaults to TrainableMvNormal 
 """
 struct VariationalDenseBE{L,F,M,B}
     layer::L
@@ -81,10 +81,8 @@ function VariationalDenseBE(
         error("Rank must be >= 1.")
     end
     alpha_sampler = alpha_init(alpha_shape, init = init)
-
     gamma_sampler = gamma_init(gamma_shape, init = init)
-
-    gamma = cpu(gamma_sampler())
+    gamma = gamma_sampler()
     ensemble_bias = create_bias(gamma, ensemble_bias, out, ensemble_size)
 
     return VariationalDenseBE(
@@ -101,7 +99,7 @@ end
 
 """
 The forward pass for a VariationalDenseBE layer. The input is initially perturbed 
-using the first fast weight, then passed through the dense layer, and finall 
+using the first fast weight, then passed through the dense layer, and finally
 multiplied by the second fast weight.
 
 # Arguments 

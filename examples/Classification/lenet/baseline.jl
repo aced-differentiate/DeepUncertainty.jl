@@ -134,17 +134,6 @@ Base.@kwdef mutable struct Args
     sample_size = 10
 end
 
-function kldivergence(model)
-    loss = 0
-    modules = Flux.modules(model)
-    for layer in modules
-        if layer isa AbstractTrainableDist
-            loss += KLDivergence(layer)
-        end
-    end
-    return loss
-end
-
 function train(; kws...)
     args = Args(; kws...)
     args.seed > 0 && Random.seed!(args.seed)
@@ -191,8 +180,7 @@ function train(; kws...)
             x, y = x |> device, y |> device
             gs = Flux.gradient(ps) do
                 ŷ = model(x)
-                kld = kldivergence(model)
-                total_loss = loss(ŷ, y) + kld
+                total_loss = loss(ŷ, y)
                 return total_loss
             end
 

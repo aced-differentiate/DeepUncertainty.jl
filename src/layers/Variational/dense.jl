@@ -3,6 +3,7 @@
                     weight_init=TrainableDistribution, 
                     bias_init=TrainableDistribution, 
                     bias=true)
+    VariationalDense(weight_sampler, bias_sampler, act)
 
 Creates a variational dense layer. Computes variational bayesian 
 approximation to the distribution over the parameters of the dense layer. 

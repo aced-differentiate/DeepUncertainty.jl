@@ -1,10 +1,10 @@
 """
-    ConvBayesianBatchEnsemble(filter, in => out, rank, 
-                            ensemble_size, σ = identity;
-                            stride = 1, pad = 0, dilation = 1, 
-                            groups = 1, [bias, weight, init])
-    ConvBayesianBatchEnsemble(layer, alpha_sampler, gamma_sampler,
-                            ensemble_bias, ensemble_act, rank)
+    VariationalConvBE(filter, in => out, rank, 
+                    ensemble_size, σ = identity;
+                    stride = 1, pad = 0, dilation = 1, 
+                    groups = 1, [bias, weight, init])
+    VariationalConvBE(layer, alpha_sampler, gamma_sampler,
+                    ensemble_bias, ensemble_act, rank)
 
 Creates a bayesian conv BatchEnsemble layer. 
 Batch ensemble is a memory efficient alternative for deep ensembles. In deep ensembles, 
@@ -42,6 +42,10 @@ as the output of an esnemble member.
 - `bias::Bool=true`: Toggle the usage of bias in the dense layer 
 - `ensemble_bias::Bool=true`: Toggle the usage of ensemble bias 
 - `ensemble_act::F=identity`: Activation function for enseble outputs 
+- `alpha_init=TrainableMvNormal`: Initialization function for the alpha fast weight,
+                        defaults to TrainableMvNormal 
+- `gamma_init=TrainableMvNormal`: Initialization function for the gamma fast weight, 
+                        defaults to TrainableMvNormal 
 """
 struct VariationalConvBE{L,F,M,B}
     layer::L
@@ -93,7 +97,6 @@ function VariationalConvBE(
     # Gamma fast weight sampler 
     gamma_sampler = gamma_init(gamma_shape, init = init)
     gamma = gamma_sampler()
-
     ensemble_bias = create_bias(gamma, ensemble_bias, out_dim, ensemble_size)
 
     return VariationalConvBE(

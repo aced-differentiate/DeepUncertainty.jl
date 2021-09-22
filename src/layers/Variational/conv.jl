@@ -1,7 +1,12 @@
 """
-    ConvBatchEnsemble(filter, in => out, σ = identity;
+    VariationalConv(filter, in => out, σ = identity;
                     stride = 1, pad = 0, dilation = 1, 
-                    groups = 1, [bias, weight, init])
+                    groups = 1, 
+                    weight_dist = TrainableMvNormal, 
+                    bias_dist = TrainableMvNormal,
+                    [bias, weight, init])
+    VariationalConvBE(σ, weight_sampler, bias_sampler,
+                    stride, pad, dilation, groups)
 
 Creates a variational conv layer. Computes variational bayesian 
 approximation to the distribution over the parameters of the conv layer. 

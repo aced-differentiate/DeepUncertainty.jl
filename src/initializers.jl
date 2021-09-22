@@ -5,6 +5,8 @@ abstract type AbstractTrainableDist end
                     prior=DistributionsAD.TuringMvNormal, 
                     posterior=DistributionsAD.TuringMvNormal, 
                     complexity_weight=1e-5)
+    TrainableMvNormal(mean, stddev, sample, shape)
+
 A distribution with trainable parameters. The mean and stddev are trainable parameters.
 The prior and posterior are by default multivariate norml distribution. 
 
@@ -16,9 +18,7 @@ The prior and posterior are by default multivariate norml distribution.
 
 # Arguments 
 - `shape::Tuple`: The shape of the sample to returned from the distribution 
-- `prior`: The prior distribution, defaults to Multivariate Normal 
-- `posterior`: The posterior distribution, defaults to Multivariate Normal 
-- `complexity_weight`: Regularization constant for KL divergence 
+- `init`: glorot_normal; to initialize the mean and stddev trainable params 
 """
 struct TrainableMvNormal{M,S,N} <: AbstractTrainableDist
     mean::M
