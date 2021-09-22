@@ -1,4 +1,5 @@
 using Flux
+using Flux: Zygote
 using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
 using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
@@ -75,6 +76,10 @@ function train(; kws...)
     end
 
     ## TRAINING
+    function kl_loss_calc(model)
+        layers = Zygote.@ignore Flux.modules(model)
+        return sum(normal_kl_divergence.(layers))
+    end
     @info "Start Training"
     for epoch = 1:args.epochs
         @showprogress for (x, y) in train_loader
@@ -84,7 +89,7 @@ function train(; kws...)
                 for sample in args.sample_size
                     ŷ = model(x)
                     total_loss += loss(ŷ, y)
-                    kl_loss = sum(normal_kl_divergence.(Flux.modules(model)))
+                    kl_loss = kl_loss_calc(model)
                     total_loss += args.complexity_constant * kl_loss
                 end
                 total_loss /= args.sample_size
