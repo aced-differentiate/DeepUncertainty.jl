@@ -24,14 +24,14 @@ function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
 
     return Chain(
-        MCConv((5, 5), imgsize[end] => 6, args.dropout, relu),
+        Conv((5, 5), imgsize[end] => 6, relu),
         MaxPool((2, 2)),
-        MCConv((5, 5), 6 => 16, args.dropout, relu),
+        Conv((5, 5), 6 => 16, relu),
         MaxPool((2, 2)),
         flatten,
-        MCDense(prod(out_conv_size), 120, args.dropout, relu),
-        MCDense(120, 84, args.dropout, relu),
-        MCDense(84, nclasses, args.dropout),
+        Dense(prod(out_conv_size), 120, relu),
+        Dense(120, 84, relu),
+        Dense(84, nclasses),
     )
 end
 
@@ -52,7 +52,25 @@ function get_data(args)
     )
     test_loader = DataLoader((xtest, ytest), batchsize = args.batchsize, partial = false)
 
-    return train_loader, test_loader
+    # Fashion mnist for uncertainty testing 
+    xtrain, ytrain = MLDatasets.FashionMNIST.traindata(Float32)
+    xtest, ytest = MLDatasets.FashionMNIST.testdata(Float32)
+
+    xtrain = reshape(xtrain, 28, 28, 1, :)
+    xtest = reshape(xtest, 28, 28, 1, :)
+
+    ytrain, ytest = onehotbatch(ytrain, 0:9), onehotbatch(ytest, 0:9)
+
+    ood_train_loader = DataLoader(
+        (xtrain, ytrain),
+        batchsize = args.batchsize,
+        shuffle = true,
+        partial = false,
+    )
+    ood_test_loader =
+        DataLoader((xtest, ytest), batchsize = args.batchsize, partial = false)
+
+    return train_loader, test_loader, ood_train_loader, ood_test_loader
 end
 
 loss(ŷ, y) = logitcrossentropy(ŷ, y)
@@ -63,64 +81,36 @@ function accuracy(preds, labels)
 end
 
 function eval_loss_accuracy(args, loader, model, device)
-    l = [0.0f0 for x = 1:args.sample_size]
-    acc = [0 for x = 1:args.sample_size]
-    ece_list = [0.0f0 for x = 1:args.sample_size]
     ntot = 0
     mean_l = 0
     mean_acc = 0
     mean_ece = 0
+    mean_entropy = 0
     for (x, y) in loader
         predictions = []
         x, y = x |> device, y |> device
-
-        # Loop through each model's predictions 
-        for ensemble = 1:args.sample_size
-            model_predictions = model(x)
-            model_predictions = softmax(model_predictions, dims = 1)
-            push!(predictions, model_predictions)
-            # Calculate individual loss 
-            l[ensemble] += loss(model_predictions, y) * size(model_predictions)[end]
-            acc[ensemble] += accuracy(model_predictions, y)
-            ece_list[ensemble] +=
-                ExpectedCalibrationError(model_predictions |> cpu, onecold(y |> cpu)) *
-                args.batchsize
-        end
         # Get the mean predictions
-        predictions = Flux.batch(predictions)
-        mean_predictions = mean(predictions, dims = ndims(predictions))
-        mean_predictions = dropdims(mean_predictions, dims = ndims(mean_predictions))
-        mean_l += loss(mean_predictions, y) * size(mean_predictions)[end]
-        mean_acc += accuracy(mean_predictions, y)
+        predictions = model(x)
+        predictions = softmax(predictions, dims = 1)
+        mean_l += loss(predictions, y) * size(predictions)[end]
+        mean_acc += accuracy(predictions, y)
         mean_ece +=
-            ExpectedCalibrationError(mean_predictions |> cpu, onecold(y |> cpu)) *
-            args.batchsize
-        ntot += size(mean_predictions)[end]
+            ExpectedCalibrationError(predictions |> cpu, onecold(y |> cpu)) * args.batchsize
+        mean_entropy += mean(calculate_entropy(predictions |> cpu)) * args.batchsize
+        ntot += size(predictions)[end]
     end
-    # Normalize the loss 
-    losses = [loss / ntot |> round4 for loss in l]
-    acc = [a / ntot * 100 |> round4 for a in acc]
-    ece_list = [x / ntot |> round4 for x in ece_list]
     # Calculate mean loss 
     mean_l = mean_l / ntot |> round4
     mean_acc = mean_acc / ntot * 100 |> round4
     mean_ece = mean_ece / ntot |> round4
+    mean_entropy = mean_entropy / ntot |> round4
 
-    # Print the per ensemble mode loss and accuracy 
-    for ensemble = 1:args.sample_size
-        @info (format(
-            "Sample {} Loss: {} Accuracy: {} ECE: {}",
-            ensemble,
-            losses[ensemble],
-            acc[ensemble],
-            ece_list[ensemble],
-        ))
-    end
     @info (format(
-        "Mean Loss: {} Mean Accuracy: {} Mean ECE: {}",
+        "Mean Loss: {} Mean Accuracy: {} Mean ECE: {} Mean Entropy: {}",
         mean_l,
         mean_acc,
         mean_ece,
+        mean_entropy,
     ))
     @info "==========================================================="
     return nothing
@@ -158,7 +148,7 @@ function train(; kws...)
     end
 
     ## DATA
-    train_loader, test_loader = get_data(args)
+    train_loader, test_loader, ood_train_loader, ood_test_loader = get_data(args)
     @info "Dataset MNIST: $(train_loader.nobs) train and $(test_loader.nobs) test examples"
 
     ## MODEL AND OPTIMIZER
@@ -175,6 +165,8 @@ function train(; kws...)
     function report(epoch)
         @info "Test metrics"
         eval_loss_accuracy(args, test_loader, model, device)
+        @info "Test OOD metrics"
+        eval_loss_accuracy(args, ood_test_loader, model, device)
     end
 
     ## TRAINING
@@ -188,7 +180,8 @@ function train(; kws...)
             x, y = x |> device, y |> device
             gs = Flux.gradient(ps) do
                 ŷ = model(x)
-                loss(ŷ, y)
+                total_loss = loss(ŷ, y)
+                return total_loss
             end
 
             Flux.Optimise.update!(opt, ps, gs)

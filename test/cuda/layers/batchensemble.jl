@@ -5,7 +5,7 @@
     output_dim = 5
     rank = 1
     inputs = rand(Float32, input_dim, samples_per_model)
-    layer = DenseBatchEnsemble(
+    layer = DenseBE(
         input_dim,
         output_dim,
         rank,
@@ -32,7 +32,7 @@
     @test isapprox(cpu(batch_outputs), loop_outputs, atol = 0.05)
 
     # Test gradients 
-    layer = gpu(DenseBatchEnsemble(2, 5, 1, 2))
+    layer = gpu(DenseBE(2, 5, 1, 2))
     i = gpu(rand(2, 4))
     y = gpu(ones(5, 4))
     grads = gradient(params(layer)) do
@@ -41,17 +41,18 @@
     end
     for param in params(layer)
         @test size(param) == size(grads[param])
+        @test grads[param] isa CuArray
     end
 end
 
-@testset "ConvBatchEnsemble" begin
+@testset "ConvBE" begin
     ensemble_size = 4
     samples_per_model = 4
     input_dim = 5
     output_dim = 10
     rank = 1
     inputs = rand(Float32, 10, 10, input_dim, samples_per_model)
-    beconv = ConvBatchEnsemble(
+    beconv = ConvBE(
         (5, 5),
         5 => 10,
         rank,
@@ -88,7 +89,7 @@ end
     @test isapprox(cpu(batch_outputs), loop_outputs, atol = 0.05)
 
     # Test gradients 
-    layer = gpu(ConvBatchEnsemble((5, 5), 3 => 6, 1, 4, relu))
+    layer = gpu(ConvBE((5, 5), 3 => 6, 1, 4, relu))
     i = gpu(rand(32, 32, 3, 4))
     y = gpu(rand(28, 28, 6, 4))
     grads = gradient(params(layer)) do
@@ -97,5 +98,6 @@ end
     end
     for param in params(layer)
         @test size(param) == size(grads[param])
+        @test grads[param] isa CuArray
     end
 end
