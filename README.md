@@ -16,11 +16,16 @@ The package is structure the following way
 DeepUncertainty/
 ├── docs
 │   └── src
-├── examples                # Examples using the package 
+├── examples
+│   ├── Classification
+│   │   ├── lenet
+│   │   └── vgg
+│   └── Regression
 ├── src
 │   └── layers
-│       ├── BatchEnsemble   # BatchEnsemble layers 
-│       └── Variational     # Variational inference layers 
+│       ├── BatchEnsemble
+│       ├── BayesianBE
+│       └── Variational
 └── test
     ├── cuda
     │   └── layers
