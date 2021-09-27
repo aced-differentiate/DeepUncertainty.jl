@@ -32,15 +32,15 @@ end
 
 # arguments for the `train` function 
 Base.@kwdef mutable struct Args
-    η = 3e-4             # learning rate
+    η = 0.001             # learning rate
     λ = 0                # L2 regularizer param, implemented as weight decay
-    batchsize = 256      # batch size
-    epochs = 10          # number of epochs
+    batchsize = 128      # batch size
+    epochs = 100         # number of epochs
     use_cuda = true      # if true use cuda (if available)
     infotime = 1      # report every `infotime` epochs
     checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
     rank = 1
-    ensemble_size = 4
+    ensemble_size = 2
 end
 
 function train(; kws...)

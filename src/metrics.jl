@@ -11,7 +11,10 @@ function get_mean_std_dev(x::AbstractArray; dims = ndims(x))
     return μ, σ
 end
 
-function calculate_entropy(probs, eps = 1e-6)
+function calculate_entropy(probs, eps = 1e-6; from_logits = true)
+    if from_logits
+        probs = softmax(probs, dims = 1)
+    end
     return -sum(probs .* log.(probs .+ eps), dims = 1)
 end
 
@@ -26,7 +29,12 @@ function brier_score(preds, labels)
     )
 end
 
-function expected_calibration_error(preds, labels, num_bins = 10;)
+function expected_calibration_error(preds, labels, num_bins = 10; from_logits = true)
+    if from_logits
+        preds = softmax(preds, dims = 1)
+    end
+    preds = cpu(preds)
+    labels = cpu(labels)
     preds = [x for x in eachcol(preds)]
     ece_estimator = ECE(UniformBinning(num_bins), SqEuclidean())
     ece = ece_estimator(preds, labels)
