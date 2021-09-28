@@ -80,7 +80,7 @@ function train_formation_energy(;
     if verbose
         println("Building the network...")
     end
-    model = CGCNN(
+    model = MC_CGCNN(
         num_features,
         num_conv = num_conv,
         atom_conv_feature_length = crys_fea_len,

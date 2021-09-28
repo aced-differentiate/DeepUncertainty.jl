@@ -1,4 +1,5 @@
 using DeepUncertainty
+include("layers.jl")
 
 function CGCNN(
     input_feature_length;
@@ -57,50 +58,41 @@ function MC_CGCNN(
     initW = glorot_uniform,
     dropout_rate = 0.2,
 )
-    dropout = (x; k...) -> Flux.dropout(x, dropout_rate; k...)
     @assert atom_conv_feature_length >= pooled_feature_length "Feature length after pooling must be <= feature length before pooling!"
     model = Chain(
-        MCLayer(
-            AGNConv(
-                input_feature_length => atom_conv_feature_length,
-                conv_activation,
-                initW = initW,
-            ),
-            dropout,
+        MCAGNConv(
+            input_feature_length => atom_conv_feature_length,
+            dropout_rate,
+            conv_activation,
+            initW = initW,
         ),
         [
-            MCLayer(
-                AGNConv(
-                    atom_conv_feature_length => atom_conv_feature_length,
-                    conv_activation,
-                    initW = initW,
-                ),
-                dropout,
+            MCAGNConv(
+                atom_conv_feature_length => atom_conv_feature_length,
+                dropout_rate,
+                conv_activation,
+                initW = initW,
             ) for i = 1:num_conv-1
         ]...,
         AGNPool(pool_type, atom_conv_feature_length, pooled_feature_length, pool_width),
         [
             MCLayer(
-                Dense(
+                MCDense(
                     pooled_feature_length,
                     pooled_feature_length,
+                    dropout_rate,
                     hidden_layer_activation,
-                    init = initW,
                 ),
-                dropout,
+                dropout_rate,
             ) for i = 1:num_hidden_layers-1
         ]...,
-        MCLayer(
-            Dense(
-                pooled_feature_length,
-                output_length,
-                output_layer_activation,
-                init = initW,
-            ),
-            dropout,
+        MCDense(
+            pooled_feature_length,
+            output_length,
+            dropout_rate,
+            output_layer_activation,
         ),
     )
-
     return model
 end
 
@@ -120,13 +112,13 @@ function BayesianCGCNN(
 )
     @assert atom_conv_feature_length >= pooled_feature_length "Feature length after pooling must be <= feature length before pooling!"
     model = Chain(
-        AGNConv(
+        VariationalAGNConv(
             input_feature_length => atom_conv_feature_length,
             conv_activation,
             initW = initW,
         ),
         [
-            AGNConv(
+            VariationalAGNConv(
                 atom_conv_feature_length => atom_conv_feature_length,
                 conv_activation,
                 initW = initW,
@@ -148,4 +140,5 @@ function BayesianCGCNN(
             init = initW,
         ),
     )
+    return model
 end

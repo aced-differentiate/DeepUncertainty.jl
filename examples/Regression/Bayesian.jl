@@ -3,7 +3,7 @@
 using CSV, DataFrames
 using Random, Statistics
 using Flux
-using Flux: @epochs, glorot_uniform
+using Flux: @epochs, glorot_uniform, Zygote, gpu
 using ChemistryFeaturization
 using AtomicGraphNets
 using Formatting
@@ -15,6 +15,8 @@ function train_formation_energy(;
     num_epochs = 25,
     data_dir = joinpath(@__DIR__, "data"),
     verbose = true,
+    sample_size = 10,
+    complexity_constant = 1e-6,
 )
     println("Setting things up...")
 
@@ -80,21 +82,20 @@ function train_formation_energy(;
     if verbose
         println("Building the network...")
     end
-    model = CGCNN(
+    model = BayesianCGCNN(
         num_features,
         num_conv = num_conv,
         atom_conv_feature_length = crys_fea_len,
         pooled_feature_length = (Int(crys_fea_len / 2)),
         num_hidden_layers = 1,
     )
-
+    model = gpu(model)
     ps = Flux.params(model)
     opt = ADAM(0.01) # optimizer
 
     # define loss function and a callback to monitor progress
     loss(x, y) = Flux.Losses.mse(model(x), y)
 
-    # train
     if verbose
         println("Training!")
     end
@@ -103,17 +104,28 @@ function train_formation_energy(;
         total_loss = 0
         count = 0
         for (x, y) in test_data
+            x, y = x |> gpu, y |> gpu
             total_loss += loss(x, y)
             count += 1
         end
         return (total_loss / count)
     end
 
+    function kl_loss_calc(model)
+        layers = Zygote.@ignore Flux.modules(model)
+        return sum(normal_kl_divergence.(layers))
+    end
     for epoch = 1:num_epochs
         for (x, y) in train_data
+            x, y = x |> gpu, y |> gpu
             gs = Flux.gradient(ps) do
-                total_l = loss(x, y)
-                return total_l
+                for sample in sample_size
+                    total_loss = loss(x, y)
+                    kl_loss = kl_loss_calc(model)
+                    total_loss += complexity_constant * kl_loss
+                end
+                total_loss /= sample_size
+                return total_loss
             end
             Flux.Optimise.update!(opt, ps, gs)
         end
