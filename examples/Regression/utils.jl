@@ -66,18 +66,6 @@ function get_data(num_pts = 100, data_dir = joinpath(@__DIR__, "data"), verbose 
     if verbose
         println("Building the network...")
     end
-    # model hyperparameters – keeping it pretty simple for now
-    num_conv = 3 # how many convolutional layers?
-    crys_fea_len = 32 # length of crystal feature vector after pooling (keep node dimension constant for now)
-    num_hidden_layers = 1 # how many fully-connected layers after convolution and pooling?
 
-    model = CGCNN(
-        num_features,
-        num_conv = num_conv,
-        atom_conv_feature_length = crys_fea_len,
-        pooled_feature_length = (Int(crys_fea_len / 2)),
-        num_hidden_layers = num_hidden_layers,
-    )
-
-    return model, train_data, test_data
+    return num_features, train_data, test_data
 end

@@ -16,7 +16,20 @@ include("models.jl")
 include("utils.jl")
 
 function train_formation_energy(; num_epochs = 25, verbose = true)
-    model, train_data, test_data = get_data()
+    # model hyperparameters – keeping it pretty simple for now
+    num_conv = 3 # how many convolutional layers?
+    crys_fea_len = 32 # length of crystal feature vector after pooling (keep node dimension constant for now)
+    num_hidden_layers = 1 # how many fully-connected layers after convolution and pooling?
+    num_features, train_data, test_data = get_data()
+
+    model = CGCNN(
+        num_features,
+        num_conv = num_conv,
+        atom_conv_feature_length = crys_fea_len,
+        pooled_feature_length = (Int(crys_fea_len / 2)),
+        num_hidden_layers = num_hidden_layers,
+    )
+
     ps = Flux.params(model)
     opt = ADAM(0.001) # optimizer
 

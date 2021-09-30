@@ -7,89 +7,31 @@ using Flux: @epochs, glorot_uniform
 using ChemistryFeaturization
 using AtomicGraphNets
 using Formatting
+using Distributions
+using CalibrationErrors
+using CalibrationErrorsDistributions
+using CalibrationTests
 
 include("models.jl")
+include("utils.jl")
 
-function train_formation_energy(;
-    num_pts = 100,
-    num_epochs = 25,
-    data_dir = joinpath(@__DIR__, "data"),
-    verbose = true,
-)
-    println("Setting things up...")
-
-    # data-related options
-    train_frac = 0.8 # what fraction for training?
-    num_train = Int32(round(train_frac * num_pts))
-    num_test = num_pts - num_train
-    prop = "formation_energy_per_atom"
-    id = "task_id" # field by which to label each input material
-
-    # set up the featurization
-    featurization = GraphNodeFeaturization([
-        "Group",
-        "Row",
-        "Block",
-        "Atomic mass",
-        "Atomic radius",
-        "X",
-    ])
-    num_features =
-        sum(ChemistryFeaturization.FeatureDescriptor.output_shape.(featurization.features)) # TODO: update this with cleaner syntax once new version of CF is tagged that has it
-
+function train_formation_energy(; num_epochs = 25, num_samples = 10, verbose = true)
     # model hyperparameters – keeping it pretty simple for now
     num_conv = 3 # how many convolutional layers?
     crys_fea_len = 32 # length of crystal feature vector after pooling (keep node dimension constant for now)
     num_hidden_layers = 1 # how many fully-connected layers after convolution and pooling?
+    num_features, train_data, test_data = get_data()
 
-    # dataset...first, read in outputs
-    info = CSV.read(string(data_dir, "/", prop, ".csv"), DataFrame)
-    y = Array(Float32.(info[!, Symbol(prop)]))
-
-    # shuffle data and pick out subset
-    indices = shuffle(1:size(info, 1))[1:num_pts]
-    info = info[indices, :]
-    output = y[indices]
-
-    # next, make and featurize graphs
-    if verbose
-        println("Building graphs and feature vectors from structures...")
-    end
-    inputs = FeaturizedAtoms[]
-
-    # for r in eachrow(info)
-    cifpaths = [
-        joinpath(data_dir, format("{}_cifs", prop), string(r[Symbol(id)], ".cif")) for
-        r in eachrow(info)
-    ]
-    graphs = skipmissing(AtomGraph.(cifpaths))
-    inputs = [featurize(gr, featurization) for gr in graphs]
-
-    # pick out train/test sets
-    if verbose
-        println("Dividing into train/test sets...")
-    end
-    train_output = output[1:num_train]
-    test_output = output[num_train+1:end]
-    train_input = inputs[1:num_train]
-    test_input = inputs[num_train+1:end]
-    train_data = zip(train_input, train_output)
-    test_data = zip(test_input, test_output)
-
-    # build the model
-    if verbose
-        println("Building the network...")
-    end
     model = MC_CGCNN(
         num_features,
         num_conv = num_conv,
         atom_conv_feature_length = crys_fea_len,
         pooled_feature_length = (Int(crys_fea_len / 2)),
-        num_hidden_layers = 1,
+        num_hidden_layers = num_hidden_layers,
     )
 
     ps = Flux.params(model)
-    opt = ADAM(0.01) # optimizer
+    opt = ADAM(0.001) # optimizer
 
     # define loss function and a callback to monitor progress
     loss(x, y) = Flux.Losses.mse(model(x), y)
@@ -99,26 +41,52 @@ function train_formation_energy(;
         println("Training!")
     end
 
-    function test(test_data)
-        total_loss = 0
-        count = 0
-        for (x, y) in test_data
-            total_loss += loss(x, y)
-            count += 1
+    function get_preds(data)
+        predictions = []
+        targets = []
+        samples = []
+        for (x, y) in data
+            for sample in num_samples
+                preds = model(x)
+                push!(samples, preds[1])
+            end
+            samples = Flux.batch(samples)
+            mean_predictions = mean(samples, dims = ndims(samples))
+            mean_predictions = dropdims(mean_predictions, dims = ndims(samples))
+            push!(predictions, mean_predictions[1])
+            push!(targets, y)
         end
-        return (total_loss / count)
+        return predictions, targets
     end
 
+    # define kernel
+    kernel = WassersteinExponentialKernel() ⊗ SqExponentialKernel()
+
     for epoch = 1:num_epochs
-        for (x, y) in train_data
-            gs = Flux.gradient(ps) do
-                total_l = loss(x, y)
-                return total_l
-            end
-            Flux.Optimise.update!(opt, ps, gs)
-        end
-        test_loss = test(test_data)
+        train_loss = 0
+        ntot = 0
+        Flux.train!(loss, ps, train_data, opt)
+        test_preds, test_targets = get_preds(test_data)
+        train_preds, train_targets = get_preds(train_data)
+        test_loss = Flux.Losses.mse(test_preds, test_targets) |> round4
+        train_loss = Flux.Losses.mse(train_preds, train_targets) |> round4
+        sigma = sqrt(train_loss)
+        predictions = [Normal(mean, sigma) for mean in test_preds]
+
+        # unbiased estimator of SKCE
+        unbiased_estimator = UnbiasedSKCE(kernel)
+        skce = calibrationerror(unbiased_estimator, predictions, test_targets) |> round4
+
+        # biased estimator of SKCE
+        biased_estimator = BiasedSKCE(kernel)
+        biased_skce =
+            calibrationerror(biased_estimator, predictions, test_targets) |> round4
+
+        println(format("Train Loss: {}", train_loss))
         println(format("Test Loss: {}", test_loss))
+        println(format("Unbiased SKCE: {}", skce))
+        println(format("Biased SKCE: {}", biased_skce))
+        println("===============")
     end
 
     return model
