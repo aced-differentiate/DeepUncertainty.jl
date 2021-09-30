@@ -67,5 +67,5 @@ function get_data(num_pts = 100, data_dir = joinpath(@__DIR__, "data"), verbose 
         println("Building the network...")
     end
 
-    return num_features, train_data, test_data
+    return num_features, train_input, train_output, test_input, test_output
 end

@@ -20,7 +20,9 @@ function train_formation_energy(; num_epochs = 25, verbose = true)
     num_conv = 3 # how many convolutional layers?
     crys_fea_len = 32 # length of crystal feature vector after pooling (keep node dimension constant for now)
     num_hidden_layers = 1 # how many fully-connected layers after convolution and pooling?
-    num_features, train_data, test_data = get_data()
+    num_features, xtrain, ytrain, xtest, ytest = get_data()
+    train_data = zip(xtrain, ytrain)
+    test_data = zip(xtest, ytest)
 
     model = CGCNN(
         num_features,
@@ -31,11 +33,10 @@ function train_formation_energy(; num_epochs = 25, verbose = true)
     )
 
     ps = Flux.params(model)
-    opt = ADAM(0.001) # optimizer
+    opt = Nesterov(0.001) # optimizer
 
     # define loss function and a callback to monitor progress
     loss(x, y) = Flux.Losses.mse(model(x), y)
-
     # train
     if verbose
         println("Training!")
@@ -57,10 +58,9 @@ function train_formation_energy(; num_epochs = 25, verbose = true)
 
     for epoch = 1:num_epochs
         train_loss = 0
-        ntot = 0
         Flux.train!(loss, ps, train_data, opt)
-        test_preds, test_targets = get_preds(test_data)
         train_preds, train_targets = get_preds(train_data)
+        test_preds, test_targets = get_preds(test_data)
         test_loss = Flux.Losses.mse(test_preds, test_targets) |> round4
         train_loss = Flux.Losses.mse(train_preds, train_targets) |> round4
         sigma = sqrt(train_loss)
