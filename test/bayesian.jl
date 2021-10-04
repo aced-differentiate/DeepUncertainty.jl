@@ -55,7 +55,7 @@ end
             return kl
         end
         for param in zip(params(l), params(mean, stddev))
-            @test isapprox(cpu(struct_grads[param[1]]), base_grads[param[2]])
+            @test isapprox(struct_grads[param[1]], base_grads[param[2]])
             @test size(param[1]) == size(struct_grads[param[1]])
         end
 

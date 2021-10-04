@@ -16,6 +16,9 @@ end
     # Test MC dense dropout toggle 
     output = layer(a, dropout = false)
     test_sparsity(output, 0)
+
+    # Test gradients 
+
 end
 
 @testset "MC Conv" begin
@@ -31,4 +34,7 @@ end
     # Test MC conv dropout toggle 
     output = layer(a, dropout = false)
     test_sparsity(output, 0)
+
+    # Test gradients 
+
 end

@@ -45,10 +45,11 @@ function VariationalDense(
     init = glorot_normal,
     weight_dist = TrainableMvNormal,
     bias_dist = TrainableMvNormal,
+    device = cpu,
 )
     # Initialize alpha and gamma samplers 
-    weight_sampler = weight_dist((out, in), init = init)
-    bias_sampler = bias_dist((out,), init = init)
+    weight_sampler = weight_dist((out, in), init = init, device = device)
+    bias_sampler = bias_dist((out,), init = init, device = device)
 
     return VariationalDense(weight_sampler, bias_sampler, σ)
 end
