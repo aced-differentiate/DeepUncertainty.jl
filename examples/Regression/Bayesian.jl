@@ -3,15 +3,20 @@
 using CSV, DataFrames
 using Random, Statistics
 using Flux
-using Flux: @epochs
+using Flux: @epochs, glorot_uniform, Zygote, gpu
 using ChemistryFeaturization
 using AtomicGraphNets
+using Formatting
+
+include("models.jl")
 
 function train_formation_energy(;
     num_pts = 100,
-    num_epochs = 5,
+    num_epochs = 25,
     data_dir = joinpath(@__DIR__, "data"),
     verbose = true,
+    sample_size = 10,
+    complexity_constant = 1e-6,
 )
     println("Setting things up...")
 
@@ -34,14 +39,13 @@ function train_formation_energy(;
     num_features =
         sum(ChemistryFeaturization.FeatureDescriptor.output_shape.(featurization.features)) # TODO: update this with cleaner syntax once new version of CF is tagged that has it
 
-    # model hyperparameters – keeping it pretty simple for now
+    # model hyperparameters – keeping it pretty simple for now
     num_conv = 3 # how many convolutional layers?
     crys_fea_len = 32 # length of crystal feature vector after pooling (keep node dimension constant for now)
     num_hidden_layers = 1 # how many fully-connected layers after convolution and pooling?
-    opt = ADAM(0.001) # optimizer
 
     # dataset...first, read in outputs
-    info = CSV.read(string(data_dir, prop, ".csv"), DataFrame)
+    info = CSV.read(string(data_dir, "/", prop, ".csv"), DataFrame)
     y = Array(Float32.(info[!, Symbol(prop)]))
 
     # shuffle data and pick out subset
@@ -55,12 +59,13 @@ function train_formation_energy(;
     end
     inputs = FeaturizedAtoms[]
 
-    for r in eachrow(info)
-        cifpath = string(data_dir, prop, "_cifs/", r[Symbol(id)], ".cif")
-        gr = AtomGraph(cifpath)
-        input = featurize(gr, featurization)
-        push!(inputs, input)
-    end
+    # for r in eachrow(info)
+    cifpaths = [
+        joinpath(data_dir, format("{}_cifs", prop), string(r[Symbol(id)], ".cif")) for
+        r in eachrow(info)
+    ]
+    graphs = skipmissing(AtomGraph.(cifpaths))
+    inputs = [featurize(gr, featurization) for gr in graphs]
 
     # pick out train/test sets
     if verbose
@@ -71,37 +76,64 @@ function train_formation_energy(;
     train_input = inputs[1:num_train]
     test_input = inputs[num_train+1:end]
     train_data = zip(train_input, train_output)
+    test_data = zip(test_input, test_output)
 
     # build the model
     if verbose
         println("Building the network...")
     end
-    model = build_CGCNN(
+    model = BayesianCGCNN(
         num_features,
         num_conv = num_conv,
         atom_conv_feature_length = crys_fea_len,
         pooled_feature_length = (Int(crys_fea_len / 2)),
         num_hidden_layers = 1,
     )
+    model = gpu(model)
+    ps = Flux.params(model)
+    opt = ADAM(0.01) # optimizer
 
     # define loss function and a callback to monitor progress
     loss(x, y) = Flux.Losses.mse(model(x), y)
-    evalcb_verbose() = @show(mean(loss.(test_input, test_output)))
-    evalcb_quiet() = return nothing
-    evalcb = verbose ? evalcb_verbose : evalcb_quiet
-    evalcb()
 
-    # train
     if verbose
         println("Training!")
     end
-    @epochs num_epochs Flux.train!(
-        loss,
-        params(model),
-        train_data,
-        opt,
-        cb = Flux.throttle(evalcb, 5),
-    )
+
+    function test(test_data)
+        total_loss = 0
+        count = 0
+        for (x, y) in test_data
+            x, y = x |> gpu, y |> gpu
+            total_loss += loss(x, y)
+            count += 1
+        end
+        return (total_loss / count)
+    end
+
+    function kl_loss_calc(model)
+        layers = Zygote.@ignore Flux.modules(model)
+        return sum(normal_kl_divergence.(layers))
+    end
+    for epoch = 1:num_epochs
+        for (x, y) in train_data
+            x, y = x |> gpu, y |> gpu
+            gs = Flux.gradient(ps) do
+                for sample in sample_size
+                    total_loss = loss(x, y)
+                    kl_loss = kl_loss_calc(model)
+                    total_loss += complexity_constant * kl_loss
+                end
+                total_loss /= sample_size
+                return total_loss
+            end
+            Flux.Optimise.update!(opt, ps, gs)
+        end
+        test_loss = test(test_data)
+        println(format("Test Loss: {}", test_loss))
+    end
 
     return model
 end
+
+train_formation_energy()

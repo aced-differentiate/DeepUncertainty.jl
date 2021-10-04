@@ -1,4 +1,5 @@
 using Flux
+using Flux: Zygote
 using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
 using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
@@ -30,28 +31,17 @@ end
 
 # arguments for the `train` function 
 Base.@kwdef mutable struct Args
-    η = 3e-4             # learning rate
+    η = 0.001            # learning rate
     λ = 0                # L2 regularizer param, implemented as weight decay
-    batchsize = 64      # batch size
-    epochs = 10          # number of epochs
+    batchsize = 256      # batch size
+    epochs = 100          # number of epochs
     use_cuda = true      # if true use cuda (if available)
     infotime = 1      # report every `infotime` epochs
     checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
     rank = 1
-    ensemble_size = 4
+    ensemble_size = 2
     sample_size = 10
-    complexity_constant = 1e-8
-end
-
-function kldivergence(model)
-    loss = 0
-    modules = Flux.modules(model)
-    for layer in modules
-        if layer isa AbstractTrainableDist
-            loss += NormalKLDivergence(layer)
-        end
-    end
-    return loss
+    complexity_constant = 1e-5
 end
 
 function train(; kws...)
@@ -91,8 +81,9 @@ function train(; kws...)
     ## TRAINING
     function kl_loss_calc(model)
         layers = Zygote.@ignore Flux.modules(model)
-        return sum(normal_kl_divergence.(layers))
+        return args.complexity_constant * sum(normal_kl_divergence.(layers))
     end
+
     @info "Start Training"
     report(0)
     for epoch = 1:args.epochs
@@ -106,8 +97,7 @@ function train(; kws...)
                 for sample in args.sample_size
                     ŷ = model(x)
                     total_loss += loss(ŷ, y)
-                    kl_loss = kl_loss_calc(model)
-                    total_loss += args.complexity_constant * kl_loss
+                    total_loss += kl_loss_calc(model)
                 end
                 total_loss /= args.sample_size
                 return total_loss

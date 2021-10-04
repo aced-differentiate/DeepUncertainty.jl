@@ -13,18 +13,34 @@ using Formatting
 using DeepUncertainty
 include("utils.jl")
 
+# function LeNet5(args; imgsize=(28, 28, 1), nclasses=10)
+#     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
+
+#     return Chain(
+#         MCConv((5, 5), imgsize[end] => 6, args.dropout, relu),
+#         MaxPool((2, 2)),
+#         MCConv((5, 5), 6 => 16, args.dropout, relu),
+#         MaxPool((2, 2)),
+#         flatten,
+#         MCDense(prod(out_conv_size), 120, args.dropout, relu),
+#         MCDense(120, 84, args.dropout, relu),
+#         MCDense(84, nclasses, args.dropout),
+#     )
+# end
+
 function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
+    dropout = (x; k...) -> Flux.dropout(x, args.dropout; k...)
 
     return Chain(
-        MCConv((5, 5), imgsize[end] => 6, args.dropout, relu),
+        MCLayer(Conv((5, 5), imgsize[end] => 6, relu), dropout),
         MaxPool((2, 2)),
-        MCConv((5, 5), 6 => 16, args.dropout, relu),
+        MCLayer(Conv((5, 5), 6 => 16, relu), dropout),
         MaxPool((2, 2)),
         flatten,
-        MCDense(prod(out_conv_size), 120, args.dropout, relu),
-        MCDense(120, 84, args.dropout, relu),
-        MCDense(84, nclasses, args.dropout),
+        MCLayer(Dense(prod(out_conv_size), 120, relu), dropout),
+        MCLayer(Dense(120, 84, relu), dropout),
+        MCLayer(Dense(84, nclasses), dropout),
     )
 end
 

@@ -103,7 +103,7 @@ using the first fast weight, then passed through the dense layer, and finall
 multiplied by the second fast weight.
 
 # Arguments 
-- `x::AbstractVecOrMat`: Input tensors 
+- `x`: Input tensors 
 """
 function (be::DenseBE)(x)
     layer = be.layer

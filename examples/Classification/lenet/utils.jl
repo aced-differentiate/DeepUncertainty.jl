@@ -60,7 +60,6 @@ function ensembles_evaluation(args, loader, model, device)
         x, y = x |> device, y |> device
         # Perform the forward pass 
         ŷ = model(x)
-        ŷ = softmax(ŷ, dims = 1)
         # Reshape the predictions into [classes, batch_size, ensemble_size
         reshaped_ŷ = reshape(ŷ, size(ŷ)[1], args.batchsize, args.ensemble_size)
         # Loop through each model's predictions 
@@ -70,8 +69,7 @@ function ensembles_evaluation(args, loader, model, device)
             l[ensemble] += loss(model_predictions, y) * size(model_predictions)[end]
             acc[ensemble] += accuracy(model_predictions, y)
             ece_list[ensemble] +=
-                expected_calibration_error(model_predictions |> cpu, onecold(y |> cpu)) *
-                args.batchsize
+                expected_calibration_error(model_predictions, onecold(y)) * args.batchsize
         end
         # Get the mean predictions
         mean_predictions = mean(reshaped_ŷ, dims = ndims(reshaped_ŷ))
@@ -79,14 +77,13 @@ function ensembles_evaluation(args, loader, model, device)
         mean_l += loss(mean_predictions, y) * size(mean_predictions)[end]
         mean_acc += accuracy(mean_predictions, y)
         mean_ece +=
-            expected_calibration_error(mean_predictions |> cpu, onecold(y |> cpu)) *
-            args.batchsize
+            expected_calibration_error(mean_predictions, onecold(y)) * args.batchsize
         ntot += size(mean_predictions)[end]
     end
     # Normalize the loss 
-    losses = round4(l ./ ntot)
-    acc = round4((acc ./ ntot) .* 100)
-    ece_list = round4(ece_list ./ ntot)
+    losses = round4.(l ./ ntot)
+    acc = round4.((acc ./ ntot) .* 100)
+    ece_list = round4.(ece_list ./ ntot)
     # Calculate mean loss 
     mean_l = round4(mean_l / ntot)
     mean_acc = round4((mean_acc / ntot) .* 100)
@@ -125,7 +122,6 @@ function monte_carlo_evaluation(args, loader, model, device)
         # Loop through each model's predictions 
         for ensemble = 1:args.sample_size
             model_predictions = model(x)
-            model_predictions = softmax(model_predictions, dims = 1)
             push!(predictions, model_predictions)
         end
         # Get the mean predictions
@@ -135,9 +131,8 @@ function monte_carlo_evaluation(args, loader, model, device)
         mean_l += loss(mean_predictions, y) * size(mean_predictions)[end]
         mean_acc += accuracy(mean_predictions, y)
         mean_ece +=
-            expected_calibration_error(mean_predictions |> cpu, onecold(y |> cpu)) *
-            args.batchsize
-        mean_entropy += mean(calculate_entropy(mean_predictions |> cpu)) * args.batchsize
+            expected_calibration_error(mean_predictions, onecold(y)) * args.batchsize
+        mean_entropy += mean(calculate_entropy(mean_predictions)) * args.batchsize
         ntot += size(mean_predictions)[end]
     end
     # Calculate mean loss 
