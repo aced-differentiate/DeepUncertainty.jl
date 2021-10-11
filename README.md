@@ -1,7 +1,7 @@
 # DeepUncertainty
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://DwaraknathT.github.io/DeepUncertainty.jl/stable)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://DwaraknathT.github.io/DeepUncertainty.jl/dev)
+[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://aced-differentiate.github.io/DeepUncertainty.jl/stable)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://aced-differentiate.github.io/DeepUncertainty.jl/dev)
 [![Build Status](https://github.com/aced-differentiate/DeepUncertainty.jl/workflows/CI/badge.svg)](https://github.com/aced-differentiate/DeepUncertainty.jl/actions)
 [![codecov](https://codecov.io/gh/aced-differentiate/DeepUncertainty.jl/branch/main/graph/badge.svg?token=9XDVJ3TOE3)](https://codecov.io/gh/aced-differentiate/DeepUncertainty.jl)
 
