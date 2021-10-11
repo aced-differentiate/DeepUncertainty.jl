@@ -1,7 +1,7 @@
 using Flux
 using Random
 using Test
-using Flux:@functor
+using Flux: @functor
 
 """
     MCLayer(layer, dropout)
@@ -47,7 +47,7 @@ layer followed by dropout applied on the resulting activations.
 - `σ::F=identity`: Activation function, defaults to identity
 - `init=glorot_normal`: Initialization function, defaults to glorot_normal 
 """
-function MCDense(in::Integer, out::Integer, dropout_rate, σ=identity, kwargs...)
+function MCDense(in::Integer, out::Integer, dropout_rate, σ = identity, kwargs...)
     layer = Flux.Dense(in, out, σ; kwargs...)
     dropout = (x; k...) -> Flux.dropout(x, dropout_rate; k...)
     return MCLayer(layer, dropout)
@@ -85,7 +85,7 @@ function MCConv(
     k::NTuple{N,Integer},
     ch::Pair{<:Integer,<:Integer},
     dropout_rate,
-    σ=identity;
+    σ = identity;
     kwargs...,
 ) where {N}
     layer = Flux.Conv(k, ch, σ; kwargs...)
@@ -97,7 +97,7 @@ function MCConv(
     w::AbstractArray{T,N},
     bias,
     dropout_rate,
-    σ=identity,
+    σ = identity,
     kwargs...,
 ) where {T,N}
     layer = Flux.Conv(w, bias, σ, kwargs...)
@@ -114,9 +114,9 @@ usual layer first and then through a dropout layer.
 - `dropout=true`: Toggle to control dropout, it's preferred to keep 
 dropout always on, but just in case if it's needed. 
 """
-function (mc::MCLayer)(x; dropout=true)
+function (mc::MCLayer)(x; dropout = true)
     # Layer forward pass 
     # Dropout on activations 
-    output = mc.dropout(mc.layer(x); active=dropout)
+    output = mc.dropout(mc.layer(x); active = dropout)
     return output
 end
