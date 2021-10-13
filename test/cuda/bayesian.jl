@@ -13,7 +13,7 @@ end
 
 
 @testset "Trainable Distributions" begin
-    @testset "Trainable MvNormal Normal KL divergence" begin
+    @testset "TrainableMvNormal Normal KL divergence" begin
         mean =
             Float32.([
                 1.3070704,
@@ -64,7 +64,7 @@ end
         end
     end
 
-    @testset "Trainable MvNormal Scale Mixture KL" begin
+    @testset "TrainableMvNormal Scale Mixture KL" begin
         l = TrainableMvNormal((2, 3), device = gpu) |> gpu
         grads = gradient(params(l)) do
             weight = l()

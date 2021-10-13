@@ -12,7 +12,7 @@ function calc_kld(mean, stddev, sample)
 end
 
 @testset "Trainable Distributions" begin
-    @testset "Trainable MvNormal" begin
+    @testset "TrainableMvNormal" begin
         mean =
             Float32.([
                 1.3070704,

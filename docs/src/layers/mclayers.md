@@ -9,12 +9,12 @@ The goal of MC Layers is to facilitate converting any layer defined in Flux into
 In simple terms, a network with dropout applied before every layer has a different weight configuration in every forward pass (Note that we also apply dropout at test time, usually dropout is turned off during test time to ensemble the various weight samples implicitly). Each weight configuration can be considered an independent sample from the underlying weight distribution. The mean and variance of these sample predictions are the mean and variance of the predictive distribution. Higher the variance, more the uncertianty. 
 
 ```@docs
-DeepUncertainty.layers.mclayers.MCLayer
+DeepUncertainty.MCLayer
 ```
 
 We also implement MC versions of Conv and Dense layers as a drop-in replacement. 
 
 ```@docs
-DeepUncertainty.layers.mclayers.MCDense
-DeepUncertainty.layers.mclayers.MCConv 
+DeepUncertainty.MCDense
+DeepUncertainty.MCConv 
 ```
