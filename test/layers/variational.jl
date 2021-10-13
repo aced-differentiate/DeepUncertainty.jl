@@ -1,4 +1,4 @@
-@testset "Variational Dense" begin
+@testset "VariationalDense" begin
     input = rand(5, 32)
     layer = VariationalDense(5, 10)
     output = layer(input)
@@ -17,7 +17,7 @@
     end
 end
 
-@testset "Variational Conv" begin
+@testset "VariationalConv" begin
     # Test gradients 
     layer = VariationalConv((5, 5), 3 => 6, relu)
     i = rand(32, 32, 3, 4)

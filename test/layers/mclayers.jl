@@ -5,7 +5,7 @@ function test_sparsity(x, target_sparsity; atol = 0.05)
     @test isapprox(target_sparsity, sparsity; atol)
 end
 
-@testset "MC Dense" begin
+@testset "MCDense" begin
     dropout_rate = 0.35
     # Test MC Dense layer 
     a = rand(Float32, 8, 32)
@@ -21,7 +21,7 @@ end
 
 end
 
-@testset "MC Conv" begin
+@testset "MCConv" begin
     dropout_rate = 0.4
     # Test MC conv layer 
     a = rand(Float32, 32, 32, 3, 32)

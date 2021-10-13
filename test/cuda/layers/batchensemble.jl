@@ -1,4 +1,4 @@
-@testset "Dense batchensemble" begin
+@testset "DenseBE GPU" begin
     ensemble_size = 4
     samples_per_model = 4
     input_dim = 5
@@ -45,7 +45,7 @@
     end
 end
 
-@testset "ConvBE" begin
+@testset "ConvBE GPU" begin
     ensemble_size = 4
     samples_per_model = 4
     input_dim = 5
