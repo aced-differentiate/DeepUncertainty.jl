@@ -7,7 +7,12 @@ using Flux: @functor
     MCLayer(layer, dropout)
 A generic Monte Carlo dropout layer. Takes in any "traditional" flux 
 layer and a function that implements dropout. Performs the usual layer 
-forward pass and then passes the acitvations through the given dropout function.  
+forward pass and then passes the acitvations through the given dropout function. 
+Let x be the input array, the forward pass then becomes -- dropout(layer(x))
+    
+# Fields
+- `layer`: Traditional Flux layer 
+- `dropout`: A function that implements dropout 
 """
 struct MCLayer{L,F}
     layer::L
@@ -17,12 +22,11 @@ end
 @functor MCLayer
 
 """
-    MCDense(in, out, dropout_rate, σ=identity; bias=true, init=glorot_uniform)
+    MCDense(in::Int, out::Int, dropout_rate, σ=identity; bias=true, init=glorot_uniform)
     MCDense(layer, dropout_rate)
 
 Creates a traditional dense layer with MC dropout functionality. 
 MC Dropout simply means that dropout is activated in both train and test times 
-
 Reference - Dropout as a bayesian approximation - https://arxiv.org/abs/1506.02142 
 
 The traditional dense layer is a field in the struct MCDense, so all the 

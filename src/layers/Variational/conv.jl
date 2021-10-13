@@ -61,6 +61,7 @@ function VariationalConv(
     bias_dist = TrainableMvNormal,
     weight = Flux.convfilter(k, (ch[1] ÷ groups => ch[2])),
     bias = true,
+    device = cpu,
 ) where {N}
 
     stride = Flux.expand(Val(N), stride)
@@ -68,9 +69,9 @@ function VariationalConv(
     pad = Flux.calc_padding(VariationalConv, pad, size(weight)[1:N], dilation, stride)
     bias = create_bias(weight, bias, size(weight, N + 2))
     # Distribution from which weights are sampled 
-    weight_sampler = weight_dist((k..., ch...), init = init)
+    weight_sampler = weight_dist((k..., ch...), init = init, device = device)
     # Distribution from which biases are sampled 
-    bias_sampler = bias_dist(size(bias), init = init)
+    bias_sampler = bias_dist(size(bias), init = init, device = device)
     return VariationalConv(σ, weight_sampler, bias_sampler, stride, pad, dilation, groups)
 end
 

@@ -50,7 +50,7 @@ end
             return kl
         end
 
-        l = TrainableMvNormal((2, 3)) |> gpu
+        l = TrainableMvNormal((2, 3), device = gpu) |> gpu
         Flux.Zygote.@ignore copyto!(l.mean, mean)
         Flux.Zygote.@ignore copyto!(l.stddev, stddev)
         Flux.Zygote.@ignore copyto!(l.sample, sample)
@@ -65,7 +65,7 @@ end
     end
 
     @testset "Trainable MvNormal Scale Mixture KL" begin
-        l = TrainableMvNormal((2, 3)) |> gpu
+        l = TrainableMvNormal((2, 3), device = gpu) |> gpu
         grads = gradient(params(l)) do
             weight = l()
             kl = scale_mixture_kl_divergence(l)

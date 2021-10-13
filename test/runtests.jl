@@ -10,6 +10,8 @@ using DistributionsAD
     include("./layers/mclayers.jl")
     # Batch ensembe layers 
     include("./layers/batchensemble.jl")
+    # Variational layers 
+    include("./layers/variational.jl")
 end
 
 @testset "Bayesian utils" begin

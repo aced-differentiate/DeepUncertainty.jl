@@ -6,8 +6,8 @@ function normal_kl_divergence(layer::AbstractTrainableDist)
     posterior_loglikelihood = DistributionsAD.loglikelihood(posterior, layer.sample)
 
     # Calculate prior loglikelihood 
-    μ2 = gpu(zeros(prod(layer.shape)))
-    σ2 = gpu(ones(prod(layer.shape)))
+    μ2 = layer.device(zeros(prod(layer.shape)))
+    σ2 = layer.device(ones(prod(layer.shape)))
     prior = DistributionsAD.TuringMvNormal(μ2, σ2)
     prior_loglikelihood = DistributionsAD.loglikelihood(prior, layer.sample)
 
@@ -23,9 +23,9 @@ function scale_mixture_kl_divergence(
     posterior = DistributionsAD.TuringMvNormal(layer.mean, abs.(layer.stddev))
     posterior_loglikelihood = DistributionsAD.loglikelihood(posterior, layer.sample)
 
-    μ = gpu(zeros(prod(layer.shape)))
-    σ1 = gpu(ones(prod(layer.shape)) .* prior_sigma1)
-    σ2 = gpu(ones(prod(layer.shape)) .* prior_sigma2)
+    μ = layer.device(zeros(prod(layer.shape)))
+    σ1 = layer.device(ones(prod(layer.shape)) .* prior_sigma1)
+    σ2 = layer.device(ones(prod(layer.shape)) .* prior_sigma2)
     prior = DistributionsAD.TuringMvNormal(μ, σ1)
     likelihood_n1 = exp.(DistributionsAD.loglikelihood(prior, layer.sample))
     prior = DistributionsAD.TuringMvNormal(μ, σ2)
