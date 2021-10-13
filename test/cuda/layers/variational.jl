@@ -1,4 +1,4 @@
-@testset "Variational Dense" begin
+@testset "VariationalDense" begin
     input = gpu(rand(5, 32))
     layer = VariationalDense(5, 10, device = gpu)
     output = layer(input)
@@ -18,7 +18,7 @@
     end
 end
 
-@testset "Variational Conv" begin
+@testset "VariationalConv" begin
     # Test gradients 
     layer = VariationalConv((5, 5), 3 => 6, relu, device = gpu)
     i = gpu(rand(32, 32, 3, 4))

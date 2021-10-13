@@ -6,31 +6,16 @@
 [![codecov](https://codecov.io/gh/aced-differentiate/DeepUncertainty.jl/branch/main/graph/badge.svg?token=9XDVJ3TOE3)](https://codecov.io/gh/aced-differentiate/DeepUncertainty.jl)
 
 
-Tools for uncertianty estimation in Deep Learning models.
+Tools for uncertianty estimation in Deep Learning models. Use the below command in REPL to install. 
 ```
 ] add DeepUncertainty
 ```
 
-The package is structure the following way 
-```
-DeepUncertainty/
-├── docs
-│   └── src
-├── examples
-│   ├── Classification
-│   │   ├── lenet
-│   │   └── vgg
-│   └── Regression
-├── src
-│   └── layers
-│       ├── BatchEnsemble
-│       ├── BayesianBE
-│       └── Variational
-└── test
-    ├── cuda
-    │   └── layers
-    └── layers
-```
+## Basics 
+
+Neural Networks are usually trained to minimize a loss function that approximates model performance on any given task. The weights (parameters) of the network are estimated using first-order gradient based optimization algorithms that usually result in a point estimates. 
+
+We can also take take a Bayesian view point and place a distribution on each weight instead of interpreting it as a point estimate. We can calculate the uncertianty in our estimates of the parameters, since we optimize the distribution parameters insteaf of point estimates directly. 
 
 ## Current Inventory
 * [MC Dropout](https://arxiv.org/abs/1506.02142) 

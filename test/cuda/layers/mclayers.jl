@@ -4,7 +4,7 @@ function test_sparsity(x, target_sparsity; atol = 0.05)
     @test isapprox(target_sparsity, sparsity; atol)
 end
 
-@testset "MC Dense GPU" begin
+@testset "MCDense GPU" begin
     dropout_rate = 0.35
     # Test MC Dense layer 
     a = gpu(rand(Float32, 8, 32))
@@ -19,7 +19,7 @@ end
     test_sparsity(output, 0)
 end
 
-@testset "MC Conv GPU" begin
+@testset "MCConv GPU" begin
     dropout_rate = 0.4
     # Test MC conv layer 
     a = gpu(rand(Float32, 32, 32, 3, 32))
