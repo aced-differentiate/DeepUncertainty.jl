@@ -2,6 +2,7 @@ module DeepUncertainty
 
 using Random
 using DistributionsAD
+using LinearAlgebra
 
 using Flux
 using Flux: @functor, create_bias, params
@@ -15,6 +16,7 @@ export MCLayer, MCDense, MCConv
 export VariationalConv, VariationalDense
 export DenseBE, ConvBE
 export VariationalConvBE, VariationalDenseBE
+export SpectralNormalizer, SpectralDense, SpectralConv
 export expected_calibration_error, prediction_metrics
 export mean_loglikelihood, brier_score, calculate_entropy
 
@@ -24,6 +26,9 @@ include("regularizers.jl")
 
 # Layers 
 include("layers/mclayers.jl")
+include("layers/Spectral/spectralnorm.jl")
+include("layers/Spectral/spectraldense.jl")
+include("layers/Spectral/spectralconv.jl")
 include("layers/BatchEnsemble/dense.jl")
 include("layers/BatchEnsemble/conv.jl")
 include("layers/Variational/conv.jl")

@@ -1,4 +1,4 @@
-using Flux
+using Flux, ParameterSchedulers
 using Flux: onehotbatch, onecold, flatten
 using Flux.Losses: logitcrossentropy
 using Flux.Data: DataLoader
@@ -8,6 +8,7 @@ using CUDA
 using MLDatasets: CIFAR10
 using MLDataPattern: splitobs
 using ProgressMeter: @showprogress
+using ParameterSchedulers: Scheduler
 
 if CUDA.has_cuda()
     @info "CUDA is on"
@@ -81,8 +82,8 @@ end
 
 @with_kw mutable struct Args
     batchsize::Int = 128
-    lr::Float64 = 3e-4
-    epochs::Int = 50
+    lr::Float64 = 0.1
+    epochs::Int = 200
     valsplit::Float64 = 0.1
 end
 
@@ -121,7 +122,10 @@ function train(; kws...)
 
     ## Training
     # Defining the optimizer
-    opt = ADAM(args.lr)
+    # opt = ADAM(args.lr)
+    steps_per_epoch = length(train_loader)
+    total_steps = steps_per_epoch * args.epochs
+    opt = Scheduler(Poly(λ = args.lr, p = 2, max_iter = total_steps), Nesterov(args.lr))
     ps = Flux.params(m)
 
     @info("Training....")
