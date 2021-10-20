@@ -1,5 +1,6 @@
 using Flux
 using Flux: @functor
+using DeepUncertainty
 
 function conv_bn(
     kernelsize,
@@ -23,10 +24,14 @@ function conv_bn(
         bnplanes = outplanes
     end
 
-    push!(
-        layers,
-        Conv(kernelsize, Int(inplanes) => Int(outplanes), activations.conv; kwargs...),
+    conv_layer = VariationalConv(
+        kernelsize,
+        Int(inplanes) => Int(outplanes),
+        activations.conv;
+        device = gpu,
+        kwargs...,
     )
+    push!(layers, conv_layer)
     push!(
         layers,
         BatchNorm(
@@ -199,12 +204,12 @@ backbone(m::ResNet) = m.layers[1]
 classifier(m::ResNet) = m.layers[2]
 
 
-function ResNet18(; pretrain = false, nclasses = 1000)
+function VariationalResNet18(; pretrain = false, nclasses = 1000)
     model = ResNet(resnet_config[:resnet18]...; block = basicblock, nclasses = nclasses)
     return model
 end
 
-function ResNet34(; pretrain = false, nclasses = 1000)
+function VariationalMCResNet34(; pretrain = false, nclasses = 1000)
     model = ResNet(resnet_config[:resnet34]...; block = basicblock, nclasses = nclasses)
     return model
 end

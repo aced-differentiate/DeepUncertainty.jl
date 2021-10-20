@@ -46,10 +46,15 @@ function VariationalDense(
     weight_dist = TrainableMvNormal,
     bias_dist = TrainableMvNormal,
     device = cpu,
+    bias = true,
 )
     # Initialize alpha and gamma samplers 
     weight_sampler = weight_dist((out, in), init = init, device = device)
-    bias_sampler = bias_dist((out,), init = init, device = device)
+    if bias
+        bias_sampler = bias_dist((out,), init = init, device = device)
+    else
+        bias_sampler = () -> Flux.Zeros()
+    end
 
     return VariationalDense(weight_sampler, bias_sampler, σ)
 end

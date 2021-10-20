@@ -1,6 +1,3 @@
-using Flux
-using Flux: @functor
-
 function conv_bn(
     kernelsize,
     inplanes,

@@ -17,11 +17,11 @@ if CUDA.has_cuda()
 end
 
 @with_kw mutable struct Args
-    batchsize::Int = 128
-    lr::Float64 = 0.1
+    batchsize::Int = 64
+    lr::Float64 = 3e-4
     epochs::Int = 50
     valsplit::Float64 = 0.1
-    sample_size = 3
+    sample_size = 10
     complexity_constant = 1e-8
 end
 
@@ -63,36 +63,37 @@ end
 
 # VGG16 and VGG19 models
 function vgg16()
+    dropout = 0.2
     Chain(
-        Conv((3, 3), 3 => 64, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 3 => 64, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(64),
-        Conv((3, 3), 64 => 64, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 64 => 64, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(64),
         MaxPool((2, 2)),
-        Conv((3, 3), 64 => 128, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 64 => 128, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(128),
-        Conv((3, 3), 128 => 128, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 128 => 128, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(128),
         MaxPool((2, 2)),
-        Conv((3, 3), 128 => 256, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 128 => 256, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(256),
-        Conv((3, 3), 256 => 256, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 256 => 256, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(256),
-        Conv((3, 3), 256 => 256, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 256 => 256, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(256),
         MaxPool((2, 2)),
-        Conv((3, 3), 256 => 512, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 256 => 512, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(512),
-        Conv((3, 3), 512 => 512, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 512 => 512, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(512),
-        Conv((3, 3), 512 => 512, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 512 => 512, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(512),
         MaxPool((2, 2)),
-        Conv((3, 3), 512 => 512, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 512 => 512, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(512),
-        Conv((3, 3), 512 => 512, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 512 => 512, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(512),
-        Conv((3, 3), 512 => 512, relu, pad = (1, 1), stride = (1, 1)),
+        MCConv((3, 3), 512 => 512, dropout, relu, pad = (1, 1), stride = (1, 1)),
         BatchNorm(512),
         MaxPool((2, 2)),
         flatten,
@@ -111,8 +112,19 @@ function test(args, loader, model)
     entropy = 0
     ntot = 0
     for (x, y) in loader
+        predictions = []
+
         x, y = x |> gpu, y |> gpu
-        logits = model(x)
+        # Loop through each model's predictions 
+        for ensemble = 1:args.sample_size
+            logits = model(x)
+            push!(predictions, logits)
+        end
+
+        # Get the mean predictions
+        mean_preds = Flux.batch(predictions)
+        mean_predictions = mean(mean_preds, dims = ndims(mean_preds))
+        logits = dropdims(mean_predictions, dims = ndims(mean_predictions))
 
         n = size(logits)[end]
         loss += logitcrossentropy(logits, y) * n
@@ -151,7 +163,7 @@ function train(; kws...)
 
     ## Training
     # Defining the optimizer
-    opt = Nesterov(args.lr)
+    opt = ADAM(args.lr)
     ps = Flux.params(m)
 
     test(args, test_loader, m)
