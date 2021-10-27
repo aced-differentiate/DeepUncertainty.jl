@@ -1,13 +1,14 @@
 using Flux, ParameterSchedulers
 using Flux: onehotbatch, onecold, flatten
-using Flux.Losses: logitcrossentropy
-using Flux.Data: DataLoader
-using Parameters: @with_kw
-using Statistics: mean
+using Flux.Losses:logitcrossentropy
+using Flux.Data:DataLoader
+using Flux.Optimise: Optimiser, WeightDecay
+using Parameters:@with_kw
+using Statistics:mean
 using CUDA
-using ProgressMeter: @showprogress
+using ProgressMeter:@showprogress
 using Formatting
-using ParameterSchedulers: Scheduler
+using ParameterSchedulers:Scheduler
 
 using DeepUncertainty
 include("utils.jl")
@@ -20,7 +21,7 @@ end
 
 @with_kw mutable struct Args
     batchsize::Int = 128
-    lr::Float64 = 0.1
+    lr::Float64 = 3e-4
     epochs::Int = 200
     valsplit::Float64 = 0.1
     sample_size = 3
@@ -42,7 +43,7 @@ function test(args, loader, model)
     for (x, y) in loader
         x, y = x |> gpu, y |> gpu
         logits = model(x)
-        logits = softmax(logits, dims = 1)
+        logits = softmax(logits, dims=1)
 
         n = size(logits)[end]
         loss += logitcrossentropy(logits, y) * n
@@ -77,17 +78,19 @@ function train(; kws...)
     train_loader, test_loader, ood_test_loader = get_data(args)
 
     @info("Constructing Model")
-    m = ResNet18(nclasses = 10) |> gpu
+    m = ResNet18(nclasses=10) |> gpu
 
     ## Training
     # Defining the optimizer
-    # opt = Nesterov(args.lr)
+    opt = ADAM(args.lr)
+    if args.weight_decay > 0 # add weight decay, equivalent to L2 regularization
+        opt = Optimiser(WeightDecay(args.weight_decay), opt)
+    end
+
     steps_per_epoch = length(train_loader)
     steps = 5 .* steps_per_epoch
-    opt =
-        Scheduler(Cos(λ0 = 0.1, λ1 = 0., period = steps), Nesterov(args.lr))
+    # opt = Scheduler(Cos(λ0 = 0.1, λ1 = 0., period = steps), Nesterov(args.lr))
     ps = Flux.params(m)
-    sqnorm(x) = sum(abs2, x)
 
     test(args, test_loader, m)
 
@@ -95,14 +98,14 @@ function train(; kws...)
 
     # Starting to train models
     for epoch = 1:args.epochs
-        @info (format("Epoch: {} Learning rate: {}", epoch, opt.optim.eta))
+        @info (format("Epoch: {} Learning rate: {}", epoch, opt.eta))
 
         loss_fn(x, y) = logitcrossentropy(m(x), y)
 
         @showprogress for (x, y) in train_loader
             x, y = x |> gpu, y |> gpu
             gs = Flux.gradient(ps) do
-                loss_fn(x, y) + args.weight_decay * sum(sqnorm, Flux.params(m))
+                loss_fn(x, y) 
             end
             Flux.update!(opt, ps, gs)
         end
