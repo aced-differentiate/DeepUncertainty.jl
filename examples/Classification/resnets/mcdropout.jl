@@ -1,18 +1,16 @@
-using Flux, ParameterSchedulers
+using Flux
 using Flux: onehotbatch, onecold, flatten
-using Flux.Losses:logitcrossentropy
-using Flux.Data:DataLoader
-using Flux.Optimise: Optimiser, WeightDecay
-using Parameters:@with_kw
-using Statistics:mean
+using Flux.Losses: logitcrossentropy
+using Flux.Data: DataLoader
+using Parameters: @with_kw
+using Statistics: mean
 using CUDA
-using ProgressMeter:@showprogress
+using ProgressMeter: @showprogress
 using Formatting
-using ParameterSchedulers:Scheduler
 
 using DeepUncertainty
 include("utils.jl")
-include("models/vgg.jl")
+include("models/mc_resnet.jl")
 
 if CUDA.has_cuda()
     @info "CUDA is on"
@@ -24,7 +22,7 @@ end
     lr::Float64 = 0.1
     epochs::Int = 200
     valsplit::Float64 = 0.1
-    sample_size = 3
+    sample_size = 10
     complexity_constant = 1e-8
     weight_decay = 5e-4 
 end
@@ -41,14 +39,25 @@ function test(args, loader, model)
     entropy = 0
     ntot = 0
     for (x, y) in loader
+        predictions = []
         x, y = x |> gpu, y |> gpu
         logits = model(x)
-        logits = softmax(logits, dims=1)
+
+        # Loop through each model's predictions 
+        for ensemble = 1:args.sample_size
+            logits = model(x)
+            push!(predictions, logits)
+        end
+
+        # Get the mean predictions
+        mean_preds = Flux.batch(predictions)
+        mean_predictions = mean(mean_preds, dims = ndims(mean_preds))
+        logits = dropdims(mean_predictions, dims = ndims(mean_predictions))
 
         n = size(logits)[end]
         loss += logitcrossentropy(logits, y) * n
         acc += accuracy(logits, y)
-        ece += expected_calibration_error(logits |> cpu, onecold(y |> cpu), from_logits=false) * n
+        ece += expected_calibration_error(logits |> cpu, onecold(y |> cpu)) * n
         entropy += mean(calculate_entropy(logits |> cpu)) * n
         ntot += n
     end
@@ -78,19 +87,17 @@ function train(; kws...)
     train_loader, test_loader, ood_test_loader = get_data(args)
 
     @info("Constructing Model")
-    m = VGG16(nclasses=10) |> gpu
+    m = MCResNet18(nclasses = 10) |> gpu
 
     ## Training
     # Defining the optimizer
-    opt = Nesterov(args.lr)
-    # if args.weight_decay > 0 # add weight decay, equivalent to L2 regularization
-    #     opt = Optimiser(WeightDecay(args.weight_decay), opt)
-    # end
-
+    # opt = Nesterov(args.lr)
     steps_per_epoch = length(train_loader)
-    steps = args.epochs .* steps_per_epoch
-    opt = Scheduler(Cos(λ0=0.1, λ1=0., period=steps), Nesterov(args.lr))
+    steps = 5 .* steps_per_epoch
+    opt =
+        Scheduler(Cos(λ0 = 0.1, λ1 = 0., period = steps), Nesterov(args.lr))
     ps = Flux.params(m)
+    sqnorm(x) = sum(abs2, x)
 
     test(args, test_loader, m)
 
@@ -105,7 +112,7 @@ function train(; kws...)
         @showprogress for (x, y) in train_loader
             x, y = x |> gpu, y |> gpu
             gs = Flux.gradient(ps) do
-                loss_fn(x, y) 
+                loss_fn(x, y) + args.weight_decay * sum(sqnorm, Flux.params(m))
             end
             Flux.update!(opt, ps, gs)
         end

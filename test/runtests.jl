@@ -12,6 +12,10 @@ using DistributionsAD
     include("./layers/batchensemble.jl")
     # Variational layers 
     include("./layers/variational.jl")
+    # Variational Batch ensembe layers 
+    include("./layers/bayesian_be.jl")
+    # Spectral layers 
+    include("./layers/spectrallayers.jl")
 end
 
 @testset "Bayesian utils" begin

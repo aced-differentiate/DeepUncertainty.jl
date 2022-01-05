@@ -12,7 +12,7 @@ using ParameterSchedulers:Scheduler
 
 using DeepUncertainty
 include("utils.jl")
-include("models/vgg.jl")
+include("models/resnets.jl")
 
 if CUDA.has_cuda()
     @info "CUDA is on"
@@ -21,7 +21,7 @@ end
 
 @with_kw mutable struct Args
     batchsize::Int = 128
-    lr::Float64 = 0.1
+    lr::Float64 = 3e-4
     epochs::Int = 200
     valsplit::Float64 = 0.1
     sample_size = 3
@@ -78,18 +78,18 @@ function train(; kws...)
     train_loader, test_loader, ood_test_loader = get_data(args)
 
     @info("Constructing Model")
-    m = VGG16(nclasses=10) |> gpu
+    m = ResNet18(nclasses=10) |> gpu
 
     ## Training
     # Defining the optimizer
-    opt = Nesterov(args.lr)
-    # if args.weight_decay > 0 # add weight decay, equivalent to L2 regularization
-    #     opt = Optimiser(WeightDecay(args.weight_decay), opt)
-    # end
+    opt = ADAM(args.lr)
+    if args.weight_decay > 0 # add weight decay, equivalent to L2 regularization
+        opt = Optimiser(WeightDecay(args.weight_decay), opt)
+    end
 
     steps_per_epoch = length(train_loader)
-    steps = args.epochs .* steps_per_epoch
-    opt = Scheduler(Cos(λ0=0.1, λ1=0., period=steps), Nesterov(args.lr))
+    steps = 5 .* steps_per_epoch
+    # opt = Scheduler(Cos(λ0 = 0.1, λ1 = 0., period = steps), Nesterov(args.lr))
     ps = Flux.params(m)
 
     test(args, test_loader, m)
@@ -98,7 +98,7 @@ function train(; kws...)
 
     # Starting to train models
     for epoch = 1:args.epochs
-        @info (format("Epoch: {} Learning rate: {}", epoch, opt.optim.eta))
+        @info (format("Epoch: {} Learning rate: {}", epoch, opt.eta))
 
         loss_fn(x, y) = logitcrossentropy(m(x), y)
 

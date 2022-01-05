@@ -67,11 +67,15 @@ function VariationalConv(
     stride = Flux.expand(Val(N), stride)
     dilation = Flux.expand(Val(N), dilation)
     pad = Flux.calc_padding(VariationalConv, pad, size(weight)[1:N], dilation, stride)
-    bias = create_bias(weight, bias, size(weight, N + 2))
     # Distribution from which weights are sampled 
     weight_sampler = weight_dist((k..., ch...), init = init, device = device)
     # Distribution from which biases are sampled 
-    bias_sampler = bias_dist(size(bias), init = init, device = device)
+    if bias
+        bias = create_bias(weight, bias, size(weight, N + 2))
+        bias_sampler = bias_dist(size(bias), init = init, device = device)
+    else
+        bias_sampler = () -> Flux.Zeros()
+    end
     return VariationalConv(σ, weight_sampler, bias_sampler, stride, pad, dilation, groups)
 end
 
