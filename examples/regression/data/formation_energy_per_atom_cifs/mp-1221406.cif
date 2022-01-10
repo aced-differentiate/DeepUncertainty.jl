@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_NaEuF4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.23924900
+_cell_length_b   7.21567860
+_cell_length_c   7.25662984
+_cell_angle_alpha   95.83366472
+_cell_angle_beta   115.40792368
+_cell_angle_gamma   115.43252738
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaEuF4
+_chemical_formula_sum   'Na3 Eu3 F12'
+_cell_volume   249.59583019
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.24692100  0.91391200  0.57937900  1
+  Na  Na1  1  0.34243900  0.67889600  0.99736300  1
+  Na  Na2  1  0.83306800  0.16625100  0.51104400  1
+  Eu  Eu3  1  0.00197000  0.00135600  0.00225600  1
+  Eu  Eu4  1  0.50420900  0.50505000  0.50408900  1
+  Eu  Eu5  1  0.74563500  0.41182400  0.08057000  1
+  F  F6  1  0.90418700  0.62713700  0.87562400  1
+  F  F7  1  0.38424800  0.13501600  0.37097500  1
+  F  F8  1  0.50415000  0.74222800  0.76010300  1
+  F  F9  1  0.99083900  0.23595700  0.26457400  1
+  F  F10  1  0.36517300  0.38833300  0.11239200  1
+  F  F11  1  0.85812900  0.88381500  0.62500200  1
+  F  F12  1  0.24997600  0.65364600  0.29850900  1
+  F  F13  1  0.79038100  0.19420700  0.84232200  1
+  F  F14  1  0.39471100  0.03862600  0.99267700  1
+  F  F15  1  0.85754400  0.50318300  0.45310800  1
+  F  F16  1  0.82667100  0.77363600  0.17832100  1
+  F  F17  1  0.36574900  0.31292800  0.71769400  1

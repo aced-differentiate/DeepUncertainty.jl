@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Pr3Mn2Sb3O14
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.40926973
+_cell_length_b   7.40926973
+_cell_length_c   7.40926932
+_cell_angle_alpha   61.84083503
+_cell_angle_beta   61.84083503
+_cell_angle_gamma   61.84083553
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pr3Mn2Sb3O14
+_chemical_formula_sum   'Pr3 Mn2 Sb3 O14'
+_cell_volume   299.47091656
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.50000000  0.50000000  0.00000000  1
+  Pr  Pr1  1  0.00000000  0.50000000  0.50000000  1
+  Pr  Pr2  1  0.50000000  0.00000000  0.50000000  1
+  Mn  Mn3  1  0.00000000  0.00000000  0.00000000  1
+  Mn  Mn4  1  0.50000000  0.50000000  0.50000000  1
+  Sb  Sb5  1  0.00000000  0.00000000  0.50000000  1
+  Sb  Sb6  1  0.50000000  0.00000000  0.00000000  1
+  Sb  Sb7  1  0.00000000  0.50000000  0.00000000  1
+  O  O8  1  0.61518600  0.61518600  0.61518600  1
+  O  O9  1  0.38481400  0.38481400  0.38481400  1
+  O  O10  1  0.31957800  0.92021100  0.31957800  1
+  O  O11  1  0.31957800  0.31957800  0.92021100  1
+  O  O12  1  0.92021100  0.31957800  0.31957800  1
+  O  O13  1  0.68042200  0.07978900  0.68042200  1
+  O  O14  1  0.68042200  0.68042200  0.07978900  1
+  O  O15  1  0.07978900  0.68042200  0.68042200  1
+  O  O16  1  0.90935800  0.35357800  0.90935800  1
+  O  O17  1  0.90935800  0.90935800  0.35357800  1
+  O  O18  1  0.35357800  0.90935800  0.90935800  1
+  O  O19  1  0.09064200  0.64642200  0.09064200  1
+  O  O20  1  0.09064200  0.09064200  0.64642200  1
+  O  O21  1  0.64642200  0.09064200  0.09064200  1

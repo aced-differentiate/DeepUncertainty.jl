@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_CsVFeF6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.55844138
+_cell_length_b   7.55844138
+_cell_length_c   7.55844138
+_cell_angle_alpha   121.15435410
+_cell_angle_beta   119.44439351
+_cell_angle_gamma   89.48868368
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsVFeF6
+_chemical_formula_sum   'Cs2 V2 Fe2 F12'
+_cell_volume   303.85829826
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.37393400  0.62393400  0.75000000  1
+  Cs  Cs1  1  0.62606600  0.37606600  0.25000000  1
+  V  V2  1  0.00000000  0.00000000  0.00000000  1
+  V  V3  1  0.50000000  0.00000000  0.50000000  1
+  Fe  Fe4  1  0.00000000  0.00000000  0.50000000  1
+  Fe  Fe5  1  0.00000000  0.50000000  0.00000000  1
+  F  F6  1  0.31631900  0.06631900  0.25000000  1
+  F  F7  1  0.92504600  0.67504600  0.25000000  1
+  F  F8  1  0.33198500  0.68958600  0.26404300  1
+  F  F9  1  0.92554300  0.06794300  0.23595700  1
+  F  F10  1  0.33198500  0.06794300  0.64240000  1
+  F  F11  1  0.92554300  0.68958600  0.85760000  1
+  F  F12  1  0.68368100  0.93368100  0.75000000  1
+  F  F13  1  0.07495400  0.32495400  0.75000000  1
+  F  F14  1  0.66801500  0.31041400  0.73595700  1
+  F  F15  1  0.07445700  0.93205700  0.76404300  1
+  F  F16  1  0.66801500  0.93205700  0.35760000  1
+  F  F17  1  0.07445700  0.31041400  0.14240000  1

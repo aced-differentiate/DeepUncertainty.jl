@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_YMn2SiGe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.99960712
+_cell_length_b   5.99960712
+_cell_length_c   5.99960712
+_cell_angle_alpha   141.99594008
+_cell_angle_beta   141.99594008
+_cell_angle_gamma   54.83491522
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   YMn2SiGe
+_chemical_formula_sum   'Y1 Mn2 Si1 Ge1'
+_cell_volume   81.29347357
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  1  0.99763500  0.99763500  0.00000000  1
+  Mn  Mn1  1  0.75405500  0.25405500  0.50000000  1
+  Mn  Mn2  1  0.25405500  0.75405500  0.50000000  1
+  Si  Si3  1  0.37768900  0.37768900  0.00000000  1
+  Ge  Ge4  1  0.61656700  0.61656700  0.00000000  1

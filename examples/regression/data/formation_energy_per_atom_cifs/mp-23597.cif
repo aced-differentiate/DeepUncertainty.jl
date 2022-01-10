@@ -1,0 +1,43 @@
+# generated using pymatgen
+data_Sr4Mn3(ClO4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.91953792
+_cell_length_b   3.91953769
+_cell_length_c   16.67171115
+_cell_angle_alpha   96.75076295
+_cell_angle_beta   96.75076133
+_cell_angle_gamma   89.99999481
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr4Mn3(ClO4)2
+_chemical_formula_sum   'Sr4 Mn3 Cl2 O8'
+_cell_volume   252.55982271
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.67802900  0.67802800  0.35605600  1
+  Sr  Sr1  1  0.32197300  0.32197200  0.64394400  1
+  Sr  Sr2  1  0.55708300  0.55708100  0.11416500  1
+  Sr  Sr3  1  0.44291700  0.44291800  0.88583400  1
+  Mn  Mn4  1  0.00000000  0.00000000  0.00000000  1
+  Mn  Mn5  1  0.88035400  0.88035400  0.76070700  1
+  Mn  Mn6  1  0.11964800  0.11964600  0.23929300  1
+  Cl  Cl7  1  0.21450200  0.21450400  0.42900500  1
+  Cl  Cl8  1  0.78549700  0.78549800  0.57099500  1
+  O  O9  1  0.12882000  0.62882000  0.25764100  1
+  O  O10  1  0.37118100  0.87117900  0.74235900  1
+  O  O11  1  0.99999900  0.49999900  0.00000000  1
+  O  O12  1  0.50000100  0.00000000  0.00000000  1
+  O  O13  1  0.62882100  0.12882000  0.25764100  1
+  O  O14  1  0.05988100  0.05988300  0.11976400  1
+  O  O15  1  0.87118000  0.37118000  0.74235900  1
+  O  O16  1  0.94011900  0.94011900  0.88023600  1

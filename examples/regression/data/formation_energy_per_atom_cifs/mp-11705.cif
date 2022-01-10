@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_Dy2Fe2Si2C
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.62642196
+_cell_length_b   5.62642196
+_cell_length_c   6.72257532
+_cell_angle_alpha   53.47164392
+_cell_angle_beta   53.47164392
+_cell_angle_gamma   40.80175094
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Dy2Fe2Si2C
+_chemical_formula_sum   'Dy2 Fe2 Si2 C1'
+_cell_volume   107.42100168
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.94094600  0.94094600  0.79362300  1
+  Dy  Dy1  1  0.05905400  0.05905400  0.20637700  1
+  Fe  Fe2  1  0.70108300  0.70108300  0.40454300  1
+  Fe  Fe3  1  0.29891700  0.29891700  0.59545700  1
+  Si  Si4  1  0.33785700  0.33785700  0.21690400  1
+  Si  Si5  1  0.66214300  0.66214300  0.78309600  1
+  C  C6  1  0.50000000  0.50000000  0.50000000  1

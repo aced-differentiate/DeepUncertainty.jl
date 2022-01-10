@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Ho5Ir2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.48531200
+_cell_length_b   7.17022859
+_cell_length_c   8.45997631
+_cell_angle_alpha   96.29114780
+_cell_angle_beta   112.53785463
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho5Ir2
+_chemical_formula_sum   'Ho10 Ir4'
+_cell_volume   360.78722409
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.96972200  0.91828100  0.18177100  1
+  Ho  Ho1  1  0.78795200  0.58171900  0.81822900  1
+  Ho  Ho2  1  0.03027800  0.08171900  0.81822900  1
+  Ho  Ho3  1  0.21204800  0.41828100  0.18177100  1
+  Ho  Ho4  1  0.65400500  0.81864700  0.44243400  1
+  Ho  Ho5  1  0.21157100  0.68135300  0.55756600  1
+  Ho  Ho6  1  0.34599500  0.18135300  0.55756600  1
+  Ho  Ho7  1  0.78842900  0.31864700  0.44243400  1
+  Ho  Ho8  1  0.42729100  0.75000000  0.00000000  1
+  Ho  Ho9  1  0.57270900  0.25000000  0.00000000  1
+  Ir  Ir10  1  0.82720400  0.57336200  0.21895800  1
+  Ir  Ir11  1  0.60824700  0.92663800  0.78104200  1
+  Ir  Ir12  1  0.17279600  0.42663800  0.78104200  1
+  Ir  Ir13  1  0.39175300  0.07336200  0.21895800  1

@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_EuCdGe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.57988400
+_cell_length_b   7.59749600
+_cell_length_c   8.62032500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuCdGe
+_chemical_formula_sum   'Eu4 Cd4 Ge4'
+_cell_volume   299.94981478
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.25000000  0.01896500  0.31092800  1
+  Eu  Eu1  1  0.25000000  0.51896500  0.18907200  1
+  Eu  Eu2  1  0.75000000  0.98103500  0.68907200  1
+  Eu  Eu3  1  0.75000000  0.48103500  0.81092800  1
+  Cd  Cd4  1  0.25000000  0.14916900  0.93107300  1
+  Cd  Cd5  1  0.25000000  0.64916900  0.56892700  1
+  Cd  Cd6  1  0.75000000  0.85083100  0.06892700  1
+  Cd  Cd7  1  0.75000000  0.35083100  0.43107300  1
+  Ge  Ge8  1  0.25000000  0.26250500  0.60764400  1
+  Ge  Ge9  1  0.25000000  0.76250500  0.89235600  1
+  Ge  Ge10  1  0.75000000  0.73749500  0.39235600  1
+  Ge  Ge11  1  0.75000000  0.23749500  0.10764400  1

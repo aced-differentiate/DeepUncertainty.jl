@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Zr5CoSb3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.79011400
+_cell_length_b   8.64871087
+_cell_length_c   8.64871087
+_cell_angle_alpha   119.99999137
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Zr5CoSb3
+_chemical_formula_sum   'Zr10 Co2 Sb6'
+_cell_volume   375.07709320
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.75000000  0.74987000  0.74987000  1
+  Zr  Zr1  1  0.25000000  0.25013000  0.25013000  1
+  Zr  Zr2  1  0.75000000  0.00000000  0.25013000  1
+  Zr  Zr3  1  0.25000000  0.00000000  0.74987000  1
+  Zr  Zr4  1  0.75000000  0.25013000  0.00000000  1
+  Zr  Zr5  1  0.25000000  0.74987000  0.00000000  1
+  Zr  Zr6  1  0.00000000  0.66666700  0.33333300  1
+  Zr  Zr7  1  0.00000000  0.33333300  0.66666700  1
+  Zr  Zr8  1  0.50000000  0.33333300  0.66666700  1
+  Zr  Zr9  1  0.50000000  0.66666700  0.33333300  1
+  Co  Co10  1  0.00000000  0.00000000  0.00000000  1
+  Co  Co11  1  0.50000000  0.00000000  0.00000000  1
+  Sb  Sb12  1  0.75000000  0.39017700  0.39017700  1
+  Sb  Sb13  1  0.25000000  0.60982300  0.60982300  1
+  Sb  Sb14  1  0.75000000  0.00000000  0.60982300  1
+  Sb  Sb15  1  0.25000000  0.00000000  0.39017700  1
+  Sb  Sb16  1  0.75000000  0.60982300  0.00000000  1
+  Sb  Sb17  1  0.25000000  0.39017700  0.00000000  1

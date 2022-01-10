@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_FeCoP
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.52703400
+_cell_length_b   5.71155900
+_cell_length_c   6.52526600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   FeCoP
+_chemical_formula_sum   'Fe4 Co4 P4'
+_cell_volume   131.45058821
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  1  0.25000000  0.03023800  0.16187700  1
+  Fe  Fe1  1  0.25000000  0.53023800  0.33812300  1
+  Fe  Fe2  1  0.75000000  0.96976200  0.83812300  1
+  Fe  Fe3  1  0.75000000  0.46976200  0.66187700  1
+  Co  Co4  1  0.25000000  0.13910600  0.56789000  1
+  Co  Co5  1  0.25000000  0.63910600  0.93211000  1
+  Co  Co6  1  0.75000000  0.86089400  0.43211000  1
+  Co  Co7  1  0.75000000  0.36089400  0.06789000  1
+  P  P8  1  0.25000000  0.75707200  0.61871900  1
+  P  P9  1  0.25000000  0.25707200  0.88128100  1
+  P  P10  1  0.75000000  0.24292800  0.38128100  1
+  P  P11  1  0.75000000  0.74292800  0.11871900  1

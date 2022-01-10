@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_ThTaN3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.69209000
+_cell_length_b   5.76957000
+_cell_length_c   8.08573700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ThTaN3
+_chemical_formula_sum   'Th4 Ta4 N12'
+_cell_volume   265.54297486
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Th  Th0  1  0.50559300  0.54319700  0.25000000  1
+  Th  Th1  1  0.99440700  0.04319700  0.25000000  1
+  Th  Th2  1  0.49440700  0.45680300  0.75000000  1
+  Th  Th3  1  0.00559300  0.95680300  0.75000000  1
+  Ta  Ta4  1  0.00000000  0.50000000  0.00000000  1
+  Ta  Ta5  1  0.50000000  0.00000000  0.50000000  1
+  Ta  Ta6  1  0.00000000  0.50000000  0.50000000  1
+  Ta  Ta7  1  0.50000000  0.00000000  0.00000000  1
+  N  N8  1  0.40959900  0.97826100  0.25000000  1
+  N  N9  1  0.09040100  0.47826100  0.25000000  1
+  N  N10  1  0.59040100  0.02173900  0.75000000  1
+  N  N11  1  0.90959900  0.52173900  0.75000000  1
+  N  N12  1  0.79939200  0.80084700  0.04713500  1
+  N  N13  1  0.70060800  0.30084700  0.45286500  1
+  N  N14  1  0.20060800  0.19915300  0.54713500  1
+  N  N15  1  0.29939200  0.69915300  0.95286500  1
+  N  N16  1  0.20060800  0.19915300  0.95286500  1
+  N  N17  1  0.29939200  0.69915300  0.54713500  1
+  N  N18  1  0.79939200  0.80084700  0.45286500  1
+  N  N19  1  0.70060800  0.30084700  0.04713500  1

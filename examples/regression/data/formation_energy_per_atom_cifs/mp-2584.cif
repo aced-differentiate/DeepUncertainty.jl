@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_TbFe3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.64857394
+_cell_length_b   8.64857394
+_cell_length_c   8.64857398
+_cell_angle_alpha   34.37994378
+_cell_angle_beta   34.37994378
+_cell_angle_gamma   34.37994534
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbFe3
+_chemical_formula_sum   'Tb3 Fe9'
+_cell_volume   183.98079264
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.00000000  0.00000000  0.00000000  1
+  Tb  Tb1  1  0.14186900  0.14186900  0.14186900  1
+  Tb  Tb2  1  0.85813100  0.85813100  0.85813100  1
+  Fe  Fe3  1  0.50000000  0.50000000  0.50000000  1
+  Fe  Fe4  1  0.33269500  0.33269500  0.33269500  1
+  Fe  Fe5  1  0.66730500  0.66730500  0.66730500  1
+  Fe  Fe6  1  0.08238000  0.58052800  0.58052800  1
+  Fe  Fe7  1  0.58052800  0.58052800  0.08238000  1
+  Fe  Fe8  1  0.58052800  0.08238000  0.58052800  1
+  Fe  Fe9  1  0.41947200  0.91762000  0.41947200  1
+  Fe  Fe10  1  0.91762000  0.41947200  0.41947200  1
+  Fe  Fe11  1  0.41947200  0.41947200  0.91762000  1

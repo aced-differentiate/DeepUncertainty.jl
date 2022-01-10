@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Pr3CoGe2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.27349500
+_cell_length_b   11.69460000
+_cell_length_c   12.01071600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pr3CoGe2
+_chemical_formula_sum   'Pr12 Co4 Ge8'
+_cell_volume   600.25732707
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.25000000  0.05600300  0.87940800  1
+  Pr  Pr1  1  0.25000000  0.44399700  0.37940800  1
+  Pr  Pr2  1  0.75000000  0.94399700  0.12059200  1
+  Pr  Pr3  1  0.75000000  0.55600300  0.62059200  1
+  Pr  Pr4  1  0.25000000  0.13037200  0.55471000  1
+  Pr  Pr5  1  0.25000000  0.36962800  0.05471000  1
+  Pr  Pr6  1  0.75000000  0.86962800  0.44529000  1
+  Pr  Pr7  1  0.75000000  0.63037200  0.94529000  1
+  Pr  Pr8  1  0.25000000  0.79962500  0.71855700  1
+  Pr  Pr9  1  0.25000000  0.70037500  0.21855700  1
+  Pr  Pr10  1  0.75000000  0.20037500  0.28144300  1
+  Pr  Pr11  1  0.75000000  0.29962500  0.78144300  1
+  Co  Co12  1  0.25000000  0.36740300  0.63462800  1
+  Co  Co13  1  0.25000000  0.13259700  0.13462800  1
+  Co  Co14  1  0.75000000  0.63259700  0.36537200  1
+  Co  Co15  1  0.75000000  0.86740300  0.86537200  1
+  Ge  Ge16  1  0.25000000  0.81836700  0.97387000  1
+  Ge  Ge17  1  0.25000000  0.68163300  0.47387000  1
+  Ge  Ge18  1  0.75000000  0.18163300  0.02613000  1
+  Ge  Ge19  1  0.75000000  0.31836700  0.52613000  1
+  Ge  Ge20  1  0.25000000  0.49424500  0.80643600  1
+  Ge  Ge21  1  0.25000000  0.00575500  0.30643600  1
+  Ge  Ge22  1  0.75000000  0.50575500  0.19356400  1
+  Ge  Ge23  1  0.75000000  0.99424500  0.69356400  1

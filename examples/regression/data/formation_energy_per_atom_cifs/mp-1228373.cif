@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Ba3Cu17AgP6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.19801562
+_cell_length_b   9.19801562
+_cell_length_c   10.50970219
+_cell_angle_alpha   58.41379102
+_cell_angle_beta   58.41379102
+_cell_angle_gamma   36.67211885
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba3Cu17AgP6
+_chemical_formula_sum   'Ba3 Cu17 Ag1 P6'
+_cell_volume   442.87254501
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.50000000  0.50000000  0.00000000  1
+  Ba  Ba1  1  0.83368700  0.83368700  0.99948400  1
+  Ba  Ba2  1  0.16631300  0.16631300  0.00051600  1
+  Cu  Cu3  1  0.44278400  0.94290300  0.67140600  1
+  Cu  Cu4  1  0.76680600  0.28880100  0.67828600  1
+  Cu  Cu5  1  0.11403200  0.59262800  0.67829000  1
+  Cu  Cu6  1  0.94290300  0.44278400  0.67140600  1
+  Cu  Cu7  1  0.28880100  0.76680600  0.67828600  1
+  Cu  Cu8  1  0.59262800  0.11403200  0.67829000  1
+  Cu  Cu9  1  0.55721600  0.05709700  0.32859400  1
+  Cu  Cu10  1  0.88596800  0.40737200  0.32171000  1
+  Cu  Cu11  1  0.23319400  0.71119900  0.32171400  1
+  Cu  Cu12  1  0.05709700  0.55721600  0.32859400  1
+  Cu  Cu13  1  0.40737200  0.88596800  0.32171000  1
+  Cu  Cu14  1  0.71119900  0.23319400  0.32171400  1
+  Cu  Cu15  1  0.16831300  0.16831300  0.49997700  1
+  Cu  Cu16  1  0.50000000  0.50000000  0.50000000  1
+  Cu  Cu17  1  0.83168700  0.83168700  0.50002300  1
+  Cu  Cu18  1  0.66724600  0.66724600  0.50001600  1
+  Cu  Cu19  1  0.33275400  0.33275400  0.49998400  1
+  Ag  Ag20  1  0.00000000  0.00000000  0.50000000  1
+  P  P21  1  0.06872700  0.06872700  0.79465900  1
+  P  P22  1  0.40165000  0.40165000  0.79474300  1
+  P  P23  1  0.73462400  0.73462400  0.79472600  1
+  P  P24  1  0.26537600  0.26537600  0.20527400  1
+  P  P25  1  0.59835000  0.59835000  0.20525700  1
+  P  P26  1  0.93127300  0.93127300  0.20534100  1

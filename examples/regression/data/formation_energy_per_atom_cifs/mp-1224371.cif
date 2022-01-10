@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_GeAsAu
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.94338068
+_cell_length_b   4.94338068
+_cell_length_c   6.41585875
+_cell_angle_alpha   68.76417649
+_cell_angle_beta   68.76417649
+_cell_angle_gamma   79.98644850
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GeAsAu
+_chemical_formula_sum   'Ge2 As2 Au2'
+_cell_volume   136.05069802
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ge  Ge0  1  0.93378200  0.19297400  0.33006200  1
+  Ge  Ge1  1  0.30702600  0.56621800  0.16993800  1
+  As  As2  1  0.06398800  0.80820000  0.66386200  1
+  As  As3  1  0.69180000  0.43601200  0.83613800  1
+  Au  Au4  1  0.50325900  0.49985500  0.49706400  1
+  Au  Au5  1  0.00014500  0.99674100  0.00293600  1

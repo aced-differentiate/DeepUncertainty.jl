@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_MnH6(NCl)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.86215794
+_cell_length_b   5.86215794
+_cell_length_c   3.82911084
+_cell_angle_alpha   88.68909520
+_cell_angle_beta   88.68909520
+_cell_angle_gamma   90.23387337
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MnH6(NCl)2
+_chemical_formula_sum   'Mn1 H6 N2 Cl2'
+_cell_volume   131.51672810
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  1  0.00083600  0.99916400  0.00000000  1
+  H  H1  1  0.60053200  0.79696000  0.20207100  1
+  H  H2  1  0.20304000  0.39946800  0.79792900  1
+  H  H3  1  0.64528200  0.71422700  0.80289900  1
+  H  H4  1  0.41477800  0.22472700  0.87396400  1
+  H  H5  1  0.28577300  0.35471800  0.19710100  1
+  H  H6  1  0.77527300  0.58522200  0.12603600  1
+  N  N7  1  0.25730000  0.27393800  0.96741500  1
+  N  N8  1  0.72606200  0.74270000  0.03258500  1
+  Cl  Cl9  1  0.21698900  0.78301100  0.50000000  1
+  Cl  Cl10  1  0.78413500  0.21586500  0.50000000  1

@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Te16(Mo3Ru)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.14848100
+_cell_length_b   9.82972815
+_cell_length_c   10.34748548
+_cell_angle_alpha   90.49207761
+_cell_angle_beta   90.23960509
+_cell_angle_gamma   95.26270761
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Te16(Mo3Ru)3
+_chemical_formula_sum   'Te16 Mo9 Ru3'
+_cell_volume   723.99252709
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Te  Te0  1  0.78378200  0.78408700  0.99762600  1
+  Te  Te1  1  0.78496400  0.29303600  0.49529500  1
+  Te  Te2  1  0.20525100  0.20574500  0.99852300  1
+  Te  Te3  1  0.20760400  0.70519300  0.49763900  1
+  Te  Te4  1  0.61978700  0.57542700  0.70098200  1
+  Te  Te5  1  0.61829600  0.07667100  0.19651400  1
+  Te  Te6  1  0.88065000  0.44580000  0.17193000  1
+  Te  Te7  1  0.88378000  0.94329600  0.67924500  1
+  Te  Te8  1  0.26413000  0.75012100  0.12518000  1
+  Te  Te9  1  0.26412100  0.25152900  0.62542600  1
+  Te  Te10  1  0.37661100  0.42670100  0.31238100  1
+  Te  Te11  1  0.37776800  0.92780800  0.81318700  1
+  Te  Te12  1  0.12096400  0.55668700  0.82064000  1
+  Te  Te13  1  0.12463600  0.05602300  0.31976200  1
+  Te  Te14  1  0.73943500  0.25215400  0.87232500  1
+  Te  Te15  1  0.73774300  0.74915900  0.37092600  1
+  Mo  Mo16  1  0.75946300  0.02222700  0.43757700  1
+  Mo  Mo17  1  0.58364600  0.60233500  0.15165700  1
+  Mo  Mo18  1  0.58414500  0.10362600  0.64965000  1
+  Mo  Mo19  1  0.54448100  0.32958700  0.08378800  1
+  Mo  Mo20  1  0.54445500  0.83057700  0.58527800  1
+  Mo  Mo21  1  0.24831500  0.47758100  0.06632400  1
+  Mo  Mo22  1  0.24826900  0.97987800  0.56562400  1
+  Mo  Mo23  1  0.41455400  0.39419400  0.85203800  1
+  Mo  Mo24  1  0.41680700  0.89490700  0.35053400  1
+  Ru  Ru25  1  0.45248800  0.67121300  0.91391000  1
+  Ru  Ru26  1  0.45304900  0.17282500  0.41342500  1
+  Ru  Ru27  1  0.76080400  0.52161500  0.93261400  1

@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_K2Cu(ClF)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.11328527
+_cell_length_b   8.11328527
+_cell_length_c   6.33734200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   134.01552903
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   K2Cu(ClF)2
+_chemical_formula_sum   'K4 Cu2 Cl4 F4'
+_cell_volume   299.99984290
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.12340400  0.87659600  0.50000000  1
+  K  K1  1  0.62340400  0.37659600  0.00000000  1
+  K  K2  1  0.87659600  0.12340400  0.50000000  1
+  K  K3  1  0.37659600  0.62340400  0.00000000  1
+  Cu  Cu4  1  0.00000000  0.00000000  0.00000000  1
+  Cu  Cu5  1  0.50000000  0.50000000  0.50000000  1
+  Cl  Cl6  1  0.15615700  0.84384300  0.00000000  1
+  Cl  Cl7  1  0.84384300  0.15615700  0.00000000  1
+  Cl  Cl8  1  0.65615700  0.34384300  0.50000000  1
+  Cl  Cl9  1  0.34384300  0.65615700  0.50000000  1
+  F  F10  1  0.21416500  0.21416500  0.21419700  1
+  F  F11  1  0.78583500  0.78583500  0.78580300  1
+  F  F12  1  0.71416500  0.71416500  0.28580300  1
+  F  F13  1  0.28583500  0.28583500  0.71419700  1

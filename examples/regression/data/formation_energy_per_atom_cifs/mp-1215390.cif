@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_Zr4Br4O
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   19.71743879
+_cell_length_b   19.71743879
+_cell_length_c   19.71743841
+_cell_angle_alpha   10.51248496
+_cell_angle_beta   10.51248496
+_cell_angle_gamma   10.51248617
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Zr4Br4O
+_chemical_formula_sum   'Zr4 Br4 O1'
+_cell_volume   221.60800216
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.89689300  0.89689300  0.89689300  1
+  Zr  Zr1  1  0.39531100  0.39531100  0.39531100  1
+  Zr  Zr2  1  0.60326100  0.60326100  0.60326100  1
+  Zr  Zr3  1  0.10416200  0.10416200  0.10416200  1
+  Br  Br4  1  0.30172400  0.30172400  0.30172400  1
+  Br  Br5  1  0.80441100  0.80441100  0.80441100  1
+  Br  Br6  1  0.19841900  0.19841900  0.19841900  1
+  Br  Br7  1  0.69639900  0.69639900  0.69639900  1
+  O  O8  1  0.43192100  0.43192100  0.43192100  1

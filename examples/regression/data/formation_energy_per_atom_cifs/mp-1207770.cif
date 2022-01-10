@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Y5BiPt2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.89678495
+_cell_length_b   8.89678495
+_cell_length_c   8.89678495
+_cell_angle_alpha   127.89362720
+_cell_angle_beta   127.89362720
+_cell_angle_gamma   76.79741123
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Y5BiPt2
+_chemical_formula_sum   'Y10 Bi2 Pt4'
+_cell_volume   425.84189851
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  1  0.00000000  0.00000000  0.00000000  1
+  Y  Y1  1  0.50000000  0.50000000  0.00000000  1
+  Y  Y2  1  0.79290600  0.29290600  0.81256100  1
+  Y  Y3  1  0.20709400  0.70709400  0.18743900  1
+  Y  Y4  1  0.48034500  0.98034500  0.18743900  1
+  Y  Y5  1  0.29290600  0.48034500  0.50000000  1
+  Y  Y6  1  0.01965500  0.20709400  0.50000000  1
+  Y  Y7  1  0.51965500  0.01965500  0.81256100  1
+  Y  Y8  1  0.70709400  0.51965500  0.50000000  1
+  Y  Y9  1  0.98034500  0.79290600  0.50000000  1
+  Bi  Bi10  1  0.25000000  0.25000000  0.00000000  1
+  Bi  Bi11  1  0.75000000  0.75000000  0.00000000  1
+  Pt  Pt12  1  0.13833800  0.63833800  0.77667700  1
+  Pt  Pt13  1  0.86166200  0.36166200  0.22332300  1
+  Pt  Pt14  1  0.63833800  0.86166200  0.50000000  1
+  Pt  Pt15  1  0.36166200  0.13833800  0.50000000  1

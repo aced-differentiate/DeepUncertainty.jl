@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_Mg4B3Ir2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.93113727
+_cell_length_b   4.93113727
+_cell_length_c   6.89010196
+_cell_angle_alpha   68.51501636
+_cell_angle_beta   68.51501636
+_cell_angle_gamma   58.76069247
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Mg4B3Ir2
+_chemical_formula_sum   'Mg4 B3 Ir2'
+_cell_volume   129.98047339
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mg  Mg0  1  0.29978000  0.31235800  0.84256900  1
+  Mg  Mg1  1  0.68764200  0.70022000  0.15743100  1
+  Mg  Mg2  1  0.29392000  0.30664600  0.35665600  1
+  Mg  Mg3  1  0.69335400  0.70608000  0.64334400  1
+  B  B4  1  0.65953800  0.34046200  0.00000000  1
+  B  B5  1  0.31104000  0.68896000  0.00000000  1
+  B  B6  1  0.92564600  0.07435400  0.50000000  1
+  Ir  Ir7  1  0.99134100  0.03226000  0.78164900  1
+  Ir  Ir8  1  0.96774000  0.00865900  0.21835100  1

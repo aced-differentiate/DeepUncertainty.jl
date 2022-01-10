@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_La2CoNiO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.42741630
+_cell_length_b   5.42741630
+_cell_length_c   5.42741624
+_cell_angle_alpha   61.60239341
+_cell_angle_beta   61.60239341
+_cell_angle_gamma   61.60238939
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   La2CoNiO6
+_chemical_formula_sum   'La2 Co1 Ni1 O6'
+_cell_volume   117.11177299
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.25130000  0.25130000  0.25130000  1
+  La  La1  1  0.74870000  0.74870000  0.74870000  1
+  Co  Co2  1  0.50000000  0.50000000  0.50000000  1
+  Ni  Ni3  1  0.00000000  0.00000000  0.00000000  1
+  O  O4  1  0.67418000  0.80596800  0.26577700  1
+  O  O5  1  0.26577700  0.67418000  0.80596800  1
+  O  O6  1  0.80596800  0.26577700  0.67418000  1
+  O  O7  1  0.73422300  0.32582000  0.19403200  1
+  O  O8  1  0.19403200  0.73422300  0.32582000  1
+  O  O9  1  0.32582000  0.19403200  0.73422300  1

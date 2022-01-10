@@ -1,0 +1,51 @@
+# generated using pymatgen
+data_Ba4Cu11(Te4S)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.35640700
+_cell_length_b   9.67995500
+_cell_length_c   14.24103488
+_cell_angle_alpha   89.97990368
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba4Cu11(Te4S)2
+_chemical_formula_sum   'Ba4 Cu11 Te8 S2'
+_cell_volume   600.54189339
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.50000000  0.47762500  0.66424600  1
+  Ba  Ba1  1  0.50000000  0.52453800  0.33976300  1
+  Ba  Ba2  1  0.50000000  0.97654600  0.84272700  1
+  Ba  Ba3  1  0.50000000  0.02474700  0.15747200  1
+  Cu  Cu4  1  0.50000000  0.11815100  0.59203400  1
+  Cu  Cu5  1  0.50000000  0.88121400  0.40840200  1
+  Cu  Cu6  1  0.50000000  0.60990400  0.90652700  1
+  Cu  Cu7  1  0.50000000  0.38167100  0.09253100  1
+  Cu  Cu8  1  0.00000000  0.24909600  0.51376500  1
+  Cu  Cu9  1  0.00000000  0.75127400  0.48656000  1
+  Cu  Cu10  1  0.00000000  0.75154500  0.98733600  1
+  Cu  Cu11  1  0.00000000  0.25462500  0.00419500  1
+  Cu  Cu12  1  0.00000000  0.52305400  0.08263300  1
+  Cu  Cu13  1  0.00000000  0.97541100  0.58978400  1
+  Cu  Cu14  1  0.00000000  0.02511900  0.41075200  1
+  Te  Te15  1  0.00000000  0.19326700  0.69960900  1
+  Te  Te16  1  0.00000000  0.80784700  0.30075700  1
+  Te  Te17  1  0.00000000  0.68643300  0.80824300  1
+  Te  Te18  1  0.00000000  0.30924200  0.19708700  1
+  Te  Te19  1  0.50000000  0.33188500  0.91114800  1
+  Te  Te20  1  0.50000000  0.67587900  0.09195000  1
+  Te  Te21  1  0.50000000  0.82246900  0.59337500  1
+  Te  Te22  1  0.50000000  0.17741900  0.40635200  1
+  S  S23  1  0.00000000  0.50009800  0.50047300  1
+  S  S24  1  0.00000000  0.99835300  0.00236700  1

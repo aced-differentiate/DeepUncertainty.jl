@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_NaAlSi3O8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.83415601
+_cell_length_b   7.53764068
+_cell_length_c   7.25887137
+_cell_angle_alpha   79.48627162
+_cell_angle_beta   107.13505357
+_cell_angle_gamma   65.13177725
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaAlSi3O8
+_chemical_formula_sum   'Na2 Al2 Si6 O16'
+_cell_volume   347.66080583
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.74435900  0.28111800  0.85405300  1
+  Na  Na1  1  0.25564100  0.71888200  0.14594700  1
+  Al  Al2  1  0.81983800  0.83900600  0.79070600  1
+  Al  Al3  1  0.18016200  0.16099400  0.20929400  1
+  Si  Si4  1  0.17418900  0.18482100  0.76284800  1
+  Si  Si5  1  0.82581100  0.81517900  0.23715200  1
+  Si  Si6  1  0.19425000  0.58348300  0.68237100  1
+  Si  Si7  1  0.80575000  0.41651700  0.31762900  1
+  Si  Si8  1  0.43221700  0.80268800  0.63846500  1
+  Si  Si9  1  0.56778300  0.19731200  0.36153500  1
+  O  O10  1  0.86446000  0.87084000  0.03261300  1
+  O  O11  1  0.13554000  0.12916000  0.96738700  1
+  O  O12  1  0.40579300  0.59756100  0.71819500  1
+  O  O13  1  0.59420700  0.40243900  0.28180500  1
+  O  O14  1  0.07334400  0.70033700  0.80781900  1
+  O  O15  1  0.92665600  0.29966300  0.19218100  1
+  O  O16  1  0.32603600  0.97023700  0.74245100  1
+  O  O17  1  0.67396400  0.02976300  0.25754900  1
+  O  O18  1  0.67903100  0.71245200  0.72982200  1
+  O  O19  1  0.32096900  0.28754800  0.27017800  1
+  O  O20  1  0.27988700  0.33211600  0.76545000  1
+  O  O21  1  0.72011300  0.66788400  0.23455000  1
+  O  O22  1  0.68583200  0.09628200  0.61106500  1
+  O  O23  1  0.31416800  0.90371800  0.38893500  1
+  O  O24  1  0.94750400  0.31369700  0.56630400  1
+  O  O25  1  0.05249600  0.68630300  0.43369600  1

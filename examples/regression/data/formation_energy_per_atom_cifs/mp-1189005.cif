@@ -1,0 +1,43 @@
+# generated using pymatgen
+data_Tb6NiBr10
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.35857400
+_cell_length_b   9.17611658
+_cell_length_c   9.17894683
+_cell_angle_alpha   108.67868012
+_cell_angle_beta   97.04759591
+_cell_angle_gamma   106.13298736
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Tb6NiBr10
+_chemical_formula_sum   'Tb6 Ni1 Br10'
+_cell_volume   548.55267603
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.12172000  0.04255600  0.75426200  1
+  Tb  Tb1  1  0.87828000  0.95744400  0.24573800  1
+  Tb  Tb2  1  0.97586100  0.29863000  0.09571000  1
+  Tb  Tb3  1  0.02413900  0.70137000  0.90429000  1
+  Tb  Tb4  1  0.36032600  0.13798300  0.17934600  1
+  Tb  Tb5  1  0.63967400  0.86201700  0.82065400  1
+  Ni  Ni6  1  0.00000000  0.00000000  0.00000000  1
+  Br  Br7  1  0.55022900  0.18021300  0.91335400  1
+  Br  Br8  1  0.44977100  0.81978700  0.08664600  1
+  Br  Br9  1  0.36488300  0.46455100  0.27587400  1
+  Br  Br10  1  0.63511700  0.53544900  0.72412600  1
+  Br  Br11  1  0.26033600  0.08660900  0.46339600  1
+  Br  Br12  1  0.73966400  0.91339100  0.53660400  1
+  Br  Br13  1  0.79154500  0.26475700  0.35596500  1
+  Br  Br14  1  0.20845500  0.73524300  0.64403500  1
+  Br  Br15  1  0.08683700  0.37057900  0.82283200  1
+  Br  Br16  1  0.91316300  0.62942100  0.17716800  1

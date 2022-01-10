@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Pr2MgIrO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.73049900
+_cell_length_b   5.54705800
+_cell_length_c   9.66073821
+_cell_angle_alpha   54.88350833
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pr2MgIrO6
+_chemical_formula_sum   'Pr4 Mg2 Ir2 O12'
+_cell_volume   251.19463800
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.55501800  0.23597100  0.75059200  1
+  Pr  Pr1  1  0.94498200  0.23597100  0.25059200  1
+  Pr  Pr2  1  0.44498200  0.76402900  0.24940800  1
+  Pr  Pr3  1  0.05501800  0.76402900  0.74940800  1
+  Mg  Mg4  1  0.50000000  0.00000000  0.50000000  1
+  Mg  Mg5  1  0.00000000  0.00000000  0.00000000  1
+  Ir  Ir6  1  0.00000000  0.50000000  0.50000000  1
+  Ir  Ir7  1  0.50000000  0.50000000  0.00000000  1
+  O  O8  1  0.79733200  0.15577100  0.54799300  1
+  O  O9  1  0.70266800  0.15577100  0.04799300  1
+  O  O10  1  0.20266800  0.84422900  0.45200700  1
+  O  O11  1  0.29733200  0.84422900  0.95200700  1
+  O  O12  1  0.97303000  0.34356100  0.74766300  1
+  O  O13  1  0.52697000  0.34356100  0.24766300  1
+  O  O14  1  0.02697000  0.65643900  0.25233700  1
+  O  O15  1  0.47303000  0.65643900  0.75233700  1
+  O  O16  1  0.29257600  0.25336800  0.54847300  1
+  O  O17  1  0.20742400  0.25336800  0.04847300  1
+  O  O18  1  0.70742400  0.74663200  0.45152700  1
+  O  O19  1  0.79257600  0.74663200  0.95152700  1

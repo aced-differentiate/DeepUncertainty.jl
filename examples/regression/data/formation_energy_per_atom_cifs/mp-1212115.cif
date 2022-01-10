@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_HoFeB4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.36543200
+_cell_length_b   5.87602900
+_cell_length_c   11.36471700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoFeB4
+_chemical_formula_sum   'Ho4 Fe4 B16'
+_cell_volume   224.74155214
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.50000000  0.37401900  0.15009400  1
+  Ho  Ho1  1  0.50000000  0.62598100  0.84990600  1
+  Ho  Ho2  1  0.50000000  0.12598100  0.65009400  1
+  Ho  Ho3  1  0.50000000  0.87401900  0.34990600  1
+  Fe  Fe4  1  0.50000000  0.36674200  0.41123500  1
+  Fe  Fe5  1  0.50000000  0.63325800  0.58876500  1
+  Fe  Fe6  1  0.50000000  0.13325800  0.91123500  1
+  Fe  Fe7  1  0.50000000  0.86674200  0.08876500  1
+  B  B8  1  0.00000000  0.11159000  0.04595400  1
+  B  B9  1  0.00000000  0.88841000  0.95404600  1
+  B  B10  1  0.00000000  0.38841000  0.54595400  1
+  B  B11  1  0.00000000  0.61159000  0.45404600  1
+  B  B12  1  0.00000000  0.13910300  0.46806700  1
+  B  B13  1  0.00000000  0.86089700  0.53193300  1
+  B  B14  1  0.00000000  0.36089700  0.96806700  1
+  B  B15  1  0.00000000  0.63910300  0.03193300  1
+  B  B16  1  0.00000000  0.02463900  0.19030100  1
+  B  B17  1  0.00000000  0.97536100  0.80969900  1
+  B  B18  1  0.00000000  0.47536100  0.69030100  1
+  B  B19  1  0.00000000  0.52463900  0.30969900  1
+  B  B20  1  0.00000000  0.21798800  0.31595300  1
+  B  B21  1  0.00000000  0.78201200  0.68404700  1
+  B  B22  1  0.00000000  0.28201200  0.81595300  1
+  B  B23  1  0.00000000  0.71798800  0.18404700  1

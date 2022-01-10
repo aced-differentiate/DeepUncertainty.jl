@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Sc4Si2Pt7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.02877400
+_cell_length_b   6.53693700
+_cell_length_c   16.34052700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sc4Si2Pt7
+_chemical_formula_sum   'Sc8 Si4 Pt14'
+_cell_volume   430.34153441
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sc  Sc0  1  0.00000000  0.28512100  0.46099500  1
+  Sc  Sc1  1  0.00000000  0.71487900  0.53900500  1
+  Sc  Sc2  1  0.00000000  0.78512100  0.03900500  1
+  Sc  Sc3  1  0.00000000  0.21487900  0.96099500  1
+  Sc  Sc4  1  0.00000000  0.52604400  0.29079100  1
+  Sc  Sc5  1  0.00000000  0.47395600  0.70920900  1
+  Sc  Sc6  1  0.00000000  0.02604400  0.20920900  1
+  Sc  Sc7  1  0.00000000  0.97395600  0.79079100  1
+  Si  Si8  1  0.50000000  0.83950700  0.30692500  1
+  Si  Si9  1  0.50000000  0.16049300  0.69307500  1
+  Si  Si10  1  0.50000000  0.33950700  0.19307500  1
+  Si  Si11  1  0.50000000  0.66049300  0.80692500  1
+  Pt  Pt12  1  0.00000000  0.90749600  0.38214700  1
+  Pt  Pt13  1  0.00000000  0.09250400  0.61785300  1
+  Pt  Pt14  1  0.00000000  0.40749600  0.11785300  1
+  Pt  Pt15  1  0.00000000  0.59250400  0.88214700  1
+  Pt  Pt16  1  0.50000000  0.59577600  0.42096400  1
+  Pt  Pt17  1  0.50000000  0.40422400  0.57903600  1
+  Pt  Pt18  1  0.50000000  0.09577600  0.07903600  1
+  Pt  Pt19  1  0.50000000  0.90422400  0.92096400  1
+  Pt  Pt20  1  0.50000000  0.50000000  0.00000000  1
+  Pt  Pt21  1  0.50000000  0.00000000  0.50000000  1
+  Pt  Pt22  1  0.50000000  0.21426100  0.33234000  1
+  Pt  Pt23  1  0.50000000  0.78573900  0.66766000  1
+  Pt  Pt24  1  0.50000000  0.71426100  0.16766000  1
+  Pt  Pt25  1  0.50000000  0.28573900  0.83234000  1

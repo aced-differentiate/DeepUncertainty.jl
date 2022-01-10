@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_LaPr(MnSi)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.99656100
+_cell_length_b   3.99656100
+_cell_length_c   10.58840300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LaPr(MnSi)4
+_chemical_formula_sum   'La1 Pr1 Mn4 Si4'
+_cell_volume   169.12326508
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.00000000  0.00000000  0.00000000  1
+  Pr  Pr1  1  0.50000000  0.50000000  0.50000000  1
+  Mn  Mn2  1  0.00000000  0.50000000  0.25065200  1
+  Mn  Mn3  1  0.50000000  0.00000000  0.74934800  1
+  Mn  Mn4  1  0.50000000  0.00000000  0.25065200  1
+  Mn  Mn5  1  0.00000000  0.50000000  0.74934800  1
+  Si  Si6  1  0.50000000  0.50000000  0.12856000  1
+  Si  Si7  1  0.00000000  0.00000000  0.62637300  1
+  Si  Si8  1  0.00000000  0.00000000  0.37362700  1
+  Si  Si9  1  0.50000000  0.50000000  0.87144000  1

@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_CrMoO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.13097000
+_cell_length_b   4.62488547
+_cell_length_c   4.63386899
+_cell_angle_alpha   91.24183281
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CrMoO4
+_chemical_formula_sum   'Cr1 Mo1 O4'
+_cell_volume   67.08441296
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cr  Cr0  1  0.00000000  0.50000000  0.00000000  1
+  Mo  Mo1  1  0.50000000  0.00000000  0.50000000  1
+  O  O2  1  0.50000000  0.70051800  0.19948300  1
+  O  O3  1  0.50000000  0.29948200  0.80051700  1
+  O  O4  1  0.00000000  0.19655600  0.30472300  1
+  O  O5  1  0.00000000  0.80344400  0.69527700  1

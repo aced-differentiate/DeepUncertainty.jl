@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_NdSi2Ir3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.71952264
+_cell_length_b   6.71952264
+_cell_length_c   6.71952264
+_cell_angle_alpha   130.52228120
+_cell_angle_beta   114.48791883
+_cell_angle_gamma   86.31649184
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NdSi2Ir3
+_chemical_formula_sum   'Nd2 Si4 Ir6'
+_cell_volume   200.45043511
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  1  0.25000000  0.97204900  0.72204900  1
+  Nd  Nd1  1  0.75000000  0.02795100  0.27795100  1
+  Si  Si2  1  0.07973500  0.28209300  0.20235800  1
+  Si  Si3  1  0.92026500  0.71790700  0.79764200  1
+  Si  Si4  1  0.42026500  0.62262200  0.20235800  1
+  Si  Si5  1  0.57973500  0.37737800  0.79764200  1
+  Ir  Ir6  1  0.50000000  0.50000000  0.50000000  1
+  Ir  Ir7  1  0.00000000  0.50000000  0.00000000  1
+  Ir  Ir8  1  0.27994000  0.00000000  0.27994000  1
+  Ir  Ir9  1  0.72006000  0.00000000  0.72006000  1
+  Ir  Ir10  1  0.22006000  0.50000000  0.72006000  1
+  Ir  Ir11  1  0.77994000  0.50000000  0.27994000  1

@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_ZrTa(SiRu)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.77113200
+_cell_length_b   6.56465600
+_cell_length_c   11.26933857
+_cell_angle_alpha   89.71382340
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ZrTa(SiRu)2
+_chemical_formula_sum   'Zr3 Ta3 Si6 Ru6'
+_cell_volume   278.98234272
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.50000000  0.28808500  0.29001200  1
+  Zr  Zr1  1  0.50000000  0.28881400  0.71025500  1
+  Zr  Zr2  1  0.50000000  0.78906600  0.20914300  1
+  Ta  Ta3  1  0.50000000  0.42312600  0.99886000  1
+  Ta  Ta4  1  0.50000000  0.92061700  0.50226400  1
+  Ta  Ta5  1  0.50000000  0.78893200  0.79118900  1
+  Si  Si6  1  0.50000000  0.00563700  0.99589700  1
+  Si  Si7  1  0.50000000  0.50733300  0.50009500  1
+  Si  Si8  1  0.00000000  0.99270600  0.66743900  1
+  Si  Si9  1  0.00000000  0.49816500  0.16220000  1
+  Si  Si10  1  0.00000000  0.50284900  0.83514200  1
+  Si  Si11  1  0.00000000  0.99677600  0.33766200  1
+  Ru  Ru12  1  0.00000000  0.25154500  0.50242800  1
+  Ru  Ru13  1  0.00000000  0.75364000  0.99684300  1
+  Ru  Ru14  1  0.00000000  0.62490300  0.62430900  1
+  Ru  Ru15  1  0.00000000  0.12295900  0.12098000  1
+  Ru  Ru16  1  0.00000000  0.12237300  0.87641800  1
+  Ru  Ru17  1  0.00000000  0.62267200  0.37886400  1

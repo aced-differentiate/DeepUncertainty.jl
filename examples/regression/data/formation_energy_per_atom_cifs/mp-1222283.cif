@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_LuSc(BO3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.97278209
+_cell_length_b   5.97278209
+_cell_length_c   5.97278223
+_cell_angle_alpha   47.97452177
+_cell_angle_beta   47.97452177
+_cell_angle_gamma   47.97451962
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LuSc(BO3)2
+_chemical_formula_sum   'Lu1 Sc1 B2 O6'
+_cell_volume   107.71113145
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Lu  Lu0  1  0.50000000  0.50000000  0.50000000  1
+  Sc  Sc1  1  0.00000000  0.00000000  0.00000000  1
+  B  B2  1  0.25328700  0.25328700  0.25328700  1
+  B  B3  1  0.74671300  0.74671300  0.74671300  1
+  O  O4  1  0.54317800  0.97224800  0.24054200  1
+  O  O5  1  0.24054200  0.54317800  0.97224800  1
+  O  O6  1  0.97224800  0.24054200  0.54317800  1
+  O  O7  1  0.75945800  0.45682200  0.02775200  1
+  O  O8  1  0.02775200  0.75945800  0.45682200  1
+  O  O9  1  0.45682200  0.02775200  0.75945800  1

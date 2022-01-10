@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Ho2MnNiO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.60254000
+_cell_length_b   5.25963000
+_cell_length_c   9.16610052
+_cell_angle_alpha   55.73231425
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho2MnNiO6
+_chemical_formula_sum   'Ho4 Mn2 Ni2 O12'
+_cell_volume   223.21505612
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.07068200  0.72563800  0.75303900  1
+  Ho  Ho1  1  0.92931800  0.27436200  0.24696100  1
+  Ho  Ho2  1  0.57068200  0.27436200  0.74696100  1
+  Ho  Ho3  1  0.42931800  0.72563800  0.25303900  1
+  Mn  Mn4  1  0.50000000  0.00000000  0.50000000  1
+  Mn  Mn5  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni6  1  0.50000000  0.50000000  0.00000000  1
+  Ni  Ni7  1  0.00000000  0.50000000  0.50000000  1
+  O  O8  1  0.45842100  0.87031700  0.74230400  1
+  O  O9  1  0.54157900  0.12968300  0.25769600  1
+  O  O10  1  0.95842100  0.12968300  0.75769600  1
+  O  O11  1  0.04157900  0.87031700  0.24230400  1
+  O  O12  1  0.79089800  0.75307300  0.56158800  1
+  O  O13  1  0.20910200  0.24692700  0.43841200  1
+  O  O14  1  0.29089800  0.24692700  0.93841200  1
+  O  O15  1  0.70910200  0.75307300  0.06158800  1
+  O  O16  1  0.31153100  0.64945600  0.55187400  1
+  O  O17  1  0.68846900  0.35054400  0.44812600  1
+  O  O18  1  0.81153100  0.35054400  0.94812600  1
+  O  O19  1  0.18846900  0.64945600  0.05187400  1

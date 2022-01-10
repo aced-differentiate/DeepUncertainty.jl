@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Ir(N2Cl3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.76414723
+_cell_length_b   7.76414723
+_cell_length_c   7.76414723
+_cell_angle_alpha   119.84205069
+_cell_angle_beta   119.84205069
+_cell_angle_gamma   90.27379464
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ir(N2Cl3)2
+_chemical_formula_sum   'Ir1 N4 Cl6'
+_cell_volume   331.73899077
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ir  Ir0  1  0.00318100  0.00318100  0.00000000  1
+  N  N1  1  0.28507400  0.71358000  0.42850600  1
+  N  N2  1  0.28507400  0.85656800  0.57149400  1
+  N  N3  1  0.71358000  0.28507400  0.42850600  1
+  N  N4  1  0.85656800  0.28507400  0.57149400  1
+  Cl  Cl5  1  0.21068300  0.21068300  0.00000000  1
+  Cl  Cl6  1  0.21533600  0.21533600  0.41937400  1
+  Cl  Cl7  1  0.21533600  0.79596200  0.00000000  1
+  Cl  Cl8  1  0.79244400  0.79244400  0.00000000  1
+  Cl  Cl9  1  0.79596200  0.79596200  0.58062600  1
+  Cl  Cl10  1  0.79596200  0.21533600  0.00000000  1

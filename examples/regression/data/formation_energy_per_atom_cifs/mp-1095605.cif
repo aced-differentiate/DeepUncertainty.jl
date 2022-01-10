@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_GdAl4Ni
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.04996956
+_cell_length_b   8.04996956
+_cell_length_c   6.52962300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   150.41667517
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdAl4Ni
+_chemical_formula_sum   'Gd2 Al8 Ni2'
+_cell_volume   208.89586831
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.88478300  0.11521700  0.75000000  1
+  Gd  Gd1  1  0.11521700  0.88478300  0.25000000  1
+  Al  Al2  1  0.50000000  0.50000000  0.00000000  1
+  Al  Al3  1  0.50000000  0.50000000  0.50000000  1
+  Al  Al4  1  0.07639900  0.92360100  0.75000000  1
+  Al  Al5  1  0.92360100  0.07639900  0.25000000  1
+  Al  Al6  1  0.68973500  0.31026500  0.94887400  1
+  Al  Al7  1  0.31026500  0.68973500  0.05112600  1
+  Al  Al8  1  0.68973500  0.31026500  0.55112600  1
+  Al  Al9  1  0.31026500  0.68973500  0.44887400  1
+  Ni  Ni10  1  0.22383600  0.77616400  0.75000000  1
+  Ni  Ni11  1  0.77616400  0.22383600  0.25000000  1

@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_Ho3Er3MnBi2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.26512400
+_cell_length_b   8.24005479
+_cell_length_c   8.24032352
+_cell_angle_alpha   119.99892538
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho3Er3MnBi2
+_chemical_formula_sum   'Ho3 Er3 Mn1 Bi2'
+_cell_volume   250.80798457
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.50000000  0.60525600  0.00000000  1
+  Ho  Ho1  1  0.50000000  0.39463000  0.39467500  1
+  Ho  Ho2  1  0.50000000  0.99995500  0.60532500  1
+  Er  Er3  1  0.00000000  0.23185700  0.00000000  1
+  Er  Er4  1  0.00000000  0.76814200  0.76807900  1
+  Er  Er5  1  0.00000000  0.00006400  0.23192100  1
+  Mn  Mn6  1  0.50000000  0.00009300  0.00000000  1
+  Bi  Bi7  1  0.00000000  0.33326700  0.66662900  1
+  Bi  Bi8  1  0.00000000  0.66663800  0.33337100  1

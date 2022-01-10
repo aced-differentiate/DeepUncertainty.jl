@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Eu2SiS4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.60820800
+_cell_length_b   6.55309500
+_cell_length_c   8.12477961
+_cell_angle_alpha   71.90792729
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu2SiS4
+_chemical_formula_sum   'Eu4 Si2 S8'
+_cell_volume   334.44191527
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.25000000  0.78285700  0.54907400  1
+  Eu  Eu1  1  0.75000000  0.21714300  0.45092600  1
+  Eu  Eu2  1  0.25000000  0.72795300  0.07018000  1
+  Eu  Eu3  1  0.75000000  0.27204700  0.92982000  1
+  Si  Si4  1  0.75000000  0.77737300  0.29771200  1
+  Si  Si5  1  0.25000000  0.22262700  0.70228800  1
+  S  S6  1  0.50017100  0.00678000  0.76230000  1
+  S  S7  1  0.00017100  0.99322000  0.23770000  1
+  S  S8  1  0.49982900  0.99322000  0.23770000  1
+  S  S9  1  0.99982900  0.00678000  0.76230000  1
+  S  S10  1  0.75000000  0.57980700  0.13256200  1
+  S  S11  1  0.25000000  0.42019300  0.86743800  1
+  S  S12  1  0.75000000  0.60832800  0.56761500  1
+  S  S13  1  0.25000000  0.39167200  0.43238500  1

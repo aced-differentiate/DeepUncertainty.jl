@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Ca2GePd2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.25317812
+_cell_length_b   8.24025626
+_cell_length_c   5.78495455
+_cell_angle_alpha   80.49345538
+_cell_angle_beta   61.43828392
+_cell_angle_gamma   38.06826070
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ca2GePd2
+_chemical_formula_sum   'Ca4 Ge2 Pd4'
+_cell_volume   219.95799932
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.03251000  0.06114200  0.63599300  1
+  Ca  Ca1  1  0.27035400  0.63599300  0.06114200  1
+  Ca  Ca2  1  0.61400700  0.97964600  0.21749000  1
+  Ca  Ca3  1  0.18885800  0.21749000  0.97964600  1
+  Ge  Ge4  1  0.89474200  0.60525800  0.60525800  1
+  Ge  Ge5  1  0.64474200  0.35525800  0.35525800  1
+  Pd  Pd6  1  0.61441500  0.63320700  0.06353900  1
+  Pd  Pd7  1  0.68883800  0.06353900  0.63320700  1
+  Pd  Pd8  1  0.18646100  0.56116200  0.63558500  1
+  Pd  Pd9  1  0.61679300  0.63558500  0.56116200  1

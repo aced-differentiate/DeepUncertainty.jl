@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Ho12Co5Bi
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.26994657
+_cell_length_b   8.26994657
+_cell_length_c   8.26994657
+_cell_angle_alpha   110.81830448
+_cell_angle_beta   110.79502448
+_cell_angle_gamma   106.83213183
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho12Co5Bi
+_chemical_formula_sum   'Ho12 Co5 Bi1'
+_cell_volume   434.70898819
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.81759600  0.71493100  0.53252800  1
+  Ho  Ho1  1  0.18240400  0.28506900  0.46747200  1
+  Ho  Ho2  1  0.18240400  0.71493100  0.89733500  1
+  Ho  Ho3  1  0.81759600  0.28506900  0.10266500  1
+  Ho  Ho4  1  0.68825000  0.38054000  0.69229100  1
+  Ho  Ho5  1  0.31175000  0.61946000  0.30770900  1
+  Ho  Ho6  1  0.68825000  0.99595900  0.30770900  1
+  Ho  Ho7  1  0.31175000  0.00404100  0.69229100  1
+  Ho  Ho8  1  0.59338000  0.78950300  0.80387700  1
+  Ho  Ho9  1  0.40662000  0.21049700  0.19612300  1
+  Ho  Ho10  1  0.98562600  0.78950300  0.19612300  1
+  Ho  Ho11  1  0.01437400  0.21049700  0.80387700  1
+  Co  Co12  1  0.62481300  0.00000000  0.62481300  1
+  Co  Co13  1  0.37518700  0.00000000  0.37518700  1
+  Co  Co14  1  0.11205700  0.61205700  0.50000000  1
+  Co  Co15  1  0.88794300  0.38794300  0.50000000  1
+  Co  Co16  1  0.00000000  0.00000000  0.00000000  1
+  Bi  Bi17  1  0.50000000  0.50000000  0.00000000  1

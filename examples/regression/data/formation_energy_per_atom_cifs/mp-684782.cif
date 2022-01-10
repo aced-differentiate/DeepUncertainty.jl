@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_CsTiMnOF5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.39513689
+_cell_length_b   7.55896298
+_cell_length_c   7.55888633
+_cell_angle_alpha   60.67447530
+_cell_angle_beta   119.28626000
+_cell_angle_gamma   119.28609374
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsTiMnOF5
+_chemical_formula_sum   'Cs2 Ti2 Mn2 O2 F10'
+_cell_volume   303.50492629
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.12013200  0.37013400  0.37013900  1
+  Cs  Cs1  1  0.87986700  0.62986800  0.62986900  1
+  Ti  Ti2  1  0.00001800  0.00000500  0.00002900  1
+  Ti  Ti3  1  0.49999000  0.00000500  0.99998000  1
+  Mn  Mn4  1  0.49993800  0.49994600  0.99994600  1
+  Mn  Mn5  1  0.50002300  0.00000800  0.50001200  1
+  O  O6  1  0.77421300  0.02421900  0.02421700  1
+  O  O7  1  0.22577900  0.97578200  0.97578500  1
+  F  F8  1  0.58150200  0.33149500  0.33150700  1
+  F  F9  1  0.41850600  0.66851300  0.66850200  1
+  F  F10  1  0.84586500  0.69018700  0.05429100  1
+  F  F11  1  0.39860800  0.69018400  0.05429300  1
+  F  F12  1  0.84587900  0.05430000  0.69018100  1
+  F  F13  1  0.60140100  0.94570700  0.30982100  1
+  F  F14  1  0.39860500  0.05429100  0.69017700  1
+  F  F15  1  0.60139100  0.30982400  0.94571300  1
+  F  F16  1  0.15414200  0.94570800  0.30983000  1
+  F  F17  1  0.15414000  0.30982500  0.94570900  1

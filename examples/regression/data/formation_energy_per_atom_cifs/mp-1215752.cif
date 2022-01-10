@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Zn6B5Ir11
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   2.89481600
+_cell_length_b   8.50171700
+_cell_length_c   11.40728200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Zn6B5Ir11
+_chemical_formula_sum   'Zn6 B5 Ir11'
+_cell_volume   280.74354957
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zn  Zn0  1  0.50000000  0.34959500  0.50000000  1
+  Zn  Zn1  1  0.50000000  0.64972100  0.50000000  1
+  Zn  Zn2  1  0.50000000  0.99830900  0.50000000  1
+  Zn  Zn3  1  0.50000000  0.51115700  0.00000000  1
+  Zn  Zn4  1  0.50000000  0.99145900  0.19930700  1
+  Zn  Zn5  1  0.50000000  0.99145900  0.80069300  1
+  B  B6  1  0.50000000  0.31869900  0.26710000  1
+  B  B7  1  0.50000000  0.68477800  0.25476500  1
+  B  B8  1  0.50000000  0.68477800  0.74523500  1
+  B  B9  1  0.50000000  0.31869900  0.73290000  1
+  B  B10  1  0.50000000  0.17641900  0.00000000  1
+  Ir  Ir11  1  0.00000000  0.50082200  0.32038200  1
+  Ir  Ir12  1  0.00000000  0.50082200  0.67961800  1
+  Ir  Ir13  1  0.00000000  0.17013400  0.35234300  1
+  Ir  Ir14  1  0.00000000  0.82527100  0.35478200  1
+  Ir  Ir15  1  0.00000000  0.82527100  0.64521800  1
+  Ir  Ir16  1  0.00000000  0.17013400  0.64765700  1
+  Ir  Ir17  1  0.00000000  0.29240100  0.12137800  1
+  Ir  Ir18  1  0.00000000  0.72170300  0.11924100  1
+  Ir  Ir19  1  0.00000000  0.72170300  0.88075900  1
+  Ir  Ir20  1  0.00000000  0.29240100  0.87862200  1
+  Ir  Ir21  1  0.00000000  0.99626500  0.00000000  1

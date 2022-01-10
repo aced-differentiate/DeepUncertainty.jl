@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_CeAl3Ag
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.35666400
+_cell_length_b   4.35666400
+_cell_length_c   6.29473123
+_cell_angle_alpha   69.75370458
+_cell_angle_beta   69.75370458
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeAl3Ag
+_chemical_formula_sum   'Ce1 Al3 Ag1'
+_cell_volume   104.19144536
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.98748400  0.98748400  0.02503200  1
+  Al  Al1  1  0.74917500  0.24917500  0.50165000  1
+  Al  Al2  1  0.24917500  0.74917500  0.50165000  1
+  Al  Al3  1  0.39338400  0.39338400  0.21323200  1
+  Ag  Ag4  1  0.62078200  0.62078200  0.75843600  1

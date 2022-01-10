@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_BaNd2NiO5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.86405804
+_cell_length_b   5.98710184
+_cell_length_c   6.89674298
+_cell_angle_alpha   115.72239429
+_cell_angle_beta   106.26778087
+_cell_angle_gamma   89.99806691
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaNd2NiO5
+_chemical_formula_sum   'Ba1 Nd2 Ni1 O5'
+_cell_volume   136.61773150
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.50000100  0.50000000  0.00000100  1
+  Nd  Nd1  1  0.29721300  0.79727500  0.59451100  1
+  Nd  Nd2  1  0.70278800  0.20272200  0.40548700  1
+  Ni  Ni3  1  0.00000000  0.00000000  0.00000100  1
+  O  O4  1  0.50000000  0.00000100  0.00000100  1
+  O  O5  1  0.14503600  0.90353100  0.29009200  1
+  O  O6  1  0.85496500  0.09646900  0.70990800  1
+  O  O7  1  0.85496000  0.61343800  0.70990200  1
+  O  O8  1  0.14504100  0.38656300  0.29010000  1

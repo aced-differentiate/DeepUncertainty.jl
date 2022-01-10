@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Pb3Se2(BrO3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.40336267
+_cell_length_b   7.40336267
+_cell_length_c   13.65386838
+_cell_angle_alpha   86.76869942
+_cell_angle_beta   86.76869942
+_cell_angle_gamma   45.56204950
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pb3Se2(BrO3)2
+_chemical_formula_sum   'Pb6 Se4 Br4 O12'
+_cell_volume   533.34026183
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pb  Pb0  1  0.55416800  0.44583200  0.25000000  1
+  Pb  Pb1  1  0.44583200  0.55416800  0.75000000  1
+  Pb  Pb2  1  0.80648300  0.78147000  0.35320300  1
+  Pb  Pb3  1  0.21853000  0.19351700  0.14679700  1
+  Pb  Pb4  1  0.19351700  0.21853000  0.64679700  1
+  Pb  Pb5  1  0.78147000  0.80648300  0.85320300  1
+  Se  Se6  1  0.10885700  0.10383200  0.38163600  1
+  Se  Se7  1  0.89616800  0.89114300  0.11836400  1
+  Se  Se8  1  0.89114300  0.89616800  0.61836400  1
+  Se  Se9  1  0.10383200  0.10885700  0.88163600  1
+  Br  Br10  1  0.34839800  0.36744000  0.44321400  1
+  Br  Br11  1  0.63256000  0.65160200  0.05678600  1
+  Br  Br12  1  0.65160200  0.63256000  0.55678600  1
+  Br  Br13  1  0.36744000  0.34839800  0.94321400  1
+  O  O14  1  0.93263400  0.38032800  0.30495700  1
+  O  O15  1  0.61967200  0.06736600  0.19504300  1
+  O  O16  1  0.06736600  0.61967200  0.69504300  1
+  O  O17  1  0.38032800  0.93263400  0.80495700  1
+  O  O18  1  0.37696600  0.90460900  0.30323600  1
+  O  O19  1  0.09539100  0.62303400  0.19676400  1
+  O  O20  1  0.62303400  0.09539100  0.69676400  1
+  O  O21  1  0.90460900  0.37696600  0.80323600  1
+  O  O22  1  0.94292800  0.02894000  0.36503700  1
+  O  O23  1  0.97106000  0.05707200  0.13496300  1
+  O  O24  1  0.05707200  0.97106000  0.63496300  1
+  O  O25  1  0.02894000  0.94292800  0.86503700  1

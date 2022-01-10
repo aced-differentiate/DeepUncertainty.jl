@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_RbZn2HSe2O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.02863412
+_cell_length_b   7.58798356
+_cell_length_c   12.11404228
+_cell_angle_alpha   82.15818588
+_cell_angle_beta   78.00678282
+_cell_angle_gamma   70.81266455
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbZn2HSe2O7
+_chemical_formula_sum   'Rb2 Zn4 H2 Se4 O14'
+_cell_volume   425.86762942
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.32516100  0.62208600  0.70885800  1
+  Rb  Rb1  1  0.67483900  0.37791400  0.29114100  1
+  Zn  Zn2  1  0.65495800  0.70263800  0.92454800  1
+  Zn  Zn3  1  0.34504200  0.29736200  0.07545200  1
+  Zn  Zn4  1  0.65678800  0.99051400  0.64283800  1
+  Zn  Zn5  1  0.34321200  0.00948600  0.35716200  1
+  H  H6  1  0.42125200  0.98061700  0.15535600  1
+  H  H7  1  0.57874800  0.01938300  0.84464400  1
+  Se  Se8  1  0.95081500  0.25921300  0.90640700  1
+  Se  Se9  1  0.04918500  0.74078700  0.09359300  1
+  Se  Se10  1  0.94352700  0.74339900  0.42618200  1
+  Se  Se11  1  0.05647300  0.25660100  0.57381800  1
+  O  O12  1  0.24340800  0.70336300  0.95965400  1
+  O  O13  1  0.75659200  0.29663700  0.04034600  1
+  O  O14  1  0.84989300  0.47984600  0.83605100  1
+  O  O15  1  0.15010700  0.52015400  0.16394900  1
+  O  O16  1  0.70946300  0.76279100  0.07048000  1
+  O  O17  1  0.29053700  0.23720900  0.92952000  1
+  O  O18  1  0.75116800  0.96179100  0.37717300  1
+  O  O19  1  0.24883200  0.03820900  0.62282700  1
+  O  O20  1  0.71308500  0.23904100  0.60200300  1
+  O  O21  1  0.28691500  0.76095900  0.39799700  1
+  O  O22  1  0.85199900  0.74993400  0.57209400  1
+  O  O23  1  0.14800100  0.25006600  0.42790600  1
+  O  O24  1  0.66848400  0.90547500  0.80384600  1
+  O  O25  1  0.33151600  0.09452500  0.19615400  1

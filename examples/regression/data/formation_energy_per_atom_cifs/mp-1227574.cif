@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Ca4Cd3Au5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.38227600
+_cell_length_b   7.42210600
+_cell_length_c   8.83475228
+_cell_angle_alpha   89.83354227
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ca4Cd3Au5
+_chemical_formula_sum   'Ca4 Cd3 Au5'
+_cell_volume   287.35543981
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.50000000  0.54248800  0.81436000  1
+  Ca  Ca1  1  0.50000000  0.03685500  0.67762700  1
+  Ca  Ca2  1  0.00000000  0.46445900  0.18944900  1
+  Ca  Ca3  1  0.00000000  0.94871400  0.32218000  1
+  Cd  Cd4  1  0.50000000  0.14296700  0.06099800  1
+  Cd  Cd5  1  0.00000000  0.36215300  0.55974800  1
+  Cd  Cd6  1  0.00000000  0.85873000  0.93908500  1
+  Au  Au7  1  0.50000000  0.74970000  0.12437900  1
+  Au  Au8  1  0.50000000  0.24907600  0.37205700  1
+  Au  Au9  1  0.00000000  0.24982600  0.87122200  1
+  Au  Au10  1  0.00000000  0.74938900  0.63174700  1
+  Au  Au11  1  0.50000000  0.64564300  0.43714800  1

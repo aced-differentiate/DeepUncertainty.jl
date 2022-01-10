@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Sr(DySe2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.15641400
+_cell_length_b   12.58341600
+_cell_length_c   15.02681000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr(DySe2)2
+_chemical_formula_sum   'Sr4 Dy8 Se16'
+_cell_volume   785.93051003
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.25000000  0.75873300  0.66436600  1
+  Sr  Sr1  1  0.75000000  0.74126700  0.16436600  1
+  Sr  Sr2  1  0.25000000  0.25873300  0.83563400  1
+  Sr  Sr3  1  0.75000000  0.24126700  0.33563400  1
+  Dy  Dy4  1  0.25000000  0.43342600  0.60957900  1
+  Dy  Dy5  1  0.75000000  0.06657400  0.10957900  1
+  Dy  Dy6  1  0.25000000  0.93342600  0.89042100  1
+  Dy  Dy7  1  0.75000000  0.56657400  0.39042100  1
+  Dy  Dy8  1  0.25000000  0.41992400  0.09912700  1
+  Dy  Dy9  1  0.75000000  0.08007600  0.59912700  1
+  Dy  Dy10  1  0.25000000  0.91992400  0.40087300  1
+  Dy  Dy11  1  0.75000000  0.58007600  0.90087300  1
+  Se  Se12  1  0.25000000  0.41182800  0.42105900  1
+  Se  Se13  1  0.75000000  0.08817200  0.92105900  1
+  Se  Se14  1  0.25000000  0.91182800  0.07894100  1
+  Se  Se15  1  0.75000000  0.58817200  0.57894100  1
+  Se  Se16  1  0.25000000  0.02409200  0.71631600  1
+  Se  Se17  1  0.75000000  0.47590800  0.21631600  1
+  Se  Se18  1  0.25000000  0.52409200  0.78368400  1
+  Se  Se19  1  0.75000000  0.97590800  0.28368400  1
+  Se  Se20  1  0.25000000  0.13215800  0.47240100  1
+  Se  Se21  1  0.75000000  0.36784200  0.97240100  1
+  Se  Se22  1  0.25000000  0.63215800  0.02759900  1
+  Se  Se23  1  0.75000000  0.86784200  0.52759900  1
+  Se  Se24  1  0.25000000  0.20738300  0.17370100  1
+  Se  Se25  1  0.75000000  0.29261700  0.67370100  1
+  Se  Se26  1  0.25000000  0.70738300  0.32629900  1
+  Se  Se27  1  0.75000000  0.79261700  0.82629900  1

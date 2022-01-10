@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Eu(In2Au)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.71755100
+_cell_length_b   7.54058100
+_cell_length_c   18.89985600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu(In2Au)2
+_chemical_formula_sum   'Eu4 In16 Au8'
+_cell_volume   672.32600324
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.75000000  0.97315700  0.85816700  1
+  Eu  Eu1  1  0.75000000  0.52684300  0.35816700  1
+  Eu  Eu2  1  0.25000000  0.02684300  0.14183300  1
+  Eu  Eu3  1  0.25000000  0.47315700  0.64183300  1
+  In  In4  1  0.25000000  0.00898100  0.56883700  1
+  In  In5  1  0.25000000  0.49101900  0.06883700  1
+  In  In6  1  0.75000000  0.99101900  0.43116300  1
+  In  In7  1  0.75000000  0.50898100  0.93116300  1
+  In  In8  1  0.25000000  0.14741100  0.96472100  1
+  In  In9  1  0.25000000  0.35258900  0.46472100  1
+  In  In10  1  0.75000000  0.85258900  0.03527900  1
+  In  In11  1  0.75000000  0.64741100  0.53527900  1
+  In  In12  1  0.25000000  0.26626900  0.81128800  1
+  In  In13  1  0.25000000  0.23373100  0.31128800  1
+  In  In14  1  0.75000000  0.73373100  0.18871200  1
+  In  In15  1  0.75000000  0.76626900  0.68871200  1
+  In  In16  1  0.25000000  0.67172800  0.81382800  1
+  In  In17  1  0.25000000  0.82827200  0.31382800  1
+  In  In18  1  0.75000000  0.32827200  0.18617200  1
+  In  In19  1  0.75000000  0.17172800  0.68617200  1
+  Au  Au20  1  0.25000000  0.96650500  0.71888300  1
+  Au  Au21  1  0.25000000  0.53349500  0.21888300  1
+  Au  Au22  1  0.75000000  0.03349500  0.28111700  1
+  Au  Au23  1  0.75000000  0.46650500  0.78111700  1
+  Au  Au24  1  0.25000000  0.75422200  0.96008200  1
+  Au  Au25  1  0.25000000  0.74577800  0.46008200  1
+  Au  Au26  1  0.75000000  0.24577800  0.03991800  1
+  Au  Au27  1  0.75000000  0.25422200  0.53991800  1

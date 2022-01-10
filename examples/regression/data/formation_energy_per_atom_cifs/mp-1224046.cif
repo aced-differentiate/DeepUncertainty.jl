@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_Ho(AlCu)6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.09460200
+_cell_length_b   6.61285526
+_cell_length_c   6.61285526
+_cell_angle_alpha   99.00590075
+_cell_angle_beta   112.65644019
+_cell_angle_gamma   67.34355981
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho(AlCu)6
+_chemical_formula_sum   'Ho1 Al6 Cu6'
+_cell_volume   189.71992288
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.00000000  0.00000000  0.00000000  1
+  Al  Al1  1  0.65129600  0.34870400  0.65129600  1
+  Al  Al2  1  0.34870400  0.65129600  0.34870400  1
+  Al  Al3  1  0.00000000  0.34481500  0.34481500  1
+  Al  Al4  1  0.00000000  0.65518500  0.65518500  1
+  Al  Al5  1  0.70891800  0.79108200  0.20891800  1
+  Al  Al6  1  0.29108200  0.20891800  0.79108200  1
+  Cu  Cu7  1  0.50000000  0.00000000  0.50000000  1
+  Cu  Cu8  1  0.00000000  0.00000000  0.50000000  1
+  Cu  Cu9  1  0.50000000  0.50000000  0.00000000  1
+  Cu  Cu10  1  0.00000000  0.50000000  0.00000000  1
+  Cu  Cu11  1  0.50000000  0.77464100  0.77464100  1
+  Cu  Cu12  1  0.50000000  0.22535900  0.22535900  1

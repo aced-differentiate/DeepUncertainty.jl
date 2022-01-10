@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Sc2TiB2Ir5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.38864900
+_cell_length_b   9.38864900
+_cell_length_c   3.15141600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sc2TiB2Ir5
+_chemical_formula_sum   'Sc4 Ti2 B4 Ir10'
+_cell_volume   277.78701541
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sc  Sc0  1  0.67516100  0.17516100  0.00000000  1
+  Sc  Sc1  1  0.32483900  0.82483900  0.00000000  1
+  Sc  Sc2  1  0.17516100  0.32483900  0.00000000  1
+  Sc  Sc3  1  0.82483900  0.67516100  0.00000000  1
+  Ti  Ti4  1  0.00000000  0.00000000  0.00000000  1
+  Ti  Ti5  1  0.50000000  0.50000000  0.00000000  1
+  B  B6  1  0.12199000  0.62199000  0.00000000  1
+  B  B7  1  0.87801000  0.37801000  0.00000000  1
+  B  B8  1  0.62199000  0.87801000  0.00000000  1
+  B  B9  1  0.37801000  0.12199000  0.00000000  1
+  Ir  Ir10  1  0.21703600  0.07149100  0.50000000  1
+  Ir  Ir11  1  0.78296400  0.92850900  0.50000000  1
+  Ir  Ir12  1  0.07149100  0.78296400  0.50000000  1
+  Ir  Ir13  1  0.71703600  0.42850900  0.50000000  1
+  Ir  Ir14  1  0.92850900  0.21703600  0.50000000  1
+  Ir  Ir15  1  0.28296400  0.57149100  0.50000000  1
+  Ir  Ir16  1  0.57149100  0.71703600  0.50000000  1
+  Ir  Ir17  1  0.42850900  0.28296400  0.50000000  1
+  Ir  Ir18  1  0.50000000  0.00000000  0.50000000  1
+  Ir  Ir19  1  0.00000000  0.50000000  0.50000000  1

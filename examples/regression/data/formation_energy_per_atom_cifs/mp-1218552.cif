@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Sr4Tl2CO9
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.12987700
+_cell_length_b   5.08327100
+_cell_length_c   10.20340800
+_cell_angle_alpha   75.57593553
+_cell_angle_beta   75.44078077
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr4Tl2CO9
+_chemical_formula_sum   'Sr4 Tl2 C1 O9'
+_cell_volume   248.85111975
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.61134100  0.12235000  0.77731900  1
+  Sr  Sr1  1  0.11337100  0.63890600  0.77325800  1
+  Sr  Sr2  1  0.38865900  0.89966800  0.22268100  1
+  Sr  Sr3  1  0.88662900  0.41216400  0.22674200  1
+  Tl  Tl4  1  0.25256600  0.26259100  0.49486800  1
+  Tl  Tl5  1  0.74743400  0.75745900  0.50513200  1
+  C  C6  1  0.00000000  0.02170200  0.00000000  1
+  O  O7  1  0.14145100  0.15751000  0.71709700  1
+  O  O8  1  0.85854900  0.87460800  0.28290300  1
+  O  O9  1  0.74947600  0.25703000  0.50104800  1
+  O  O10  1  0.25052400  0.75807800  0.49895200  1
+  O  O11  1  0.63463500  0.64401400  0.73072900  1
+  O  O12  1  0.36536500  0.37474300  0.26927100  1
+  O  O13  1  0.21880000  0.89248500  0.00000000  1
+  O  O14  1  0.78120000  0.89248500  0.00000000  1
+  O  O15  1  0.00000000  0.27720700  0.00000000  1

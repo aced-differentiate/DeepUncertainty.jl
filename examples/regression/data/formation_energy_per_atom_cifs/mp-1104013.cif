@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Dy3Ga9Pd2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.30992100
+_cell_length_b   8.18792675
+_cell_length_c   8.18792675
+_cell_angle_alpha   70.90392839
+_cell_angle_beta   74.74071826
+_cell_angle_gamma   74.74071826
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Dy3Ga9Pd2
+_chemical_formula_sum   'Dy3 Ga9 Pd2'
+_cell_volume   258.40234101
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.50000000  0.50000000  0.50000000  1
+  Dy  Dy1  1  0.19917800  0.80082200  0.80082200  1
+  Dy  Dy2  1  0.80082200  0.19917800  0.19917800  1
+  Ga  Ga3  1  0.36157200  0.35596100  0.92089500  1
+  Ga  Ga4  1  0.63842800  0.64403900  0.07910500  1
+  Ga  Ga5  1  0.36157200  0.92089500  0.35596100  1
+  Ga  Ga6  1  0.63842800  0.07910500  0.64403900  1
+  Ga  Ga7  1  0.15579200  0.47774000  0.21067500  1
+  Ga  Ga8  1  0.84420800  0.52226000  0.78932500  1
+  Ga  Ga9  1  0.15579200  0.21067500  0.47774000  1
+  Ga  Ga10  1  0.84420800  0.78932500  0.52226000  1
+  Ga  Ga11  1  0.50000000  0.00000000  0.00000000  1
+  Pd  Pd12  1  0.00000000  0.81668100  0.18331900  1
+  Pd  Pd13  1  0.00000000  0.18331900  0.81668100  1

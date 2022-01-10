@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_RbMnH4Cl3O2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.63518900
+_cell_length_b   7.31591796
+_cell_length_c   8.98696464
+_cell_angle_alpha   91.26314094
+_cell_angle_beta   107.60419699
+_cell_angle_gamma   112.10082123
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbMnH4Cl3O2
+_chemical_formula_sum   'Rb2 Mn2 H8 Cl6 O4'
+_cell_volume   380.68201272
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.26323800  0.94290100  0.18112600  1
+  Rb  Rb1  1  0.73676200  0.05709900  0.81887400  1
+  Mn  Mn2  1  0.99968200  0.33469600  0.33176400  1
+  Mn  Mn3  1  0.00031800  0.66530400  0.66823600  1
+  H  H4  1  0.58802100  0.70381200  0.47856700  1
+  H  H5  1  0.41197900  0.29618800  0.52143300  1
+  H  H6  1  0.77688800  0.82171200  0.40300600  1
+  H  H7  1  0.22311200  0.17828800  0.59699400  1
+  H  H8  1  0.62114400  0.44859500  0.18855700  1
+  H  H9  1  0.37885600  0.55140500  0.81144300  1
+  H  H10  1  0.75367300  0.47624300  0.06511300  1
+  H  H11  1  0.24632700  0.52375700  0.93488700  1
+  Cl  Cl12  1  0.24632000  0.70250900  0.48999400  1
+  Cl  Cl13  1  0.75368000  0.29749100  0.51000600  1
+  Cl  Cl14  1  0.78064000  0.97354900  0.19743800  1
+  Cl  Cl15  1  0.21936000  0.02645100  0.80256200  1
+  Cl  Cl16  1  0.25029400  0.42078500  0.15686000  1
+  Cl  Cl17  1  0.74970600  0.57921500  0.84314000  1
+  O  O18  1  0.75453600  0.75742400  0.49608800  1
+  O  O19  1  0.24546400  0.24257600  0.50391200  1
+  O  O20  1  0.75112200  0.43183900  0.16798000  1
+  O  O21  1  0.24887800  0.56816100  0.83202000  1

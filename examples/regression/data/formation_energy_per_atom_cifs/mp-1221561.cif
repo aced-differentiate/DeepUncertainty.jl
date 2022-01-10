@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_MnZn3(CrSe2)8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   13.01324690
+_cell_length_b   13.01324690
+_cell_length_c   13.01324732
+_cell_angle_alpha   33.57616410
+_cell_angle_beta   33.57616410
+_cell_angle_gamma   33.57616657
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MnZn3(CrSe2)8
+_chemical_formula_sum   'Mn1 Zn3 Cr8 Se16'
+_cell_volume   600.39127687
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  1  0.43748200  0.43748200  0.43748200  1
+  Zn  Zn1  1  0.93752300  0.93752300  0.93752300  1
+  Zn  Zn2  1  0.06248900  0.06248900  0.06248900  1
+  Zn  Zn3  1  0.56251100  0.56251100  0.56251100  1
+  Cr  Cr4  1  0.74993700  0.74993700  0.74993700  1
+  Cr  Cr5  1  0.25002700  0.25002700  0.25002700  1
+  Cr  Cr6  1  0.00009600  0.00009600  0.50018000  1
+  Cr  Cr7  1  0.50002700  0.50002700  0.99961200  1
+  Cr  Cr8  1  0.00009600  0.50018000  0.00009600  1
+  Cr  Cr9  1  0.50002700  0.99961200  0.50002700  1
+  Cr  Cr10  1  0.50018000  0.00009600  0.00009600  1
+  Cr  Cr11  1  0.99961200  0.50002700  0.50002700  1
+  Se  Se12  1  0.36997900  0.36997900  0.36997900  1
+  Se  Se13  1  0.86988300  0.86988300  0.86988300  1
+  Se  Se14  1  0.64014500  0.64014500  0.09973900  1
+  Se  Se15  1  0.14033200  0.14033200  0.59943600  1
+  Se  Se16  1  0.64014500  0.09973900  0.64014500  1
+  Se  Se17  1  0.14033200  0.59943600  0.14033200  1
+  Se  Se18  1  0.09973900  0.64014500  0.64014500  1
+  Se  Se19  1  0.59943600  0.14033200  0.14033200  1
+  Se  Se20  1  0.13006000  0.13006000  0.13006000  1
+  Se  Se21  1  0.63007100  0.63007100  0.63007100  1
+  Se  Se22  1  0.85977900  0.85977900  0.40031700  1
+  Se  Se23  1  0.35978000  0.35978000  0.90043900  1
+  Se  Se24  1  0.85977900  0.40031700  0.85977900  1
+  Se  Se25  1  0.35978000  0.90043900  0.35978000  1
+  Se  Se26  1  0.40031700  0.85977900  0.85977900  1
+  Se  Se27  1  0.90043900  0.35978000  0.35978000  1

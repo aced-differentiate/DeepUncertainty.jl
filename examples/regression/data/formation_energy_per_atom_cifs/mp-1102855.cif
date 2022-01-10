@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_ScGeIr
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.14869600
+_cell_length_b   6.51035400
+_cell_length_c   7.52381600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ScGeIr
+_chemical_formula_sum   'Sc4 Ge4 Ir4'
+_cell_volume   203.21435475
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sc  Sc0  1  0.25000000  0.01400700  0.31269200  1
+  Sc  Sc1  1  0.25000000  0.51400700  0.18730800  1
+  Sc  Sc2  1  0.75000000  0.98599300  0.68730800  1
+  Sc  Sc3  1  0.75000000  0.48599300  0.81269200  1
+  Ge  Ge4  1  0.25000000  0.28434100  0.62312400  1
+  Ge  Ge5  1  0.25000000  0.78434100  0.87687600  1
+  Ge  Ge6  1  0.75000000  0.71565900  0.37687600  1
+  Ge  Ge7  1  0.75000000  0.21565900  0.12312400  1
+  Ir  Ir8  1  0.25000000  0.16385200  0.94245000  1
+  Ir  Ir9  1  0.25000000  0.66385200  0.55755000  1
+  Ir  Ir10  1  0.75000000  0.83614800  0.05755000  1
+  Ir  Ir11  1  0.75000000  0.33614800  0.44245000  1

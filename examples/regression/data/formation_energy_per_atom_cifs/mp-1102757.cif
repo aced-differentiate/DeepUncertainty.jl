@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_HoGaPt
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.45683100
+_cell_length_b   6.88037200
+_cell_length_c   7.64251200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoGaPt
+_chemical_formula_sum   'Ho4 Ga4 Pt4'
+_cell_volume   234.35499550
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.25000000  0.01489500  0.79847700  1
+  Ho  Ho1  1  0.25000000  0.51489500  0.70152300  1
+  Ho  Ho2  1  0.75000000  0.98510500  0.20152300  1
+  Ho  Ho3  1  0.75000000  0.48510500  0.29847700  1
+  Ga  Ga4  1  0.25000000  0.18324300  0.42165700  1
+  Ga  Ga5  1  0.25000000  0.68324300  0.07834300  1
+  Ga  Ga6  1  0.75000000  0.81675700  0.57834300  1
+  Ga  Ga7  1  0.75000000  0.31675700  0.92165700  1
+  Pt  Pt8  1  0.25000000  0.78511400  0.40637500  1
+  Pt  Pt9  1  0.25000000  0.28511400  0.09362500  1
+  Pt  Pt10  1  0.75000000  0.21488600  0.59362500  1
+  Pt  Pt11  1  0.75000000  0.71488600  0.90637500  1

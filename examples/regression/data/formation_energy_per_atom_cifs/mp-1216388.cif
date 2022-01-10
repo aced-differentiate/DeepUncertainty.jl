@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Zr18Co5Sn4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.34944100
+_cell_length_b   8.01317100
+_cell_length_c   21.19858410
+_cell_angle_alpha   79.11622991
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Zr18Co5Sn4
+_chemical_formula_sum   'Zr18 Co5 Sn4'
+_cell_volume   558.72807834
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.00000000  0.75734900  0.00069000  1
+  Zr  Zr1  1  0.00000000  0.42230100  0.66458800  1
+  Zr  Zr2  1  0.00000000  0.08901800  0.33151600  1
+  Zr  Zr3  1  0.00000000  0.74625200  0.74800400  1
+  Zr  Zr4  1  0.00000000  0.41245200  0.41430400  1
+  Zr  Zr5  1  0.00000000  0.07747300  0.08339300  1
+  Zr  Zr6  1  0.00000000  0.16293700  0.92046700  1
+  Zr  Zr7  1  0.00000000  0.83115400  0.58476000  1
+  Zr  Zr8  1  0.00000000  0.49974700  0.25278800  1
+  Zr  Zr9  1  0.50000000  0.06259400  0.66571700  1
+  Zr  Zr10  1  0.50000000  0.73934700  0.34872800  1
+  Zr  Zr11  1  0.50000000  0.40468100  0.01595000  1
+  Zr  Zr12  1  0.50000000  0.86745800  0.86858000  1
+  Zr  Zr13  1  0.50000000  0.56817600  0.52021500  1
+  Zr  Zr14  1  0.50000000  0.23643000  0.18819600  1
+  Zr  Zr15  1  0.50000000  0.40392100  0.79852100  1
+  Zr  Zr16  1  0.50000000  0.02687200  0.46226600  1
+  Zr  Zr17  1  0.50000000  0.69135400  0.13081200  1
+  Co  Co18  1  0.50000000  0.00155000  0.00147300  1
+  Co  Co19  1  0.50000000  0.66563100  0.66486300  1
+  Co  Co20  1  0.50000000  0.33350800  0.33341300  1
+  Co  Co21  1  0.00000000  0.77811900  0.44527800  1
+  Co  Co22  1  0.00000000  0.44407100  0.11065200  1
+  Sn  Sn23  1  0.00000000  0.54890400  0.89356500  1
+  Sn  Sn24  1  0.00000000  0.22776600  0.55103100  1
+  Sn  Sn25  1  0.00000000  0.88924000  0.22246700  1
+  Sn  Sn26  1  0.00000000  0.11139400  0.77776300  1

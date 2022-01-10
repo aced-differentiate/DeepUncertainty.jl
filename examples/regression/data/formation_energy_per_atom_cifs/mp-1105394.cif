@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Sr2HoMoO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.83566644
+_cell_length_b   5.88605600
+_cell_length_c   8.33335195
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.52104922
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr2HoMoO6
+_chemical_formula_sum   'Sr4 Ho2 Mo2 O12'
+_cell_volume   286.23096516
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.49527800  0.53361700  0.25185800  1
+  Sr  Sr1  1  0.99527800  0.96638300  0.75185800  1
+  Sr  Sr2  1  0.50472200  0.46638300  0.74814200  1
+  Sr  Sr3  1  0.00472200  0.03361700  0.24814200  1
+  Ho  Ho4  1  0.00000000  0.50000000  0.50000000  1
+  Ho  Ho5  1  0.50000000  0.00000000  0.00000000  1
+  Mo  Mo6  1  0.50000000  0.00000000  0.50000000  1
+  Mo  Mo7  1  0.00000000  0.50000000  0.00000000  1
+  O  O8  1  0.23069800  0.80577800  0.46437800  1
+  O  O9  1  0.73069800  0.69422200  0.96437800  1
+  O  O10  1  0.76930200  0.19422200  0.53562200  1
+  O  O11  1  0.26930200  0.30577800  0.03562200  1
+  O  O12  1  0.19903000  0.77840800  0.04303600  1
+  O  O13  1  0.69903000  0.72159200  0.54303600  1
+  O  O14  1  0.80097000  0.22159200  0.95696400  1
+  O  O15  1  0.30097000  0.27840800  0.45696400  1
+  O  O16  1  0.57686500  0.98067100  0.26240600  1
+  O  O17  1  0.07686500  0.51932900  0.76240600  1
+  O  O18  1  0.42313500  0.01932900  0.73759400  1
+  O  O19  1  0.92313500  0.48067100  0.23759400  1

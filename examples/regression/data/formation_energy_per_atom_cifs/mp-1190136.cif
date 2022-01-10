@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_SrAl2Au3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.49379100
+_cell_length_b   7.02270800
+_cell_length_c   13.33228100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SrAl2Au3
+_chemical_formula_sum   'Sr4 Al8 Au12'
+_cell_volume   514.37659970
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.25000000  0.65312900  0.91049200  1
+  Sr  Sr1  1  0.25000000  0.84687100  0.41049200  1
+  Sr  Sr2  1  0.75000000  0.34687100  0.08950800  1
+  Sr  Sr3  1  0.75000000  0.15312900  0.58950800  1
+  Al  Al4  1  0.99927000  0.14254100  0.84906400  1
+  Al  Al5  1  0.50073000  0.35745900  0.34906400  1
+  Al  Al6  1  0.49927000  0.85745900  0.15093600  1
+  Al  Al7  1  0.00073000  0.64254100  0.65093600  1
+  Al  Al8  1  0.00073000  0.85745900  0.15093600  1
+  Al  Al9  1  0.49927000  0.64254100  0.65093600  1
+  Al  Al10  1  0.50073000  0.14254100  0.84906400  1
+  Al  Al11  1  0.99927000  0.35745900  0.34906400  1
+  Au  Au12  1  0.25000000  0.34790100  0.71780900  1
+  Au  Au13  1  0.25000000  0.15209900  0.21780900  1
+  Au  Au14  1  0.75000000  0.65209900  0.28219100  1
+  Au  Au15  1  0.75000000  0.84790100  0.78219100  1
+  Au  Au16  1  0.25000000  0.94145000  0.69324000  1
+  Au  Au17  1  0.25000000  0.55855000  0.19324000  1
+  Au  Au18  1  0.75000000  0.05855000  0.30676000  1
+  Au  Au19  1  0.75000000  0.44145000  0.80676000  1
+  Au  Au20  1  0.25000000  0.40299300  0.50793200  1
+  Au  Au21  1  0.25000000  0.09700700  0.00793200  1
+  Au  Au22  1  0.75000000  0.59700700  0.49206800  1
+  Au  Au23  1  0.75000000  0.90299300  0.99206800  1

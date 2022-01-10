@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_Hf6Ga2Co
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.34470100
+_cell_length_b   7.76882628
+_cell_length_c   7.76891122
+_cell_angle_alpha   119.99964020
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Hf6Ga2Co
+_chemical_formula_sum   'Hf6 Ga2 Co1'
+_cell_volume   174.82561918
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Hf  Hf0  1  0.00000000  0.24891100  0.00000000  1
+  Hf  Hf1  1  0.00000000  0.75099900  0.75105200  1
+  Hf  Hf2  1  0.00000000  0.99994700  0.24894800  1
+  Hf  Hf3  1  0.50000000  0.59807100  0.00000000  1
+  Hf  Hf4  1  0.50000000  0.40196800  0.40195600  1
+  Hf  Hf5  1  0.50000000  0.00001200  0.59804400  1
+  Ga  Ga6  1  0.00000000  0.33333500  0.66671900  1
+  Ga  Ga7  1  0.00000000  0.66661500  0.33328100  1
+  Co  Co8  1  0.50000000  0.00004100  0.00000000  1

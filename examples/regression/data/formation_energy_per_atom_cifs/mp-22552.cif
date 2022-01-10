@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Ni(AuF4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.69835200
+_cell_length_b   5.57088500
+_cell_length_c   10.96814874
+_cell_angle_alpha   70.44224122
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ni(AuF4)2
+_chemical_formula_sum   'Ni2 Au4 F16'
+_cell_volume   328.09383242
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ni  Ni0  1  0.50000000  0.50000000  0.00000000  1
+  Ni  Ni1  1  0.00000000  0.50000000  0.50000000  1
+  Au  Au2  1  0.71613700  0.86961400  0.66835200  1
+  Au  Au3  1  0.21613700  0.13038600  0.83164800  1
+  Au  Au4  1  0.28386300  0.13038600  0.33164800  1
+  Au  Au5  1  0.78386300  0.86961400  0.16835200  1
+  F  F6  1  0.61567900  0.56790200  0.81452400  1
+  F  F7  1  0.11567900  0.43209800  0.68547600  1
+  F  F8  1  0.38432100  0.43209800  0.18547600  1
+  F  F9  1  0.88432100  0.56790200  0.31452400  1
+  F  F10  1  0.68826700  0.17464300  0.02281300  1
+  F  F11  1  0.18826700  0.82535700  0.47718700  1
+  F  F12  1  0.78316100  0.66234500  0.05063700  1
+  F  F13  1  0.28316100  0.33765500  0.44936300  1
+  F  F14  1  0.21683900  0.33765500  0.94936300  1
+  F  F15  1  0.71683900  0.66234500  0.55063700  1
+  F  F16  1  0.79250900  0.07271100  0.28144100  1
+  F  F17  1  0.29250900  0.92728900  0.21855900  1
+  F  F18  1  0.20749100  0.92728900  0.71855900  1
+  F  F19  1  0.70749100  0.07271100  0.78144100  1
+  F  F20  1  0.81173300  0.17464300  0.52281300  1
+  F  F21  1  0.31173300  0.82535700  0.97718700  1

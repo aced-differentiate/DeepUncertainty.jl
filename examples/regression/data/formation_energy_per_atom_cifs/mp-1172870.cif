@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_K2Ho4Cu4S9
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.14038971
+_cell_length_b   7.14038971
+_cell_length_c   15.85119249
+_cell_angle_alpha   71.06674058
+_cell_angle_beta   71.06674058
+_cell_angle_gamma   32.03253774
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   K2Ho4Cu4S9
+_chemical_formula_sum   'K2 Ho4 Cu4 S9'
+_cell_volume   403.49503994
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.97093700  0.97093700  0.76953300  1
+  K  K1  1  0.02906300  0.02906300  0.23046700  1
+  Ho  Ho2  1  0.65456100  0.65456100  0.94575700  1
+  Ho  Ho3  1  0.23336400  0.23336400  0.39501700  1
+  Ho  Ho4  1  0.34543900  0.34543900  0.05424300  1
+  Ho  Ho5  1  0.76663600  0.76663600  0.60498300  1
+  Cu  Cu6  1  0.75415900  0.75415900  0.22858000  1
+  Cu  Cu7  1  0.56793300  0.56793300  0.54154900  1
+  Cu  Cu8  1  0.24584100  0.24584100  0.77142000  1
+  Cu  Cu9  1  0.43206700  0.43206700  0.45845100  1
+  S  S10  1  0.35049600  0.35049600  0.22112700  1
+  S  S11  1  0.64950400  0.64950400  0.77887300  1
+  S  S12  1  0.38993100  0.38993100  0.62715100  1
+  S  S13  1  0.61006900  0.61006900  0.37284900  1
+  S  S14  1  0.70042000  0.70042000  0.10265800  1
+  S  S15  1  0.13874700  0.13874700  0.57552300  1
+  S  S16  1  0.00000000  0.00000000  0.00000000  1
+  S  S17  1  0.29958000  0.29958000  0.89734200  1
+  S  S18  1  0.86125300  0.86125300  0.42447700  1

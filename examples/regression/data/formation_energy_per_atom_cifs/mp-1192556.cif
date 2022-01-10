@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_RbInTe3O8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.87332700
+_cell_length_b   7.75314168
+_cell_length_c   11.34230044
+_cell_angle_alpha   100.59785988
+_cell_angle_beta   89.41498925
+_cell_angle_gamma   109.50938536
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbInTe3O8
+_chemical_formula_sum   'Rb2 In2 Te6 O16'
+_cell_volume   477.80202530
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.83907800  0.11930300  0.16688500  1
+  Rb  Rb1  1  0.16092200  0.88069700  0.83311500  1
+  In  In2  1  0.50000000  0.50000000  0.00000000  1
+  In  In3  1  0.00000000  0.50000000  0.50000000  1
+  Te  Te4  1  0.22216300  0.99209900  0.41882700  1
+  Te  Te5  1  0.77783700  0.00790100  0.58117300  1
+  Te  Te6  1  0.06983100  0.67722500  0.14955200  1
+  Te  Te7  1  0.93016900  0.32277500  0.85044800  1
+  Te  Te8  1  0.51652300  0.52602900  0.33529300  1
+  Te  Te9  1  0.48347700  0.47397100  0.66470700  1
+  O  O10  1  0.18613000  0.73890800  0.41668400  1
+  O  O11  1  0.81387000  0.26109200  0.58331600  1
+  O  O12  1  0.23997600  0.93262500  0.23009500  1
+  O  O13  1  0.76002400  0.06737500  0.76990500  1
+  O  O14  1  0.88762100  0.96922700  0.39614700  1
+  O  O15  1  0.11237900  0.03077300  0.60385300  1
+  O  O16  1  0.27039800  0.67903300  0.01710200  1
+  O  O17  1  0.72960200  0.32096700  0.98289800  1
+  O  O18  1  0.82266100  0.73586800  0.07700300  1
+  O  O19  1  0.17733900  0.26413200  0.92299700  1
+  O  O20  1  0.39010400  0.42626200  0.17417400  1
+  O  O21  1  0.60989600  0.57373800  0.82582600  1
+  O  O22  1  0.24872200  0.37001200  0.40734200  1
+  O  O23  1  0.75127800  0.62998800  0.59265800  1
+  O  O24  1  0.73017700  0.39055900  0.34520900  1
+  O  O25  1  0.26982300  0.60944100  0.65479100  1

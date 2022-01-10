@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_CeAu2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.93681448
+_cell_length_b   5.93681448
+_cell_length_c   5.93681448
+_cell_angle_alpha   133.24841767
+_cell_angle_beta   107.75158121
+_cell_angle_gamma   90.56990432
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeAu2
+_chemical_formula_sum   'Ce2 Au4'
+_cell_volume   137.74451342
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.71531800  0.46531800  0.25000000  1
+  Ce  Ce1  1  0.28468200  0.53468200  0.75000000  1
+  Au  Au2  1  0.87077100  0.83598100  0.03479100  1
+  Au  Au3  1  0.12922900  0.16401900  0.96520900  1
+  Au  Au4  1  0.69881000  0.16401900  0.53479100  1
+  Au  Au5  1  0.30119000  0.83598100  0.46520900  1

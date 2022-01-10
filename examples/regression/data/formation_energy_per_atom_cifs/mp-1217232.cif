@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_U6Cu3Ni3Sb8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.22700165
+_cell_length_b   8.22700165
+_cell_length_c   9.48794558
+_cell_angle_alpha   54.83121608
+_cell_angle_beta   54.83121608
+_cell_angle_gamma   70.50384737
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   U6Cu3Ni3Sb8
+_chemical_formula_sum   'U6 Cu3 Ni3 Sb8'
+_cell_volume   429.12638900
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  U  U0  1  0.87322400  0.37036300  0.63403900  1
+  U  U1  1  0.62963700  0.12677600  0.36596100  1
+  U  U2  1  0.36898000  0.63102000  0.00000000  1
+  U  U3  1  0.13033700  0.86966300  0.50000000  1
+  U  U4  1  0.24547600  0.24504400  0.88193700  1
+  U  U5  1  0.75495600  0.75452400  0.11806300  1
+  Cu  Cu6  1  0.62449200  0.37550800  0.50000000  1
+  Cu  Cu7  1  0.24960900  0.25002200  0.37529800  1
+  Cu  Cu8  1  0.74997800  0.75039100  0.62470200  1
+  Ni  Ni9  1  0.37434400  0.87551700  0.12530900  1
+  Ni  Ni10  1  0.12448300  0.62565600  0.87469100  1
+  Ni  Ni11  1  0.87489200  0.12510800  0.00000000  1
+  Sb  Sb12  1  0.33330900  0.50309200  0.41473800  1
+  Sb  Sb13  1  0.00250800  0.83301900  0.24798000  1
+  Sb  Sb14  1  0.16698100  0.99749200  0.75202000  1
+  Sb  Sb15  1  0.49690800  0.66669100  0.58526200  1
+  Sb  Sb16  1  0.99949200  0.33479200  0.24796600  1
+  Sb  Sb17  1  0.83391000  0.49872400  0.91821500  1
+  Sb  Sb18  1  0.66520800  0.00050800  0.75203400  1
+  Sb  Sb19  1  0.50127600  0.16609000  0.08178500  1

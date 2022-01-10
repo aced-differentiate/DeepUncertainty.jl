@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_TmCu2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.35636886
+_cell_length_b   5.35636886
+_cell_length_c   5.35636886
+_cell_angle_alpha   132.81349583
+_cell_angle_beta   103.00144920
+_cell_angle_gamma   95.47492908
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TmCu2
+_chemical_formula_sum   'Tm2 Cu4'
+_cell_volume   103.00222874
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tm  Tm0  1  0.70708400  0.45708400  0.25000000  1
+  Tm  Tm1  1  0.29291600  0.54291600  0.75000000  1
+  Cu  Cu2  1  0.88307200  0.83465600  0.04841700  1
+  Cu  Cu3  1  0.11692800  0.16534400  0.95158300  1
+  Cu  Cu4  1  0.71376100  0.16534400  0.54841700  1
+  Cu  Cu5  1  0.28623900  0.83465600  0.45158300  1

@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Zn11Co2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.77724761
+_cell_length_b   7.77724761
+_cell_length_c   7.77724761
+_cell_angle_alpha   109.47122063
+_cell_angle_beta   109.47122063
+_cell_angle_gamma   109.47122063
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Zn11Co2
+_chemical_formula_sum   'Zn22 Co4'
+_cell_volume   362.12281463
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zn  Zn0  1  0.35424200  0.35424200  0.00000000  1
+  Zn  Zn1  1  0.00000000  0.64575800  0.64575800  1
+  Zn  Zn2  1  0.35424200  0.00000000  0.35424200  1
+  Zn  Zn3  1  0.00000000  0.35424200  0.35424200  1
+  Zn  Zn4  1  0.64575800  0.00000000  0.64575800  1
+  Zn  Zn5  1  0.64575800  0.64575800  0.00000000  1
+  Zn  Zn6  1  0.20772400  0.20772400  0.20772400  1
+  Zn  Zn7  1  0.00000000  0.00000000  0.79227600  1
+  Zn  Zn8  1  0.00000000  0.79227600  0.00000000  1
+  Zn  Zn9  1  0.79227600  0.00000000  0.00000000  1
+  Zn  Zn10  1  0.38905600  0.74115300  0.74115300  1
+  Zn  Zn11  1  0.64790300  0.00000000  0.25884700  1
+  Zn  Zn12  1  0.64790300  0.25884700  0.00000000  1
+  Zn  Zn13  1  0.00000000  0.64790300  0.25884700  1
+  Zn  Zn14  1  0.74115300  0.38905600  0.74115300  1
+  Zn  Zn15  1  0.25884700  0.64790300  0.00000000  1
+  Zn  Zn16  1  0.00000000  0.25884700  0.64790300  1
+  Zn  Zn17  1  0.25884700  0.00000000  0.64790300  1
+  Zn  Zn18  1  0.74115300  0.74115300  0.38905600  1
+  Zn  Zn19  1  0.61094400  0.35209700  0.35209700  1
+  Zn  Zn20  1  0.35209700  0.61094400  0.35209700  1
+  Zn  Zn21  1  0.35209700  0.35209700  0.61094400  1
+  Co  Co22  1  0.34458400  0.00000000  0.00000000  1
+  Co  Co23  1  0.00000000  0.34458400  0.00000000  1
+  Co  Co24  1  0.00000000  0.00000000  0.34458400  1
+  Co  Co25  1  0.65541600  0.65541600  0.65541600  1

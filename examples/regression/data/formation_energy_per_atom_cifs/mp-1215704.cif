@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Zr3Mn8Al
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.86891468
+_cell_length_b   4.86891468
+_cell_length_c   8.12078300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000926
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Zr3Mn8Al
+_chemical_formula_sum   'Zr3 Mn8 Al1'
+_cell_volume   166.72196707
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.66666700  0.33333300  0.44166400  1
+  Zr  Zr1  1  0.66666700  0.33333300  0.06531000  1
+  Zr  Zr2  1  0.00000000  0.00000000  0.92341900  1
+  Mn  Mn3  1  0.33333300  0.66666700  0.50253800  1
+  Mn  Mn4  1  0.33333300  0.66666700  0.00505000  1
+  Mn  Mn5  1  0.50438100  0.00876200  0.74522100  1
+  Mn  Mn6  1  0.50438100  0.49561900  0.74522100  1
+  Mn  Mn7  1  0.99123800  0.49561900  0.74522100  1
+  Mn  Mn8  1  0.15997400  0.31994700  0.25421800  1
+  Mn  Mn9  1  0.15997400  0.84002600  0.25421800  1
+  Mn  Mn10  1  0.68005300  0.84002600  0.25421800  1
+  Al  Al11  1  0.00000000  0.00000000  0.56371900  1

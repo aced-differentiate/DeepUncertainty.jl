@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_TbH2ClO2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.71560700
+_cell_length_b   6.18210600
+_cell_length_c   6.73061132
+_cell_angle_alpha   69.97060653
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbH2ClO2
+_chemical_formula_sum   'Tb2 H4 Cl2 O4'
+_cell_volume   145.25309365
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.25000000  0.70234900  0.12151400  1
+  Tb  Tb1  1  0.75000000  0.29765100  0.87848600  1
+  H  H2  1  0.75000000  0.88239500  0.77591200  1
+  H  H3  1  0.25000000  0.11760500  0.22408800  1
+  H  H4  1  0.75000000  0.31931700  0.30253600  1
+  H  H5  1  0.25000000  0.68068300  0.69746400  1
+  Cl  Cl6  1  0.75000000  0.75757100  0.43245900  1
+  Cl  Cl7  1  0.25000000  0.24242900  0.56754100  1
+  O  O8  1  0.75000000  0.89796500  0.91502200  1
+  O  O9  1  0.25000000  0.10203500  0.08497800  1
+  O  O10  1  0.75000000  0.43720200  0.16195800  1
+  O  O11  1  0.25000000  0.56279800  0.83804200  1

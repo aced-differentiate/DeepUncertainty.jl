@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Li8Ag5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.32774705
+_cell_length_b   8.32774705
+_cell_length_c   8.32774705
+_cell_angle_alpha   109.47122063
+_cell_angle_beta   109.47122063
+_cell_angle_gamma   109.47122063
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li8Ag5
+_chemical_formula_sum   'Li16 Ag10'
+_cell_volume   444.59101835
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.36949800  0.65248600  0.65248600  1
+  Li  Li1  1  0.63050200  0.28298800  0.28298800  1
+  Li  Li2  1  0.00000000  0.34751400  0.71701200  1
+  Li  Li3  1  0.65248600  0.65248600  0.36949800  1
+  Li  Li4  1  0.00000000  0.71701200  0.34751400  1
+  Li  Li5  1  0.28298800  0.28298800  0.63050200  1
+  Li  Li6  1  0.34751400  0.71701200  0.00000000  1
+  Li  Li7  1  0.71701200  0.34751400  0.00000000  1
+  Li  Li8  1  0.65248600  0.36949800  0.65248600  1
+  Li  Li9  1  0.71701200  0.00000000  0.34751400  1
+  Li  Li10  1  0.34751400  0.00000000  0.71701200  1
+  Li  Li11  1  0.28298800  0.63050200  0.28298800  1
+  Li  Li12  1  0.76970500  0.76970500  0.76970500  1
+  Li  Li13  1  0.23029500  0.00000000  0.00000000  1
+  Li  Li14  1  0.00000000  0.23029500  0.00000000  1
+  Li  Li15  1  0.00000000  0.00000000  0.23029500  1
+  Ag  Ag16  1  0.34441300  0.34441300  0.34441300  1
+  Ag  Ag17  1  0.65558700  0.00000000  0.00000000  1
+  Ag  Ag18  1  0.00000000  0.65558700  0.00000000  1
+  Ag  Ag19  1  0.00000000  0.00000000  0.65558700  1
+  Ag  Ag20  1  0.64662500  0.64662500  0.00000000  1
+  Ag  Ag21  1  0.35337500  0.35337500  0.00000000  1
+  Ag  Ag22  1  0.64662500  0.00000000  0.64662500  1
+  Ag  Ag23  1  0.35337500  0.00000000  0.35337500  1
+  Ag  Ag24  1  0.00000000  0.64662500  0.64662500  1
+  Ag  Ag25  1  0.00000000  0.35337500  0.35337500  1

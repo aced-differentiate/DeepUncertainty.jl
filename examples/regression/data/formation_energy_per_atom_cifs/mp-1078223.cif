@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_Eu(Ag2Sb)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.65775942
+_cell_length_b   8.65775942
+_cell_length_c   8.65775989
+_cell_angle_alpha   32.09989243
+_cell_angle_beta   32.09989243
+_cell_angle_gamma   32.09989474
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu(Ag2Sb)2
+_chemical_formula_sum   'Eu1 Ag4 Sb2'
+_cell_volume   162.84617974
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.00000000  0.00000000  0.00000000  1
+  Ag  Ag1  1  0.85797800  0.85797800  0.85797800  1
+  Ag  Ag2  1  0.14202200  0.14202200  0.14202200  1
+  Ag  Ag3  1  0.56645700  0.56645700  0.56645700  1
+  Ag  Ag4  1  0.43354300  0.43354300  0.43354300  1
+  Sb  Sb5  1  0.74084700  0.74084700  0.74084700  1
+  Sb  Sb6  1  0.25915300  0.25915300  0.25915300  1

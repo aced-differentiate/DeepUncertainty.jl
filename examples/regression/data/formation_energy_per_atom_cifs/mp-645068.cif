@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Ce2In3Ru2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.70903500
+_cell_length_b   7.52404500
+_cell_length_c   17.71355500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ce2In3Ru2
+_chemical_formula_sum   'Ce8 In12 Ru8'
+_cell_volume   627.60881215
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.75000000  0.06281700  0.14595400  1
+  Ce  Ce1  1  0.25000000  0.56281700  0.35404600  1
+  Ce  Ce2  1  0.25000000  0.44713800  0.92440900  1
+  Ce  Ce3  1  0.75000000  0.94713800  0.57559100  1
+  Ce  Ce4  1  0.25000000  0.93718300  0.85404600  1
+  Ce  Ce5  1  0.75000000  0.43718300  0.64595400  1
+  Ce  Ce6  1  0.25000000  0.05286200  0.42440900  1
+  Ce  Ce7  1  0.75000000  0.55286200  0.07559100  1
+  In  In8  1  0.25000000  0.76923500  0.19352200  1
+  In  In9  1  0.75000000  0.12595300  0.96712700  1
+  In  In10  1  0.25000000  0.62595300  0.53287300  1
+  In  In11  1  0.25000000  0.35799100  0.18521300  1
+  In  In12  1  0.75000000  0.26923500  0.30647800  1
+  In  In13  1  0.25000000  0.14200900  0.68521300  1
+  In  In14  1  0.75000000  0.37404700  0.46712700  1
+  In  In15  1  0.75000000  0.64200900  0.81478700  1
+  In  In16  1  0.75000000  0.23076500  0.80647800  1
+  In  In17  1  0.75000000  0.85799100  0.31478700  1
+  In  In18  1  0.25000000  0.87404700  0.03287300  1
+  In  In19  1  0.25000000  0.73076500  0.69352200  1
+  Ru  Ru20  1  0.25000000  0.23887900  0.53165100  1
+  Ru  Ru21  1  0.25000000  0.43414900  0.78881100  1
+  Ru  Ru22  1  0.25000000  0.26112100  0.03165100  1
+  Ru  Ru23  1  0.25000000  0.06585100  0.28881100  1
+  Ru  Ru24  1  0.75000000  0.73887900  0.96834900  1
+  Ru  Ru25  1  0.75000000  0.93414900  0.71118900  1
+  Ru  Ru26  1  0.75000000  0.56585100  0.21118900  1
+  Ru  Ru27  1  0.75000000  0.76112100  0.46834900  1

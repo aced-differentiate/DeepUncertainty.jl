@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Lu2InCu2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.51578200
+_cell_length_b   7.51578200
+_cell_length_c   3.52799100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Lu2InCu2
+_chemical_formula_sum   'Lu4 In2 Cu4'
+_cell_volume   199.28555378
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Lu  Lu0  1  0.67254300  0.17254300  0.50000000  1
+  Lu  Lu1  1  0.32745700  0.82745700  0.50000000  1
+  Lu  Lu2  1  0.17254300  0.32745700  0.50000000  1
+  Lu  Lu3  1  0.82745700  0.67254300  0.50000000  1
+  In  In4  1  0.50000000  0.50000000  0.00000000  1
+  In  In5  1  0.00000000  0.00000000  0.00000000  1
+  Cu  Cu6  1  0.11934900  0.61934900  0.00000000  1
+  Cu  Cu7  1  0.88065100  0.38065100  0.00000000  1
+  Cu  Cu8  1  0.61934900  0.88065100  0.00000000  1
+  Cu  Cu9  1  0.38065100  0.11934900  0.00000000  1

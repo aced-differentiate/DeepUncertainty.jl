@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Gd2MnNiO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.65200300
+_cell_length_b   5.34112600
+_cell_length_c   9.28340977
+_cell_angle_alpha   55.32216594
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Gd2MnNiO6
+_chemical_formula_sum   'Gd4 Mn2 Ni2 O12'
+_cell_volume   230.46603607
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.06565300  0.72929700  0.75212300  1
+  Gd  Gd1  1  0.93434700  0.27070300  0.24787700  1
+  Gd  Gd2  1  0.56565300  0.27070300  0.74787700  1
+  Gd  Gd3  1  0.43434700  0.72929700  0.25212300  1
+  Mn  Mn4  1  0.50000000  0.00000000  0.50000000  1
+  Mn  Mn5  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni6  1  0.50000000  0.50000000  0.00000000  1
+  Ni  Ni7  1  0.00000000  0.50000000  0.50000000  1
+  O  O8  1  0.46274800  0.86411900  0.74043300  1
+  O  O9  1  0.53725200  0.13588100  0.25956700  1
+  O  O10  1  0.96274800  0.13588100  0.75956700  1
+  O  O11  1  0.03725200  0.86411900  0.24043300  1
+  O  O12  1  0.78737500  0.75681100  0.55810900  1
+  O  O13  1  0.21262500  0.24318900  0.44189100  1
+  O  O14  1  0.28737500  0.24318900  0.94189100  1
+  O  O15  1  0.71262500  0.75681100  0.05810900  1
+  O  O16  1  0.31100600  0.65676200  0.54925500  1
+  O  O17  1  0.68899400  0.34323800  0.45074500  1
+  O  O18  1  0.81100600  0.34323800  0.95074500  1
+  O  O19  1  0.18899400  0.65676200  0.04925500  1

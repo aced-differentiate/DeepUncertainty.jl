@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Ce2Mn22C3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.52570949
+_cell_length_b   7.78149275
+_cell_length_c   7.79546358
+_cell_angle_alpha   99.02531673
+_cell_angle_beta   114.87860706
+_cell_angle_gamma   65.34415528
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ce2Mn22C3
+_chemical_formula_sum   'Ce2 Mn22 C3'
+_cell_volume   326.29312535
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.38207600  0.74869600  0.24869600  1
+  Ce  Ce1  1  0.61792400  0.25130400  0.75130400  1
+  Mn  Mn2  1  0.00000000  0.50000000  0.00000000  1
+  Mn  Mn3  1  0.00000000  0.50000000  0.50000000  1
+  Mn  Mn4  1  0.50000000  0.00000000  0.00000000  1
+  Mn  Mn5  1  0.00000000  0.00000000  0.50000000  1
+  Mn  Mn6  1  0.12007100  0.24816400  0.74816400  1
+  Mn  Mn7  1  0.87992900  0.75183600  0.25183600  1
+  Mn  Mn8  1  0.17513700  0.17703700  0.41651200  1
+  Mn  Mn9  1  0.43566300  0.91651200  0.67703700  1
+  Mn  Mn10  1  0.85237500  0.82418900  0.91928700  1
+  Mn  Mn11  1  0.25727600  0.41928700  0.32418900  1
+  Mn  Mn12  1  0.18825300  0.57436900  0.83208100  1
+  Mn  Mn13  1  0.43054100  0.33208100  0.07436900  1
+  Mn  Mn14  1  0.84918900  0.08932800  0.17254500  1
+  Mn  Mn15  1  0.26597200  0.67254500  0.58932800  1
+  Mn  Mn16  1  0.82486300  0.82296300  0.58348800  1
+  Mn  Mn17  1  0.56433700  0.08348800  0.32296300  1
+  Mn  Mn18  1  0.14762500  0.17581100  0.08071300  1
+  Mn  Mn19  1  0.74272400  0.58071300  0.67581100  1
+  Mn  Mn20  1  0.81174700  0.42563100  0.16791900  1
+  Mn  Mn21  1  0.56945900  0.66791900  0.92563100  1
+  Mn  Mn22  1  0.15081100  0.91067200  0.82745500  1
+  Mn  Mn23  1  0.73402800  0.32745500  0.41067200  1
+  C  C24  1  0.50000000  0.50000000  0.50000000  1
+  C  C25  1  0.00000000  0.00000000  0.00000000  1
+  C  C26  1  0.50000000  0.00000000  0.50000000  1

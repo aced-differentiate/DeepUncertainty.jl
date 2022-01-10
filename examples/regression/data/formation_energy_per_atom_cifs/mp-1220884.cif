@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_NaTiVS4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.29525815
+_cell_length_b   7.29525815
+_cell_length_c   5.90623420
+_cell_angle_alpha   82.20291057
+_cell_angle_beta   82.20291057
+_cell_angle_gamma   27.19100793
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaTiVS4
+_chemical_formula_sum   'Na1 Ti1 V1 S4'
+_cell_volume   142.23172796
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.24333700  0.24333700  0.91356800  1
+  Ti  Ti1  1  0.49313000  0.49313000  0.49402500  1
+  V  V2  1  0.99298900  0.99298900  0.01009700  1
+  S  S3  1  0.89287700  0.89287700  0.70516600  1
+  S  S4  1  0.39148500  0.39148500  0.20071400  1
+  S  S5  1  0.59215800  0.59215800  0.80653600  1
+  S  S6  1  0.09502400  0.09502400  0.30289400  1

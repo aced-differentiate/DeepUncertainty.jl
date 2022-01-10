@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Ce3(AgSn)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.95231902
+_cell_length_b   8.95231902
+_cell_length_c   8.95231902
+_cell_angle_alpha   149.32547557
+_cell_angle_beta   131.01502574
+_cell_angle_gamma   58.91319510
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ce3(AgSn)4
+_chemical_formula_sum   'Ce3 Ag4 Sn4'
+_cell_volume   274.01700799
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.50000000  0.00000000  0.50000000  1
+  Ce  Ce1  1  0.12968100  0.12968100  0.00000000  1
+  Ce  Ce2  1  0.87031900  0.87031900  0.00000000  1
+  Ag  Ag3  1  0.52474700  0.33084400  0.19390300  1
+  Ag  Ag4  1  0.47525300  0.66915600  0.80609700  1
+  Ag  Ag5  1  0.86305900  0.66915600  0.19390300  1
+  Ag  Ag6  1  0.13694100  0.33084400  0.80609700  1
+  Sn  Sn7  1  0.71535700  0.21535700  0.50000000  1
+  Sn  Sn8  1  0.28464300  0.78464300  0.50000000  1
+  Sn  Sn9  1  0.19457200  0.50000000  0.69457200  1
+  Sn  Sn10  1  0.80542800  0.50000000  0.30542800  1

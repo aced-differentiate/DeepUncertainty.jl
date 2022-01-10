@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_Nd12InCo6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.66788545
+_cell_length_b   8.66788545
+_cell_length_c   8.66788545
+_cell_angle_alpha   109.47122063
+_cell_angle_beta   109.47122063
+_cell_angle_gamma   109.47122063
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Nd12InCo6
+_chemical_formula_sum   'Nd12 In1 Co6'
+_cell_volume   501.32296511
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  1  0.80887100  0.69399000  0.50286100  1
+  Nd  Nd1  1  0.19112900  0.30601000  0.49713900  1
+  Nd  Nd2  1  0.19112900  0.69399000  0.88511900  1
+  Nd  Nd3  1  0.80887100  0.30601000  0.11488100  1
+  Nd  Nd4  1  0.69399000  0.50286100  0.80887100  1
+  Nd  Nd5  1  0.30601000  0.49713900  0.19112900  1
+  Nd  Nd6  1  0.69399000  0.88511900  0.19112900  1
+  Nd  Nd7  1  0.30601000  0.11488100  0.80887100  1
+  Nd  Nd8  1  0.50286100  0.80887100  0.69399000  1
+  Nd  Nd9  1  0.49713900  0.19112900  0.30601000  1
+  Nd  Nd10  1  0.11488100  0.80887100  0.30601000  1
+  Nd  Nd11  1  0.88511900  0.19112900  0.69399000  1
+  In  In12  1  0.00000000  0.00000000  0.00000000  1
+  Co  Co13  1  0.88822100  0.38822100  0.50000000  1
+  Co  Co14  1  0.11177900  0.61177900  0.50000000  1
+  Co  Co15  1  0.38822100  0.50000000  0.88822100  1
+  Co  Co16  1  0.61177900  0.50000000  0.11177900  1
+  Co  Co17  1  0.50000000  0.88822100  0.38822100  1
+  Co  Co18  1  0.50000000  0.11177900  0.61177900  1

@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_Sm2Re2Si2C
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.89263881
+_cell_length_b   5.89263881
+_cell_length_c   7.09286198
+_cell_angle_alpha   54.96635745
+_cell_angle_beta   54.96635745
+_cell_angle_gamma   40.00961961
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sm2Re2Si2C
+_chemical_formula_sum   'Sm2 Re2 Si2 C1'
+_cell_volume   125.35825598
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.42790800  0.42790800  0.30282800  1
+  Sm  Sm1  1  0.57209200  0.57209200  0.69717200  1
+  Re  Re2  1  0.79466500  0.79466500  0.08890600  1
+  Re  Re3  1  0.20533500  0.20533500  0.91109400  1
+  Si  Si4  1  0.85464000  0.85464000  0.68981000  1
+  Si  Si5  1  0.14536000  0.14536000  0.31019000  1
+  C  C6  1  0.00000000  0.00000000  0.00000000  1

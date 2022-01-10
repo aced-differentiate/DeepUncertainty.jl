@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_ErTc2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.35341578
+_cell_length_b   5.35341578
+_cell_length_c   8.86738800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999729
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ErTc2
+_chemical_formula_sum   'Er4 Tc8'
+_cell_volume   220.08391601
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Er  Er0  1  0.33333300  0.66666700  0.43627600  1
+  Er  Er1  1  0.66666700  0.33333300  0.56372400  1
+  Er  Er2  1  0.66666700  0.33333300  0.93627600  1
+  Er  Er3  1  0.33333300  0.66666700  0.06372400  1
+  Tc  Tc4  1  0.00000000  0.00000000  0.50000000  1
+  Tc  Tc5  1  0.00000000  0.00000000  0.00000000  1
+  Tc  Tc6  1  0.82844700  0.17155300  0.25000000  1
+  Tc  Tc7  1  0.82844700  0.65689500  0.25000000  1
+  Tc  Tc8  1  0.34310500  0.17155300  0.25000000  1
+  Tc  Tc9  1  0.17155300  0.82844700  0.75000000  1
+  Tc  Tc10  1  0.17155300  0.34310500  0.75000000  1
+  Tc  Tc11  1  0.65689500  0.82844700  0.75000000  1

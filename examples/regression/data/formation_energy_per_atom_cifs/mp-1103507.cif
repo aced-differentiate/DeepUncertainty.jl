@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Ho(Ni2As)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.22660000
+_cell_length_b   7.22660000
+_cell_length_c   3.77929800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho(Ni2As)2
+_chemical_formula_sum   'Ho2 Ni8 As4'
+_cell_volume   197.36910471
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.50000000  0.50000000  0.00000000  1
+  Ho  Ho1  1  0.00000000  0.00000000  0.50000000  1
+  Ni  Ni2  1  0.58916700  0.15378800  0.50000000  1
+  Ni  Ni3  1  0.41083300  0.84621200  0.50000000  1
+  Ni  Ni4  1  0.08916700  0.34621200  0.00000000  1
+  Ni  Ni5  1  0.91083300  0.65378800  0.00000000  1
+  Ni  Ni6  1  0.15378800  0.58916700  0.50000000  1
+  Ni  Ni7  1  0.84621200  0.41083300  0.50000000  1
+  Ni  Ni8  1  0.34621200  0.08916700  0.00000000  1
+  Ni  Ni9  1  0.65378800  0.91083300  0.00000000  1
+  As  As10  1  0.71713000  0.71713000  0.50000000  1
+  As  As11  1  0.28287000  0.28287000  0.50000000  1
+  As  As12  1  0.21713000  0.78287000  0.00000000  1
+  As  As13  1  0.78287000  0.21713000  0.00000000  1

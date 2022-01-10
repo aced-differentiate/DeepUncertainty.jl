@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Ag5PSeO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.98528600
+_cell_length_b   6.98528600
+_cell_length_c   7.36352400
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ag5PSeO4
+_chemical_formula_sum   'Ag10 P2 Se2 O8'
+_cell_volume   359.29741373
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ag  Ag0  1  0.78071300  0.71928700  0.19572100  1
+  Ag  Ag1  1  0.21928700  0.71928700  0.19572100  1
+  Ag  Ag2  1  0.78071300  0.28071300  0.19572100  1
+  Ag  Ag3  1  0.21928700  0.28071300  0.19572100  1
+  Ag  Ag4  1  0.71928700  0.78071300  0.80427900  1
+  Ag  Ag5  1  0.28071300  0.78071300  0.80427900  1
+  Ag  Ag6  1  0.71928700  0.21928700  0.80427900  1
+  Ag  Ag7  1  0.28071300  0.21928700  0.80427900  1
+  Ag  Ag8  1  0.00000000  0.50000000  0.46965700  1
+  Ag  Ag9  1  0.50000000  0.00000000  0.53034300  1
+  P  P10  1  0.50000000  0.50000000  0.50000000  1
+  P  P11  1  0.00000000  0.00000000  0.50000000  1
+  Se  Se12  1  0.00000000  0.50000000  0.00047100  1
+  Se  Se13  1  0.50000000  0.00000000  0.99952900  1
+  O  O14  1  0.50000000  0.31627400  0.37678700  1
+  O  O15  1  0.50000000  0.68372600  0.37678700  1
+  O  O16  1  0.81627400  0.00000000  0.37678700  1
+  O  O17  1  0.18372600  0.00000000  0.37678700  1
+  O  O18  1  0.00000000  0.18372600  0.62321300  1
+  O  O19  1  0.00000000  0.81627400  0.62321300  1
+  O  O20  1  0.68372600  0.50000000  0.62321300  1
+  O  O21  1  0.31627400  0.50000000  0.62321300  1

@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Tb2(Ga3Rh)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.57048952
+_cell_length_b   7.57048952
+_cell_length_c   9.54500400
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.89847360
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Tb2(Ga3Rh)3
+_chemical_formula_sum   'Tb4 Ga18 Rh6'
+_cell_volume   474.23987430
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.99697300  0.66772400  0.25000000  1
+  Tb  Tb1  1  0.00302700  0.33227600  0.75000000  1
+  Tb  Tb2  1  0.66772400  0.99697300  0.25000000  1
+  Tb  Tb3  1  0.33227600  0.00302700  0.75000000  1
+  Ga  Ga4  1  0.12488900  0.12488900  0.25000000  1
+  Ga  Ga5  1  0.87511100  0.87511100  0.75000000  1
+  Ga  Ga6  1  0.00052500  0.33380400  0.07719100  1
+  Ga  Ga7  1  0.99947500  0.66619600  0.92280900  1
+  Ga  Ga8  1  0.99947500  0.66619600  0.57719100  1
+  Ga  Ga9  1  0.33380400  0.00052500  0.42280900  1
+  Ga  Ga10  1  0.00052500  0.33380400  0.42280900  1
+  Ga  Ga11  1  0.66619600  0.99947500  0.57719100  1
+  Ga  Ga12  1  0.66619600  0.99947500  0.92280900  1
+  Ga  Ga13  1  0.33380400  0.00052500  0.07719100  1
+  Ga  Ga14  1  0.33415700  0.33415700  0.56140800  1
+  Ga  Ga15  1  0.66584300  0.66584300  0.43859200  1
+  Ga  Ga16  1  0.66584300  0.66584300  0.06140800  1
+  Ga  Ga17  1  0.33415700  0.33415700  0.93859200  1
+  Ga  Ga18  1  0.33729100  0.54662000  0.25000000  1
+  Ga  Ga19  1  0.66270900  0.45338000  0.75000000  1
+  Ga  Ga20  1  0.54662000  0.33729100  0.25000000  1
+  Ga  Ga21  1  0.45338000  0.66270900  0.75000000  1
+  Rh  Rh22  1  0.67163100  0.32836900  0.00000000  1
+  Rh  Rh23  1  0.32836900  0.67163100  0.00000000  1
+  Rh  Rh24  1  0.32836900  0.67163100  0.50000000  1
+  Rh  Rh25  1  0.67163100  0.32836900  0.50000000  1
+  Rh  Rh26  1  0.00000000  0.00000000  0.00000000  1
+  Rh  Rh27  1  0.00000000  0.00000000  0.50000000  1

@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_CeGaIr
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.36772400
+_cell_length_b   6.87620600
+_cell_length_c   7.88808200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeGaIr
+_chemical_formula_sum   'Ce4 Ga4 Ir4'
+_cell_volume   236.90568510
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.25000000  0.53034300  0.18827500  1
+  Ce  Ce1  1  0.75000000  0.46965700  0.81172500  1
+  Ce  Ce2  1  0.75000000  0.96965700  0.68827500  1
+  Ce  Ce3  1  0.25000000  0.03034300  0.31172500  1
+  Ga  Ga4  1  0.25000000  0.65015000  0.56856600  1
+  Ga  Ga5  1  0.75000000  0.34985000  0.43143400  1
+  Ga  Ga6  1  0.75000000  0.84985000  0.06856600  1
+  Ga  Ga7  1  0.25000000  0.15015000  0.93143400  1
+  Ir  Ir8  1  0.25000000  0.76081700  0.88953000  1
+  Ir  Ir9  1  0.75000000  0.23918300  0.11047000  1
+  Ir  Ir10  1  0.75000000  0.73918300  0.38953000  1
+  Ir  Ir11  1  0.25000000  0.26081700  0.61047000  1

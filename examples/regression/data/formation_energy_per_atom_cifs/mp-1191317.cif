@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Sr2CoGe2O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.39526700
+_cell_length_b   8.26178500
+_cell_length_c   8.26193500
+_cell_angle_alpha   89.99713585
+_cell_angle_beta   89.99806965
+_cell_angle_gamma   89.99902602
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr2CoGe2O7
+_chemical_formula_sum   'Sr4 Co2 Ge4 O14'
+_cell_volume   368.27191849
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.50708400  0.83428700  0.33426100  1
+  Sr  Sr1  1  0.49290600  0.66574100  0.83428200  1
+  Sr  Sr2  1  0.50708800  0.16571300  0.66573800  1
+  Sr  Sr3  1  0.49290500  0.33425500  0.16571800  1
+  Co  Co4  1  0.99996100  0.99999600  0.99999400  1
+  Co  Co5  1  0.00000400  0.50000000  0.49999800  1
+  Ge  Ge6  1  0.95141800  0.35723900  0.85712200  1
+  Ge  Ge7  1  0.04858600  0.14288000  0.35723100  1
+  Ge  Ge8  1  0.95141800  0.64276100  0.14287600  1
+  Ge  Ge9  1  0.04859100  0.85712000  0.64277200  1
+  O  O10  1  0.18435100  0.00000100  0.50000100  1
+  O  O11  1  0.81565300  0.50000100  0.99999800  1
+  O  O12  1  0.27409300  0.36150800  0.86139100  1
+  O  O13  1  0.72591000  0.13860600  0.36150900  1
+  O  O14  1  0.27409300  0.63849000  0.13860700  1
+  O  O15  1  0.72590700  0.86139400  0.63849500  1
+  O  O16  1  0.20828500  0.32113900  0.41811800  1
+  O  O17  1  0.79140900  0.17902300  0.91800900  1
+  O  O18  1  0.20830000  0.67886200  0.58188000  1
+  O  O19  1  0.79141500  0.82098200  0.08199800  1
+  O  O20  1  0.79170500  0.58188500  0.32114100  1
+  O  O21  1  0.20859600  0.91800100  0.82097400  1
+  O  O22  1  0.79170800  0.41811800  0.67886600  1
+  O  O23  1  0.20861200  0.08199800  0.17902100  1

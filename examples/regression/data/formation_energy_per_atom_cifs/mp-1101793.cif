@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_YSeO3F
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.10902500
+_cell_length_b   4.43927500
+_cell_length_c   6.63369620
+_cell_angle_alpha   83.88231939
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   YSeO3F
+_chemical_formula_sum   'Y2 Se2 O6 F2'
+_cell_volume   208.16002842
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  1  0.25000000  0.54003400  0.36433000  1
+  Y  Y1  1  0.75000000  0.45996600  0.63567000  1
+  Se  Se2  1  0.75000000  0.68014000  0.14804600  1
+  Se  Se3  1  0.25000000  0.31986000  0.85195400  1
+  O  O4  1  0.25000000  0.58942400  0.01566500  1
+  O  O5  1  0.75000000  0.41057600  0.98433500  1
+  O  O6  1  0.57391400  0.56135800  0.32290300  1
+  O  O7  1  0.07391400  0.43864200  0.67709700  1
+  O  O8  1  0.42608600  0.43864200  0.67709700  1
+  O  O9  1  0.92608600  0.56135800  0.32290300  1
+  F  F10  1  0.25000000  0.04039900  0.35095500  1
+  F  F11  1  0.75000000  0.95960100  0.64904500  1

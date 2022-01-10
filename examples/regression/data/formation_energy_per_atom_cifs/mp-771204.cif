@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Na3FeSiCO7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.61271600
+_cell_length_b   5.25421200
+_cell_length_c   9.01231138
+_cell_angle_alpha   89.33043182
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na3FeSiCO7
+_chemical_formula_sum   'Na6 Fe2 Si2 C2 O14'
+_cell_volume   313.10787882
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.75000000  0.23781000  0.91216300  1
+  Na  Na1  1  0.99216300  0.74385700  0.73439700  1
+  Na  Na2  1  0.50783700  0.74385700  0.73439700  1
+  Na  Na3  1  0.49216300  0.25614300  0.26560300  1
+  Na  Na4  1  0.00783700  0.25614300  0.26560300  1
+  Na  Na5  1  0.25000000  0.76219000  0.08783700  1
+  Fe  Fe6  1  0.25000000  0.20994300  0.64449800  1
+  Fe  Fe7  1  0.75000000  0.79005700  0.35550200  1
+  Si  Si8  1  0.75000000  0.29308000  0.57992900  1
+  Si  Si9  1  0.25000000  0.70692000  0.42007100  1
+  C  C10  1  0.25000000  0.26652500  0.93761400  1
+  C  C11  1  0.75000000  0.73347500  0.06238600  1
+  O  O12  1  0.75000000  0.70806700  0.92004200  1
+  O  O13  1  0.25000000  0.04179200  0.87790900  1
+  O  O14  1  0.25000000  0.46481500  0.84918300  1
+  O  O15  1  0.94889000  0.22531000  0.68344400  1
+  O  O16  1  0.55111000  0.22531000  0.68344400  1
+  O  O17  1  0.75000000  0.60327500  0.54304500  1
+  O  O18  1  0.25000000  0.85916900  0.57770100  1
+  O  O19  1  0.75000000  0.14083100  0.42229900  1
+  O  O20  1  0.25000000  0.39672500  0.45695500  1
+  O  O21  1  0.44889000  0.77469000  0.31655600  1
+  O  O22  1  0.05111000  0.77469000  0.31655600  1
+  O  O23  1  0.75000000  0.53518500  0.15081700  1
+  O  O24  1  0.75000000  0.95820800  0.12209100  1
+  O  O25  1  0.25000000  0.29193300  0.07995800  1

@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Ga3Re
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.55351700
+_cell_length_b   6.55351700
+_cell_length_c   7.09896300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ga3Re
+_chemical_formula_sum   'Ga12 Re4'
+_cell_volume   304.89041631
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ga  Ga0  1  0.00000000  0.50000000  0.50000000  1
+  Ga  Ga1  1  0.50000000  0.00000000  0.00000000  1
+  Ga  Ga2  1  0.50000000  0.00000000  0.50000000  1
+  Ga  Ga3  1  0.00000000  0.50000000  0.00000000  1
+  Ga  Ga4  1  0.33772000  0.66228000  0.24820100  1
+  Ga  Ga5  1  0.66228000  0.33772000  0.24820100  1
+  Ga  Ga6  1  0.16228000  0.16228000  0.74820100  1
+  Ga  Ga7  1  0.83772000  0.83772000  0.74820100  1
+  Ga  Ga8  1  0.66228000  0.33772000  0.75179900  1
+  Ga  Ga9  1  0.33772000  0.66228000  0.75179900  1
+  Ga  Ga10  1  0.83772000  0.83772000  0.25179900  1
+  Ga  Ga11  1  0.16228000  0.16228000  0.25179900  1
+  Re  Re12  1  0.14387100  0.85612900  0.50000000  1
+  Re  Re13  1  0.85612900  0.14387100  0.50000000  1
+  Re  Re14  1  0.35612900  0.35612900  0.00000000  1
+  Re  Re15  1  0.64387100  0.64387100  0.00000000  1

@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Yb(Al5Os)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.90064476
+_cell_length_b   6.90064476
+_cell_length_c   9.13906500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   96.34482928
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Yb(Al5Os)2
+_chemical_formula_sum   'Yb2 Al20 Os4'
+_cell_volume   432.52656286
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.62617800  0.37382200  0.75000000  1
+  Yb  Yb1  1  0.37382200  0.62617800  0.25000000  1
+  Al  Al2  1  0.28268600  0.02271900  0.75000000  1
+  Al  Al3  1  0.02271900  0.28268600  0.25000000  1
+  Al  Al4  1  0.71731400  0.97728100  0.25000000  1
+  Al  Al5  1  0.97728100  0.71731400  0.75000000  1
+  Al  Al6  1  0.87647000  0.12353000  0.95548200  1
+  Al  Al7  1  0.12353000  0.87647000  0.04451800  1
+  Al  Al8  1  0.87647000  0.12353000  0.54451800  1
+  Al  Al9  1  0.12353000  0.87647000  0.45548200  1
+  Al  Al10  1  0.64358200  0.91586500  0.75000000  1
+  Al  Al11  1  0.91586500  0.64358200  0.25000000  1
+  Al  Al12  1  0.35641800  0.08413500  0.25000000  1
+  Al  Al13  1  0.08413500  0.35641800  0.75000000  1
+  Al  Al14  1  0.34469800  0.65530200  0.90043800  1
+  Al  Al15  1  0.65530200  0.34469800  0.09956200  1
+  Al  Al16  1  0.34469800  0.65530200  0.59956200  1
+  Al  Al17  1  0.65530200  0.34469800  0.40043800  1
+  Al  Al18  1  0.72325400  0.72325400  0.00000000  1
+  Al  Al19  1  0.72325400  0.72325400  0.50000000  1
+  Al  Al20  1  0.27674600  0.27674600  0.00000000  1
+  Al  Al21  1  0.27674600  0.27674600  0.50000000  1
+  Os  Os22  1  0.50000000  0.00000000  0.00000000  1
+  Os  Os23  1  0.00000000  0.50000000  0.00000000  1
+  Os  Os24  1  0.50000000  0.00000000  0.50000000  1
+  Os  Os25  1  0.00000000  0.50000000  0.50000000  1

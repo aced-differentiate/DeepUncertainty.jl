@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_HoB4Os
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.56446800
+_cell_length_b   5.96245600
+_cell_length_c   11.53036800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoB4Os
+_chemical_formula_sum   'Ho4 B16 Os4'
+_cell_volume   245.05472216
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.00000000  0.62810900  0.34974400  1
+  Ho  Ho1  1  0.00000000  0.37189100  0.65025600  1
+  Ho  Ho2  1  0.00000000  0.12810900  0.15025600  1
+  Ho  Ho3  1  0.00000000  0.87189100  0.84974400  1
+  B  B4  1  0.50000000  0.78905300  0.18594200  1
+  B  B5  1  0.50000000  0.21094700  0.81405800  1
+  B  B6  1  0.50000000  0.28905300  0.31405800  1
+  B  B7  1  0.50000000  0.71094700  0.68594200  1
+  B  B8  1  0.50000000  0.86402800  0.02999600  1
+  B  B9  1  0.50000000  0.13597200  0.97000400  1
+  B  B10  1  0.50000000  0.36402800  0.47000400  1
+  B  B11  1  0.50000000  0.63597200  0.52999600  1
+  B  B12  1  0.50000000  0.88719500  0.45320600  1
+  B  B13  1  0.50000000  0.11280500  0.54679400  1
+  B  B14  1  0.50000000  0.38719500  0.04679400  1
+  B  B15  1  0.50000000  0.61280500  0.95320600  1
+  B  B16  1  0.50000000  0.97469300  0.30854800  1
+  B  B17  1  0.50000000  0.02530700  0.69145200  1
+  B  B18  1  0.50000000  0.47469300  0.19145200  1
+  B  B19  1  0.50000000  0.52530700  0.80854800  1
+  Os  Os20  1  0.00000000  0.64134300  0.09350900  1
+  Os  Os21  1  0.00000000  0.35865700  0.90649100  1
+  Os  Os22  1  0.00000000  0.14134300  0.40649100  1
+  Os  Os23  1  0.00000000  0.85865700  0.59350900  1

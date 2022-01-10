@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_HoTiClO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.28588042
+_cell_length_b   5.28588042
+_cell_length_c   9.90364222
+_cell_angle_alpha   74.34688437
+_cell_angle_beta   74.34688437
+_cell_angle_gamma   43.38760746
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoTiClO3
+_chemical_formula_sum   'Ho2 Ti2 Cl2 O6'
+_cell_volume   181.89222047
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.27868300  0.27868300  0.20601000  1
+  Ho  Ho1  1  0.72131700  0.72131700  0.79399000  1
+  Ti  Ti2  1  0.88152400  0.88152400  0.43035700  1
+  Ti  Ti3  1  0.11847600  0.11847600  0.56964300  1
+  Cl  Cl4  1  0.61503000  0.61503000  0.09426800  1
+  Cl  Cl5  1  0.38497000  0.38497000  0.90573200  1
+  O  O6  1  0.84832400  0.84832400  0.25296900  1
+  O  O7  1  0.15167600  0.15167600  0.74703100  1
+  O  O8  1  0.66716600  0.66716600  0.56439500  1
+  O  O9  1  0.33283400  0.33283400  0.43560500  1
+  O  O10  1  0.92127700  0.92127700  0.62495400  1
+  O  O11  1  0.07872300  0.07872300  0.37504600  1

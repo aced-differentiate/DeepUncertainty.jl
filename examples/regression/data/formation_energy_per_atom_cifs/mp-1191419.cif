@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_NdEuCuS3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.04315300
+_cell_length_b   11.03674400
+_cell_length_c   11.42447100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NdEuCuS3
+_chemical_formula_sum   'Nd4 Eu4 Cu4 S12'
+_cell_volume   509.79696402
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  1  0.25000000  0.01165100  0.18336900  1
+  Nd  Nd1  1  0.25000000  0.51165100  0.31663100  1
+  Nd  Nd2  1  0.75000000  0.98834900  0.81663100  1
+  Nd  Nd3  1  0.75000000  0.48834900  0.68336900  1
+  Eu  Eu4  1  0.25000000  0.68304200  0.99544700  1
+  Eu  Eu5  1  0.25000000  0.18304200  0.50455300  1
+  Eu  Eu6  1  0.75000000  0.31695800  0.00455300  1
+  Eu  Eu7  1  0.75000000  0.81695800  0.49544700  1
+  Cu  Cu8  1  0.25000000  0.25590900  0.78633400  1
+  Cu  Cu9  1  0.25000000  0.75590900  0.71366600  1
+  Cu  Cu10  1  0.75000000  0.74409100  0.21366600  1
+  Cu  Cu11  1  0.75000000  0.24409100  0.28633400  1
+  S  S12  1  0.25000000  0.11583600  0.94257200  1
+  S  S13  1  0.25000000  0.61583600  0.55742800  1
+  S  S14  1  0.75000000  0.88416400  0.05742800  1
+  S  S15  1  0.75000000  0.38416400  0.44257200  1
+  S  S16  1  0.25000000  0.45145100  0.86155700  1
+  S  S17  1  0.25000000  0.95145100  0.63844300  1
+  S  S18  1  0.75000000  0.54854900  0.13844300  1
+  S  S19  1  0.75000000  0.04854900  0.36155700  1
+  S  S20  1  0.25000000  0.27711100  0.19140600  1
+  S  S21  1  0.25000000  0.77711100  0.30859400  1
+  S  S22  1  0.75000000  0.72288900  0.80859400  1
+  S  S23  1  0.75000000  0.22288900  0.69140600  1

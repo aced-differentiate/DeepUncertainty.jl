@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_UTcC2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.18878000
+_cell_length_b   5.59676100
+_cell_length_c   11.00098500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   UTcC2
+_chemical_formula_sum   'U4 Tc4 C8'
+_cell_volume   196.33281409
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  U  U0  1  0.25000000  0.08288700  0.85777400  1
+  U  U1  1  0.25000000  0.58288700  0.64222600  1
+  U  U2  1  0.75000000  0.91711300  0.14222600  1
+  U  U3  1  0.75000000  0.41711300  0.35777400  1
+  Tc  Tc4  1  0.25000000  0.41777000  0.10211500  1
+  Tc  Tc5  1  0.25000000  0.91777000  0.39788500  1
+  Tc  Tc6  1  0.75000000  0.58223000  0.89788500  1
+  Tc  Tc7  1  0.75000000  0.08223000  0.60211500  1
+  C  C8  1  0.25000000  0.15849600  0.24366000  1
+  C  C9  1  0.25000000  0.65849600  0.25634000  1
+  C  C10  1  0.75000000  0.84150400  0.75634000  1
+  C  C11  1  0.75000000  0.34150400  0.74366000  1
+  C  C12  1  0.25000000  0.74342600  0.99336700  1
+  C  C13  1  0.25000000  0.24342600  0.50663300  1
+  C  C14  1  0.75000000  0.25657400  0.00663300  1
+  C  C15  1  0.75000000  0.75657400  0.49336700  1

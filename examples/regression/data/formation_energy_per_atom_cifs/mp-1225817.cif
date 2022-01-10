@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_DyFe2Co2B
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.06930308
+_cell_length_b   5.04179819
+_cell_length_c   6.84308372
+_cell_angle_alpha   89.99078127
+_cell_angle_beta   90.04833520
+_cell_angle_gamma   119.85780879
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyFe2Co2B
+_chemical_formula_sum   'Dy2 Fe4 Co4 B2'
+_cell_volume   151.68285991
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.99889300  0.99942400  0.00243400  1
+  Dy  Dy1  1  0.00074700  0.00036100  0.49368000  1
+  Fe  Fe2  1  0.50135400  0.00061700  0.71315900  1
+  Fe  Fe3  1  0.50133500  0.50076500  0.71319400  1
+  Fe  Fe4  1  0.33452100  0.66712900  0.00277900  1
+  Fe  Fe5  1  0.66321100  0.33162400  0.00299800  1
+  Co  Co6  1  0.99913900  0.49959900  0.28745100  1
+  Co  Co7  1  0.49942200  0.99978100  0.28893500  1
+  Co  Co8  1  0.49948000  0.49975100  0.28884400  1
+  Co  Co9  1  0.00114300  0.50062900  0.71266900  1
+  B  B10  1  0.33102200  0.66561300  0.49694500  1
+  B  B11  1  0.66953400  0.33470700  0.49691400  1

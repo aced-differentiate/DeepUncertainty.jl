@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Na4Tb2(IrO4)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.20770900
+_cell_length_b   9.48117490
+_cell_length_c   9.48117490
+_cell_angle_alpha   119.99999230
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na4Tb2(IrO4)3
+_chemical_formula_sum   'Na4 Tb2 Ir3 O12'
+_cell_volume   249.71805520
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.50000000  0.30098000  0.30098000  1
+  Na  Na1  1  0.50000000  0.00000000  0.69902000  1
+  Na  Na2  1  0.50000000  0.69902000  0.00000000  1
+  Na  Na3  1  0.00000000  0.00000000  0.00000000  1
+  Tb  Tb4  1  0.50000000  0.66666700  0.33333300  1
+  Tb  Tb5  1  0.50000000  0.33333300  0.66666700  1
+  Ir  Ir6  1  0.00000000  0.67042300  0.67042300  1
+  Ir  Ir7  1  0.00000000  0.00000000  0.32957700  1
+  Ir  Ir8  1  0.00000000  0.32957700  0.00000000  1
+  O  O9  1  0.50000000  0.54350600  0.54350600  1
+  O  O10  1  0.50000000  0.00000000  0.45649400  1
+  O  O11  1  0.50000000  0.45649400  0.00000000  1
+  O  O12  1  0.50000000  0.80346700  0.80346700  1
+  O  O13  1  0.50000000  0.00000000  0.19653300  1
+  O  O14  1  0.50000000  0.19653300  0.00000000  1
+  O  O15  1  0.00000000  0.75671800  0.21622400  1
+  O  O16  1  0.00000000  0.45950600  0.24328200  1
+  O  O17  1  0.00000000  0.54049400  0.78377600  1
+  O  O18  1  0.00000000  0.78377600  0.54049400  1
+  O  O19  1  0.00000000  0.21622400  0.75671800  1
+  O  O20  1  0.00000000  0.24328200  0.45950600  1

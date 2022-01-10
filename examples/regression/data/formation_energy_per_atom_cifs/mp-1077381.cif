@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_Eu2BBrN2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.21831510
+_cell_length_b   9.21831510
+_cell_length_c   9.21831583
+_cell_angle_alpha   25.44027556
+_cell_angle_beta   25.44027556
+_cell_angle_gamma   25.44027354
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu2BBrN2
+_chemical_formula_sum   'Eu2 B1 Br1 N2'
+_cell_volume   127.24044114
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.75183100  0.75183100  0.75183100  1
+  Eu  Eu1  1  0.24816900  0.24816900  0.24816900  1
+  B  B2  1  0.50000000  0.50000000  0.50000000  1
+  Br  Br3  1  0.00000000  0.00000000  0.00000000  1
+  N  N4  1  0.55064000  0.55064000  0.55064000  1
+  N  N5  1  0.44936000  0.44936000  0.44936000  1

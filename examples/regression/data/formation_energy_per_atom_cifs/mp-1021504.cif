@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Ba2NbFeO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.80921314
+_cell_length_b   5.80925698
+_cell_length_c   10.06197764
+_cell_angle_alpha   106.77538230
+_cell_angle_beta   73.22434014
+_cell_angle_gamma   119.99681908
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba2NbFeO6
+_chemical_formula_sum   'Ba4 Nb2 Fe2 O12'
+_cell_volume   277.26721103
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.62499800  0.37499400  0.12499300  1
+  Ba  Ba1  1  0.12500000  0.87499800  0.62499100  1
+  Ba  Ba2  1  0.87499300  0.12500300  0.37501200  1
+  Ba  Ba3  1  0.37500600  0.62500400  0.87499800  1
+  Nb  Nb4  1  0.24999600  0.75000400  0.25001700  1
+  Nb  Nb5  1  0.75001400  0.24999900  0.74998400  1
+  Fe  Fe6  1  0.50001200  0.49999200  0.49999500  1
+  Fe  Fe7  1  0.00000900  0.00001200  0.00000000  1
+  O  O8  1  0.12639500  0.37916300  0.12638100  1
+  O  O9  1  0.62639700  0.87917300  0.62638900  1
+  O  O10  1  0.37360900  0.62639200  0.37362000  1
+  O  O11  1  0.87361500  0.12639000  0.87363000  1
+  O  O12  1  0.62083300  0.87360100  0.12638000  1
+  O  O13  1  0.12082200  0.37360100  0.62639000  1
+  O  O14  1  0.37359400  0.12082300  0.37361200  1
+  O  O15  1  0.87360200  0.62083400  0.87362100  1
+  O  O16  1  0.12638600  0.87361200  0.12637300  1
+  O  O17  1  0.62638500  0.37361000  0.62638000  1
+  O  O18  1  0.87917300  0.62639800  0.37361300  1
+  O  O19  1  0.37916000  0.12639700  0.87362300  1

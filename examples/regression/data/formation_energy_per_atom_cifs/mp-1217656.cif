@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_TbU3(CoGe)8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.01699500
+_cell_length_b   4.01699500
+_cell_length_c   19.67836800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbU3(CoGe)8
+_chemical_formula_sum   'Tb1 U3 Co8 Ge8'
+_cell_volume   317.53504262
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.00000000  0.00000000  0.00000000  1
+  U  U1  1  0.50000000  0.50000000  0.25101800  1
+  U  U2  1  0.00000000  0.00000000  0.50000000  1
+  U  U3  1  0.50000000  0.50000000  0.74898200  1
+  Co  Co4  1  0.00000000  0.50000000  0.12709100  1
+  Co  Co5  1  0.50000000  0.00000000  0.37478100  1
+  Co  Co6  1  0.00000000  0.50000000  0.62521900  1
+  Co  Co7  1  0.50000000  0.00000000  0.87290900  1
+  Co  Co8  1  0.50000000  0.00000000  0.12709100  1
+  Co  Co9  1  0.00000000  0.50000000  0.37478100  1
+  Co  Co10  1  0.50000000  0.00000000  0.62521900  1
+  Co  Co11  1  0.00000000  0.50000000  0.87290900  1
+  Ge  Ge12  1  0.50000000  0.50000000  0.06488200  1
+  Ge  Ge13  1  0.00000000  0.00000000  0.31419000  1
+  Ge  Ge14  1  0.50000000  0.50000000  0.56378700  1
+  Ge  Ge15  1  0.00000000  0.00000000  0.81350200  1
+  Ge  Ge16  1  0.00000000  0.00000000  0.18649800  1
+  Ge  Ge17  1  0.50000000  0.50000000  0.43621300  1
+  Ge  Ge18  1  0.00000000  0.00000000  0.68581000  1
+  Ge  Ge19  1  0.50000000  0.50000000  0.93511800  1

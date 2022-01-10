@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Sm2CuTe2(SO7)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.25421297
+_cell_length_b   8.07922707
+_cell_length_c   8.34260694
+_cell_angle_alpha   62.04857551
+_cell_angle_beta   74.25689265
+_cell_angle_gamma   85.50152944
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sm2CuTe2(SO7)2
+_chemical_formula_sum   'Sm2 Cu1 Te2 S2 O14'
+_cell_volume   300.60079727
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.92579700  0.74976400  0.98277200  1
+  Sm  Sm1  1  0.07420300  0.25023600  0.01722800  1
+  Cu  Cu2  1  0.00000000  0.00000000  0.50000000  1
+  Te  Te3  1  0.48825300  0.73187000  0.65153000  1
+  Te  Te4  1  0.51174700  0.26813000  0.34847000  1
+  S  S5  1  0.24966100  0.74658200  0.25402300  1
+  S  S6  1  0.75033900  0.25341800  0.74597700  1
+  O  O7  1  0.13995100  0.58708700  0.24491900  1
+  O  O8  1  0.86004900  0.41291300  0.75508100  1
+  O  O9  1  0.13550400  0.74822000  0.43395600  1
+  O  O10  1  0.86449600  0.25178000  0.56604400  1
+  O  O11  1  0.54228700  0.73820600  0.21899900  1
+  O  O12  1  0.45771300  0.26179400  0.78100100  1
+  O  O13  1  0.17627700  0.91881400  0.09553100  1
+  O  O14  1  0.82372300  0.08118600  0.90446900  1
+  O  O15  1  0.25636600  0.56359100  0.88660400  1
+  O  O16  1  0.74363400  0.43640900  0.11339600  1
+  O  O17  1  0.72949800  0.81436900  0.73856800  1
+  O  O18  1  0.27050200  0.18563100  0.26143200  1
+  O  O19  1  0.24991800  0.92726900  0.65427900  1
+  O  O20  1  0.75008200  0.07273100  0.34572100  1

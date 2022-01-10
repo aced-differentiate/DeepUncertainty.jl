@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_NaBrF4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.84697800
+_cell_length_b   5.84697800
+_cell_length_c   6.71954799
+_cell_angle_alpha   115.78989265
+_cell_angle_beta   115.78989265
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaBrF4
+_chemical_formula_sum   'Na2 Br2 F8'
+_cell_volume   181.09108627
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.25000000  0.25000000  0.50000000  1
+  Na  Na1  1  0.75000000  0.75000000  0.50000000  1
+  Br  Br2  1  0.00000000  0.50000000  0.00000000  1
+  Br  Br3  1  0.50000000  0.00000000  0.00000000  1
+  F  F4  1  0.29469000  0.79469000  0.26060900  1
+  F  F5  1  0.70531000  0.20531000  0.73939100  1
+  F  F6  1  0.96591900  0.46591900  0.26060900  1
+  F  F7  1  0.46591900  0.29469000  0.26060900  1
+  F  F8  1  0.20531000  0.03408100  0.73939100  1
+  F  F9  1  0.03408100  0.53408100  0.73939100  1
+  F  F10  1  0.53408100  0.70531000  0.73939100  1
+  F  F11  1  0.79469000  0.96591900  0.26060900  1

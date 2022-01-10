@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Na2Th(AsO4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   11.14929746
+_cell_length_b   9.92167903
+_cell_length_c   7.17783916
+_cell_angle_alpha   79.62352605
+_cell_angle_beta   61.08512310
+_cell_angle_gamma   39.29135086
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na2Th(AsO4)2
+_chemical_formula_sum   'Na4 Th2 As4 O16'
+_cell_volume   412.27473233
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.89314700  0.89314700  0.60685300  1
+  Na  Na1  1  0.60685300  0.60685300  0.89314700  1
+  Na  Na2  1  0.35685300  0.35685300  0.64314700  1
+  Na  Na3  1  0.64314700  0.64314700  0.35685300  1
+  Th  Th4  1  0.25000000  0.25000000  0.25000000  1
+  Th  Th5  1  0.00000000  0.00000000  0.00000000  1
+  As  As6  1  0.07114100  0.07114100  0.42885900  1
+  As  As7  1  0.42885900  0.42885900  0.07114100  1
+  As  As8  1  0.17885900  0.17885900  0.82114100  1
+  As  As9  1  0.82114100  0.82114100  0.17885900  1
+  O  O10  1  0.34094100  0.92026900  0.22885000  1
+  O  O11  1  0.50994000  0.22885000  0.92026900  1
+  O  O12  1  0.22885000  0.50994000  0.34094100  1
+  O  O13  1  0.92026900  0.34094100  0.50994000  1
+  O  O14  1  0.90905900  0.32973100  0.02115000  1
+  O  O15  1  0.74006000  0.02115000  0.32973100  1
+  O  O16  1  0.02115000  0.74006000  0.90905900  1
+  O  O17  1  0.32973100  0.90905900  0.74006000  1
+  O  O18  1  0.07026900  0.95694000  0.63849900  1
+  O  O19  1  0.33429200  0.63849900  0.95694000  1
+  O  O20  1  0.63849900  0.33429200  0.07026900  1
+  O  O21  1  0.95694000  0.07026900  0.33429200  1
+  O  O22  1  0.17973100  0.29306000  0.61150100  1
+  O  O23  1  0.91570800  0.61150100  0.29306000  1
+  O  O24  1  0.61150100  0.91570800  0.17973100  1
+  O  O25  1  0.29306000  0.17973100  0.91570800  1

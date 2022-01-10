@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Ca3Ge4Au7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.52444800
+_cell_length_b   8.55935943
+_cell_length_c   8.55935943
+_cell_angle_alpha   69.21763627
+_cell_angle_beta   74.67473917
+_cell_angle_gamma   74.67473917
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ca3Ge4Au7
+_chemical_formula_sum   'Ca3 Ge4 Au7'
+_cell_volume   293.49250032
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.00000000  0.00126900  0.99873100  1
+  Ca  Ca1  1  0.31007500  0.69148500  0.68836600  1
+  Ca  Ca2  1  0.68992500  0.31163400  0.30851500  1
+  Ge  Ge3  1  0.13202800  0.14045100  0.59549300  1
+  Ge  Ge4  1  0.86797200  0.40450700  0.85954900  1
+  Ge  Ge5  1  0.32132300  0.03537200  0.32198100  1
+  Ge  Ge6  1  0.67867700  0.67801900  0.96462800  1
+  Au  Au7  1  0.34037300  0.27776700  0.04148800  1
+  Au  Au8  1  0.65962700  0.95851200  0.72223300  1
+  Au  Au9  1  0.50000000  0.69745300  0.30254700  1
+  Au  Au10  1  0.13437900  0.60631600  0.12492700  1
+  Au  Au11  1  0.86562100  0.87507300  0.39368400  1
+  Au  Au12  1  0.50000000  0.31023600  0.68976400  1
+  Au  Au13  1  0.00000000  0.50007500  0.49992500  1

@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_CsTiAlO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.42874170
+_cell_length_b   7.42874170
+_cell_length_c   7.42874170
+_cell_angle_alpha   133.86289866
+_cell_angle_beta   103.85464257
+_cell_angle_gamma   93.87646027
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsTiAlO4
+_chemical_formula_sum   'Cs2 Ti2 Al2 O8'
+_cell_volume   270.54337786
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.45150700  0.95150700  0.50000000  1
+  Cs  Cs1  1  0.04833400  0.04833400  0.00000000  1
+  Ti  Ti2  1  0.46930100  0.66854700  0.80075300  1
+  Ti  Ti3  1  0.86779400  0.66854700  0.19924700  1
+  Al  Al4  1  0.64268800  0.33078500  0.31190300  1
+  Al  Al5  1  0.01888200  0.33078500  0.68809700  1
+  O  O6  1  0.01928100  0.49656500  0.01201700  1
+  O  O7  1  0.01928100  0.00726300  0.52271500  1
+  O  O8  1  0.48454800  0.49656500  0.47728500  1
+  O  O9  1  0.48454800  0.00726300  0.98798300  1
+  O  O10  1  0.74770400  0.49676300  0.25094000  1
+  O  O11  1  0.24582300  0.49676300  0.74906000  1
+  O  O12  1  0.82492600  0.32492600  0.50000000  1
+  O  O13  1  0.67538600  0.67538600  0.00000000  1

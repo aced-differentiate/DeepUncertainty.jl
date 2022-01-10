@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_ErUTe4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.96249002
+_cell_length_b   7.96249002
+_cell_length_c   7.96249002
+_cell_angle_alpha   149.47564664
+_cell_angle_beta   134.97446805
+_cell_angle_gamma   55.37485268
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ErUTe4
+_chemical_formula_sum   'Er1 U1 Te4'
+_cell_volume   180.22374051
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Er  Er0  1  0.86126000  0.86126000  0.00000000  1
+  U  U1  1  0.13678800  0.13678800  0.00000000  1
+  Te  Te2  1  0.70386100  0.20386100  0.50000000  1
+  Te  Te3  1  0.29536800  0.79536800  0.50000000  1
+  Te  Te4  1  0.75373300  0.50136200  0.25237100  1
+  Te  Te5  1  0.24899000  0.50136200  0.74762900  1

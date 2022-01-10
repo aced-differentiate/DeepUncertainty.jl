@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_LiCeSi2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.87028200
+_cell_length_b   7.66708600
+_cell_length_c   10.48034300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LiCeSi2
+_chemical_formula_sum   'Li4 Ce4 Si8'
+_cell_volume   310.99144426
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.25000000  0.99450600  0.39029400  1
+  Li  Li1  1  0.25000000  0.49450600  0.10970600  1
+  Li  Li2  1  0.75000000  0.00549400  0.60970600  1
+  Li  Li3  1  0.75000000  0.50549400  0.89029400  1
+  Ce  Ce4  1  0.25000000  0.13824700  0.86400300  1
+  Ce  Ce5  1  0.25000000  0.63824700  0.63599700  1
+  Ce  Ce6  1  0.75000000  0.86175300  0.13599700  1
+  Ce  Ce7  1  0.75000000  0.36175300  0.36400300  1
+  Si  Si8  1  0.25000000  0.23106300  0.56951300  1
+  Si  Si9  1  0.25000000  0.73106300  0.93048700  1
+  Si  Si10  1  0.75000000  0.76893700  0.43048700  1
+  Si  Si11  1  0.75000000  0.26893700  0.06951300  1
+  Si  Si12  1  0.25000000  0.66350000  0.32094600  1
+  Si  Si13  1  0.25000000  0.16350000  0.17905400  1
+  Si  Si14  1  0.75000000  0.33650000  0.67905400  1
+  Si  Si15  1  0.75000000  0.83650000  0.82094600  1

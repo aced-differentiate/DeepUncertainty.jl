@@ -1,0 +1,43 @@
+# generated using pymatgen
+data_Nd4Mg7Ge6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.63091771
+_cell_length_b   8.63091771
+_cell_length_c   12.55952229
+_cell_angle_alpha   58.85524125
+_cell_angle_beta   58.85524125
+_cell_angle_gamma   29.80120930
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Nd4Mg7Ge6
+_chemical_formula_sum   'Nd4 Mg7 Ge6'
+_cell_volume   392.78290085
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  1  0.26648500  0.26648500  0.61335400  1
+  Nd  Nd1  1  0.73351500  0.73351500  0.38664600  1
+  Nd  Nd2  1  0.37008800  0.37008800  0.83938200  1
+  Nd  Nd3  1  0.62991200  0.62991200  0.16061800  1
+  Mg  Mg4  1  0.03983800  0.03983800  0.86117100  1
+  Mg  Mg5  1  0.96016200  0.96016200  0.13882900  1
+  Mg  Mg6  1  0.06234800  0.06234800  0.60323300  1
+  Mg  Mg7  1  0.93765200  0.93765200  0.39676700  1
+  Mg  Mg8  1  0.68975100  0.68975100  0.84656800  1
+  Mg  Mg9  1  0.31024900  0.31024900  0.15343200  1
+  Mg  Mg10  1  0.50000000  0.50000000  0.50000000  1
+  Ge  Ge11  1  0.12055600  0.12055600  0.34783900  1
+  Ge  Ge12  1  0.87944400  0.87944400  0.65216100  1
+  Ge  Ge13  1  0.14951900  0.14951900  0.97661400  1
+  Ge  Ge14  1  0.85048100  0.85048100  0.02338600  1
+  Ge  Ge15  1  0.60930600  0.60930600  0.68777200  1
+  Ge  Ge16  1  0.39069400  0.39069400  0.31222800  1

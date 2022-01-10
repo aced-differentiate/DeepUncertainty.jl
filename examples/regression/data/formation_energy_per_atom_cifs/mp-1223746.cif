@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_InSb3Pb4O13
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.58615153
+_cell_length_b   7.58615153
+_cell_length_c   7.58615098
+_cell_angle_alpha   60.33834119
+_cell_angle_beta   60.33834119
+_cell_angle_gamma   60.33833963
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   InSb3Pb4O13
+_chemical_formula_sum   'In1 Sb3 Pb4 O13'
+_cell_volume   311.07216847
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  In  In0  1  0.49990800  0.49990800  0.49990800  1
+  Sb  Sb1  1  0.00092600  0.49987300  0.49987300  1
+  Sb  Sb2  1  0.49987300  0.49987300  0.00092600  1
+  Sb  Sb3  1  0.49987300  0.00092600  0.49987300  1
+  Pb  Pb4  1  0.99869400  0.99869400  0.99869400  1
+  Pb  Pb5  1  0.50075500  0.00066200  0.00066200  1
+  Pb  Pb6  1  0.00066200  0.00066200  0.50075500  1
+  Pb  Pb7  1  0.00066200  0.50075500  0.00066200  1
+  O  O8  1  0.84639200  0.41860900  0.41860900  1
+  O  O9  1  0.42207500  0.81808300  0.81808300  1
+  O  O10  1  0.41860900  0.41860900  0.84639200  1
+  O  O11  1  0.81808300  0.81808300  0.42207500  1
+  O  O12  1  0.81808300  0.42207500  0.81808300  1
+  O  O13  1  0.41860900  0.84639200  0.41860900  1
+  O  O14  1  0.15665200  0.57933200  0.57933200  1
+  O  O15  1  0.57712400  0.18345600  0.18345600  1
+  O  O16  1  0.57933200  0.57933200  0.15665200  1
+  O  O17  1  0.18345600  0.18345600  0.57712400  1
+  O  O18  1  0.18345600  0.57712400  0.18345600  1
+  O  O19  1  0.57933200  0.15665200  0.57933200  1
+  O  O20  1  0.12244200  0.12244200  0.12244200  1

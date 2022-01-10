@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Hf10VSb5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.58339600
+_cell_length_b   8.30821834
+_cell_length_c   8.30821834
+_cell_angle_alpha   96.48292168
+_cell_angle_beta   109.63435935
+_cell_angle_gamma   70.36564065
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Hf10VSb5
+_chemical_formula_sum   'Hf10 V1 Sb5'
+_cell_volume   341.88760899
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Hf  Hf0  1  0.93761300  0.86028100  0.70793200  1
+  Hf  Hf1  1  0.08996200  0.13971900  0.29206800  1
+  Hf  Hf2  1  0.41003800  0.29206800  0.13971900  1
+  Hf  Hf3  1  0.56238700  0.70793200  0.86028100  1
+  Hf  Hf4  1  0.22968200  0.70793200  0.13971900  1
+  Hf  Hf5  1  0.79789400  0.29206800  0.86028100  1
+  Hf  Hf6  1  0.27031800  0.13971900  0.70793200  1
+  Hf  Hf7  1  0.70210600  0.86028100  0.29206800  1
+  Hf  Hf8  1  0.25000000  0.50000000  0.50000000  1
+  Hf  Hf9  1  0.75000000  0.50000000  0.50000000  1
+  V  V10  1  0.25000000  0.00000000  0.00000000  1
+  Sb  Sb11  1  0.33599900  0.82800300  0.50000000  1
+  Sb  Sb12  1  0.66400100  0.17199700  0.50000000  1
+  Sb  Sb13  1  0.83599900  0.50000000  0.17199700  1
+  Sb  Sb14  1  0.16400100  0.50000000  0.82800300  1
+  Sb  Sb15  1  0.75000000  0.00000000  0.00000000  1

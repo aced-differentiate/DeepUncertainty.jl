@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_NaV2Bi3O10
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.64395800
+_cell_length_b   7.22026426
+_cell_length_c   7.24272701
+_cell_angle_alpha   107.07594495
+_cell_angle_beta   112.69542000
+_cell_angle_gamma   96.33186583
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaV2Bi3O10
+_chemical_formula_sum   'Na1 V2 Bi3 O10'
+_cell_volume   251.78622235
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.69682100  0.62383300  0.80882100  1
+  V  V1  1  0.65095800  0.15685500  0.85383700  1
+  V  V2  1  0.34536600  0.84288800  0.13990000  1
+  Bi  Bi3  1  0.91342500  0.24681800  0.47976700  1
+  Bi  Bi4  1  0.09073900  0.75618000  0.53378300  1
+  Bi  Bi5  1  0.30662700  0.38412700  0.21251800  1
+  O  O6  1  0.74246200  0.49811500  0.45634100  1
+  O  O7  1  0.24918200  0.49025200  0.51888800  1
+  O  O8  1  0.84200900  0.30741200  0.78338200  1
+  O  O9  1  0.16597600  0.68749700  0.21875200  1
+  O  O10  1  0.43417000  0.10475600  0.29856700  1
+  O  O11  1  0.55068700  0.90278000  0.69296200  1
+  O  O12  1  0.86998300  0.19597700  0.12443600  1
+  O  O13  1  0.14435000  0.79942500  0.87272800  1
+  O  O14  1  0.62829500  0.76990200  0.16891800  1
+  O  O15  1  0.36894900  0.23318200  0.83640100  1

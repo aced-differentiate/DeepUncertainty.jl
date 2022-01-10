@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_La2ZnCoO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.46786477
+_cell_length_b   7.82856175
+_cell_length_c   5.58973052
+_cell_angle_alpha   89.93786310
+_cell_angle_beta   90.05019982
+_cell_angle_gamma   91.78988851
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   La2ZnCoO6
+_chemical_formula_sum   'La4 Zn2 Co2 O12'
+_cell_volume   239.15433584
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.50297700  0.75066000  0.99985400  1
+  La  La1  1  0.00292700  0.25201900  0.49969700  1
+  La  La2  1  0.49702300  0.24934000  0.00014700  1
+  La  La3  1  0.99707300  0.74798100  0.50030200  1
+  Zn  Zn4  1  0.00000000  0.50000000  0.00000000  1
+  Zn  Zn5  1  0.50000000  0.00000000  0.50000000  1
+  Co  Co6  1  0.50000000  0.50000000  0.50000000  1
+  Co  Co7  1  0.00000000  0.00000000  0.00000000  1
+  O  O8  1  0.77611300  0.46858000  0.70254800  1
+  O  O9  1  0.27499600  0.96885400  0.20183900  1
+  O  O10  1  0.00549600  0.23958700  0.06859200  1
+  O  O11  1  0.50529600  0.73885700  0.56771100  1
+  O  O12  1  0.70740500  0.53661100  0.22938600  1
+  O  O13  1  0.20799300  0.03673600  0.72966200  1
+  O  O14  1  0.22388600  0.53142000  0.29745200  1
+  O  O15  1  0.72500400  0.03114600  0.79816100  1
+  O  O16  1  0.29259500  0.46338900  0.77061400  1
+  O  O17  1  0.79200700  0.96326400  0.27033800  1
+  O  O18  1  0.99450400  0.76041300  0.93140800  1
+  O  O19  1  0.49470500  0.26114300  0.43228900  1

@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_TlAgAs2PbS5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.09988200
+_cell_length_b   8.22027192
+_cell_length_c   9.28161315
+_cell_angle_alpha   64.92353983
+_cell_angle_beta   75.55520624
+_cell_angle_gamma   65.53520088
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TlAgAs2PbS5
+_chemical_formula_sum   'Tl2 Ag2 As4 Pb2 S10'
+_cell_volume   507.43996383
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tl  Tl0  1  0.69587200  0.85383000  0.86423200  1
+  Tl  Tl1  1  0.30412800  0.14617000  0.13576800  1
+  Ag  Ag2  1  0.89025300  0.24401200  0.91274400  1
+  Ag  Ag3  1  0.10974700  0.75598800  0.08725600  1
+  As  As4  1  0.88931700  0.95455100  0.37288500  1
+  As  As5  1  0.55071500  0.38336300  0.19151900  1
+  As  As6  1  0.44928500  0.61663700  0.80848100  1
+  As  As7  1  0.11068300  0.04544900  0.62711500  1
+  Pb  Pb8  1  0.75136300  0.54054000  0.40725200  1
+  Pb  Pb9  1  0.24863700  0.45946000  0.59274800  1
+  S  S10  1  0.81660100  0.43470300  0.09170900  1
+  S  S11  1  0.86912500  0.69158100  0.58947800  1
+  S  S12  1  0.78780100  0.91972000  0.18323300  1
+  S  S13  1  0.63189500  0.17787400  0.45097900  1
+  S  S14  1  0.37814700  0.65111500  0.24738400  1
+  S  S15  1  0.62185300  0.34888500  0.75261600  1
+  S  S16  1  0.36810500  0.82212600  0.54902100  1
+  S  S17  1  0.21219900  0.08028000  0.81676700  1
+  S  S18  1  0.13087500  0.30841900  0.41052200  1
+  S  S19  1  0.18339900  0.56529700  0.90829100  1

@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Cu4Bi3Pb(SeO)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.11011395
+_cell_length_b   10.11011395
+_cell_length_c   10.11011395
+_cell_angle_alpha   147.75287682
+_cell_angle_beta   147.75287682
+_cell_angle_gamma   46.25030370
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Cu4Bi3Pb(SeO)4
+_chemical_formula_sum   'Cu4 Bi3 Pb1 Se4 O4'
+_cell_volume   293.17876988
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cu  Cu0  1  0.49998500  0.99950600  0.00000000  1
+  Cu  Cu1  1  0.99950600  0.49998500  0.00000000  1
+  Cu  Cu2  1  0.49998500  0.49998500  0.50048000  1
+  Cu  Cu3  1  0.99950600  0.99950600  0.49952000  1
+  Bi  Bi4  1  0.93800800  0.93800800  0.00000000  1
+  Bi  Bi5  1  0.56632400  0.06632400  0.50000000  1
+  Bi  Bi6  1  0.06632400  0.56632400  0.50000000  1
+  Pb  Pb7  1  0.42393100  0.42393100  0.00000000  1
+  Se  Se8  1  0.66656800  0.66656800  0.00000000  1
+  Se  Se9  1  0.16803600  0.16803600  0.00000000  1
+  Se  Se10  1  0.33047200  0.83047200  0.50000000  1
+  Se  Se11  1  0.83047200  0.33047200  0.50000000  1
+  O  O12  1  0.24700800  0.75843800  0.00000000  1
+  O  O13  1  0.75843800  0.24700800  0.00000000  1
+  O  O14  1  0.24700800  0.24700800  0.48857000  1
+  O  O15  1  0.75843800  0.75843800  0.51143000  1

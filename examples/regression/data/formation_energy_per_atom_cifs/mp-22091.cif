@@ -1,0 +1,41 @@
+# generated using pymatgen
+data_NaZr2CoF11
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.75203704
+_cell_length_b   5.75203704
+_cell_length_c   7.90405849
+_cell_angle_alpha   69.19540685
+_cell_angle_beta   69.19540685
+_cell_angle_gamma   72.68120569
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaZr2CoF11
+_chemical_formula_sum   'Na1 Zr2 Co1 F11'
+_cell_volume   224.07610685
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.00000000  0.00000000  0.00000000  1
+  Zr  Zr1  1  0.49404400  0.49404400  0.23633200  1
+  Zr  Zr2  1  0.50595600  0.50595600  0.76366800  1
+  Co  Co3  1  0.00000000  0.00000000  0.50000000  1
+  F  F4  1  0.81024100  0.21976200  0.68814800  1
+  F  F5  1  0.18975900  0.78023800  0.31185200  1
+  F  F6  1  0.73239700  0.73239700  0.11002000  1
+  F  F7  1  0.67135800  0.32864200  0.00000000  1
+  F  F8  1  0.24686900  0.24686900  0.35162300  1
+  F  F9  1  0.32864200  0.67135800  0.00000000  1
+  F  F10  1  0.78023800  0.18975900  0.31185200  1
+  F  F11  1  0.21976200  0.81024100  0.68814800  1
+  F  F12  1  0.26760300  0.26760300  0.88998000  1
+  F  F13  1  0.75313100  0.75313100  0.64837700  1
+  F  F14  1  0.50000000  0.50000000  0.50000000  1

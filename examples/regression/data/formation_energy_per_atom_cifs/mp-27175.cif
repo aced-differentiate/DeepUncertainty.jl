@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_InOF
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.70803187
+_cell_length_b   6.30240537
+_cell_length_c   5.56630486
+_cell_angle_alpha   68.50716864
+_cell_angle_beta   60.95036934
+_cell_angle_gamma   50.54246202
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   InOF
+_chemical_formula_sum   'In4 O4 F4'
+_cell_volume   158.25289531
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  In  In0  1  0.79943100  0.20056900  0.79943100  1
+  In  In1  1  0.20056900  0.79943100  0.20056900  1
+  In  In2  1  0.45056900  0.04943100  0.45056900  1
+  In  In3  1  0.04943100  0.45056900  0.04943100  1
+  O  O4  1  0.13640900  0.13640900  0.86359100  1
+  O  O5  1  0.38640900  0.38640900  0.11359100  1
+  O  O6  1  0.11359100  0.11359100  0.38640900  1
+  O  O7  1  0.86359100  0.86359100  0.13640900  1
+  F  F8  1  0.62500000  0.62500000  0.62500000  1
+  F  F9  1  0.62500000  0.62500000  0.12500000  1
+  F  F10  1  0.62500000  0.12500000  0.62500000  1
+  F  F11  1  0.12500000  0.62500000  0.62500000  1

@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Sm4MgNi
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.82823413
+_cell_length_b   9.82823413
+_cell_length_c   9.82823413
+_cell_angle_alpha   60.00000000
+_cell_angle_beta   60.00000000
+_cell_angle_gamma   60.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sm4MgNi
+_chemical_formula_sum   'Sm16 Mg4 Ni4'
+_cell_volume   671.29201827
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.59663200  0.59663200  0.59663200  1
+  Sm  Sm1  1  0.59663200  0.59663200  0.21010300  1
+  Sm  Sm2  1  0.59663200  0.21010300  0.59663200  1
+  Sm  Sm3  1  0.21010300  0.59663200  0.59663200  1
+  Sm  Sm4  1  0.06163200  0.43836800  0.43836800  1
+  Sm  Sm5  1  0.43836800  0.06163200  0.06163200  1
+  Sm  Sm6  1  0.43836800  0.06163200  0.43836800  1
+  Sm  Sm7  1  0.06163200  0.43836800  0.06163200  1
+  Sm  Sm8  1  0.43836800  0.43836800  0.06163200  1
+  Sm  Sm9  1  0.06163200  0.06163200  0.43836800  1
+  Sm  Sm10  1  0.18591300  0.81408700  0.81408700  1
+  Sm  Sm11  1  0.81408700  0.18591300  0.18591300  1
+  Sm  Sm12  1  0.81408700  0.18591300  0.81408700  1
+  Sm  Sm13  1  0.18591300  0.81408700  0.18591300  1
+  Sm  Sm14  1  0.81408700  0.81408700  0.18591300  1
+  Sm  Sm15  1  0.18591300  0.18591300  0.81408700  1
+  Mg  Mg16  1  0.82993700  0.82993700  0.82993700  1
+  Mg  Mg17  1  0.82993700  0.82993700  0.51018900  1
+  Mg  Mg18  1  0.82993700  0.51018900  0.82993700  1
+  Mg  Mg19  1  0.51018900  0.82993700  0.82993700  1
+  Ni  Ni20  1  0.39207900  0.39207900  0.39207900  1
+  Ni  Ni21  1  0.39207900  0.39207900  0.82376400  1
+  Ni  Ni22  1  0.39207900  0.82376400  0.39207900  1
+  Ni  Ni23  1  0.82376400  0.39207900  0.39207900  1

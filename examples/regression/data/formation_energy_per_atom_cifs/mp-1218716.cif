@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Sr2Pr2TlNi2O9
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   15.28520929
+_cell_length_b   15.28063736
+_cell_length_c   3.82695000
+_cell_angle_alpha   82.87540987
+_cell_angle_beta   82.73958839
+_cell_angle_gamma   14.38500174
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr2Pr2TlNi2O9
+_chemical_formula_sum   'Sr2 Pr2 Tl1 Ni2 O9'
+_cell_volume   220.28010704
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.59140700  0.57624400  0.42375600  1
+  Sr  Sr1  1  0.42375600  0.40859300  0.59140700  1
+  Pr  Pr2  1  0.70312400  0.70151500  0.29848500  1
+  Pr  Pr3  1  0.29848500  0.29687600  0.70312400  1
+  Tl  Tl4  1  0.04423400  0.95576600  0.04423400  1
+  Ni  Ni5  1  0.14709000  0.14452700  0.85547300  1
+  Ni  Ni6  1  0.85547300  0.85291000  0.14709000  1
+  O  O7  1  0.21922500  0.21827300  0.78172700  1
+  O  O8  1  0.78172700  0.78077500  0.21922500  1
+  O  O9  1  0.65053900  0.64613100  0.85313900  1
+  O  O10  1  0.14980800  0.14686200  0.35386900  1
+  O  O11  1  0.35386900  0.34946100  0.14980800  1
+  O  O12  1  0.85313800  0.85019200  0.65053900  1
+  O  O13  1  0.47467000  0.52533000  0.47467000  1
+  O  O14  1  0.06975300  0.07029600  0.92970400  1
+  O  O15  1  0.92970400  0.93024700  0.06975300  1

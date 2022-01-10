@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Cr2FeO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.03282646
+_cell_length_b   5.99222044
+_cell_length_c   6.04040665
+_cell_angle_alpha   60.62118004
+_cell_angle_beta   60.70208777
+_cell_angle_gamma   91.26828348
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Cr2FeO4
+_chemical_formula_sum   'Cr4 Fe2 O8'
+_cell_volume   155.74937952
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cr  Cr0  1  0.99999400  0.99998200  0.50001000  1
+  Cr  Cr1  1  0.00000400  0.50000400  0.99999800  1
+  Cr  Cr2  1  0.00000500  0.50000400  0.49999800  1
+  Cr  Cr3  1  0.49999700  0.50000400  0.00000200  1
+  Fe  Fe4  1  0.62532300  0.87521900  0.25005200  1
+  Fe  Fe5  1  0.37467800  0.12478000  0.74995500  1
+  O  O6  1  0.75855500  0.73034400  0.52868600  1
+  O  O7  1  0.23167100  0.25965100  0.02743000  1
+  O  O8  1  0.78711800  0.26014500  0.47150400  1
+  O  O9  1  0.76006100  0.28879500  0.97082600  1
+  O  O10  1  0.24144400  0.26965800  0.47131300  1
+  O  O11  1  0.76832700  0.74035300  0.97256400  1
+  O  O12  1  0.21288100  0.73985300  0.52849300  1
+  O  O13  1  0.23994200  0.71121000  0.02917100  1

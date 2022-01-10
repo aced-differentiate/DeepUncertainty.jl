@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_DyAgSe2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.28335300
+_cell_length_b   6.84881000
+_cell_length_c   13.85537500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   DyAgSe2
+_chemical_formula_sum   'Dy4 Ag4 Se8'
+_cell_volume   406.45949172
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.27169700  0.70876200  0.62831800  1
+  Dy  Dy1  1  0.77169700  0.79123800  0.37168200  1
+  Dy  Dy2  1  0.72830300  0.20876200  0.87168200  1
+  Dy  Dy3  1  0.22830300  0.29123800  0.12831800  1
+  Ag  Ag4  1  0.49804300  0.70449500  0.87591600  1
+  Ag  Ag5  1  0.99804300  0.79550500  0.12408400  1
+  Ag  Ag6  1  0.50195700  0.20449500  0.62408400  1
+  Ag  Ag7  1  0.00195700  0.29550500  0.37591600  1
+  Se  Se8  1  0.76979900  0.91081300  0.72681300  1
+  Se  Se9  1  0.26979900  0.58918700  0.27318700  1
+  Se  Se10  1  0.23020100  0.41081300  0.77318700  1
+  Se  Se11  1  0.73020100  0.08918700  0.22681300  1
+  Se  Se12  1  0.76511500  0.51235400  0.52710700  1
+  Se  Se13  1  0.26511500  0.98764600  0.47289300  1
+  Se  Se14  1  0.23488500  0.01235400  0.97289300  1
+  Se  Se15  1  0.73488500  0.48764600  0.02710700  1

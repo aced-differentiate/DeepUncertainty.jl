@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_HoMgTl
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.51998384
+_cell_length_b   7.51998384
+_cell_length_c   4.68555400
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999863
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoMgTl
+_chemical_formula_sum   'Ho3 Mg3 Tl3'
+_cell_volume   229.46972766
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.57178200  0.00000000  0.00000000  1
+  Ho  Ho1  1  0.00000000  0.57178200  0.00000000  1
+  Ho  Ho2  1  0.42821800  0.42821800  0.00000000  1
+  Mg  Mg3  1  0.24417300  0.00000000  0.50000000  1
+  Mg  Mg4  1  0.00000000  0.24417300  0.50000000  1
+  Mg  Mg5  1  0.75582700  0.75582700  0.50000000  1
+  Tl  Tl6  1  0.33333300  0.66666700  0.50000000  1
+  Tl  Tl7  1  0.66666700  0.33333300  0.50000000  1
+  Tl  Tl8  1  0.00000000  0.00000000  0.00000000  1

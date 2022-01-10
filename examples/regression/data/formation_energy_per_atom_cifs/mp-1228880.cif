@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_AlNi4Ge
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.82839500
+_cell_length_b   5.01917300
+_cell_length_c   7.34021900
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   AlNi4Ge
+_chemical_formula_sum   'Al2 Ni8 Ge2'
+_cell_volume   141.04507401
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al  Al0  1  0.75000000  0.81098100  0.89017800  1
+  Al  Al1  1  0.75000000  0.31098100  0.60982200  1
+  Ni  Ni2  1  0.75000000  0.44686000  0.28317300  1
+  Ni  Ni3  1  0.75000000  0.94686000  0.21682700  1
+  Ni  Ni4  1  0.25000000  0.56495600  0.72673100  1
+  Ni  Ni5  1  0.25000000  0.06495600  0.77326900  1
+  Ni  Ni6  1  0.75000000  0.33509500  0.93838100  1
+  Ni  Ni7  1  0.75000000  0.83509500  0.56161900  1
+  Ni  Ni8  1  0.25000000  0.65944200  0.06959500  1
+  Ni  Ni9  1  0.25000000  0.15944200  0.43040500  1
+  Ge  Ge10  1  0.25000000  0.18266600  0.09994800  1
+  Ge  Ge11  1  0.25000000  0.68266600  0.40005200  1

@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_VPt8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.25280700
+_cell_length_b   6.25280700
+_cell_length_c   6.25280700
+_cell_angle_alpha   95.66816602
+_cell_angle_beta   95.66816602
+_cell_angle_gamma   143.36626171
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   VPt8
+_chemical_formula_sum   'V1 Pt8'
+_cell_volume   138.48344773
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  V  V0  1  0.00000000  0.00000000  0.00000000  1
+  Pt  Pt1  1  0.33945900  0.33945900  0.67891800  1
+  Pt  Pt2  1  0.66054100  0.66054100  0.32108200  1
+  Pt  Pt3  1  0.66054100  0.33945900  0.00000000  1
+  Pt  Pt4  1  0.33945900  0.66054100  0.00000000  1
+  Pt  Pt5  1  0.00000000  0.32787100  0.32787100  1
+  Pt  Pt6  1  0.00000000  0.67212900  0.67212900  1
+  Pt  Pt7  1  0.67212900  0.00000000  0.67212900  1
+  Pt  Pt8  1  0.32787100  0.00000000  0.32787100  1

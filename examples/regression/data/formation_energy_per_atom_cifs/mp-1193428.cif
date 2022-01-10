@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_PrNi5Sn
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.93130353
+_cell_length_b   4.93130353
+_cell_length_c   19.74810800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999375
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PrNi5Sn
+_chemical_formula_sum   'Pr4 Ni20 Sn4'
+_cell_volume   415.89109677
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.33333300  0.66666700  0.25000000  1
+  Pr  Pr1  1  0.66666700  0.33333300  0.75000000  1
+  Pr  Pr2  1  0.00000000  0.00000000  0.50000000  1
+  Pr  Pr3  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni4  1  0.83434200  0.16565800  0.35401700  1
+  Ni  Ni5  1  0.83434200  0.66868400  0.35401700  1
+  Ni  Ni6  1  0.33131600  0.16565800  0.35401700  1
+  Ni  Ni7  1  0.16565800  0.83434200  0.64598300  1
+  Ni  Ni8  1  0.16565800  0.33131600  0.64598300  1
+  Ni  Ni9  1  0.66868400  0.83434200  0.64598300  1
+  Ni  Ni10  1  0.16565800  0.83434200  0.85401700  1
+  Ni  Ni11  1  0.16565800  0.33131600  0.85401700  1
+  Ni  Ni12  1  0.66868400  0.83434200  0.85401700  1
+  Ni  Ni13  1  0.83434200  0.16565800  0.14598300  1
+  Ni  Ni14  1  0.83434200  0.66868400  0.14598300  1
+  Ni  Ni15  1  0.33131600  0.16565800  0.14598300  1
+  Ni  Ni16  1  0.33333300  0.66666700  0.95655300  1
+  Ni  Ni17  1  0.66666700  0.33333300  0.04344700  1
+  Ni  Ni18  1  0.66666700  0.33333300  0.45655300  1
+  Ni  Ni19  1  0.33333300  0.66666700  0.54344700  1
+  Ni  Ni20  1  0.33333300  0.66666700  0.75000000  1
+  Ni  Ni21  1  0.66666700  0.33333300  0.25000000  1
+  Ni  Ni22  1  0.00000000  0.00000000  0.25000000  1
+  Ni  Ni23  1  0.00000000  0.00000000  0.75000000  1
+  Sn  Sn24  1  0.33333300  0.66666700  0.41237800  1
+  Sn  Sn25  1  0.66666700  0.33333300  0.58762200  1
+  Sn  Sn26  1  0.66666700  0.33333300  0.91237800  1
+  Sn  Sn27  1  0.33333300  0.66666700  0.08762200  1

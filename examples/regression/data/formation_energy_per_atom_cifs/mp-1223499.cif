@@ -1,0 +1,34 @@
+# generated using pymatgen
+data_KBa(AgTe2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   12.79575237
+_cell_length_b   12.79575237
+_cell_length_c   12.79575237
+_cell_angle_alpha   159.32919855
+_cell_angle_beta   159.32919855
+_cell_angle_gamma   29.39599914
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   KBa(AgTe2)2
+_chemical_formula_sum   'K1 Ba1 Ag2 Te4'
+_cell_volume   260.91668671
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.88287600  0.88287600  0.00000000  1
+  Ba  Ba1  1  0.11641100  0.11641100  0.00000000  1
+  Ag  Ag2  1  0.25134400  0.75134400  0.50000000  1
+  Ag  Ag3  1  0.75134400  0.25134400  0.50000000  1
+  Te  Te4  1  0.50235600  0.00235600  0.50000000  1
+  Te  Te5  1  0.00235600  0.50235600  0.50000000  1
+  Te  Te6  1  0.32036300  0.32036300  0.00000000  1
+  Te  Te7  1  0.67295000  0.67295000  0.00000000  1

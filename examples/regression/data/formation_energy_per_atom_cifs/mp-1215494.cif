@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_YbZnCuP2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.94798089
+_cell_length_b   3.94798089
+_cell_length_c   6.74739400
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00001490
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   YbZnCuP2
+_chemical_formula_sum   'Yb1 Zn1 Cu1 P2'
+_cell_volume   91.07867848
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.33333300  0.66666700  0.99559000  1
+  Zn  Zn1  1  0.00000000  0.00000000  0.37211100  1
+  Cu  Cu2  1  0.66666700  0.33333300  0.63700000  1
+  P  P3  1  0.66666700  0.33333300  0.26241900  1
+  P  P4  1  0.00000000  0.00000000  0.73288000  1

@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_FeSbSe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.13132800
+_cell_length_b   6.25417541
+_cell_length_c   6.26121225
+_cell_angle_alpha   113.71511482
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   FeSbSe
+_chemical_formula_sum   'Fe4 Sb4 Se4'
+_cell_volume   219.82050225
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  1  0.50849100  0.70839700  0.20156900  1
+  Fe  Fe1  1  0.00849100  0.29160300  0.29843100  1
+  Fe  Fe2  1  0.49150900  0.29160300  0.79843100  1
+  Fe  Fe3  1  0.99150900  0.70839700  0.70156900  1
+  Sb  Sb4  1  0.13831800  0.85721500  0.12548600  1
+  Sb  Sb5  1  0.63831800  0.14278500  0.37451400  1
+  Sb  Sb6  1  0.86168200  0.14278500  0.87451400  1
+  Sb  Sb7  1  0.36168200  0.85721500  0.62548600  1
+  Se  Se8  1  0.85928500  0.64644000  0.32891000  1
+  Se  Se9  1  0.35928500  0.35356000  0.17109000  1
+  Se  Se10  1  0.14071500  0.35356000  0.67109000  1
+  Se  Se11  1  0.64071500  0.64644000  0.82891000  1

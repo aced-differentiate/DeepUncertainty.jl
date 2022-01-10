@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_BaHg6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.64077700
+_cell_length_b   10.50567100
+_cell_length_c   13.98230600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaHg6
+_chemical_formula_sum   'Ba4 Hg24'
+_cell_volume   828.59351380
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.25000000  0.14444300  0.81852800  1
+  Ba  Ba1  1  0.25000000  0.35555700  0.31852800  1
+  Ba  Ba2  1  0.75000000  0.85555700  0.18147200  1
+  Ba  Ba3  1  0.75000000  0.64444300  0.68147200  1
+  Hg  Hg4  1  0.25000000  0.88794000  0.00384300  1
+  Hg  Hg5  1  0.25000000  0.61206000  0.50384300  1
+  Hg  Hg6  1  0.75000000  0.11206000  0.99615700  1
+  Hg  Hg7  1  0.75000000  0.38794000  0.49615700  1
+  Hg  Hg8  1  0.25000000  0.78761000  0.80449400  1
+  Hg  Hg9  1  0.25000000  0.71239000  0.30449400  1
+  Hg  Hg10  1  0.75000000  0.21239000  0.19550600  1
+  Hg  Hg11  1  0.75000000  0.28761000  0.69550600  1
+  Hg  Hg12  1  0.25000000  0.50966600  0.85216900  1
+  Hg  Hg13  1  0.25000000  0.99033400  0.35216900  1
+  Hg  Hg14  1  0.75000000  0.49033400  0.14783100  1
+  Hg  Hg15  1  0.75000000  0.00966600  0.64783100  1
+  Hg  Hg16  1  0.25000000  0.40160600  0.64514000  1
+  Hg  Hg17  1  0.25000000  0.09839400  0.14514000  1
+  Hg  Hg18  1  0.75000000  0.59839400  0.35486000  1
+  Hg  Hg19  1  0.75000000  0.90160600  0.85486000  1
+  Hg  Hg20  1  0.25000000  0.86879700  0.59658800  1
+  Hg  Hg21  1  0.25000000  0.63120300  0.09658800  1
+  Hg  Hg22  1  0.75000000  0.13120300  0.40341200  1
+  Hg  Hg23  1  0.75000000  0.36879700  0.90341200  1
+  Hg  Hg24  1  0.25000000  0.15000400  0.54103600  1
+  Hg  Hg25  1  0.25000000  0.34999600  0.04103600  1
+  Hg  Hg26  1  0.75000000  0.84999600  0.45896400  1
+  Hg  Hg27  1  0.75000000  0.65000400  0.95896400  1

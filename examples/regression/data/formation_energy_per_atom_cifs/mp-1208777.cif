@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_Sr3NbGa3(SiO7)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.40778081
+_cell_length_b   8.40778081
+_cell_length_c   5.14984500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000634
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr3NbGa3(SiO7)2
+_chemical_formula_sum   'Sr3 Nb1 Ga3 Si2 O14'
+_cell_volume   315.27354035
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.42780200  0.00000000  0.00000000  1
+  Sr  Sr1  1  0.57219800  0.57219800  0.00000000  1
+  Sr  Sr2  1  0.00000000  0.42780200  0.00000000  1
+  Nb  Nb3  1  0.00000000  0.00000000  0.00000000  1
+  Ga  Ga4  1  0.74349700  0.00000000  0.50000000  1
+  Ga  Ga5  1  0.25650300  0.25650300  0.50000000  1
+  Ga  Ga6  1  0.00000000  0.74349700  0.50000000  1
+  Si  Si7  1  0.66666700  0.33333300  0.53408900  1
+  Si  Si8  1  0.33333300  0.66666700  0.46591100  1
+  O  O9  1  0.66666700  0.33333300  0.22161100  1
+  O  O10  1  0.33333300  0.66666700  0.77838900  1
+  O  O11  1  0.16440200  0.68719200  0.33081800  1
+  O  O12  1  0.52279000  0.83559800  0.33081800  1
+  O  O13  1  0.31280800  0.47721000  0.33081800  1
+  O  O14  1  0.83559800  0.52279000  0.66918200  1
+  O  O15  1  0.68719200  0.16440200  0.66918200  1
+  O  O16  1  0.47721000  0.31280800  0.66918200  1
+  O  O17  1  0.12586400  0.90253900  0.76885700  1
+  O  O18  1  0.77667400  0.87413600  0.76885700  1
+  O  O19  1  0.09746100  0.22332600  0.76885700  1
+  O  O20  1  0.87413600  0.77667400  0.23114300  1
+  O  O21  1  0.90253900  0.12586400  0.23114300  1
+  O  O22  1  0.22332600  0.09746100  0.23114300  1

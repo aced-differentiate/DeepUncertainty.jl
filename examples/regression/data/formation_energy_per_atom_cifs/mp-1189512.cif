@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Eu3Rh
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.58412400
+_cell_length_b   7.70702000
+_cell_length_c   9.93796500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu3Rh
+_chemical_formula_sum   'Eu12 Rh4'
+_cell_volume   504.29185099
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.33605000  0.67067200  0.06912900  1
+  Eu  Eu1  1  0.16395000  0.17067200  0.43087100  1
+  Eu  Eu2  1  0.66395000  0.32932800  0.56912900  1
+  Eu  Eu3  1  0.83605000  0.82932800  0.93087100  1
+  Eu  Eu4  1  0.66395000  0.32932800  0.93087100  1
+  Eu  Eu5  1  0.83605000  0.82932800  0.56912900  1
+  Eu  Eu6  1  0.33605000  0.67067200  0.43087100  1
+  Eu  Eu7  1  0.16395000  0.17067200  0.06912900  1
+  Eu  Eu8  1  0.85773000  0.54155800  0.25000000  1
+  Eu  Eu9  1  0.64227000  0.04155800  0.25000000  1
+  Eu  Eu10  1  0.14227000  0.45844200  0.75000000  1
+  Eu  Eu11  1  0.35773000  0.95844200  0.75000000  1
+  Rh  Rh12  1  0.05277000  0.88176900  0.25000000  1
+  Rh  Rh13  1  0.44723000  0.38176900  0.25000000  1
+  Rh  Rh14  1  0.94723000  0.11823100  0.75000000  1
+  Rh  Rh15  1  0.55277000  0.61823100  0.75000000  1

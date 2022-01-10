@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_TaTe4I
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.75313605
+_cell_length_b   8.36081308
+_cell_length_c   9.21777604
+_cell_angle_alpha   115.99764677
+_cell_angle_beta   101.41702558
+_cell_angle_gamma   100.77898989
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TaTe4I
+_chemical_formula_sum   'Ta2 Te8 I2'
+_cell_volume   435.82879175
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ta  Ta0  1  0.75022100  0.99969300  0.00030800  1
+  Ta  Ta1  1  0.24977900  0.00030700  0.99969200  1
+  Te  Te2  1  0.12233100  0.32247200  0.17787600  1
+  Te  Te3  1  0.02283100  0.87959600  0.18586600  1
+  Te  Te4  1  0.38570200  0.84968900  0.70461600  1
+  Te  Te5  1  0.61429800  0.15031100  0.29538400  1
+  Te  Te6  1  0.87766900  0.67752800  0.82212400  1
+  Te  Te7  1  0.53959800  0.24261000  0.93641900  1
+  Te  Te8  1  0.46040200  0.75739000  0.06358100  1
+  Te  Te9  1  0.97716900  0.12040400  0.81413400  1
+  I  I10  1  0.24563500  0.40297300  0.56465000  1
+  I  I11  1  0.75436500  0.59702700  0.43535000  1

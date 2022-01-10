@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Sm2Cu(GeO4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.09606259
+_cell_length_b   9.09606259
+_cell_length_c   5.18889386
+_cell_angle_alpha   73.79115945
+_cell_angle_beta   73.79115945
+_cell_angle_gamma   114.78354671
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sm2Cu(GeO4)2
+_chemical_formula_sum   'Sm4 Cu2 Ge4 O16'
+_cell_volume   333.41249656
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.29882900  0.53965200  0.81730200  1
+  Sm  Sm1  1  0.53965200  0.29882900  0.81730200  1
+  Sm  Sm2  1  0.04346200  0.80139100  0.32295800  1
+  Sm  Sm3  1  0.80139100  0.04346200  0.32295800  1
+  Cu  Cu4  1  0.92623700  0.34020300  0.62118800  1
+  Cu  Cu5  1  0.34020300  0.92623700  0.62118800  1
+  Ge  Ge6  1  0.16278400  0.16278400  0.62429900  1
+  Ge  Ge7  1  0.88854200  0.46759600  0.08127100  1
+  Ge  Ge8  1  0.46759600  0.88854200  0.08127100  1
+  Ge  Ge9  1  0.66648500  0.66648500  0.02524200  1
+  O  O10  1  0.09160400  0.62408300  0.07432600  1
+  O  O11  1  0.62408300  0.09160400  0.07432600  1
+  O  O12  1  0.06470500  0.25166500  0.41982600  1
+  O  O13  1  0.25166500  0.06470500  0.41982600  1
+  O  O14  1  0.49535700  0.49535700  0.99152300  1
+  O  O15  1  0.75165900  0.26951900  0.44543700  1
+  O  O16  1  0.26951900  0.75165900  0.44543700  1
+  O  O17  1  0.75800300  0.57360400  0.24226200  1
+  O  O18  1  0.57360400  0.75800300  0.24226200  1
+  O  O19  1  0.33367400  0.33367400  0.66301000  1
+  O  O20  1  0.83306000  0.83306000  0.65236100  1
+  O  O21  1  0.83983400  0.49619400  0.75939600  1
+  O  O22  1  0.49619400  0.83983400  0.75939600  1
+  O  O23  1  0.99872800  0.99872800  0.00537900  1
+  O  O24  1  0.00100900  0.34652200  0.92752500  1
+  O  O25  1  0.34652200  0.00100900  0.92752500  1

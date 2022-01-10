@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_U8TiSe17
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.23096930
+_cell_length_b   8.23096930
+_cell_length_c   10.84782053
+_cell_angle_alpha   80.56349320
+_cell_angle_beta   80.56349320
+_cell_angle_gamma   64.90191508
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   U8TiSe17
+_chemical_formula_sum   'U8 Ti1 Se17'
+_cell_volume   652.85494411
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  U  U0  1  0.18105400  0.69951300  0.70157500  1
+  U  U1  1  0.69951300  0.18105400  0.70157500  1
+  U  U2  1  0.81894600  0.30048700  0.29842500  1
+  U  U3  1  0.30048700  0.81894600  0.29842500  1
+  U  U4  1  0.20300500  0.20300500  0.53977700  1
+  U  U5  1  0.79699500  0.79699500  0.46022300  1
+  U  U6  1  0.68136300  0.68136300  0.98665400  1
+  U  U7  1  0.31863700  0.31863700  0.01334600  1
+  Ti  Ti8  1  0.00000000  0.00000000  0.00000000  1
+  Se  Se9  1  0.82049300  0.43331900  0.53629200  1
+  Se  Se10  1  0.43331900  0.82049300  0.53629200  1
+  Se  Se11  1  0.17950700  0.56668100  0.46370800  1
+  Se  Se12  1  0.56668100  0.17950700  0.46370800  1
+  Se  Se13  1  0.05954300  0.67521200  0.97306000  1
+  Se  Se14  1  0.67521200  0.05954300  0.97306000  1
+  Se  Se15  1  0.94045700  0.32478800  0.02694000  1
+  Se  Se16  1  0.32478800  0.94045700  0.02694000  1
+  Se  Se17  1  0.06231500  0.06231500  0.77029800  1
+  Se  Se18  1  0.93768500  0.93768500  0.22970200  1
+  Se  Se19  1  0.21295100  0.21295100  0.27460200  1
+  Se  Se20  1  0.78704900  0.78704900  0.72539800  1
+  Se  Se21  1  0.30193600  0.30193600  0.75296900  1
+  Se  Se22  1  0.69806400  0.69806400  0.24703100  1
+  Se  Se23  1  0.52130300  0.52130300  0.83131100  1
+  Se  Se24  1  0.47869700  0.47869700  0.16868900  1
+  Se  Se25  1  0.00000000  0.00000000  0.50000000  1

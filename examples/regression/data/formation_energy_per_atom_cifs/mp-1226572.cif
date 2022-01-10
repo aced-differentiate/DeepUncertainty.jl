@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_CeGaSi
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.10244000
+_cell_length_b   4.26291500
+_cell_length_c   7.77739613
+_cell_angle_alpha   74.09411983
+_cell_angle_beta   74.70783027
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeGaSi
+_chemical_formula_sum   'Ce2 Ga2 Si2'
+_cell_volume   125.79132732
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.74094700  0.24094700  0.51810500  1
+  Ce  Ce1  1  0.00905300  0.00905300  0.98189500  1
+  Ga  Ga2  1  0.33376300  0.83376300  0.33247300  1
+  Ga  Ga3  1  0.41623700  0.41623700  0.16752700  1
+  Si  Si4  1  0.16634600  0.66634600  0.66730800  1
+  Si  Si5  1  0.58365400  0.58365400  0.83269200  1

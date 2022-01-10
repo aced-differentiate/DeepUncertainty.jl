@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Zr(CuCl3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   11.62492063
+_cell_length_b   11.12353170
+_cell_length_c   6.13916611
+_cell_angle_alpha   90.44522368
+_cell_angle_beta   90.60974285
+_cell_angle_gamma   120.62941417
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Zr(CuCl3)2
+_chemical_formula_sum   'Zr3 Cu6 Cl18'
+_cell_volume   682.97924799
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.33566200  0.67019300  0.03385000  1
+  Zr  Zr1  1  0.00013900  0.99758900  0.49084000  1
+  Zr  Zr2  1  0.65644300  0.32509500  0.97445300  1
+  Cu  Cu3  1  0.41747600  0.83729700  0.62787500  1
+  Cu  Cu4  1  0.10205500  0.20671100  0.88950400  1
+  Cu  Cu5  1  0.23801300  0.47353200  0.40989600  1
+  Cu  Cu6  1  0.76713600  0.53406400  0.58648900  1
+  Cu  Cu7  1  0.90045100  0.80055800  0.11037000  1
+  Cu  Cu8  1  0.76816500  0.23173100  0.57315100  1
+  Cl  Cl9  1  0.10561800  0.89434700  0.26842000  1
+  Cl  Cl10  1  0.22615400  0.76982600  0.79908800  1
+  Cl  Cl11  1  0.12354700  0.56179800  0.24736200  1
+  Cl  Cl12  1  0.10721000  0.21804100  0.26701300  1
+  Cl  Cl13  1  0.22364100  0.44730800  0.78302700  1
+  Cl  Cl14  1  0.44097200  0.88277600  0.26792800  1
+  Cl  Cl15  1  0.20334800  0.10127400  0.73086000  1
+  Cl  Cl16  1  0.43768300  0.55785900  0.25328100  1
+  Cl  Cl17  1  0.54087400  0.76567900  0.80415600  1
+  Cl  Cl18  1  0.46618500  0.23065500  0.19893100  1
+  Cl  Cl19  1  0.56561500  0.44065300  0.74172600  1
+  Cl  Cl20  1  0.78938000  0.89501100  0.26810200  1
+  Cl  Cl21  1  0.56137000  0.11504000  0.72670400  1
+  Cl  Cl22  1  0.77904000  0.55354000  0.21243800  1
+  Cl  Cl23  1  0.89023200  0.78178700  0.73107500  1
+  Cl  Cl24  1  0.88489800  0.44473400  0.75409800  1
+  Cl  Cl25  1  0.77176200  0.22942400  0.20470500  1
+  Cl  Cl26  1  0.89322900  0.10977800  0.71925900  1

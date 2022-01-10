@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_SrCaAl2(SiN3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.14503367
+_cell_length_b   5.73080872
+_cell_length_c   5.74990180
+_cell_angle_alpha   119.89011327
+_cell_angle_beta   90.13482673
+_cell_angle_gamma   90.13841001
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SrCaAl2(SiN3)2
+_chemical_formula_sum   'Sr1 Ca1 Al2 Si2 N6'
+_cell_volume   146.98401223
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.99811000  0.67878000  0.68264200  1
+  Ca  Ca1  1  0.49493800  0.30355100  0.30022100  1
+  Al  Al2  1  0.52424500  0.02217400  0.67140700  1
+  Al  Al3  1  0.02213200  0.98215400  0.32995000  1
+  Si  Si4  1  0.51966100  0.66916200  0.02434300  1
+  Si  Si5  1  0.01692900  0.33332200  0.98086900  1
+  N  N6  1  0.49712900  0.75515600  0.77278000  1
+  N  N7  1  0.98899900  0.23274900  0.21655600  1
+  N  N8  1  0.87753800  0.11306300  0.67020600  1
+  N  N9  1  0.85362400  0.64492700  0.10040500  1
+  N  N10  1  0.38048900  0.90696700  0.33027500  1
+  N  N11  1  0.35620700  0.35799500  0.92034600  1

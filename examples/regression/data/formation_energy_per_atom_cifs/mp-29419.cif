@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Hf(Te2Cl3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.34054100
+_cell_length_b   7.38830152
+_cell_length_c   7.87229489
+_cell_angle_alpha   76.19763373
+_cell_angle_beta   75.10464059
+_cell_angle_gamma   79.21041816
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Hf(Te2Cl3)2
+_chemical_formula_sum   'Hf1 Te4 Cl6'
+_cell_volume   397.06575626
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Hf  Hf0  1  0.00000000  0.00000000  0.00000000  1
+  Te  Te1  1  0.39149000  0.50024100  0.30328600  1
+  Te  Te2  1  0.60851000  0.49975900  0.69671400  1
+  Te  Te3  1  0.68979300  0.29355200  0.43767300  1
+  Te  Te4  1  0.31020700  0.70644800  0.56232700  1
+  Cl  Cl5  1  0.99725200  0.21477600  0.70386200  1
+  Cl  Cl6  1  0.00274800  0.78522400  0.29613800  1
+  Cl  Cl7  1  0.11124500  0.23800100  0.09947000  1
+  Cl  Cl8  1  0.88875500  0.76199900  0.90053000  1
+  Cl  Cl9  1  0.66429100  0.12508800  0.11922300  1
+  Cl  Cl10  1  0.33570900  0.87491200  0.88077700  1

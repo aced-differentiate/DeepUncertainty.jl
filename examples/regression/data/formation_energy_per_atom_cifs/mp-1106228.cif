@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Tb7NiI12
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.70655619
+_cell_length_b   9.70655619
+_cell_length_c   9.70655709
+_cell_angle_alpha   107.41701213
+_cell_angle_beta   107.41701213
+_cell_angle_gamma   107.41700862
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Tb7NiI12
+_chemical_formula_sum   'Tb7 Ni1 I12'
+_cell_volume   752.79316561
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.90030700  0.96877500  0.70104500  1
+  Tb  Tb1  1  0.70104500  0.90030700  0.96877500  1
+  Tb  Tb2  1  0.96877500  0.70104500  0.90030700  1
+  Tb  Tb3  1  0.09969300  0.03122500  0.29895500  1
+  Tb  Tb4  1  0.29895500  0.09969300  0.03122500  1
+  Tb  Tb5  1  0.03122500  0.29895500  0.09969300  1
+  Tb  Tb6  1  0.50000000  0.50000000  0.50000000  1
+  Ni  Ni7  1  0.00000000  0.00000000  0.00000000  1
+  I  I8  1  0.92464000  0.31967300  0.77161500  1
+  I  I9  1  0.77161500  0.92464000  0.31967300  1
+  I  I10  1  0.31967300  0.77161500  0.92464000  1
+  I  I11  1  0.07536000  0.68032700  0.22838500  1
+  I  I12  1  0.22838500  0.07536000  0.68032700  1
+  I  I13  1  0.68032700  0.22838500  0.07536000  1
+  I  I14  1  0.52802200  0.84459800  0.60817600  1
+  I  I15  1  0.60817600  0.52802200  0.84459800  1
+  I  I16  1  0.84459800  0.60817600  0.52802200  1
+  I  I17  1  0.47197800  0.15540200  0.39182400  1
+  I  I18  1  0.39182400  0.47197800  0.15540200  1
+  I  I19  1  0.15540200  0.39182400  0.47197800  1

@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_CaGaH5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.39485600
+_cell_length_b   6.65870800
+_cell_length_c   6.77253138
+_cell_angle_alpha   77.16199925
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CaGaH5
+_chemical_formula_sum   'Ca2 Ga2 H10'
+_cell_volume   193.23742523
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.99979900  0.82959400  0.66798000  1
+  Ca  Ca1  1  0.49979900  0.17040600  0.33202000  1
+  Ga  Ga2  1  0.24223200  0.71435200  0.20214200  1
+  Ga  Ga3  1  0.74223200  0.28564800  0.79785800  1
+  H  H4  1  0.07742300  0.67986100  0.00101400  1
+  H  H5  1  0.57742300  0.32013900  0.99898600  1
+  H  H6  1  0.49929200  0.87994800  0.58261700  1
+  H  H7  1  0.99929200  0.12005200  0.41738300  1
+  H  H8  1  0.44932800  0.51815000  0.28911800  1
+  H  H9  1  0.94932800  0.48185000  0.71088200  1
+  H  H10  1  0.44792700  0.91677500  0.14394500  1
+  H  H11  1  0.94792700  0.08322500  0.85605500  1
+  H  H12  1  0.98579900  0.73727300  0.36105700  1
+  H  H13  1  0.48579900  0.26272700  0.63894300  1

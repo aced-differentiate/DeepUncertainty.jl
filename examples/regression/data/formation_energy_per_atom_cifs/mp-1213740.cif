@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_CrNiAg2F7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.52394282
+_cell_length_b   7.52394282
+_cell_length_c   7.52394282
+_cell_angle_alpha   120.65886382
+_cell_angle_beta   118.30637919
+_cell_angle_gamma   90.91037187
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CrNiAg2F7
+_chemical_formula_sum   'Cr2 Ni2 Ag4 F14'
+_cell_volume   303.33372740
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cr  Cr0  1  0.50000000  0.50000000  0.50000000  1
+  Cr  Cr1  1  0.50000000  0.00000000  0.00000000  1
+  Ni  Ni2  1  0.00000000  0.50000000  0.50000000  1
+  Ni  Ni3  1  0.50000000  0.00000000  0.50000000  1
+  Ag  Ag4  1  0.50000000  0.50000000  0.00000000  1
+  Ag  Ag5  1  0.00000000  0.00000000  0.00000000  1
+  Ag  Ag6  1  0.00000000  0.50000000  0.00000000  1
+  Ag  Ag7  1  0.00000000  0.00000000  0.50000000  1
+  F  F8  1  0.86615300  0.59362400  0.27253000  1
+  F  F9  1  0.17890600  0.90637600  0.27253000  1
+  F  F10  1  0.20054200  0.81820700  0.77557500  1
+  F  F11  1  0.45736800  0.68179300  0.38233500  1
+  F  F12  1  0.45736800  0.07503300  0.77557500  1
+  F  F13  1  0.20054200  0.42496700  0.38233500  1
+  F  F14  1  0.79945800  0.57503300  0.61766500  1
+  F  F15  1  0.54263200  0.92496700  0.22442500  1
+  F  F16  1  0.54263200  0.31820700  0.61766500  1
+  F  F17  1  0.79945800  0.18179300  0.22442500  1
+  F  F18  1  0.41500200  0.25000000  0.16500200  1
+  F  F19  1  0.13384700  0.40637600  0.72747000  1
+  F  F20  1  0.82109400  0.09362400  0.72747000  1
+  F  F21  1  0.58499800  0.75000000  0.83499800  1

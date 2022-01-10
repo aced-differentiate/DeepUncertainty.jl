@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Na9Sm(GeSe3)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.47904139
+_cell_length_b   9.47904139
+_cell_length_c   8.01290084
+_cell_angle_alpha   78.48106421
+_cell_angle_beta   78.48106421
+_cell_angle_gamma   81.94710807
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na9Sm(GeSe3)4
+_chemical_formula_sum   'Na9 Sm1 Ge4 Se12'
+_cell_volume   687.49108978
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.65384600  0.84819300  0.74757600  1
+  Na  Na1  1  0.15180700  0.34615400  0.25242400  1
+  Na  Na2  1  0.34313700  0.15054900  0.75248100  1
+  Na  Na3  1  0.84945100  0.65686300  0.24751900  1
+  Na  Na4  1  0.00333900  0.50164400  0.74693800  1
+  Na  Na5  1  0.49835600  0.99666100  0.25306200  1
+  Na  Na6  1  0.07258000  0.92742000  0.50000000  1
+  Na  Na7  1  0.93200900  0.06799100  0.00000000  1
+  Na  Na8  1  0.42537600  0.57462400  0.50000000  1
+  Sm  Sm9  1  0.57202800  0.42797200  0.00000000  1
+  Ge  Ge10  1  0.27381400  0.77989700  0.13319000  1
+  Ge  Ge11  1  0.78391400  0.27884100  0.63034200  1
+  Ge  Ge12  1  0.22010300  0.72618600  0.86681000  1
+  Ge  Ge13  1  0.72115900  0.21608600  0.36965800  1
+  Se  Se14  1  0.13821500  0.63452000  0.37041000  1
+  Se  Se15  1  0.63315800  0.14710500  0.87364800  1
+  Se  Se16  1  0.36548000  0.86178500  0.62959000  1
+  Se  Se17  1  0.85289500  0.36684200  0.12635200  1
+  Se  Se18  1  0.53549200  0.70947000  0.11682200  1
+  Se  Se19  1  0.03454800  0.21886300  0.62398500  1
+  Se  Se20  1  0.22223200  0.03424800  0.12406500  1
+  Se  Se21  1  0.71212200  0.53247900  0.63796100  1
+  Se  Se22  1  0.96575200  0.77776800  0.87593500  1
+  Se  Se23  1  0.46752100  0.28787800  0.36203900  1
+  Se  Se24  1  0.29053000  0.46450800  0.88317800  1
+  Se  Se25  1  0.78113700  0.96545200  0.37601500  1

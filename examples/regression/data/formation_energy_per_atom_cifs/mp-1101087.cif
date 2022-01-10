@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Dy2CoGe2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.22885500
+_cell_length_b   5.63167106
+_cell_length_c   9.22015507
+_cell_angle_alpha   82.22403886
+_cell_angle_beta   76.74256330
+_cell_angle_gamma   67.94768398
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Dy2CoGe2
+_chemical_formula_sum   'Dy4 Co2 Ge4'
+_cell_volume   197.79976246
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.81523000  0.25913400  0.11040600  1
+  Dy  Dy1  1  0.18477000  0.74086600  0.88959400  1
+  Dy  Dy2  1  0.99541800  0.67599500  0.33317000  1
+  Dy  Dy3  1  0.00458200  0.32400500  0.66683000  1
+  Co  Co4  1  0.72830500  0.89975000  0.64364000  1
+  Co  Co5  1  0.27169500  0.10025000  0.35636000  1
+  Ge  Ge6  1  0.51339700  0.84711900  0.12608700  1
+  Ge  Ge7  1  0.48660300  0.15288100  0.87391300  1
+  Ge  Ge8  1  0.65567400  0.25420900  0.43444200  1
+  Ge  Ge9  1  0.34432600  0.74579100  0.56555800  1

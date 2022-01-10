@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_EuAl3Pd2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.34042700
+_cell_length_b   9.66922296
+_cell_length_c   9.66850221
+_cell_angle_alpha   120.00247422
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuAl3Pd2
+_chemical_formula_sum   'Eu3 Al9 Pd6'
+_cell_volume   351.40103414
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.50000000  0.33331900  0.66672800  1
+  Eu  Eu1  1  0.50000000  0.66659100  0.33327200  1
+  Eu  Eu2  1  0.00000000  0.00000000  0.00000000  1
+  Al  Al3  1  0.50000000  0.30245800  0.00000000  1
+  Al  Al4  1  0.50000000  0.69754900  0.69755700  1
+  Al  Al5  1  0.50000000  0.99999300  0.30244300  1
+  Al  Al6  1  0.50000000  0.69754100  0.00000000  1
+  Al  Al7  1  0.50000000  0.30244900  0.30244500  1
+  Al  Al8  1  0.50000000  0.00000400  0.69755500  1
+  Al  Al9  1  0.00000000  0.50000000  0.00000000  1
+  Al  Al10  1  0.00000000  0.50000000  0.50000100  1
+  Al  Al11  1  0.00000000  0.99999900  0.49999900  1
+  Pd  Pd12  1  0.00000000  0.18398800  0.36797700  1
+  Pd  Pd13  1  0.00000000  0.18397100  0.81602200  1
+  Pd  Pd14  1  0.00000000  0.63205100  0.81602300  1
+  Pd  Pd15  1  0.00000000  0.81601100  0.63202300  1
+  Pd  Pd16  1  0.00000000  0.36794900  0.18397800  1
+  Pd  Pd17  1  0.00000000  0.81602900  0.18397700  1

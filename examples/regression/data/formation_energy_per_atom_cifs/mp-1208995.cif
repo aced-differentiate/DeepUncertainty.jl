@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_ScTl3F6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.54360000
+_cell_length_b   6.54360000
+_cell_length_c   9.45204900
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ScTl3F6
+_chemical_formula_sum   'Sc2 Tl6 F12'
+_cell_volume   404.72445959
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sc  Sc0  1  0.00000000  0.00000000  0.00000000  1
+  Sc  Sc1  1  0.50000000  0.50000000  0.50000000  1
+  Tl  Tl2  1  0.00000000  0.50000000  0.25000000  1
+  Tl  Tl3  1  0.00000000  0.50000000  0.75000000  1
+  Tl  Tl4  1  0.50000000  0.00000000  0.25000000  1
+  Tl  Tl5  1  0.50000000  0.00000000  0.75000000  1
+  Tl  Tl6  1  0.00000000  0.00000000  0.50000000  1
+  Tl  Tl7  1  0.50000000  0.50000000  0.00000000  1
+  F  F8  1  0.14167900  0.27810000  0.00000000  1
+  F  F9  1  0.85832100  0.72190000  0.00000000  1
+  F  F10  1  0.72190000  0.14167900  0.00000000  1
+  F  F11  1  0.35832100  0.77810000  0.50000000  1
+  F  F12  1  0.27810000  0.85832100  0.00000000  1
+  F  F13  1  0.64167900  0.22190000  0.50000000  1
+  F  F14  1  0.77810000  0.64167900  0.50000000  1
+  F  F15  1  0.22190000  0.35832100  0.50000000  1
+  F  F16  1  0.00000000  0.00000000  0.21596400  1
+  F  F17  1  0.00000000  0.00000000  0.78403600  1
+  F  F18  1  0.50000000  0.50000000  0.28403600  1
+  F  F19  1  0.50000000  0.50000000  0.71596400  1

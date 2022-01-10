@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_NaCaAlPHO5F2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.29954100
+_cell_length_b   5.59397200
+_cell_length_c   6.95704572
+_cell_angle_alpha   71.42024969
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaCaAlPHO5F2
+_chemical_formula_sum   'Na2 Ca2 Al2 P2 H2 O10 F4'
+_cell_volume   269.27408072
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.25000000  0.97110300  0.54175700  1
+  Na  Na1  1  0.75000000  0.02889700  0.45824300  1
+  Ca  Ca2  1  0.50000000  0.00000000  0.00000000  1
+  Ca  Ca3  1  0.00000000  0.00000000  0.00000000  1
+  Al  Al4  1  0.50000000  0.50000000  0.50000000  1
+  Al  Al5  1  0.00000000  0.50000000  0.50000000  1
+  P  P6  1  0.25000000  0.46396800  0.13438200  1
+  P  P7  1  0.75000000  0.53603200  0.86561800  1
+  H  H8  1  0.25000000  0.47920800  0.72953000  1
+  H  H9  1  0.75000000  0.52079200  0.27047000  1
+  O  O10  1  0.42335700  0.41697200  0.27079300  1
+  O  O11  1  0.57664300  0.58302800  0.72920700  1
+  O  O12  1  0.92335700  0.58302800  0.72920700  1
+  O  O13  1  0.07664300  0.41697200  0.27079300  1
+  O  O14  1  0.25000000  0.73929100  0.98710100  1
+  O  O15  1  0.75000000  0.26070900  0.01289900  1
+  O  O16  1  0.25000000  0.27143300  0.01503600  1
+  O  O17  1  0.75000000  0.72856700  0.98496400  1
+  O  O18  1  0.25000000  0.52823400  0.58026600  1
+  O  O19  1  0.75000000  0.47176600  0.41973400  1
+  F  F20  1  0.49948600  0.84382600  0.34936300  1
+  F  F21  1  0.50051400  0.15617400  0.65063700  1
+  F  F22  1  0.99948600  0.15617400  0.65063700  1
+  F  F23  1  0.00051400  0.84382600  0.34936300  1

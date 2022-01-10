@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_BaGa2GeS6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.30377100
+_cell_length_b   6.35148674
+_cell_length_c   6.40036978
+_cell_angle_alpha   100.45015345
+_cell_angle_beta   101.08314395
+_cell_angle_gamma   99.81176935
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaGa2GeS6
+_chemical_formula_sum   'Ba1 Ga2 Ge1 S6'
+_cell_volume   241.64979825
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.05672700  0.05686500  0.06052900  1
+  Ga  Ga1  1  0.51582000  0.66510700  0.24398300  1
+  Ga  Ga2  1  0.24750400  0.52524700  0.65940900  1
+  Ge  Ge3  1  0.66325500  0.24382700  0.52012000  1
+  S  S4  1  0.92652500  0.47123100  0.79128300  1
+  S  S5  1  0.79698400  0.93689800  0.48176300  1
+  S  S6  1  0.47728400  0.79476800  0.93155400  1
+  S  S7  1  0.33587800  0.18399000  0.60893100  1
+  S  S8  1  0.61523000  0.32839800  0.19170300  1
+  S  S9  1  0.17963200  0.60850900  0.32556500  1

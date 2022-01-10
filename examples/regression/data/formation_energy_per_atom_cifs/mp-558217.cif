@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_CsAg(NO3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.81477464
+_cell_length_b   10.81477464
+_cell_length_c   5.59171379
+_cell_angle_alpha   86.82577391
+_cell_angle_beta   86.82577391
+_cell_angle_gamma   30.89901849
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsAg(NO3)2
+_chemical_formula_sum   'Cs2 Ag2 N4 O12'
+_cell_volume   335.29335784
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.59034600  0.59034600  0.73028300  1
+  Cs  Cs1  1  0.40965400  0.40965400  0.26971700  1
+  Ag  Ag2  1  0.17968600  0.17968600  0.18824600  1
+  Ag  Ag3  1  0.82031400  0.82031400  0.81175400  1
+  N  N4  1  0.24032800  0.24032800  0.68077200  1
+  N  N5  1  0.75967200  0.75967200  0.31922800  1
+  N  N6  1  0.03992800  0.03992800  0.23985600  1
+  N  N7  1  0.96007200  0.96007200  0.76014400  1
+  O  O8  1  0.72136300  0.72136300  0.15101800  1
+  O  O9  1  0.81992900  0.81992900  0.27252400  1
+  O  O10  1  0.88036100  0.26220300  0.23141000  1
+  O  O11  1  0.02011100  0.02011100  0.74413100  1
+  O  O12  1  0.11963900  0.73779700  0.76859000  1
+  O  O13  1  0.73779700  0.11963900  0.76859000  1
+  O  O14  1  0.27863700  0.27863700  0.84898200  1
+  O  O15  1  0.26220300  0.88036100  0.23141000  1
+  O  O16  1  0.97988900  0.97988900  0.25586900  1
+  O  O17  1  0.18007100  0.18007100  0.72747600  1
+  O  O18  1  0.26262400  0.26262400  0.46352100  1
+  O  O19  1  0.73737600  0.73737600  0.53647900  1

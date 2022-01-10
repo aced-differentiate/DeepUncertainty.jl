@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Ga2Pd5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.12309100
+_cell_length_b   5.52259800
+_cell_length_c   18.67581200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ga2Pd5
+_chemical_formula_sum   'Ga8 Pd20'
+_cell_volume   425.25149089
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ga  Ga0  1  0.75000000  0.70333100  0.45604600  1
+  Ga  Ga1  1  0.25000000  0.29666900  0.54395400  1
+  Ga  Ga2  1  0.75000000  0.20333100  0.04395400  1
+  Ga  Ga3  1  0.25000000  0.79666900  0.95604600  1
+  Ga  Ga4  1  0.75000000  0.16801400  0.32387100  1
+  Ga  Ga5  1  0.25000000  0.83198600  0.67612900  1
+  Ga  Ga6  1  0.75000000  0.66801400  0.17612900  1
+  Ga  Ga7  1  0.25000000  0.33198600  0.82387100  1
+  Pd  Pd8  1  0.75000000  0.63808000  0.73357900  1
+  Pd  Pd9  1  0.25000000  0.36192000  0.26642100  1
+  Pd  Pd10  1  0.75000000  0.13808000  0.76642100  1
+  Pd  Pd11  1  0.25000000  0.86192000  0.23357900  1
+  Pd  Pd12  1  0.75000000  0.16958800  0.46937900  1
+  Pd  Pd13  1  0.25000000  0.83041200  0.53062100  1
+  Pd  Pd14  1  0.75000000  0.66958800  0.03062100  1
+  Pd  Pd15  1  0.25000000  0.33041200  0.96937900  1
+  Pd  Pd16  1  0.75000000  0.53359700  0.58784300  1
+  Pd  Pd17  1  0.25000000  0.46640300  0.41215700  1
+  Pd  Pd18  1  0.75000000  0.03359700  0.91215700  1
+  Pd  Pd19  1  0.25000000  0.96640300  0.08784300  1
+  Pd  Pd20  1  0.75000000  0.66515100  0.31999700  1
+  Pd  Pd21  1  0.25000000  0.33484900  0.68000300  1
+  Pd  Pd22  1  0.75000000  0.16515100  0.18000300  1
+  Pd  Pd23  1  0.25000000  0.83484900  0.81999700  1
+  Pd  Pd24  1  0.75000000  0.53548200  0.88177400  1
+  Pd  Pd25  1  0.25000000  0.46451800  0.11822600  1
+  Pd  Pd26  1  0.75000000  0.03548200  0.61822600  1
+  Pd  Pd27  1  0.25000000  0.96451800  0.38177400  1

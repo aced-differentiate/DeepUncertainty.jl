@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Sr3La(NiO4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.77405891
+_cell_length_b   6.77405891
+_cell_length_c   5.48005300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   132.29231192
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr3La(NiO4)2
+_chemical_formula_sum   'Sr3 La1 Ni2 O8'
+_cell_volume   186.01624652
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.64136900  0.35863100  0.00000000  1
+  Sr  Sr1  1  0.36100400  0.63899600  0.00000000  1
+  Sr  Sr2  1  0.85816300  0.14183700  0.50000000  1
+  La  La3  1  0.13868200  0.86131800  0.50000000  1
+  Ni  Ni4  1  0.49718700  0.50281300  0.50000000  1
+  Ni  Ni5  1  0.99829200  0.00170800  0.00000000  1
+  O  O6  1  0.24821800  0.24190800  0.25484500  1
+  O  O7  1  0.75809200  0.75178200  0.74515500  1
+  O  O8  1  0.24821800  0.24190800  0.74515500  1
+  O  O9  1  0.75809200  0.75178200  0.25484500  1
+  O  O10  1  0.84142600  0.15857400  0.00000000  1
+  O  O11  1  0.33280600  0.66719400  0.50000000  1
+  O  O12  1  0.65846500  0.34153500  0.50000000  1
+  O  O13  1  0.15998700  0.84001300  0.00000000  1

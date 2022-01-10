@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_GdTiClO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.28953022
+_cell_length_b   5.28953022
+_cell_length_c   10.10102218
+_cell_angle_alpha   74.54845015
+_cell_angle_beta   74.54845015
+_cell_angle_gamma   43.79000342
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdTiClO3
+_chemical_formula_sum   'Gd2 Ti2 Cl2 O6'
+_cell_volume   187.34071133
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.28010300  0.28010300  0.20588000  1
+  Gd  Gd1  1  0.71989700  0.71989700  0.79412000  1
+  Ti  Ti2  1  0.88000700  0.88000700  0.43374400  1
+  Ti  Ti3  1  0.11999300  0.11999300  0.56625600  1
+  Cl  Cl4  1  0.61329000  0.61329000  0.09596300  1
+  Cl  Cl5  1  0.38671000  0.38671000  0.90403700  1
+  O  O6  1  0.84979500  0.84979500  0.25839700  1
+  O  O7  1  0.15020500  0.15020500  0.74160300  1
+  O  O8  1  0.66738800  0.66738800  0.56102100  1
+  O  O9  1  0.33261200  0.33261200  0.43897900  1
+  O  O10  1  0.92249100  0.92249100  0.62212400  1
+  O  O11  1  0.07750900  0.07750900  0.37787600  1

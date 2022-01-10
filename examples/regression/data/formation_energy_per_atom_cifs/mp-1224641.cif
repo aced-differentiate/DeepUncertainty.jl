@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_GdSiPd
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.56495822
+_cell_length_b   5.56495822
+_cell_length_c   7.13712986
+_cell_angle_alpha   51.58871771
+_cell_angle_beta   51.58871771
+_cell_angle_gamma   45.99800002
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdSiPd
+_chemical_formula_sum   'Gd2 Si2 Pd2'
+_cell_volume   117.31168554
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.45560200  0.45560200  0.30436000  1
+  Gd  Gd1  1  0.54439800  0.54439800  0.69564000  1
+  Si  Si2  1  0.15519100  0.15519100  0.89519900  1
+  Si  Si3  1  0.84480900  0.84480900  0.10480100  1
+  Pd  Pd4  1  0.81495400  0.81495400  0.74174500  1
+  Pd  Pd5  1  0.18504600  0.18504600  0.25825500  1

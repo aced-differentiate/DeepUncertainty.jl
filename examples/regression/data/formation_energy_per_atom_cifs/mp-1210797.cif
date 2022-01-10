@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Li2MgGeO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.09165800
+_cell_length_b   5.55182800
+_cell_length_c   6.35494300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2MgGeO4
+_chemical_formula_sum   'Li4 Mg2 Ge2 O8'
+_cell_volume   179.64158878
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.50233600  0.83300900  0.25052200  1
+  Li  Li1  1  0.00233600  0.16699100  0.24947800  1
+  Li  Li2  1  0.00233600  0.16699100  0.75052200  1
+  Li  Li3  1  0.50233600  0.83300900  0.74947800  1
+  Mg  Mg4  1  0.50052400  0.33625100  0.00000000  1
+  Mg  Mg5  1  0.00052400  0.66374900  0.50000000  1
+  Ge  Ge6  1  0.00679000  0.67423300  0.00000000  1
+  Ge  Ge7  1  0.50679000  0.32576700  0.50000000  1
+  O  O8  1  0.89186600  0.36904400  0.00000000  1
+  O  O9  1  0.39186600  0.63095600  0.50000000  1
+  O  O10  1  0.89577400  0.82382300  0.23174900  1
+  O  O11  1  0.39577400  0.17617700  0.26825100  1
+  O  O12  1  0.39577400  0.17617700  0.73174900  1
+  O  O13  1  0.89577400  0.82382300  0.76825100  1
+  O  O14  1  0.35710000  0.66977500  0.00000000  1
+  O  O15  1  0.85710000  0.33022500  0.50000000  1

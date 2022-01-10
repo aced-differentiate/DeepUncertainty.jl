@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_CaGa3Co2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.28478000
+_cell_length_b   6.24559278
+_cell_length_c   6.24559278
+_cell_angle_alpha   75.58806827
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CaGa3Co2
+_chemical_formula_sum   'Ca2 Ga6 Co4'
+_cell_volume   199.65855568
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.75000000  0.33853700  0.66146300  1
+  Ca  Ca1  1  0.25000000  0.66146300  0.33853700  1
+  Ga  Ga2  1  0.75000000  0.94565700  0.05434300  1
+  Ga  Ga3  1  0.25000000  0.05434300  0.94565700  1
+  Ga  Ga4  1  0.75000000  0.52502600  0.08584400  1
+  Ga  Ga5  1  0.25000000  0.08584400  0.52502600  1
+  Ga  Ga6  1  0.25000000  0.47497400  0.91415600  1
+  Ga  Ga7  1  0.75000000  0.91415600  0.47497400  1
+  Co  Co8  1  0.50000000  0.20118800  0.20118800  1
+  Co  Co9  1  0.00000000  0.20118800  0.20118800  1
+  Co  Co10  1  0.50000000  0.79881200  0.79881200  1
+  Co  Co11  1  0.00000000  0.79881200  0.79881200  1

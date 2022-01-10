@@ -1,0 +1,43 @@
+# generated using pymatgen
+data_Er6NiI10
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.65149300
+_cell_length_b   9.59602508
+_cell_length_c   9.60447737
+_cell_angle_alpha   107.35835935
+_cell_angle_beta   97.00644101
+_cell_angle_gamma   104.90870738
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Er6NiI10
+_chemical_formula_sum   'Er6 Ni1 I10'
+_cell_volume   635.14480546
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Er  Er0  1  0.34017400  0.12204000  0.16132200  1
+  Er  Er1  1  0.65982600  0.87796000  0.83867800  1
+  Er  Er2  1  0.97210100  0.27981800  0.08422800  1
+  Er  Er3  1  0.02789900  0.72018200  0.91577200  1
+  Er  Er4  1  0.88988900  0.96185900  0.23624900  1
+  Er  Er5  1  0.11011100  0.03814100  0.76375100  1
+  Ni  Ni6  1  0.00000000  0.00000000  0.00000000  1
+  I  I7  1  0.35699800  0.45561000  0.27485100  1
+  I  I8  1  0.64300200  0.54439000  0.72514900  1
+  I  I9  1  0.77954800  0.26070500  0.34933300  1
+  I  I10  1  0.22045200  0.73929500  0.65066700  1
+  I  I11  1  0.54703000  0.18583800  0.90619100  1
+  I  I12  1  0.45297000  0.81416200  0.09380900  1
+  I  I13  1  0.73745700  0.91064200  0.53408000  1
+  I  I14  1  0.26254300  0.08935800  0.46592000  1
+  I  I15  1  0.91380900  0.62653900  0.18196300  1
+  I  I16  1  0.08619100  0.37346100  0.81803700  1

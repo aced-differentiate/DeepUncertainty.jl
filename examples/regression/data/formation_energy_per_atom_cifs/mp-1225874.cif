@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_CsZnCoF6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.46068643
+_cell_length_b   7.46068643
+_cell_length_c   7.46068643
+_cell_angle_alpha   120.65094968
+_cell_angle_beta   119.78452464
+_cell_angle_gamma   89.62492865
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsZnCoF6
+_chemical_formula_sum   'Cs2 Zn2 Co2 F12'
+_cell_volume   292.64986492
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.37279600  0.12279600  0.25000000  1
+  Cs  Cs1  1  0.62720400  0.87720400  0.75000000  1
+  Zn  Zn2  1  0.00000000  0.50000000  0.00000000  1
+  Zn  Zn3  1  0.00000000  0.00000000  0.50000000  1
+  Co  Co4  1  0.00000000  0.50000000  0.50000000  1
+  Co  Co5  1  0.50000000  0.50000000  0.00000000  1
+  F  F6  1  0.31512000  0.56512000  0.75000000  1
+  F  F7  1  0.92786000  0.17786000  0.75000000  1
+  F  F8  1  0.33276000  0.19653300  0.76485900  1
+  F  F9  1  0.93167400  0.56790200  0.73514100  1
+  F  F10  1  0.33276000  0.56790200  0.13622800  1
+  F  F11  1  0.93167400  0.19653300  0.36377200  1
+  F  F12  1  0.68488000  0.43488000  0.25000000  1
+  F  F13  1  0.07214000  0.82214000  0.25000000  1
+  F  F14  1  0.66724000  0.80346700  0.23514100  1
+  F  F15  1  0.06832600  0.43209800  0.26485900  1
+  F  F16  1  0.66724000  0.43209800  0.86377200  1
+  F  F17  1  0.06832600  0.80346700  0.63622800  1

@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Eu(InAs)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.31951412
+_cell_length_b   4.31951412
+_cell_length_c   17.75254000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000191
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu(InAs)2
+_chemical_formula_sum   'Eu2 In4 As4'
+_cell_volume   286.85400656
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.00000000  0.00000000  0.50000000  1
+  Eu  Eu1  1  0.00000000  0.00000000  0.00000000  1
+  In  In2  1  0.33333300  0.66666700  0.82958100  1
+  In  In3  1  0.66666700  0.33333300  0.32958100  1
+  In  In4  1  0.66666700  0.33333300  0.17041900  1
+  In  In5  1  0.33333300  0.66666700  0.67041900  1
+  As  As6  1  0.66666700  0.33333300  0.60399700  1
+  As  As7  1  0.66666700  0.33333300  0.89600300  1
+  As  As8  1  0.33333300  0.66666700  0.10399700  1
+  As  As9  1  0.33333300  0.66666700  0.39600300  1

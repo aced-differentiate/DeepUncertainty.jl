@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_Ce2CoRu3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.26905226
+_cell_length_b   5.26905226
+_cell_length_c   5.26905295
+_cell_angle_alpha   60.24079710
+_cell_angle_beta   60.24079710
+_cell_angle_gamma   60.24079588
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ce2CoRu3
+_chemical_formula_sum   'Ce2 Co1 Ru3'
+_cell_volume   104.00244180
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.62489100  0.62489100  0.62489100  1
+  Ce  Ce1  1  0.37510900  0.37510900  0.37510900  1
+  Co  Co2  1  0.00000000  0.00000000  0.00000000  1
+  Ru  Ru3  1  0.00000000  0.50000000  0.00000000  1
+  Ru  Ru4  1  0.50000000  0.00000000  0.00000000  1
+  Ru  Ru5  1  0.00000000  0.00000000  0.50000000  1

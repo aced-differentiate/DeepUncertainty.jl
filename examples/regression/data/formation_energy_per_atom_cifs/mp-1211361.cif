@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_MnAg2GeSe4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.98199300
+_cell_length_b   7.30894400
+_cell_length_c   8.24455700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MnAg2GeSe4
+_chemical_formula_sum   'Mn2 Ag4 Ge2 Se8'
+_cell_volume   420.72795401
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mn  Mn0  1  0.50833000  0.35336600  0.00000000  1
+  Mn  Mn1  1  0.00833000  0.64663400  0.50000000  1
+  Ag  Ag2  1  0.51807400  0.82451100  0.75398500  1
+  Ag  Ag3  1  0.01807400  0.17548900  0.74601500  1
+  Ag  Ag4  1  0.01807400  0.17548900  0.25398500  1
+  Ag  Ag5  1  0.51807400  0.82451100  0.24601500  1
+  Ge  Ge6  1  0.99826900  0.66506700  0.00000000  1
+  Ge  Ge7  1  0.49826900  0.33493300  0.50000000  1
+  Se  Se8  1  0.87121400  0.35878700  0.00000000  1
+  Se  Se9  1  0.37121400  0.64121300  0.50000000  1
+  Se  Se10  1  0.89656100  0.82516800  0.75539100  1
+  Se  Se11  1  0.39656100  0.17483200  0.74460900  1
+  Se  Se12  1  0.39656100  0.17483200  0.25539100  1
+  Se  Se13  1  0.89656100  0.82516800  0.24460900  1
+  Se  Se14  1  0.34541800  0.66073100  0.00000000  1
+  Se  Se15  1  0.84541800  0.33926900  0.50000000  1

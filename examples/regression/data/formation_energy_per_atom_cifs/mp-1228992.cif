@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_AlGe3Mo2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.85324578
+_cell_length_b   4.85422868
+_cell_length_c   13.41292280
+_cell_angle_alpha   89.99490116
+_cell_angle_beta   90.33546776
+_cell_angle_gamma   60.01382440
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   AlGe3Mo2
+_chemical_formula_sum   'Al3 Ge9 Mo6'
+_cell_volume   273.68877195
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al  Al0  1  0.16672341  0.66717337  0.08476289  1
+  Al  Al1  1  0.16360317  0.66933531  0.58267332  1
+  Al  Al2  1  0.66891137  0.16420805  0.24927781  1
+  Ge  Ge3  1  0.66832084  0.16515938  0.74911055  1
+  Ge  Ge4  1  0.16813514  0.16407218  0.41606643  1
+  Ge  Ge5  1  0.16332436  0.16617491  0.91808969  1
+  Ge  Ge6  1  0.82809439  0.33435781  0.08605863  1
+  Ge  Ge7  1  0.83418371  0.33607241  0.58295501  1
+  Ge  Ge8  1  0.33275290  0.83065553  0.24762365  1
+  Ge  Ge9  1  0.32772002  0.83328313  0.74789255  1
+  Ge  Ge10  1  0.83636809  0.83952030  0.41649097  1
+  Ge  Ge11  1  0.84166026  0.83189988  0.91898594  1
+  Mo  Mo12  1  0.50018106  0.99928690  0.08036902  1
+  Mo  Mo13  1  0.49989150  0.00057349  0.58360030  1
+  Mo  Mo14  1  0.00065463  0.49969964  0.25272566  1
+  Mo  Mo15  1  0.99971742  0.49963134  0.75259009  1
+  Mo  Mo16  1  0.49963465  0.50037406  0.41700242  1
+  Mo  Mo17  1  0.50012308  0.49852231  0.91372506  1

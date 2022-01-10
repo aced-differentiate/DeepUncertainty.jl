@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_Gd2Al6Si4Pt
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   17.18022257
+_cell_length_b   17.18022257
+_cell_length_c   17.18022252
+_cell_angle_alpha   13.91258598
+_cell_angle_beta   13.91258598
+_cell_angle_gamma   13.91258656
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Gd2Al6Si4Pt
+_chemical_formula_sum   'Gd2 Al6 Si4 Pt1'
+_cell_volume   255.13119675
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.43362500  0.43362500  0.43362500  1
+  Gd  Gd1  1  0.56637500  0.56637500  0.56637500  1
+  Al  Al2  1  0.68162600  0.68162600  0.68162600  1
+  Al  Al3  1  0.95035300  0.95035300  0.95035300  1
+  Al  Al4  1  0.04964700  0.04964700  0.04964700  1
+  Al  Al5  1  0.31837400  0.31837400  0.31837400  1
+  Al  Al6  1  0.18513200  0.18513200  0.18513200  1
+  Al  Al7  1  0.81486800  0.81486800  0.81486800  1
+  Si  Si8  1  0.13524000  0.13524000  0.13524000  1
+  Si  Si9  1  0.73347900  0.73347900  0.73347900  1
+  Si  Si10  1  0.86476000  0.86476000  0.86476000  1
+  Si  Si11  1  0.26652100  0.26652100  0.26652100  1
+  Pt  Pt12  1  0.00000000  0.00000000  0.00000000  1

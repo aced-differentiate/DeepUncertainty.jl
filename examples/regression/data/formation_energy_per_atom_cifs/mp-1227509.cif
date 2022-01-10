@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_CeGa2Co3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.13889600
+_cell_length_b   8.67311113
+_cell_length_c   8.67311053
+_cell_angle_alpha   59.98037402
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeGa2Co3
+_chemical_formula_sum   'Ce3 Ga6 Co9'
+_cell_volume   269.57462850
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.50000000  0.33315600  0.33353200  1
+  Ce  Ce1  1  0.50000000  0.66646800  0.66684400  1
+  Ce  Ce2  1  0.00000000  0.99999400  0.00000600  1
+  Ga  Ga3  1  0.00000000  0.50614800  0.49385200  1
+  Ga  Ga4  1  0.00000000  0.49375000  0.00018500  1
+  Ga  Ga5  1  0.00000000  0.99981500  0.50625000  1
+  Ga  Ga6  1  0.50000000  0.27456300  0.72543700  1
+  Ga  Ga7  1  0.50000000  0.72553800  0.99999500  1
+  Ga  Ga8  1  0.50000000  0.00000500  0.27446200  1
+  Co  Co9  1  0.00000000  0.17498500  0.17729500  1
+  Co  Co10  1  0.00000000  0.17721600  0.64774300  1
+  Co  Co11  1  0.00000000  0.64794300  0.17489300  1
+  Co  Co12  1  0.00000000  0.82270500  0.82501500  1
+  Co  Co13  1  0.00000000  0.35225700  0.82278400  1
+  Co  Co14  1  0.00000000  0.82510700  0.35205700  1
+  Co  Co15  1  0.50000000  0.69420400  0.30579600  1
+  Co  Co16  1  0.50000000  0.30596800  0.99991900  1
+  Co  Co17  1  0.50000000  0.00008100  0.69403200  1

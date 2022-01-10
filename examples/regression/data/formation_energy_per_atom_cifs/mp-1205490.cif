@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_La3(AgSn)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.07768064
+_cell_length_b   9.07768064
+_cell_length_c   9.07768064
+_cell_angle_alpha   149.48272019
+_cell_angle_beta   131.17410654
+_cell_angle_gamma   58.67945893
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   La3(AgSn)4
+_chemical_formula_sum   'La3 Ag4 Sn4'
+_cell_volume   283.72009547
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.36913100  0.86913100  0.50000000  1
+  La  La1  1  0.63086900  0.13086900  0.50000000  1
+  La  La2  1  0.00000000  0.00000000  0.00000000  1
+  Ag  Ag3  1  0.63936900  0.33098900  0.30838000  1
+  Ag  Ag4  1  0.36063100  0.66901100  0.69162000  1
+  Ag  Ag5  1  0.02260800  0.33098900  0.69162000  1
+  Ag  Ag6  1  0.97739200  0.66901100  0.30838000  1
+  Sn  Sn7  1  0.21619500  0.21619500  0.00000000  1
+  Sn  Sn8  1  0.78380500  0.78380500  0.00000000  1
+  Sn  Sn9  1  0.69203800  0.50000000  0.19203800  1
+  Sn  Sn10  1  0.30796200  0.50000000  0.80796200  1

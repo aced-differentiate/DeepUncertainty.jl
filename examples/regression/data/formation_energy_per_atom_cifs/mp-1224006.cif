@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_HoCuPbS3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.85098304
+_cell_length_b   6.85098304
+_cell_length_c   10.22844800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   146.49012632
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoCuPbS3
+_chemical_formula_sum   'Ho2 Cu2 Pb2 S6'
+_cell_volume   265.04405950
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.99714300  0.00285700  0.49864400  1
+  Ho  Ho1  1  0.00285700  0.99714300  0.99864400  1
+  Cu  Cu2  1  0.46616000  0.53384000  0.24958500  1
+  Cu  Cu3  1  0.53384000  0.46616000  0.74958500  1
+  Pb  Pb4  1  0.74827500  0.25172500  0.22658100  1
+  Pb  Pb5  1  0.25172500  0.74827500  0.72658100  1
+  S  S6  1  0.07326200  0.92673800  0.25029600  1
+  S  S7  1  0.92673800  0.07326200  0.75029600  1
+  S  S8  1  0.36256800  0.63743200  0.43490400  1
+  S  S9  1  0.63681600  0.36318400  0.56479000  1
+  S  S10  1  0.36318400  0.63681600  0.06479000  1
+  S  S11  1  0.63743200  0.36256800  0.93490400  1

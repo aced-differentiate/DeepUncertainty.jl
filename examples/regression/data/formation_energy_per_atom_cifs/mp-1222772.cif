@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Li(TiTe2)5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.58504700
+_cell_length_b   7.88675145
+_cell_length_c   9.54499041
+_cell_angle_alpha   109.87331414
+_cell_angle_beta   109.99148517
+_cell_angle_gamma   90.12393055
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li(TiTe2)5
+_chemical_formula_sum   'Li1 Ti5 Te10'
+_cell_volume   434.15456514
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.00000000  0.50000000  0.00000000  1
+  Ti  Ti1  1  0.70272800  0.39924400  0.40022100  1
+  Ti  Ti2  1  0.29727200  0.60075600  0.59977900  1
+  Ti  Ti3  1  0.50000000  0.00000000  0.00000000  1
+  Ti  Ti4  1  0.89786900  0.79948400  0.79807900  1
+  Ti  Ti5  1  0.10213100  0.20051600  0.20192100  1
+  Te  Te6  1  0.28791000  0.65092200  0.89957100  1
+  Te  Te7  1  0.48347200  0.05014900  0.30012100  1
+  Te  Te8  1  0.67879500  0.44746800  0.69606500  1
+  Te  Te9  1  0.88322300  0.85404000  0.10296300  1
+  Te  Te10  1  0.08360900  0.24965100  0.50021200  1
+  Te  Te11  1  0.11677700  0.14596000  0.89703700  1
+  Te  Te12  1  0.32120500  0.55253200  0.30393500  1
+  Te  Te13  1  0.51652800  0.94985100  0.69987900  1
+  Te  Te14  1  0.71209000  0.34907800  0.10042900  1
+  Te  Te15  1  0.91639100  0.75034900  0.49978800  1

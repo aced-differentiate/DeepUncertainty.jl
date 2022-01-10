@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_CsTlO
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.44899274
+_cell_length_b   7.44899274
+_cell_length_c   6.71503230
+_cell_angle_alpha   74.38651181
+_cell_angle_beta   74.38651181
+_cell_angle_gamma   30.21934079
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsTlO
+_chemical_formula_sum   'Cs2 Tl2 O2'
+_cell_volume   180.09904447
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.87667200  0.87667200  0.34476800  1
+  Cs  Cs1  1  0.12332800  0.12332800  0.65523200  1
+  Tl  Tl2  1  0.65049300  0.65049300  0.13810600  1
+  Tl  Tl3  1  0.34950800  0.34950800  0.86189400  1
+  O  O4  1  0.24805200  0.24805200  0.20751400  1
+  O  O5  1  0.75194800  0.75194800  0.79248600  1

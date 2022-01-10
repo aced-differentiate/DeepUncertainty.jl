@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_PuSb2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.40595066
+_cell_length_b   4.40595066
+_cell_length_c   17.15059000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.07039956
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PuSb2
+_chemical_formula_sum   'Pu4 Sb8'
+_cell_volume   332.93388261
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pu  Pu0  1  0.64124700  0.35875300  0.89308700  1
+  Pu  Pu1  1  0.35875300  0.64124700  0.10691300  1
+  Pu  Pu2  1  0.85875300  0.14124700  0.39308700  1
+  Pu  Pu3  1  0.14124700  0.85875300  0.60691300  1
+  Sb  Sb4  1  0.64079500  0.35920500  0.57004000  1
+  Sb  Sb5  1  0.35920500  0.64079500  0.42996000  1
+  Sb  Sb6  1  0.85920500  0.14079500  0.07004000  1
+  Sb  Sb7  1  0.14079500  0.85920500  0.92996000  1
+  Sb  Sb8  1  0.62644100  0.87355900  0.75000000  1
+  Sb  Sb9  1  0.87355900  0.62644100  0.25000000  1
+  Sb  Sb10  1  0.37355900  0.12644100  0.25000000  1
+  Sb  Sb11  1  0.12644100  0.37355900  0.75000000  1

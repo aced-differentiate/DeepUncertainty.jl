@@ -1,0 +1,41 @@
+# generated using pymatgen
+data_Ba3Nb2CoO9
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.86956034
+_cell_length_b   5.85428623
+_cell_length_c   7.19110699
+_cell_angle_alpha   89.90355410
+_cell_angle_beta   89.98560996
+_cell_angle_gamma   119.99907332
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba3Nb2CoO9
+_chemical_formula_sum   'Ba3 Nb2 Co1 O9'
+_cell_volume   213.99764820
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.00000000  0.00000000  0.00000000  1
+  Ba  Ba1  1  0.33241600  0.66582700  0.66502300  1
+  Ba  Ba2  1  0.66758400  0.33417300  0.33497700  1
+  Nb  Nb3  1  0.33339700  0.66682000  0.17781800  1
+  Nb  Nb4  1  0.66660300  0.33318000  0.82218200  1
+  Co  Co5  1  0.00000000  0.00000000  0.50000000  1
+  O  O6  1  0.50000000  0.50000000  0.00000000  1
+  O  O7  1  0.50000000  0.00000000  0.00000000  1
+  O  O8  1  0.00000000  0.50000000  0.00000000  1
+  O  O9  1  0.17078800  0.82795300  0.32523500  1
+  O  O10  1  0.17064900  0.34192900  0.32622300  1
+  O  O11  1  0.65658000  0.82786900  0.32502800  1
+  O  O12  1  0.82921200  0.17204700  0.67476500  1
+  O  O13  1  0.82935200  0.65807100  0.67377700  1
+  O  O14  1  0.34342000  0.17213100  0.67497200  1

@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_In2AgS3Cl
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.75260552
+_cell_length_b   7.75260552
+_cell_length_c   7.75260610
+_cell_angle_alpha   61.06252948
+_cell_angle_beta   61.06252948
+_cell_angle_gamma   61.06252687
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   In2AgS3Cl
+_chemical_formula_sum   'In4 Ag2 S6 Cl2'
+_cell_volume   337.36145869
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  In  In0  1  0.50000000  0.50000000  0.50000000  1
+  In  In1  1  0.50000000  0.00000000  0.50000000  1
+  In  In2  1  0.00000000  0.50000000  0.50000000  1
+  In  In3  1  0.50000000  0.50000000  0.00000000  1
+  Ag  Ag4  1  0.08571300  0.08571300  0.08571300  1
+  Ag  Ag5  1  0.91428700  0.91428700  0.91428700  1
+  S  S6  1  0.74136900  0.28924800  0.74136900  1
+  S  S7  1  0.28924800  0.74136900  0.74136900  1
+  S  S8  1  0.74136900  0.74136900  0.28924800  1
+  S  S9  1  0.25863100  0.71075200  0.25863100  1
+  S  S10  1  0.71075200  0.25863100  0.25863100  1
+  S  S11  1  0.25863100  0.25863100  0.71075200  1
+  Cl  Cl12  1  0.75346500  0.75346500  0.75346500  1
+  Cl  Cl13  1  0.24653500  0.24653500  0.24653500  1

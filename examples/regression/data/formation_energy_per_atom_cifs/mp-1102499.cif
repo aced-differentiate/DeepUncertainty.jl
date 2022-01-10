@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_SmGa4Ni
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.18250700
+_cell_length_b   6.53712000
+_cell_length_c   7.99346668
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   105.16623307
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SmGa4Ni
+_chemical_formula_sum   'Sm2 Ga8 Ni2'
+_cell_volume   210.94172732
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.88254000  0.75000000  0.76507900  1
+  Sm  Sm1  1  0.11746000  0.25000000  0.23492100  1
+  Ga  Ga2  1  0.50000000  0.50000000  0.00000000  1
+  Ga  Ga3  1  0.50000000  0.00000000  0.00000000  1
+  Ga  Ga4  1  0.07260300  0.75000000  0.14520700  1
+  Ga  Ga5  1  0.92739700  0.25000000  0.85479300  1
+  Ga  Ga6  1  0.68619500  0.55215100  0.37239000  1
+  Ga  Ga7  1  0.31380500  0.44784900  0.62761000  1
+  Ga  Ga8  1  0.68619500  0.94784900  0.37239000  1
+  Ga  Ga9  1  0.31380500  0.05215100  0.62761000  1
+  Ni  Ni10  1  0.22400800  0.75000000  0.44801600  1
+  Ni  Ni11  1  0.77599200  0.25000000  0.55198400  1

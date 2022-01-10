@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Cs4CuSi2O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.61807900
+_cell_length_b   7.56841219
+_cell_length_c   7.62131101
+_cell_angle_alpha   106.36794633
+_cell_angle_beta   110.50434724
+_cell_angle_gamma   109.29937307
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Cs4CuSi2O7
+_chemical_formula_sum   'Cs4 Cu1 Si2 O7'
+_cell_volume   301.40696212
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.28782400  0.76443000  0.22611300  1
+  Cs  Cs1  1  0.71217600  0.23557000  0.77388700  1
+  Cs  Cs2  1  0.60524400  0.37012900  0.27523000  1
+  Cs  Cs3  1  0.39475600  0.62987100  0.72477000  1
+  Cu  Cu4  1  0.00000000  0.00000000  0.50000000  1
+  Si  Si5  1  0.99114900  0.86458300  0.77847100  1
+  Si  Si6  1  0.00885100  0.13541700  0.22152900  1
+  O  O7  1  0.77037700  0.99136800  0.23773900  1
+  O  O8  1  0.96323700  0.64036000  0.76616800  1
+  O  O9  1  0.22962300  0.00863200  0.76226100  1
+  O  O10  1  0.23738900  0.15329600  0.42361000  1
+  O  O11  1  0.76261100  0.84670400  0.57639000  1
+  O  O12  1  0.03676300  0.35964000  0.23383200  1
+  O  O13  1  0.00000000  0.00000000  0.00000000  1

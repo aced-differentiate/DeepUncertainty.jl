@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Sc2P7Ru12
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.36185366
+_cell_length_b   9.36185366
+_cell_length_c   3.91757700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999761
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sc2P7Ru12
+_chemical_formula_sum   'Sc2 P7 Ru12'
+_cell_volume   297.35269564
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sc  Sc0  1  0.66666700  0.33333300  0.50000000  1
+  Sc  Sc1  1  0.33333300  0.66666700  0.00000000  1
+  P  P2  1  0.59751700  0.71790900  0.50000000  1
+  P  P3  1  0.00000000  0.00000000  0.00000000  1
+  P  P4  1  0.28209100  0.87960800  0.50000000  1
+  P  P5  1  0.12039200  0.40248300  0.50000000  1
+  P  P6  1  0.88221000  0.57301000  0.00000000  1
+  P  P7  1  0.42699000  0.30920000  0.00000000  1
+  P  P8  1  0.69080000  0.11779000  0.00000000  1
+  Ru  Ru9  1  0.55375900  0.94663000  0.50000000  1
+  Ru  Ru10  1  0.39287200  0.44624100  0.50000000  1
+  Ru  Ru11  1  0.91363900  0.12270800  0.50000000  1
+  Ru  Ru12  1  0.20906900  0.08636100  0.50000000  1
+  Ru  Ru13  1  0.87729200  0.79093100  0.50000000  1
+  Ru  Ru14  1  0.72600800  0.89069600  0.00000000  1
+  Ru  Ru15  1  0.10930400  0.83531100  0.00000000  1
+  Ru  Ru16  1  0.16468900  0.27399200  0.00000000  1
+  Ru  Ru17  1  0.42748300  0.06854500  0.00000000  1
+  Ru  Ru18  1  0.93145500  0.35893900  0.00000000  1
+  Ru  Ru19  1  0.64106100  0.57251700  0.00000000  1
+  Ru  Ru20  1  0.05337000  0.60712800  0.50000000  1

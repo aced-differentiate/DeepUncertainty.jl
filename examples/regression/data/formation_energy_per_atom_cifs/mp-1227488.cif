@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Ca(BiAu3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.70269411
+_cell_length_b   5.70269411
+_cell_length_c   14.07125400
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000127
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ca(BiAu3)2
+_chemical_formula_sum   'Ca2 Bi4 Au12'
+_cell_volume   396.29955280
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.00000000  0.00000000  0.58375600  1
+  Ca  Ca1  1  0.66666700  0.33333300  0.91349600  1
+  Bi  Bi2  1  0.66666700  0.33333300  0.66568900  1
+  Bi  Bi3  1  0.33333300  0.66666700  0.00622500  1
+  Bi  Bi4  1  0.00000000  0.00000000  0.32871400  1
+  Bi  Bi5  1  0.33333300  0.66666700  0.25172500  1
+  Au  Au6  1  0.83273300  0.16726700  0.12307600  1
+  Au  Au7  1  0.50001700  0.49998300  0.45913600  1
+  Au  Au8  1  0.16656600  0.83343400  0.79325900  1
+  Au  Au9  1  0.83273300  0.66546700  0.12307600  1
+  Au  Au10  1  0.50001700  0.00003300  0.45913600  1
+  Au  Au11  1  0.16656600  0.33313300  0.79325900  1
+  Au  Au12  1  0.66666700  0.33333300  0.29195800  1
+  Au  Au13  1  0.33333300  0.66666700  0.62441700  1
+  Au  Au14  1  0.00000000  0.00000000  0.95760800  1
+  Au  Au15  1  0.33453300  0.16726700  0.12307600  1
+  Au  Au16  1  0.99996700  0.49998300  0.45913600  1
+  Au  Au17  1  0.66686700  0.83343400  0.79325900  1

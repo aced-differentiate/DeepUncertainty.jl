@@ -6,6 +6,7 @@ version = "0.1.0"
 [deps]
 CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
 CalibrationErrors = "33913031-fe46-5864-950f-100836f47845"
+ChemistryFeaturization = "6c925690-434a-421d-aea7-51398c5b007a"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 DistributionsAD = "ced4e74d-a319-5a8a-b0ac-84af2272839c"
 Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"

@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_Sr3Se2(ClO3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.26212267
+_cell_length_b   7.26212267
+_cell_length_c   6.78660897
+_cell_angle_alpha   84.24815390
+_cell_angle_beta   84.24815390
+_cell_angle_gamma   45.68654389
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr3Se2(ClO3)2
+_chemical_formula_sum   'Sr3 Se2 Cl2 O6'
+_cell_volume   254.57963539
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.28651600  0.28866200  0.21210000  1
+  Sr  Sr1  1  0.71133800  0.71348400  0.78790000  1
+  Sr  Sr2  1  0.98271700  0.01728300  0.00000000  1
+  Se  Se3  1  0.40171100  0.40526100  0.73511400  1
+  Se  Se4  1  0.59473900  0.59828900  0.26488600  1
+  Cl  Cl5  1  0.16035400  0.16094900  0.62468600  1
+  Cl  Cl6  1  0.83905100  0.83964600  0.37531400  1
+  O  O7  1  0.87800000  0.40812600  0.11533900  1
+  O  O8  1  0.40465500  0.87976400  0.11477800  1
+  O  O9  1  0.12023600  0.59534500  0.88522200  1
+  O  O10  1  0.59187400  0.12200000  0.88466100  1
+  O  O11  1  0.47555800  0.46974800  0.22834000  1
+  O  O12  1  0.53025200  0.52444200  0.77166000  1

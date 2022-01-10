@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_RbMgAlF6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.15675315
+_cell_length_b   7.15675315
+_cell_length_c   7.15675315
+_cell_angle_alpha   120.42557155
+_cell_angle_beta   119.40563128
+_cell_angle_gamma   90.14850864
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbMgAlF6
+_chemical_formula_sum   'Rb2 Mg2 Al2 F12'
+_cell_volume   259.50296936
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.61912800  0.86912800  0.75000000  1
+  Rb  Rb1  1  0.38087200  0.13087200  0.25000000  1
+  Mg  Mg2  1  0.50000000  0.50000000  0.00000000  1
+  Mg  Mg3  1  0.00000000  0.50000000  0.50000000  1
+  Al  Al4  1  0.00000000  0.50000000  0.00000000  1
+  Al  Al5  1  0.00000000  0.00000000  0.50000000  1
+  F  F6  1  0.05274600  0.80274600  0.25000000  1
+  F  F7  1  0.66888800  0.41888800  0.25000000  1
+  F  F8  1  0.05661500  0.83340000  0.63356300  1
+  F  F9  1  0.69983700  0.42305200  0.86643700  1
+  F  F10  1  0.69983700  0.83340000  0.27678500  1
+  F  F11  1  0.05661500  0.42305200  0.22321500  1
+  F  F12  1  0.94725400  0.19725400  0.75000000  1
+  F  F13  1  0.33111200  0.58111200  0.75000000  1
+  F  F14  1  0.94338500  0.16660000  0.36643700  1
+  F  F15  1  0.30016300  0.57694800  0.13356300  1
+  F  F16  1  0.30016300  0.16660000  0.72321500  1
+  F  F17  1  0.94338500  0.57694800  0.77678500  1

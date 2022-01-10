@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Hf3Co2Si3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.83501000
+_cell_length_b   5.31201140
+_cell_length_c   12.75175000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   111.16010566
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Hf3Co2Si3
+_chemical_formula_sum   'Hf6 Co4 Si6'
+_cell_volume   242.25861519
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Hf  Hf0  1  0.07510700  0.15021300  0.38260200  1
+  Hf  Hf1  1  0.92489300  0.84978700  0.61739800  1
+  Hf  Hf2  1  0.07510700  0.15021300  0.11739800  1
+  Hf  Hf3  1  0.92489300  0.84978700  0.88260200  1
+  Hf  Hf4  1  0.36490600  0.72981100  0.25000000  1
+  Hf  Hf5  1  0.63509400  0.27018900  0.75000000  1
+  Co  Co6  1  0.21794500  0.43589100  0.91738000  1
+  Co  Co7  1  0.78205500  0.56410900  0.08262000  1
+  Co  Co8  1  0.21794500  0.43589100  0.58262000  1
+  Co  Co9  1  0.78205500  0.56410900  0.41738000  1
+  Si  Si10  1  0.38894800  0.77789500  0.45910100  1
+  Si  Si11  1  0.61105200  0.22210500  0.54089900  1
+  Si  Si12  1  0.38894800  0.77789500  0.04089900  1
+  Si  Si13  1  0.61105200  0.22210500  0.95910100  1
+  Si  Si14  1  0.66477600  0.32955200  0.25000000  1
+  Si  Si15  1  0.33522400  0.67044800  0.75000000  1

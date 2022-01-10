@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Pr2Ni7P4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.77270900
+_cell_length_b   9.26319600
+_cell_length_c   10.47778200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pr2Ni7P4
+_chemical_formula_sum   'Pr4 Ni14 P8'
+_cell_volume   366.17064057
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.00000000  0.56308700  0.00038500  1
+  Pr  Pr1  1  0.50000000  0.43691300  0.50038500  1
+  Pr  Pr2  1  0.00000000  0.93942900  0.78341000  1
+  Pr  Pr3  1  0.50000000  0.06057100  0.28341000  1
+  Ni  Ni4  1  0.00000000  0.58280900  0.30389400  1
+  Ni  Ni5  1  0.50000000  0.41719100  0.80389400  1
+  Ni  Ni6  1  0.00000000  0.31820500  0.26026400  1
+  Ni  Ni7  1  0.50000000  0.68179500  0.76026400  1
+  Ni  Ni8  1  0.00000000  0.25298100  0.90258700  1
+  Ni  Ni9  1  0.50000000  0.74701900  0.40258700  1
+  Ni  Ni10  1  0.00000000  0.90359700  0.08590100  1
+  Ni  Ni11  1  0.50000000  0.09640300  0.58590100  1
+  Ni  Ni12  1  0.00000000  0.93888600  0.47976000  1
+  Ni  Ni13  1  0.50000000  0.06111400  0.97976000  1
+  Ni  Ni14  1  0.00000000  0.27474000  0.67235400  1
+  Ni  Ni15  1  0.50000000  0.72526000  0.17235400  1
+  Ni  Ni16  1  0.00000000  0.69514600  0.57464500  1
+  Ni  Ni17  1  0.50000000  0.30485400  0.07464500  1
+  P  P18  1  0.00000000  0.52403100  0.71784000  1
+  P  P19  1  0.50000000  0.47596900  0.21784000  1
+  P  P20  1  0.00000000  0.81566400  0.28839800  1
+  P  P21  1  0.50000000  0.18433600  0.78839800  1
+  P  P22  1  0.00000000  0.15736300  0.08925900  1
+  P  P23  1  0.50000000  0.84263700  0.58925900  1
+  P  P24  1  0.00000000  0.18496400  0.47250300  1
+  P  P25  1  0.50000000  0.81503600  0.97250300  1

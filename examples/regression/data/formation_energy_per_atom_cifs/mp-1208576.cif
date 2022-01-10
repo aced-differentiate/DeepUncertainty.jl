@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_TaCoAs
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.74916100
+_cell_length_b   6.28663600
+_cell_length_c   7.15105900
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TaCoAs
+_chemical_formula_sum   'Ta4 Co4 As4'
+_cell_volume   168.54767538
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ta  Ta0  1  0.25000000  0.52198700  0.17070100  1
+  Ta  Ta1  1  0.75000000  0.47801300  0.82929900  1
+  Ta  Ta2  1  0.75000000  0.97801300  0.67070100  1
+  Ta  Ta3  1  0.25000000  0.02198700  0.32929900  1
+  Co  Co4  1  0.25000000  0.65751900  0.56605600  1
+  Co  Co5  1  0.75000000  0.34248100  0.43394400  1
+  Co  Co6  1  0.75000000  0.84248100  0.06605600  1
+  Co  Co7  1  0.25000000  0.15751900  0.93394400  1
+  As  As8  1  0.25000000  0.78284100  0.87869700  1
+  As  As9  1  0.75000000  0.21715900  0.12130300  1
+  As  As10  1  0.75000000  0.71715900  0.37869700  1
+  As  As11  1  0.25000000  0.28284100  0.62130300  1

@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_Pr6Cd(SiS7)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.35339964
+_cell_length_b   10.35339964
+_cell_length_c   5.74502600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999770
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pr6Cd(SiS7)2
+_chemical_formula_sum   'Pr6 Cd1 Si2 S14'
+_cell_volume   533.32089145
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.09805000  0.78943000  0.75079000  1
+  Pr  Pr1  1  0.69138000  0.90195000  0.75079000  1
+  Pr  Pr2  1  0.21057000  0.30862000  0.75079000  1
+  Pr  Pr3  1  0.56859300  0.54392100  0.24899800  1
+  Pr  Pr4  1  0.97532800  0.43140700  0.24899800  1
+  Pr  Pr5  1  0.45607900  0.02467200  0.24899800  1
+  Cd  Cd6  1  0.33333300  0.66666700  0.50924500  1
+  Si  Si7  1  0.00000000  0.00000000  0.16480400  1
+  Si  Si8  1  0.66666700  0.33333300  0.66233800  1
+  S  S9  1  0.00000000  0.00000000  0.53217100  1
+  S  S10  1  0.66666700  0.33333300  0.03071000  1
+  S  S11  1  0.16562700  0.75352200  0.26581800  1
+  S  S12  1  0.58789500  0.83437300  0.26581800  1
+  S  S13  1  0.24647800  0.41210500  0.26581800  1
+  S  S14  1  0.50286200  0.58167000  0.75640000  1
+  S  S15  1  0.07880800  0.49713800  0.75640000  1
+  S  S16  1  0.41833000  0.92119200  0.75640000  1
+  S  S17  1  0.21755500  0.07476800  0.02052400  1
+  S  S18  1  0.85721300  0.78244500  0.02052400  1
+  S  S19  1  0.92523200  0.14278700  0.02052400  1
+  S  S20  1  0.44901700  0.25835000  0.51908900  1
+  S  S21  1  0.80933300  0.55098300  0.51908900  1
+  S  S22  1  0.74165000  0.19066700  0.51908900  1

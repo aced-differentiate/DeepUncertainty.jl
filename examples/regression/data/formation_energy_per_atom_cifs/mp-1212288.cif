@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_HoSbO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.39190951
+_cell_length_b   7.66842093
+_cell_length_c   7.56255649
+_cell_angle_alpha   81.00193173
+_cell_angle_beta   90.82700938
+_cell_angle_gamma   92.10975740
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   HoSbO4
+_chemical_formula_sum   'Ho4 Sb4 O16'
+_cell_volume   308.62290023
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.25829200  0.13701200  0.62023100  1
+  Ho  Ho1  1  0.74170800  0.86298800  0.37976900  1
+  Ho  Ho2  1  0.21281000  0.15860200  0.10943400  1
+  Ho  Ho3  1  0.78719000  0.84139800  0.89056600  1
+  Sb  Sb4  1  0.23982700  0.66027300  0.19510500  1
+  Sb  Sb5  1  0.76017300  0.33972700  0.80489500  1
+  Sb  Sb6  1  0.72916400  0.33198200  0.30754600  1
+  Sb  Sb7  1  0.27083600  0.66801800  0.69245400  1
+  O  O8  1  0.08456700  0.43679700  0.68770000  1
+  O  O9  1  0.91543400  0.56320300  0.31230000  1
+  O  O10  1  0.61134500  0.31742200  0.55967300  1
+  O  O11  1  0.38865500  0.68257800  0.44032700  1
+  O  O12  1  0.87578300  0.33504600  0.06022200  1
+  O  O13  1  0.12421700  0.66495400  0.93977800  1
+  O  O14  1  0.39937700  0.42639700  0.20277000  1
+  O  O15  1  0.60062300  0.57360300  0.79723000  1
+  O  O16  1  0.04454400  0.88441700  0.17078400  1
+  O  O17  1  0.95545600  0.11558300  0.82921600  1
+  O  O18  1  0.52351600  0.10647200  0.31048600  1
+  O  O19  1  0.47648400  0.89352800  0.68951400  1
+  O  O20  1  0.45917600  0.19816100  0.87943000  1
+  O  O21  1  0.54082400  0.80183900  0.12057000  1
+  O  O22  1  0.00263600  0.16922000  0.38063300  1
+  O  O23  1  0.99736400  0.83078000  0.61936700  1

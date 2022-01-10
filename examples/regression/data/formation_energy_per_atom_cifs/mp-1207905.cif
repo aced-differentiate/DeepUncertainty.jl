@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Y2Ge2Ru
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.83078656
+_cell_length_b   5.83078656
+_cell_length_c   10.19849438
+_cell_angle_alpha   63.92278439
+_cell_angle_beta   63.92278439
+_cell_angle_gamma   43.47815765
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Y2Ge2Ru
+_chemical_formula_sum   'Y4 Ge4 Ru2'
+_cell_volume   210.17038288
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  1  0.81628000  0.81628000  0.10936500  1
+  Y  Y1  1  0.18372000  0.18372000  0.89063500  1
+  Y  Y2  1  0.99914700  0.99914700  0.32786900  1
+  Y  Y3  1  0.00085300  0.00085300  0.67213100  1
+  Ge  Ge4  1  0.64660400  0.64660400  0.43319100  1
+  Ge  Ge5  1  0.35339600  0.35339600  0.56680900  1
+  Ge  Ge6  1  0.51036800  0.51036800  0.12482300  1
+  Ge  Ge7  1  0.48963200  0.48963200  0.87517700  1
+  Ru  Ru8  1  0.72910700  0.72910700  0.62740700  1
+  Ru  Ru9  1  0.27089300  0.27089300  0.37259300  1

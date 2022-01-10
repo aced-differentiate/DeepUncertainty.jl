@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Eu2(Ga3Ir)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.61432484
+_cell_length_b   7.61432484
+_cell_length_c   9.77839200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.49602269
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu2(Ga3Ir)3
+_chemical_formula_sum   'Eu4 Ga18 Ir6'
+_cell_volume   493.45104775
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.00281600  0.33055500  0.75000000  1
+  Eu  Eu1  1  0.99718400  0.66944500  0.25000000  1
+  Eu  Eu2  1  0.33055500  0.00281600  0.75000000  1
+  Eu  Eu3  1  0.66944500  0.99718400  0.25000000  1
+  Ga  Ga4  1  0.66565100  0.66565100  0.44207300  1
+  Ga  Ga5  1  0.33434900  0.33434900  0.94207300  1
+  Ga  Ga6  1  0.66565100  0.66565100  0.05792700  1
+  Ga  Ga7  1  0.33434900  0.33434900  0.55792700  1
+  Ga  Ga8  1  0.00189400  0.33478300  0.42551400  1
+  Ga  Ga9  1  0.99810600  0.66521700  0.92551400  1
+  Ga  Ga10  1  0.33478300  0.00189400  0.07448600  1
+  Ga  Ga11  1  0.66521700  0.99810600  0.57448600  1
+  Ga  Ga12  1  0.99810600  0.66521700  0.57448600  1
+  Ga  Ga13  1  0.00189400  0.33478300  0.07448600  1
+  Ga  Ga14  1  0.66521700  0.99810600  0.92551400  1
+  Ga  Ga15  1  0.33478300  0.00189400  0.42551400  1
+  Ga  Ga16  1  0.12961100  0.12961100  0.25000000  1
+  Ga  Ga17  1  0.87038900  0.87038900  0.75000000  1
+  Ga  Ga18  1  0.66331600  0.45585300  0.75000000  1
+  Ga  Ga19  1  0.33668400  0.54414700  0.25000000  1
+  Ga  Ga20  1  0.45585300  0.66331600  0.75000000  1
+  Ga  Ga21  1  0.54414700  0.33668400  0.25000000  1
+  Ir  Ir22  1  0.00000000  0.00000000  0.50000000  1
+  Ir  Ir23  1  0.00000000  0.00000000  0.00000000  1
+  Ir  Ir24  1  0.67040000  0.32960000  0.50000000  1
+  Ir  Ir25  1  0.32960000  0.67040000  0.00000000  1
+  Ir  Ir26  1  0.32960000  0.67040000  0.50000000  1
+  Ir  Ir27  1  0.67040000  0.32960000  0.00000000  1

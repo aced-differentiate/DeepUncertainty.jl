@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Ce2Si5Ni3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.95696805
+_cell_length_b   7.95696805
+_cell_length_c   7.95696805
+_cell_angle_alpha   137.71617026
+_cell_angle_beta   106.11422761
+_cell_angle_gamma   89.00447986
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ce2Si5Ni3
+_chemical_formula_sum   'Ce4 Si10 Ni6'
+_cell_volume   311.55681168
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.89209400  0.62992200  0.26217200  1
+  Ce  Ce1  1  0.10790600  0.37007800  0.73782800  1
+  Ce  Ce2  1  0.63225000  0.87007800  0.76217200  1
+  Ce  Ce3  1  0.36775000  0.12992200  0.23782800  1
+  Si  Si4  1  0.24309800  0.89089200  0.35220600  1
+  Si  Si5  1  0.75690300  0.10910800  0.64779400  1
+  Si  Si6  1  0.46131400  0.60910800  0.85220600  1
+  Si  Si7  1  0.53868600  0.39089200  0.14779400  1
+  Si  Si8  1  0.73561700  0.98561700  0.25000000  1
+  Si  Si9  1  0.26438300  0.51438300  0.25000000  1
+  Si  Si10  1  0.26438300  0.01438300  0.75000000  1
+  Si  Si11  1  0.73561700  0.48561700  0.75000000  1
+  Si  Si12  1  0.00000000  0.75000000  0.75000000  1
+  Si  Si13  1  0.00000000  0.25000000  0.25000000  1
+  Ni  Ni14  1  0.97812900  0.86662900  0.11150000  1
+  Ni  Ni15  1  0.02187100  0.13337100  0.88850000  1
+  Ni  Ni16  1  0.24487100  0.63337100  0.61150000  1
+  Ni  Ni17  1  0.75512900  0.36662900  0.38850000  1
+  Ni  Ni18  1  0.50000000  0.75000000  0.25000000  1
+  Ni  Ni19  1  0.50000000  0.25000000  0.75000000  1

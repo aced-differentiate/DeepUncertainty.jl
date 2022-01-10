@@ -1,0 +1,51 @@
+# generated using pymatgen
+data_NaSr4(FeAs)10
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.85812068
+_cell_length_b   8.55280907
+_cell_length_c   8.85812068
+_cell_angle_alpha   58.81194873
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   58.81194873
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaSr4(FeAs)10
+_chemical_formula_sum   'Na1 Sr4 Fe10 As10'
+_cell_volume   456.97707163
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.00000000  0.00000000  0.00000000  1
+  Sr  Sr1  1  0.19802600  0.00000000  0.60498300  1
+  Sr  Sr2  1  0.39501700  0.00000000  0.19802600  1
+  Sr  Sr3  1  0.60498300  0.00000000  0.80197400  1
+  Sr  Sr4  1  0.80197400  0.00000000  0.39501700  1
+  Fe  Fe5  1  0.94952600  0.50091400  0.84947700  1
+  Fe  Fe6  1  0.15052300  0.49908600  0.45044000  1
+  Fe  Fe7  1  0.35039100  0.49908600  0.05047400  1
+  Fe  Fe8  1  0.54956000  0.50091400  0.64960900  1
+  Fe  Fe9  1  0.75000000  0.50000000  0.25000000  1
+  Fe  Fe10  1  0.84947700  0.50091400  0.54956000  1
+  Fe  Fe11  1  0.05047400  0.49908600  0.15052300  1
+  Fe  Fe12  1  0.25000000  0.50000000  0.75000000  1
+  Fe  Fe13  1  0.45044000  0.49908600  0.35039100  1
+  Fe  Fe14  1  0.64960900  0.50091400  0.94952600  1
+  As  As15  1  0.15275800  0.29327000  0.75345600  1
+  As  As16  1  0.35347800  0.29304400  0.35347800  1
+  As  As17  1  0.55397100  0.29327000  0.95327300  1
+  As  As18  1  0.75345600  0.29327000  0.55397100  1
+  As  As19  1  0.95327300  0.29327000  0.15275800  1
+  As  As20  1  0.64652200  0.70695600  0.64652200  1
+  As  As21  1  0.84724200  0.70673000  0.24654400  1
+  As  As22  1  0.04672600  0.70673000  0.84724200  1
+  As  As23  1  0.24654400  0.70673000  0.44602900  1
+  As  As24  1  0.44602900  0.70673000  0.04672600  1

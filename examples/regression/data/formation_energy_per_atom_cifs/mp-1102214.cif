@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_BaCaPb
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.39473300
+_cell_length_b   8.95617500
+_cell_length_c   9.83708000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaCaPb
+_chemical_formula_sum   'Ba4 Ca4 Pb4'
+_cell_volume   475.29005739
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.25000000  0.52131400  0.31763700  1
+  Ba  Ba1  1  0.25000000  0.02131400  0.18236300  1
+  Ba  Ba2  1  0.75000000  0.47868600  0.68236300  1
+  Ba  Ba3  1  0.75000000  0.97868600  0.81763700  1
+  Ca  Ca4  1  0.25000000  0.64474400  0.92968800  1
+  Ca  Ca5  1  0.25000000  0.14474400  0.57031200  1
+  Ca  Ca6  1  0.75000000  0.35525600  0.07031200  1
+  Ca  Ca7  1  0.75000000  0.85525600  0.42968800  1
+  Pb  Pb8  1  0.25000000  0.27439700  0.89197700  1
+  Pb  Pb9  1  0.25000000  0.77439700  0.60802300  1
+  Pb  Pb10  1  0.75000000  0.72560300  0.10802300  1
+  Pb  Pb11  1  0.75000000  0.22560300  0.39197700  1

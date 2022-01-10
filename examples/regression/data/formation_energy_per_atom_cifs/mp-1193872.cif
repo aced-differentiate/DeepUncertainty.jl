@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Pr3(GeRu)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.80823600
+_cell_length_b   8.06007600
+_cell_length_c   13.75538700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pr3(GeRu)2
+_chemical_formula_sum   'Pr12 Ge8 Ru8'
+_cell_volume   643.95601576
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.14724900  0.89668400  0.59829000  1
+  Pr  Pr1  1  0.85275100  0.10331600  0.09829000  1
+  Pr  Pr2  1  0.14724900  0.60331600  0.40171000  1
+  Pr  Pr3  1  0.85275100  0.39668400  0.90171000  1
+  Pr  Pr4  1  0.85275100  0.10331600  0.40171000  1
+  Pr  Pr5  1  0.14724900  0.89668400  0.90171000  1
+  Pr  Pr6  1  0.85275100  0.39668400  0.59829000  1
+  Pr  Pr7  1  0.14724900  0.60331600  0.09829000  1
+  Pr  Pr8  1  0.36843300  0.25302600  0.75000000  1
+  Pr  Pr9  1  0.63156700  0.74697400  0.25000000  1
+  Pr  Pr10  1  0.36843300  0.24697400  0.25000000  1
+  Pr  Pr11  1  0.63156700  0.75302600  0.75000000  1
+  Ge  Ge12  1  0.85707900  0.10256300  0.75000000  1
+  Ge  Ge13  1  0.14292100  0.89743700  0.25000000  1
+  Ge  Ge14  1  0.85707900  0.39743700  0.25000000  1
+  Ge  Ge15  1  0.14292100  0.60256300  0.75000000  1
+  Ge  Ge16  1  0.38546800  0.25000000  0.50000000  1
+  Ge  Ge17  1  0.61453200  0.75000000  0.00000000  1
+  Ge  Ge18  1  0.61453200  0.75000000  0.50000000  1
+  Ge  Ge19  1  0.38546800  0.25000000  0.00000000  1
+  Ru  Ru20  1  0.64270200  0.03110700  0.58995700  1
+  Ru  Ru21  1  0.35729800  0.96889300  0.08995700  1
+  Ru  Ru22  1  0.64270200  0.46889300  0.41004300  1
+  Ru  Ru23  1  0.35729800  0.53110700  0.91004300  1
+  Ru  Ru24  1  0.35729800  0.96889300  0.41004300  1
+  Ru  Ru25  1  0.64270200  0.03110700  0.91004300  1
+  Ru  Ru26  1  0.35729800  0.53110700  0.58995700  1
+  Ru  Ru27  1  0.64270200  0.46889300  0.08995700  1

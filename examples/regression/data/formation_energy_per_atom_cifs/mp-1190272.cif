@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_GdB4Mo
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.06883600
+_cell_length_b   11.73624500
+_cell_length_c   3.65599500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdB4Mo
+_chemical_formula_sum   'Gd4 B16 Mo4'
+_cell_volume   260.39950944
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.62626100  0.34981600  0.00000000  1
+  Gd  Gd1  1  0.37373900  0.65018400  0.00000000  1
+  Gd  Gd2  1  0.12626100  0.15018400  0.00000000  1
+  Gd  Gd3  1  0.87373900  0.84981600  0.00000000  1
+  B  B4  1  0.78537500  0.18591500  0.50000000  1
+  B  B5  1  0.21462500  0.81408500  0.50000000  1
+  B  B6  1  0.28537500  0.31408500  0.50000000  1
+  B  B7  1  0.71462500  0.68591500  0.50000000  1
+  B  B8  1  0.86580200  0.03231800  0.50000000  1
+  B  B9  1  0.13419800  0.96768200  0.50000000  1
+  B  B10  1  0.36580200  0.46768200  0.50000000  1
+  B  B11  1  0.63419800  0.53231800  0.50000000  1
+  B  B12  1  0.88589500  0.45283300  0.50000000  1
+  B  B13  1  0.11410500  0.54716700  0.50000000  1
+  B  B14  1  0.38589500  0.04716700  0.50000000  1
+  B  B15  1  0.61410500  0.95283300  0.50000000  1
+  B  B16  1  0.97565500  0.30728000  0.50000000  1
+  B  B17  1  0.02434500  0.69272000  0.50000000  1
+  B  B18  1  0.47565500  0.19272000  0.50000000  1
+  B  B19  1  0.52434500  0.80728000  0.50000000  1
+  Mo  Mo20  1  0.62888900  0.08330600  0.00000000  1
+  Mo  Mo21  1  0.37111100  0.91669400  0.00000000  1
+  Mo  Mo22  1  0.12888900  0.41669400  0.00000000  1
+  Mo  Mo23  1  0.87111100  0.58330600  0.00000000  1

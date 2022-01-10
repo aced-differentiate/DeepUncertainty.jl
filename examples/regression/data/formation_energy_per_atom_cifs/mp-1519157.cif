@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_SrCaLaBiO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.90678172
+_cell_length_b   6.12880050
+_cell_length_c   8.51658274
+_cell_angle_alpha   90.00106692
+_cell_angle_beta   89.91709250
+_cell_angle_gamma   89.99943309
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SrCaLaBiO6
+_chemical_formula_sum   'Sr2 Ca2 La2 Bi2 O12'
+_cell_volume   308.31263481
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.98810155  0.04964262  0.24827899  1
+  Sr  Sr1  1  0.48808984  0.45035436  0.74826967  1
+  Ca  Ca2  1  0.50155167  0.00616021  0.99968437  1
+  Ca  Ca3  1  0.00154172  0.49384098  0.49968072  1
+  La  La4  1  0.51869535  0.56050353  0.24872109  1
+  La  La5  1  0.01869647  0.93949605  0.74870403  1
+  Bi  Bi6  1  0.00149869  0.49771567  0.99988692  1
+  Bi  Bi7  1  0.50153470  0.00223570  0.49986079  1
+  O  O8  1  0.16954678  0.20059219  0.93698371  1
+  O  O9  1  0.30687556  0.71770774  0.56331350  1
+  O  O10  1  0.80688453  0.78228904  0.06331585  1
+  O  O11  1  0.66955149  0.29942636  0.43697856  1
+  O  O12  1  0.28786277  0.69633609  0.94451826  1
+  O  O13  1  0.20100522  0.17936716  0.56121847  1
+  O  O14  1  0.70098118  0.32064493  0.06119090  1
+  O  O15  1  0.78782687  0.80369628  0.44451402  1
+  O  O16  1  0.39804086  0.94609572  0.26092236  1
+  O  O17  1  0.12681648  0.45669879  0.23650590  1
+  O  O18  1  0.62684372  0.04329805  0.73652435  1
+  O  O19  1  0.89805456  0.55389852  0.76092753  1

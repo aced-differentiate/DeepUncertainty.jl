@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_Li2TiN2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.08829400
+_cell_length_b   3.08829122
+_cell_length_c   5.44177600
+_cell_angle_alpha   90.00000141
+_cell_angle_beta   89.99999749
+_cell_angle_gamma   119.99993130
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2TiN2
+_chemical_formula_sum   'Li2 Ti1 N2'
+_cell_volume   44.94780389
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.66666700  0.33333400  0.36863500  1
+  Li  Li1  1  0.33333300  0.66666600  0.63136500  1
+  Ti  Ti2  1  0.00000000  0.00000000  0.00000000  1
+  N  N3  1  0.66666700  0.33333400  0.78898800  1
+  N  N4  1  0.33333300  0.66666600  0.21101200  1

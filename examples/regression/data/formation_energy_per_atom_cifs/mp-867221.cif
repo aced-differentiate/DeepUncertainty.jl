@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Ce3(TaN3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.15462603
+_cell_length_b   10.15462603
+_cell_length_c   10.15462603
+_cell_angle_alpha   157.01859567
+_cell_angle_beta   157.01859567
+_cell_angle_gamma   32.72624419
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ce3(TaN3)2
+_chemical_formula_sum   'Ce3 Ta2 N6'
+_cell_volume   159.48221627
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.00000000  0.00000000  0.00000000  1
+  Ce  Ce1  1  0.18106200  0.18106200  0.00000000  1
+  Ce  Ce2  1  0.81893800  0.81893800  0.00000000  1
+  Ta  Ta3  1  0.59942300  0.59942300  0.00000000  1
+  Ta  Ta4  1  0.40057700  0.40057700  0.00000000  1
+  N  N5  1  0.08365100  0.58365100  0.50000000  1
+  N  N6  1  0.58365100  0.08365100  0.50000000  1
+  N  N7  1  0.70104500  0.70104500  0.00000000  1
+  N  N8  1  0.29895500  0.29895500  0.00000000  1
+  N  N9  1  0.41634900  0.91634900  0.50000000  1
+  N  N10  1  0.91634900  0.41634900  0.50000000  1

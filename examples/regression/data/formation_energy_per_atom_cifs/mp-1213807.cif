@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_CeSiPd
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.81655500
+_cell_length_b   7.85524100
+_cell_length_c   10.69534136
+_cell_angle_alpha   88.07460375
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeSiPd
+_chemical_formula_sum   'Ce8 Si8 Pd8'
+_cell_volume   488.39897142
+_cell_formula_units_Z   8
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.36330500  0.96421200  0.13869000  1
+  Ce  Ce1  1  0.63669500  0.03578800  0.86131000  1
+  Ce  Ce2  1  0.86330500  0.53578800  0.86131000  1
+  Ce  Ce3  1  0.13669500  0.46421200  0.13869000  1
+  Ce  Ce4  1  0.86958400  0.82463500  0.36916200  1
+  Ce  Ce5  1  0.13041600  0.17536500  0.63083800  1
+  Ce  Ce6  1  0.36958400  0.67536500  0.63083800  1
+  Ce  Ce7  1  0.63041600  0.32463500  0.36916200  1
+  Si  Si8  1  0.86406600  0.53523800  0.57481900  1
+  Si  Si9  1  0.13593400  0.46476200  0.42518100  1
+  Si  Si10  1  0.36406600  0.96476200  0.42518100  1
+  Si  Si11  1  0.63593400  0.03523800  0.57481900  1
+  Si  Si12  1  0.65018400  0.61962900  0.14868900  1
+  Si  Si13  1  0.34981600  0.38037100  0.85131100  1
+  Si  Si14  1  0.15018400  0.88037100  0.85131100  1
+  Si  Si15  1  0.84981600  0.11962900  0.14868900  1
+  Pd  Pd16  1  0.90342800  0.83289500  0.05187400  1
+  Pd  Pd17  1  0.09657200  0.16710500  0.94812600  1
+  Pd  Pd18  1  0.40342800  0.66710500  0.94812600  1
+  Pd  Pd19  1  0.59657200  0.33289500  0.05187400  1
+  Pd  Pd20  1  0.89000200  0.81859500  0.66937700  1
+  Pd  Pd21  1  0.10999800  0.18140500  0.33062300  1
+  Pd  Pd22  1  0.39000200  0.68140500  0.33062300  1
+  Pd  Pd23  1  0.60999800  0.31859500  0.66937700  1

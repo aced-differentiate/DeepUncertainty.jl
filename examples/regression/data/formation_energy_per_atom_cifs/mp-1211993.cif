@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_K2FeI4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.22221900
+_cell_length_b   7.94929100
+_cell_length_c   9.78340108
+_cell_angle_alpha   71.79616407
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   K2FeI4
+_chemical_formula_sum   'K4 Fe2 I8'
+_cell_volume   607.44723793
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.75000000  0.78137000  0.55156500  1
+  K  K1  1  0.25000000  0.21863000  0.44843500  1
+  K  K2  1  0.75000000  0.73196700  0.06803000  1
+  K  K3  1  0.25000000  0.26803300  0.93197000  1
+  Fe  Fe4  1  0.75000000  0.22381300  0.70094600  1
+  Fe  Fe5  1  0.25000000  0.77618700  0.29905400  1
+  I  I6  1  0.75000000  0.39964200  0.42508200  1
+  I  I7  1  0.25000000  0.60035800  0.57491800  1
+  I  I8  1  0.99824400  0.99376400  0.23967300  1
+  I  I9  1  0.00175600  0.00623600  0.76032700  1
+  I  I10  1  0.49824400  0.00623600  0.76032700  1
+  I  I11  1  0.50175600  0.99376400  0.23967300  1
+  I  I12  1  0.75000000  0.42025500  0.87259800  1
+  I  I13  1  0.25000000  0.57974500  0.12740200  1

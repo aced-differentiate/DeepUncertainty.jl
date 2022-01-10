@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Pu(AlGa)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.87991261
+_cell_length_b   7.87991261
+_cell_length_c   7.87991261
+_cell_angle_alpha   148.28490459
+_cell_angle_beta   133.09262005
+_cell_angle_gamma   57.73388550
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Pu(AlGa)2
+_chemical_formula_sum   'Pu2 Al4 Ga4'
+_cell_volume   186.40053944
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pu  Pu0  1  0.13563800  0.88563800  0.25000000  1
+  Pu  Pu1  1  0.86436200  0.11436200  0.75000000  1
+  Al  Al2  1  0.35627700  0.10627700  0.25000000  1
+  Al  Al3  1  0.64372300  0.89372300  0.75000000  1
+  Al  Al4  1  0.50000000  0.50000000  0.00000000  1
+  Al  Al5  1  0.00000000  0.50000000  0.50000000  1
+  Ga  Ga6  1  0.66707100  0.69689300  0.97017800  1
+  Ga  Ga7  1  0.33292900  0.30310700  0.02982200  1
+  Ga  Ga8  1  0.77328500  0.30310700  0.47017800  1
+  Ga  Ga9  1  0.22671500  0.69689300  0.52982200  1

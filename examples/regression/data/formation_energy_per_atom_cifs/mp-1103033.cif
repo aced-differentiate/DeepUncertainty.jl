@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_SrMgPt
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.46795600
+_cell_length_b   7.62237700
+_cell_length_c   8.64063000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SrMgPt
+_chemical_formula_sum   'Sr4 Mg4 Pt4'
+_cell_volume   294.26914080
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.25000000  0.02668200  0.32220800  1
+  Sr  Sr1  1  0.25000000  0.52668200  0.17779200  1
+  Sr  Sr2  1  0.75000000  0.97331800  0.67779200  1
+  Sr  Sr3  1  0.75000000  0.47331800  0.82220800  1
+  Mg  Mg4  1  0.25000000  0.13836300  0.93697400  1
+  Mg  Mg5  1  0.25000000  0.63836300  0.56302600  1
+  Mg  Mg6  1  0.75000000  0.86163700  0.06302600  1
+  Mg  Mg7  1  0.75000000  0.36163700  0.43697400  1
+  Pt  Pt8  1  0.25000000  0.28014500  0.61745900  1
+  Pt  Pt9  1  0.25000000  0.78014500  0.88254100  1
+  Pt  Pt10  1  0.75000000  0.71985500  0.38254100  1
+  Pt  Pt11  1  0.75000000  0.21985500  0.11745900  1

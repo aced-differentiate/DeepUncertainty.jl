@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Gd3Al7Ag2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.38959081
+_cell_length_b   9.38959081
+_cell_length_c   9.38959053
+_cell_angle_alpha   34.57036624
+_cell_angle_beta   34.57036624
+_cell_angle_gamma   34.57036673
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Gd3Al7Ag2
+_chemical_formula_sum   'Gd3 Al7 Ag2'
+_cell_volume   237.80583449
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.14203000  0.14203000  0.14203000  1
+  Gd  Gd1  1  0.85797000  0.85797000  0.85797000  1
+  Gd  Gd2  1  0.00000000  0.00000000  0.00000000  1
+  Al  Al3  1  0.58647500  0.58647500  0.07836800  1
+  Al  Al4  1  0.41352500  0.92163200  0.41352500  1
+  Al  Al5  1  0.58647500  0.07836800  0.58647500  1
+  Al  Al6  1  0.07836800  0.58647500  0.58647500  1
+  Al  Al7  1  0.41352500  0.41352500  0.92163200  1
+  Al  Al8  1  0.50000000  0.50000000  0.50000000  1
+  Al  Al9  1  0.92163200  0.41352500  0.41352500  1
+  Ag  Ag10  1  0.33562300  0.33562300  0.33562300  1
+  Ag  Ag11  1  0.66437700  0.66437700  0.66437700  1

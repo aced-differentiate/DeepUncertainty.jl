@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_TiBe3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.53260616
+_cell_length_b   7.53260616
+_cell_length_c   7.53260574
+_cell_angle_alpha   34.63105284
+_cell_angle_beta   34.63105284
+_cell_angle_gamma   34.63104292
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TiBe3
+_chemical_formula_sum   'Ti3 Be9'
+_cell_volume   123.16755956
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ti  Ti0  1  0.85769400  0.85769400  0.85769400  1
+  Ti  Ti1  1  0.14230600  0.14230600  0.14230600  1
+  Ti  Ti2  1  0.00000000  0.00000000  0.00000000  1
+  Be  Be3  1  0.41765000  0.92138300  0.41765000  1
+  Be  Be4  1  0.41765000  0.41765000  0.92138300  1
+  Be  Be5  1  0.92138300  0.41765000  0.41765000  1
+  Be  Be6  1  0.58235000  0.07861700  0.58235000  1
+  Be  Be7  1  0.58235000  0.58235000  0.07861700  1
+  Be  Be8  1  0.07861700  0.58235000  0.58235000  1
+  Be  Be9  1  0.66607500  0.66607500  0.66607500  1
+  Be  Be10  1  0.33392500  0.33392500  0.33392500  1
+  Be  Be11  1  0.50000000  0.50000000  0.50000000  1

@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_TmSbO4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.33016000
+_cell_length_b   7.51177400
+_cell_length_c   7.62407632
+_cell_angle_alpha   81.40552459
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TmSbO4
+_chemical_formula_sum   'Tm4 Sb4 O16'
+_cell_volume   301.83223823
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tm  Tm0  1  0.72668800  0.61662700  0.14657200  1
+  Tm  Tm1  1  0.27331200  0.38337300  0.85342800  1
+  Tm  Tm2  1  0.77331200  0.11662700  0.14657200  1
+  Tm  Tm3  1  0.22668800  0.88337300  0.85342800  1
+  Sb  Sb4  1  0.76548100  0.19247400  0.66311900  1
+  Sb  Sb5  1  0.23451900  0.80752600  0.33688100  1
+  Sb  Sb6  1  0.26548100  0.30752600  0.33688100  1
+  Sb  Sb7  1  0.73451900  0.69247400  0.66311900  1
+  O  O8  1  0.90631000  0.69083400  0.42931600  1
+  O  O9  1  0.09369000  0.30916600  0.57068400  1
+  O  O10  1  0.38816100  0.56264000  0.32586300  1
+  O  O11  1  0.61183900  0.43736000  0.67413700  1
+  O  O12  1  0.11183900  0.06264000  0.32586300  1
+  O  O13  1  0.88816100  0.93736000  0.67413700  1
+  O  O14  1  0.59369000  0.19083400  0.42931600  1
+  O  O15  1  0.40631000  0.80916600  0.57068400  1
+  O  O16  1  0.96837400  0.18050200  0.88921500  1
+  O  O17  1  0.03162600  0.81949800  0.11078500  1
+  O  O18  1  0.46837400  0.31949800  0.11078500  1
+  O  O19  1  0.53162600  0.68050200  0.88921500  1
+  O  O20  1  0.52243700  0.88347300  0.18189600  1
+  O  O21  1  0.47756300  0.11652700  0.81810400  1
+  O  O22  1  0.97756300  0.38347300  0.18189600  1
+  O  O23  1  0.02243700  0.61652700  0.81810400  1

@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_Ba4Na2W2O11
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.00673757
+_cell_length_b   6.00673757
+_cell_length_c   8.70984600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   91.13507371
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba4Na2W2O11
+_chemical_formula_sum   'Ba4 Na2 W2 O11'
+_cell_volume   314.19738371
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.02152500  0.47560100  0.27896000  1
+  Ba  Ba1  1  0.02152500  0.47560100  0.72104000  1
+  Ba  Ba2  1  0.52439900  0.97847500  0.27896000  1
+  Ba  Ba3  1  0.52439900  0.97847500  0.72104000  1
+  Na  Na4  1  0.51610200  0.48389800  0.50000000  1
+  Na  Na5  1  0.97850600  0.02149400  0.00000000  1
+  W  W6  1  0.50114800  0.49885200  0.00000000  1
+  W  W7  1  0.02019100  0.97980900  0.50000000  1
+  O  O8  1  0.24603100  0.75396800  0.50000000  1
+  O  O9  1  0.78942200  0.21057800  0.50000000  1
+  O  O10  1  0.78160200  0.75570500  0.50000000  1
+  O  O11  1  0.24429500  0.21839800  0.50000000  1
+  O  O12  1  0.02327600  0.97672400  0.27141700  1
+  O  O13  1  0.02327600  0.97672400  0.72858300  1
+  O  O14  1  0.49271200  0.50728800  0.77743900  1
+  O  O15  1  0.49271200  0.50728800  0.22256100  1
+  O  O16  1  0.71675900  0.28324100  0.00000000  1
+  O  O17  1  0.59730000  0.80144300  0.00000000  1
+  O  O18  1  0.19855700  0.40270000  0.00000000  1

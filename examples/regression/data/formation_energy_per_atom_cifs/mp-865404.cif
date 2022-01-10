@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Tm3ReB7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.97497770
+_cell_length_b   7.97497770
+_cell_length_c   9.27318000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   154.66562306
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Tm3ReB7
+_chemical_formula_sum   'Tm6 Re2 B14'
+_cell_volume   252.36560361
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tm  Tm0  1  0.89429400  0.10570600  0.05957900  1
+  Tm  Tm1  1  0.10570600  0.89429400  0.55957900  1
+  Tm  Tm2  1  0.10570600  0.89429400  0.94042100  1
+  Tm  Tm3  1  0.89429400  0.10570600  0.44042100  1
+  Tm  Tm4  1  0.24326600  0.75673400  0.25000000  1
+  Tm  Tm5  1  0.75673400  0.24326600  0.75000000  1
+  Re  Re6  1  0.05223000  0.94777000  0.25000000  1
+  Re  Re7  1  0.94777000  0.05223000  0.75000000  1
+  B  B8  1  0.45420800  0.54579200  0.25000000  1
+  B  B9  1  0.54579200  0.45420800  0.75000000  1
+  B  B10  1  0.72748200  0.27251800  0.03363700  1
+  B  B11  1  0.27251800  0.72748200  0.53363700  1
+  B  B12  1  0.27251800  0.72748200  0.96636300  1
+  B  B13  1  0.72748200  0.27251800  0.46636300  1
+  B  B14  1  0.63252300  0.36747700  0.34981900  1
+  B  B15  1  0.36747700  0.63252300  0.84981900  1
+  B  B16  1  0.36747700  0.63252300  0.65018100  1
+  B  B17  1  0.63252300  0.36747700  0.15018100  1
+  B  B18  1  0.51986100  0.48013900  0.40547000  1
+  B  B19  1  0.48013900  0.51986100  0.90547000  1
+  B  B20  1  0.48013900  0.51986100  0.59453000  1
+  B  B21  1  0.51986100  0.48013900  0.09453000  1

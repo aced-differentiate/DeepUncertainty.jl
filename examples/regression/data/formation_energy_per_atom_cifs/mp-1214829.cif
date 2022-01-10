@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_AlNiAg2F7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.34834657
+_cell_length_b   7.34834657
+_cell_length_c   7.34834657
+_cell_angle_alpha   120.57152525
+_cell_angle_beta   116.91942801
+_cell_angle_gamma   92.21499578
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   AlNiAg2F7
+_chemical_formula_sum   'Al2 Ni2 Ag4 F14'
+_cell_volume   285.32142908
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Al  Al0  1  0.50000000  0.00000000  0.50000000  1
+  Al  Al1  1  0.00000000  0.50000000  0.50000000  1
+  Ni  Ni2  1  0.00000000  0.00000000  0.50000000  1
+  Ni  Ni3  1  0.00000000  0.50000000  0.00000000  1
+  Ag  Ag4  1  0.00000000  0.00000000  0.00000000  1
+  Ag  Ag5  1  0.50000000  0.50000000  0.00000000  1
+  Ag  Ag6  1  0.50000000  0.00000000  0.00000000  1
+  Ag  Ag7  1  0.50000000  0.50000000  0.50000000  1
+  F  F8  1  0.37301300  0.08416700  0.28884600  1
+  F  F9  1  0.70467900  0.41583300  0.28884600  1
+  F  F10  1  0.68404200  0.29120700  0.75096700  1
+  F  F11  1  0.95975900  0.20879300  0.39283500  1
+  F  F12  1  0.95975900  0.56692500  0.75096700  1
+  F  F13  1  0.68404200  0.93307500  0.39283500  1
+  F  F14  1  0.31595800  0.06692500  0.60716500  1
+  F  F15  1  0.04024100  0.43307500  0.24903300  1
+  F  F16  1  0.04024100  0.79120700  0.60716500  1
+  F  F17  1  0.31595800  0.70879300  0.24903300  1
+  F  F18  1  0.88993300  0.75000000  0.13993300  1
+  F  F19  1  0.62698700  0.91583300  0.71115400  1
+  F  F20  1  0.29532100  0.58416700  0.71115400  1
+  F  F21  1  0.11006700  0.25000000  0.86006700  1

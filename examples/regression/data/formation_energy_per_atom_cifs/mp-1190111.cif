@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_GaHCl2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.96434033
+_cell_length_b   6.96434033
+_cell_length_c   10.27947413
+_cell_angle_alpha   88.75353938
+_cell_angle_beta   88.75353938
+_cell_angle_gamma   124.86039464
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GaHCl2
+_chemical_formula_sum   'Ga4 H4 Cl8'
+_cell_volume   408.65254370
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ga  Ga0  1  0.94235700  0.67371300  0.57572500  1
+  Ga  Ga1  1  0.32628700  0.05764300  0.92427500  1
+  Ga  Ga2  1  0.05764300  0.32628700  0.42427500  1
+  Ga  Ga3  1  0.67371300  0.94235700  0.07572500  1
+  H  H4  1  0.69829200  0.57975700  0.63413900  1
+  H  H5  1  0.42024300  0.30170800  0.86586100  1
+  H  H6  1  0.30170800  0.42024300  0.36586100  1
+  H  H7  1  0.57975700  0.69829200  0.13413900  1
+  Cl  Cl8  1  0.25326700  0.03051700  0.58125300  1
+  Cl  Cl9  1  0.96948300  0.74673300  0.91874700  1
+  Cl  Cl10  1  0.74673300  0.96948300  0.41874700  1
+  Cl  Cl11  1  0.03051700  0.25326700  0.08125300  1
+  Cl  Cl12  1  0.92755100  0.56068500  0.36013800  1
+  Cl  Cl13  1  0.43931500  0.07244900  0.13986200  1
+  Cl  Cl14  1  0.07244900  0.43931500  0.63986200  1
+  Cl  Cl15  1  0.56068500  0.92755100  0.86013800  1

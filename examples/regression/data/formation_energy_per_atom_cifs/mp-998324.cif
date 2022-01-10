@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_RbCaCl3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.62021910
+_cell_length_b   7.62021910
+_cell_length_c   7.62021938
+_cell_angle_alpha   60.22584488
+_cell_angle_beta   60.22584488
+_cell_angle_gamma   60.22585355
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbCaCl3
+_chemical_formula_sum   'Rb2 Ca2 Cl6'
+_cell_volume   314.48676090
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.26898900  0.26898900  0.26898900  1
+  Rb  Rb1  1  0.76898900  0.76898900  0.76898900  1
+  Ca  Ca2  1  0.00500200  0.00500200  0.00500200  1
+  Ca  Ca3  1  0.50500200  0.50500200  0.50500200  1
+  Cl  Cl4  1  0.82060900  0.24640000  0.68750000  1
+  Cl  Cl5  1  0.68750000  0.82060900  0.24640000  1
+  Cl  Cl6  1  0.24640000  0.68750000  0.82060900  1
+  Cl  Cl7  1  0.32060900  0.18750000  0.74640000  1
+  Cl  Cl8  1  0.18750000  0.74640000  0.32060900  1
+  Cl  Cl9  1  0.74640000  0.32060900  0.18750000  1

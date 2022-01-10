@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_V9Ga4Fe3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.66502500
+_cell_length_b   4.70032100
+_cell_length_c   9.41577178
+_cell_angle_alpha   89.70266920
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   V9Ga4Fe3
+_chemical_formula_sum   'V9 Ga4 Fe3'
+_cell_volume   206.45793046
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  V  V0  1  0.50000000  0.74976800  0.50062300  1
+  V  V1  1  0.75042900  0.00222700  0.24775700  1
+  V  V2  1  0.74968700  0.99868400  0.75112700  1
+  V  V3  1  0.00000000  0.49670800  0.12141400  1
+  V  V4  1  0.00000000  0.49721800  0.62564100  1
+  V  V5  1  0.50000000  0.25736200  0.00172100  1
+  V  V6  1  0.50000000  0.24797500  0.50048100  1
+  V  V7  1  0.24957100  0.00222700  0.24775700  1
+  V  V8  1  0.25031300  0.99868400  0.75112700  1
+  Ga  Ga9  1  0.50000000  0.50155100  0.24907300  1
+  Ga  Ga10  1  0.50000000  0.50094800  0.75382900  1
+  Ga  Ga11  1  0.00000000  0.99531600  0.99885000  1
+  Ga  Ga12  1  0.00000000  0.99965200  0.49917200  1
+  Fe  Fe13  1  0.00000000  0.49926100  0.37339400  1
+  Fe  Fe14  1  0.00000000  0.50043600  0.87589200  1
+  Fe  Fe15  1  0.50000000  0.75198200  0.00214200  1

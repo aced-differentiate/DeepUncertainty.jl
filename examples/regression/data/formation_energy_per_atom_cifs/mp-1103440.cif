@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_GdZnRh
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.09443000
+_cell_length_b   7.03094100
+_cell_length_c   8.19876300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdZnRh
+_chemical_formula_sum   'Gd4 Zn4 Rh4'
+_cell_volume   236.02349484
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.25000000  0.03744200  0.31590500  1
+  Gd  Gd1  1  0.25000000  0.53744200  0.18409500  1
+  Gd  Gd2  1  0.75000000  0.96255800  0.68409500  1
+  Gd  Gd3  1  0.75000000  0.46255800  0.81590500  1
+  Zn  Zn4  1  0.25000000  0.63640600  0.56288100  1
+  Zn  Zn5  1  0.25000000  0.13640600  0.93711900  1
+  Zn  Zn6  1  0.75000000  0.36359400  0.43711900  1
+  Zn  Zn7  1  0.75000000  0.86359400  0.06288100  1
+  Rh  Rh8  1  0.25000000  0.25710100  0.62236800  1
+  Rh  Rh9  1  0.25000000  0.75710100  0.87763200  1
+  Rh  Rh10  1  0.75000000  0.74289900  0.37763200  1
+  Rh  Rh11  1  0.75000000  0.24289900  0.12236800  1

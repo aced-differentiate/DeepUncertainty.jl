@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_Mg2Al2Se5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.91772493
+_cell_length_b   3.91772493
+_cell_length_c   16.50004500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99998185
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Mg2Al2Se5
+_chemical_formula_sum   'Mg2 Al2 Se5'
+_cell_volume   219.32276838
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mg  Mg0  1  0.33333300  0.66666700  0.59749800  1
+  Mg  Mg1  1  0.66666700  0.33333300  0.40250200  1
+  Al  Al2  1  0.33333300  0.66666700  0.17638500  1
+  Al  Al3  1  0.66666700  0.33333300  0.82361500  1
+  Se  Se4  1  0.66666700  0.33333300  0.11146900  1
+  Se  Se5  1  0.33333300  0.66666700  0.88853100  1
+  Se  Se6  1  0.66666700  0.33333300  0.68352300  1
+  Se  Se7  1  0.33333300  0.66666700  0.31647700  1
+  Se  Se8  1  0.00000000  0.00000000  0.50000000  1

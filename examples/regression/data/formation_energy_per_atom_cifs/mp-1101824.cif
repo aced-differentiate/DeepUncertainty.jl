@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_PrGaPt
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.52490700
+_cell_length_b   7.18107100
+_cell_length_c   7.95797800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   PrGaPt
+_chemical_formula_sum   'Pr4 Ga4 Pt4'
+_cell_volume   258.58397813
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Pr  Pr0  1  0.25000000  0.02795000  0.68968400  1
+  Pr  Pr1  1  0.25000000  0.52795000  0.81031600  1
+  Pr  Pr2  1  0.75000000  0.97205000  0.31031600  1
+  Pr  Pr3  1  0.75000000  0.47205000  0.18968400  1
+  Ga  Ga4  1  0.25000000  0.15685900  0.06810700  1
+  Ga  Ga5  1  0.25000000  0.65685900  0.43189300  1
+  Ga  Ga6  1  0.75000000  0.84314100  0.93189300  1
+  Ga  Ga7  1  0.75000000  0.34314100  0.56810700  1
+  Pt  Pt8  1  0.25000000  0.27966500  0.39195800  1
+  Pt  Pt9  1  0.25000000  0.77966500  0.10804200  1
+  Pt  Pt10  1  0.75000000  0.72033500  0.60804200  1
+  Pt  Pt11  1  0.75000000  0.22033500  0.89195800  1

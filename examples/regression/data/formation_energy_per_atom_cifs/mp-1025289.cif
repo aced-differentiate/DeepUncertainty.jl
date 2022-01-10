@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_Ce2Fe2Si2C
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.67495536
+_cell_length_b   5.67495536
+_cell_length_c   7.00749957
+_cell_angle_alpha   52.65486235
+_cell_angle_beta   52.65486235
+_cell_angle_gamma   40.98932364
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ce2Fe2Si2C
+_chemical_formula_sum   'Ce2 Fe2 Si2 C1'
+_cell_volume   112.79221303
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.56312200  0.56312200  0.17208500  1
+  Ce  Ce1  1  0.43687800  0.43687800  0.82791500  1
+  Fe  Fe2  1  0.19728300  0.19728300  0.68838900  1
+  Fe  Fe3  1  0.80271700  0.80271700  0.31161100  1
+  Si  Si4  1  0.16343500  0.16343500  0.39295900  1
+  Si  Si5  1  0.83656500  0.83656500  0.60704100  1
+  C  C6  1  0.00000000  0.00000000  0.00000000  1

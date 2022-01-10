@@ -1,0 +1,34 @@
+# generated using pymatgen
+data_GdAl2Ni
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.11439329
+_cell_length_b   5.47991388
+_cell_length_c   6.85642871
+_cell_angle_alpha   89.69759216
+_cell_angle_beta   89.98815815
+_cell_angle_gamma   111.95985594
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdAl2Ni
+_chemical_formula_sum   'Gd2 Al4 Ni2'
+_cell_volume   143.37021199
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.06670600  0.13109800  0.74814700  1
+  Gd  Gd1  1  0.94149600  0.87848200  0.24898400  1
+  Al  Al2  1  0.65896200  0.31609300  0.44296900  1
+  Al  Al3  1  0.34696400  0.69120400  0.94318700  1
+  Al  Al4  1  0.34765700  0.69413500  0.55392100  1
+  Al  Al5  1  0.66184300  0.32057600  0.05450200  1
+  Ni  Ni6  1  0.79100400  0.57816600  0.74703200  1
+  Ni  Ni7  1  0.21771600  0.43257300  0.24914600  1

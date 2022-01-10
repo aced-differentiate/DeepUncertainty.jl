@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Ho3Sn7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   13.49595047
+_cell_length_b   13.49595047
+_cell_length_c   4.46682600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   161.21601712
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho3Sn7
+_chemical_formula_sum   'Ho3 Sn7'
+_cell_volume   261.97706287
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.00000000  0.00000000  0.50000000  1
+  Ho  Ho1  1  0.31051300  0.68948700  0.00000000  1
+  Ho  Ho2  1  0.68948700  0.31051300  0.00000000  1
+  Sn  Sn3  1  0.50000000  0.50000000  0.00000000  1
+  Sn  Sn4  1  0.40289800  0.59710200  0.50000000  1
+  Sn  Sn5  1  0.59710200  0.40289800  0.50000000  1
+  Sn  Sn6  1  0.09640800  0.90359200  0.00000000  1
+  Sn  Sn7  1  0.90359200  0.09640800  0.00000000  1
+  Sn  Sn8  1  0.21089600  0.78910400  0.50000000  1
+  Sn  Sn9  1  0.78910400  0.21089600  0.50000000  1

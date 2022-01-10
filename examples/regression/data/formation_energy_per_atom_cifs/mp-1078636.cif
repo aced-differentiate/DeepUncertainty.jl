@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Ba2ZnAs2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.32472240
+_cell_length_b   8.32472240
+_cell_length_c   8.32472240
+_cell_angle_alpha   132.95238810
+_cell_angle_beta   130.48278190
+_cell_angle_gamma   70.69420258
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba2ZnAs2
+_chemical_formula_sum   'Ba4 Zn2 As4'
+_cell_volume   314.62759492
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.66556400  0.86094900  0.80461500  1
+  Ba  Ba1  1  0.33443600  0.13905100  0.19538500  1
+  Ba  Ba2  1  0.94366500  0.63905100  0.30461500  1
+  Ba  Ba3  1  0.05633500  0.36094900  0.69538500  1
+  Zn  Zn4  1  0.50000000  0.25000000  0.75000000  1
+  Zn  Zn5  1  0.50000000  0.75000000  0.25000000  1
+  As  As6  1  0.40580300  0.60814000  0.79766200  1
+  As  As7  1  0.59419700  0.39186000  0.20233800  1
+  As  As8  1  0.18952200  0.89186000  0.29766200  1
+  As  As9  1  0.81047800  0.10814000  0.70233800  1

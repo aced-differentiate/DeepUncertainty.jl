@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Ho2Ni2Sn
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.28031700
+_cell_length_b   7.28031700
+_cell_length_c   3.69826100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ho2Ni2Sn
+_chemical_formula_sum   'Ho4 Ni4 Sn2'
+_cell_volume   196.01898555
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ho  Ho0  1  0.67360300  0.17360300  0.50000000  1
+  Ho  Ho1  1  0.32639700  0.82639700  0.50000000  1
+  Ho  Ho2  1  0.17360300  0.32639700  0.50000000  1
+  Ho  Ho3  1  0.82639700  0.67360300  0.50000000  1
+  Ni  Ni4  1  0.87652000  0.37652000  0.00000000  1
+  Ni  Ni5  1  0.12348000  0.62348000  0.00000000  1
+  Ni  Ni6  1  0.37652000  0.12348000  0.00000000  1
+  Ni  Ni7  1  0.62348000  0.87652000  0.00000000  1
+  Sn  Sn8  1  0.50000000  0.50000000  0.00000000  1
+  Sn  Sn9  1  0.00000000  0.00000000  0.00000000  1

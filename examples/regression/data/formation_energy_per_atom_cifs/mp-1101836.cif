@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_GdH2ClO2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.78451100
+_cell_length_b   6.20782300
+_cell_length_c   6.80450517
+_cell_angle_alpha   68.50698184
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   GdH2ClO2
+_chemical_formula_sum   'Gd2 H4 Cl2 O4'
+_cell_volume   148.74569006
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Gd  Gd0  1  0.25000000  0.69647000  0.12644900  1
+  Gd  Gd1  1  0.75000000  0.30353000  0.87355100  1
+  H  H2  1  0.75000000  0.88528300  0.77947500  1
+  H  H3  1  0.25000000  0.11471700  0.22052500  1
+  H  H4  1  0.75000000  0.30693700  0.29979400  1
+  H  H5  1  0.25000000  0.69306300  0.70020600  1
+  Cl  Cl6  1  0.75000000  0.75347700  0.43632000  1
+  Cl  Cl7  1  0.25000000  0.24652300  0.56368000  1
+  O  O8  1  0.75000000  0.89933200  0.91808200  1
+  O  O9  1  0.25000000  0.10066800  0.08191800  1
+  O  O10  1  0.75000000  0.43249400  0.16123100  1
+  O  O11  1  0.25000000  0.56750600  0.83876900  1

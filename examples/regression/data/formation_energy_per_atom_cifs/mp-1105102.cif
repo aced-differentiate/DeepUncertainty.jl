@@ -1,0 +1,40 @@
+# generated using pymatgen
+data_Sm3GaCo3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.47868879
+_cell_length_b   5.47868879
+_cell_length_c   13.10500800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   135.40671881
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sm3GaCo3
+_chemical_formula_sum   'Sm6 Ga2 Co6'
+_cell_volume   276.16630725
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.79403200  0.20596800  0.39774900  1
+  Sm  Sm1  1  0.20596800  0.79403200  0.60225100  1
+  Sm  Sm2  1  0.79403200  0.20596800  0.10225100  1
+  Sm  Sm3  1  0.20596800  0.79403200  0.89774900  1
+  Sm  Sm4  1  0.50405700  0.49594300  0.25000000  1
+  Sm  Sm5  1  0.49594300  0.50405700  0.75000000  1
+  Ga  Ga6  1  0.50000000  0.50000000  0.50000000  1
+  Ga  Ga7  1  0.50000000  0.50000000  0.00000000  1
+  Co  Co8  1  0.08441300  0.91558700  0.40381900  1
+  Co  Co9  1  0.91558700  0.08441300  0.59618100  1
+  Co  Co10  1  0.08441300  0.91558700  0.09618100  1
+  Co  Co11  1  0.91558700  0.08441300  0.90381900  1
+  Co  Co12  1  0.20117100  0.79882900  0.25000000  1
+  Co  Co13  1  0.79882900  0.20117100  0.75000000  1

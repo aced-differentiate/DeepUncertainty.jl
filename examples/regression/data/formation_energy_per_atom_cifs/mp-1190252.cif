@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_CsEr2Ag3Te5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.52418350
+_cell_length_b   8.52418350
+_cell_length_c   18.60026900
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   148.14839945
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsEr2Ag3Te5
+_chemical_formula_sum   'Cs2 Er4 Ag6 Te10'
+_cell_volume   713.22930365
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.55747900  0.44252100  0.25000000  1
+  Cs  Cs1  1  0.44252100  0.55747900  0.75000000  1
+  Er  Er2  1  0.69360800  0.30639200  0.90526600  1
+  Er  Er3  1  0.30639200  0.69360800  0.09473400  1
+  Er  Er4  1  0.69360800  0.30639200  0.59473400  1
+  Er  Er5  1  0.30639200  0.69360800  0.40526600  1
+  Ag  Ag6  1  0.84158900  0.15841100  0.25000000  1
+  Ag  Ag7  1  0.15841100  0.84158900  0.75000000  1
+  Ag  Ag8  1  0.08103900  0.91896100  0.46211200  1
+  Ag  Ag9  1  0.91896100  0.08103900  0.53788800  1
+  Ag  Ag10  1  0.08103900  0.91896100  0.03788800  1
+  Ag  Ag11  1  0.91896100  0.08103900  0.96211200  1
+  Te  Te12  1  0.06930100  0.93069900  0.88320500  1
+  Te  Te13  1  0.93069900  0.06930100  0.11679500  1
+  Te  Te14  1  0.06930100  0.93069900  0.61679500  1
+  Te  Te15  1  0.93069900  0.06930100  0.38320500  1
+  Te  Te16  1  0.68153100  0.31846900  0.43122900  1
+  Te  Te17  1  0.31846900  0.68153100  0.56877100  1
+  Te  Te18  1  0.68153100  0.31846900  0.06877100  1
+  Te  Te19  1  0.31846900  0.68153100  0.93122900  1
+  Te  Te20  1  0.24508900  0.75491100  0.25000000  1
+  Te  Te21  1  0.75491100  0.24508900  0.75000000  1

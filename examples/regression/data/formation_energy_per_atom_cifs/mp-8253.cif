@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Na5ReO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.69904129
+_cell_length_b   5.69904129
+_cell_length_c   5.67180615
+_cell_angle_alpha   79.64694781
+_cell_angle_beta   79.64694781
+_cell_angle_gamma   119.41000821
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Na5ReO6
+_chemical_formula_sum   'Na5 Re1 O6'
+_cell_volume   149.94595691
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.82908600  0.17091400  0.50000000  1
+  Na  Na1  1  0.33353700  0.66646300  0.00000000  1
+  Na  Na2  1  0.66646300  0.33353700  0.00000000  1
+  Na  Na3  1  0.50000000  0.50000000  0.50000000  1
+  Na  Na4  1  0.17091400  0.82908600  0.50000000  1
+  Re  Re5  1  0.00000000  0.00000000  0.00000000  1
+  O  O6  1  0.20306300  0.20306300  0.20226300  1
+  O  O7  1  0.93019100  0.65371800  0.21396500  1
+  O  O8  1  0.34628200  0.06980900  0.78603500  1
+  O  O9  1  0.06980900  0.34628200  0.78603500  1
+  O  O10  1  0.65371800  0.93019100  0.21396500  1
+  O  O11  1  0.79693700  0.79693700  0.79773700  1

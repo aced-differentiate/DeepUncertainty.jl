@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Sr3LiBiO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.99199880
+_cell_length_b   6.99199880
+_cell_length_c   6.99068410
+_cell_angle_alpha   87.68504103
+_cell_angle_beta   87.68504103
+_cell_angle_gamma   92.51346355
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr3LiBiO6
+_chemical_formula_sum   'Sr6 Li2 Bi2 O12'
+_cell_volume   340.84898358
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.89687000  0.74823200  0.39674600  1
+  Sr  Sr1  1  0.25028200  0.09943300  0.09965600  1
+  Sr  Sr2  1  0.59907600  0.40098700  0.74856900  1
+  Sr  Sr3  1  0.74823200  0.89687000  0.89674600  1
+  Sr  Sr4  1  0.40098700  0.59907600  0.24856900  1
+  Sr  Sr5  1  0.09943300  0.25028200  0.59965600  1
+  Li  Li6  1  0.22804300  0.74995000  0.72791100  1
+  Li  Li7  1  0.74995000  0.22804300  0.22791100  1
+  Bi  Bi8  1  0.50029600  0.00066100  0.50095600  1
+  Bi  Bi9  1  0.00066100  0.50029600  0.00095600  1
+  O  O10  1  0.20796000  0.91675200  0.45497200  1
+  O  O11  1  0.42163700  0.05167600  0.79153200  1
+  O  O12  1  0.54888500  0.70819200  0.57643400  1
+  O  O13  1  0.91675200  0.20796000  0.95497200  1
+  O  O14  1  0.70819200  0.54888500  0.07643400  1
+  O  O15  1  0.05167600  0.42163700  0.29153200  1
+  O  O16  1  0.79264600  0.07657900  0.54898200  1
+  O  O17  1  0.58214300  0.95533100  0.20787000  1
+  O  O18  1  0.44799200  0.29057700  0.42057200  1
+  O  O19  1  0.07657900  0.79264600  0.04898200  1
+  O  O20  1  0.29057700  0.44799200  0.92057200  1
+  O  O21  1  0.95533100  0.58214300  0.70787000  1

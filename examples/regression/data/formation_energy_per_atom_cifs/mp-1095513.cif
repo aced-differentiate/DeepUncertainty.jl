@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_SrCdAu
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.56985400
+_cell_length_b   7.91869000
+_cell_length_c   9.02089100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SrCdAu
+_chemical_formula_sum   'Sr4 Cd4 Au4'
+_cell_volume   326.44130253
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.25000000  0.03383000  0.31568000  1
+  Sr  Sr1  1  0.25000000  0.53383000  0.18432000  1
+  Sr  Sr2  1  0.75000000  0.96617000  0.68432000  1
+  Sr  Sr3  1  0.75000000  0.46617000  0.81568000  1
+  Cd  Cd4  1  0.25000000  0.14537900  0.93638100  1
+  Cd  Cd5  1  0.25000000  0.64537900  0.56361900  1
+  Cd  Cd6  1  0.75000000  0.85462100  0.06361900  1
+  Cd  Cd7  1  0.75000000  0.35462100  0.43638100  1
+  Au  Au8  1  0.25000000  0.26436100  0.62403800  1
+  Au  Au9  1  0.25000000  0.76436100  0.87596200  1
+  Au  Au10  1  0.75000000  0.73563900  0.37596200  1
+  Au  Au11  1  0.75000000  0.23563900  0.12403800  1

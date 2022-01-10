@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_RbTlO
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.09623628
+_cell_length_b   7.09623628
+_cell_length_c   6.54852942
+_cell_angle_alpha   73.72191872
+_cell_angle_beta   73.72191872
+_cell_angle_gamma   30.91476814
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbTlO
+_chemical_formula_sum   'Rb2 Tl2 O2'
+_cell_volume   162.09644719
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.87390000  0.87390000  0.34467000  1
+  Rb  Rb1  1  0.12610000  0.12610000  0.65533000  1
+  Tl  Tl2  1  0.64473900  0.64473900  0.14552100  1
+  Tl  Tl3  1  0.35526100  0.35526100  0.85447900  1
+  O  O4  1  0.24934000  0.24934000  0.21204600  1
+  O  O5  1  0.75066000  0.75066000  0.78795400  1

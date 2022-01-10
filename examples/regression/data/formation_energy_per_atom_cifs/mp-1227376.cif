@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_Ca2AlP3Pt7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   13.93705021
+_cell_length_b   13.93705021
+_cell_length_c   13.93705021
+_cell_angle_alpha   163.34172288
+_cell_angle_beta   163.34172288
+_cell_angle_gamma   23.64285976
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ca2AlP3Pt7
+_chemical_formula_sum   'Ca2 Al1 P3 Pt7'
+_cell_volume   222.41084430
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.66579700  0.66579700  0.00000000  1
+  Ca  Ca1  1  0.33420300  0.33420300  0.00000000  1
+  Al  Al2  1  0.50000000  0.50000000  0.00000000  1
+  P  P3  1  0.87823200  0.87823200  0.00000000  1
+  P  P4  1  0.12176800  0.12176800  0.00000000  1
+  P  P5  1  0.25000000  0.75000000  0.50000000  1
+  Pt  Pt6  1  0.42932200  0.92932200  0.50000000  1
+  Pt  Pt7  1  0.92701900  0.42701900  0.50000000  1
+  Pt  Pt8  1  0.57298100  0.07298100  0.50000000  1
+  Pt  Pt9  1  0.07067800  0.57067800  0.50000000  1
+  Pt  Pt10  1  0.79398900  0.79398900  0.00000000  1
+  Pt  Pt11  1  0.20601100  0.20601100  0.00000000  1
+  Pt  Pt12  1  0.00000000  0.00000000  0.00000000  1

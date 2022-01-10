@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_SrAl3Ag
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.36123100
+_cell_length_b   4.36123100
+_cell_length_c   6.57168901
+_cell_angle_alpha   70.62074696
+_cell_angle_beta   70.62074696
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SrAl3Ag
+_chemical_formula_sum   'Sr1 Al3 Ag1'
+_cell_volume   110.37848957
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.99554300  0.99554300  0.00891300  1
+  Al  Al1  1  0.75080700  0.25080700  0.49838600  1
+  Al  Al2  1  0.25080700  0.75080700  0.49838600  1
+  Al  Al3  1  0.38742100  0.38742100  0.22515700  1
+  Ag  Ag4  1  0.61542100  0.61542100  0.76915800  1

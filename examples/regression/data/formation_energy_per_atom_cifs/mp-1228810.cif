@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_AsIrSe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.02035700
+_cell_length_b   6.02035700
+_cell_length_c   6.02035700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   AsIrSe
+_chemical_formula_sum   'As4 Ir4 Se4'
+_cell_volume   218.20602377
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  As  As0  1  0.12031400  0.87968600  0.37968600  1
+  As  As1  1  0.87968600  0.37968600  0.12031400  1
+  As  As2  1  0.37968600  0.12031400  0.87968600  1
+  As  As3  1  0.62031400  0.62031400  0.62031400  1
+  Ir  Ir4  1  0.50444700  0.49555300  0.99555300  1
+  Ir  Ir5  1  0.49555300  0.99555300  0.50444700  1
+  Ir  Ir6  1  0.99555300  0.50444700  0.49555300  1
+  Ir  Ir7  1  0.00444700  0.00444700  0.00444700  1
+  Se  Se8  1  0.88250400  0.11749600  0.61749600  1
+  Se  Se9  1  0.11749600  0.61749600  0.88250400  1
+  Se  Se10  1  0.61749600  0.88250400  0.11749600  1
+  Se  Se11  1  0.38250400  0.38250400  0.38250400  1

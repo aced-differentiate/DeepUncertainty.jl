@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_ZrMn6GaSn5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.35205895
+_cell_length_b   5.35420100
+_cell_length_c   8.90592100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   59.98651376
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   ZrMn6GaSn5
+_chemical_formula_sum   'Zr1 Mn6 Ga1 Sn5'
+_cell_volume   220.98662738
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Zr  Zr0  1  0.99998500  0.00000900  0.50000000  1
+  Mn  Mn1  1  0.49689800  0.00619000  0.25767400  1
+  Mn  Mn2  1  0.00622000  0.49690800  0.25765600  1
+  Mn  Mn3  1  0.49686900  0.49691300  0.25766200  1
+  Mn  Mn4  1  0.49689800  0.00619000  0.74232600  1
+  Mn  Mn5  1  0.00622000  0.49690800  0.74234400  1
+  Mn  Mn6  1  0.49686900  0.49691300  0.74233800  1
+  Ga  Ga7  1  0.33318100  0.33344200  0.50000000  1
+  Sn  Sn8  1  0.99998800  0.00000100  0.17267700  1
+  Sn  Sn9  1  0.99998800  0.00000100  0.82732300  1
+  Sn  Sn10  1  0.66666500  0.66666600  0.00000000  1
+  Sn  Sn11  1  0.33328500  0.33334700  0.00000000  1
+  Sn  Sn12  1  0.66673300  0.66651200  0.50000000  1

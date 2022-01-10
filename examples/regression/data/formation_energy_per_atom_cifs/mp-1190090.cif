@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_EuAl2Ge
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.28312700
+_cell_length_b   7.24650300
+_cell_length_c   11.24303200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuAl2Ge
+_chemical_formula_sum   'Eu4 Al8 Ge4'
+_cell_volume   348.95777172
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.25000000  0.35983300  0.63971400  1
+  Eu  Eu1  1  0.25000000  0.85983300  0.86028600  1
+  Eu  Eu2  1  0.75000000  0.64016700  0.36028600  1
+  Eu  Eu3  1  0.75000000  0.14016700  0.13971400  1
+  Al  Al4  1  0.25000000  0.96723700  0.34316900  1
+  Al  Al5  1  0.25000000  0.46723700  0.15683100  1
+  Al  Al6  1  0.75000000  0.03276300  0.65683100  1
+  Al  Al7  1  0.75000000  0.53276300  0.84316900  1
+  Al  Al8  1  0.25000000  0.35212500  0.93614900  1
+  Al  Al9  1  0.25000000  0.85212500  0.56385100  1
+  Al  Al10  1  0.75000000  0.64787500  0.06385100  1
+  Al  Al11  1  0.75000000  0.14787500  0.43614900  1
+  Ge  Ge12  1  0.25000000  0.32506800  0.35906900  1
+  Ge  Ge13  1  0.25000000  0.82506800  0.14093100  1
+  Ge  Ge14  1  0.75000000  0.67493200  0.64093100  1
+  Ge  Ge15  1  0.75000000  0.17493200  0.85906900  1

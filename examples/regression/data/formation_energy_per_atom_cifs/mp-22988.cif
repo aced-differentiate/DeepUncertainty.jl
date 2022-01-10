@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_CsGeCl3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.51827350
+_cell_length_b   5.51827350
+_cell_length_c   5.51827380
+_cell_angle_alpha   89.84400156
+_cell_angle_beta   89.84400156
+_cell_angle_gamma   89.84400072
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsGeCl3
+_chemical_formula_sum   'Cs1 Ge1 Cl3'
+_cell_volume   168.03698010
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.99992600  0.99992600  0.99992600  1
+  Ge  Ge1  1  0.51323800  0.51323800  0.51323800  1
+  Cl  Cl2  1  0.94939400  0.49672100  0.49672100  1
+  Cl  Cl3  1  0.49672100  0.49672100  0.94939400  1
+  Cl  Cl4  1  0.49672100  0.94939400  0.49672100  1

@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_TiMnCr
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.81248164
+_cell_length_b   4.81248164
+_cell_length_c   7.82856500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.10268962
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TiMnCr
+_chemical_formula_sum   'Ti4 Mn4 Cr4'
+_cell_volume   156.85582081
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ti  Ti0  1  0.33341900  0.66658100  0.18970700  1
+  Ti  Ti1  1  0.66664600  0.33335400  0.31410200  1
+  Ti  Ti2  1  0.66664600  0.33335400  0.68589800  1
+  Ti  Ti3  1  0.33341900  0.66658100  0.81029300  1
+  Mn  Mn4  1  0.82996100  0.17003900  0.00000000  1
+  Mn  Mn5  1  0.17313700  0.34477600  0.50000000  1
+  Mn  Mn6  1  0.65522400  0.82686300  0.50000000  1
+  Mn  Mn7  1  0.17227500  0.82772500  0.50000000  1
+  Cr  Cr8  1  0.99869700  0.00130300  0.25617100  1
+  Cr  Cr9  1  0.99869700  0.00130300  0.74382900  1
+  Cr  Cr10  1  0.83118500  0.65925200  0.00000000  1
+  Cr  Cr11  1  0.34074800  0.16881500  0.00000000  1

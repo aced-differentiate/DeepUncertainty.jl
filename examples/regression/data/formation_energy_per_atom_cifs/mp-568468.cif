@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Yb5(AlSb3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.44039400
+_cell_length_b   7.37470200
+_cell_length_c   23.10434700
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Yb5(AlSb3)2
+_chemical_formula_sum   'Yb10 Al4 Sb12'
+_cell_volume   756.58840543
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.00000000  0.45168700  0.90985800  1
+  Yb  Yb1  1  0.00000000  0.26708500  0.74687200  1
+  Yb  Yb2  1  0.00000000  0.76708500  0.75312800  1
+  Yb  Yb3  1  0.00000000  0.54831300  0.09014200  1
+  Yb  Yb4  1  0.00000000  0.95168700  0.59014200  1
+  Yb  Yb5  1  0.00000000  0.00000000  0.00000000  1
+  Yb  Yb6  1  0.00000000  0.73291500  0.25312800  1
+  Yb  Yb7  1  0.00000000  0.04831300  0.40985800  1
+  Yb  Yb8  1  0.00000000  0.50000000  0.50000000  1
+  Yb  Yb9  1  0.00000000  0.23291500  0.24687200  1
+  Al  Al10  1  0.50000000  0.81384500  0.87821400  1
+  Al  Al11  1  0.50000000  0.18615500  0.12178600  1
+  Al  Al12  1  0.50000000  0.68615500  0.37821400  1
+  Al  Al13  1  0.50000000  0.31384500  0.62178600  1
+  Sb  Sb14  1  0.50000000  0.80370700  0.49473800  1
+  Sb  Sb15  1  0.00000000  0.47377200  0.36445500  1
+  Sb  Sb16  1  0.00000000  0.97377200  0.13554500  1
+  Sb  Sb17  1  0.50000000  0.51212800  0.81173900  1
+  Sb  Sb18  1  0.50000000  0.48787200  0.18826100  1
+  Sb  Sb19  1  0.00000000  0.02622800  0.86445500  1
+  Sb  Sb20  1  0.00000000  0.52622800  0.63554500  1
+  Sb  Sb21  1  0.50000000  0.98787200  0.31173900  1
+  Sb  Sb22  1  0.50000000  0.19629300  0.50526200  1
+  Sb  Sb23  1  0.50000000  0.01212800  0.68826100  1
+  Sb  Sb24  1  0.50000000  0.30370700  0.00526200  1
+  Sb  Sb25  1  0.50000000  0.69629300  0.99473800  1

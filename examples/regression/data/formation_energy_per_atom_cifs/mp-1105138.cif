@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_SrFe4(CuO4)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.47676834
+_cell_length_b   6.47721231
+_cell_length_c   6.45692550
+_cell_angle_alpha   70.59118368
+_cell_angle_beta   70.58359459
+_cell_angle_gamma   109.52676046
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SrFe4(CuO4)3
+_chemical_formula_sum   'Sr1 Fe4 Cu3 O12'
+_cell_volume   208.67964928
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe1  1  0.99999800  0.50000000  0.00000100  1
+  Fe  Fe2  1  0.49999900  0.49999900  0.50000000  1
+  Fe  Fe3  1  0.50000100  0.00000200  0.99999900  1
+  Fe  Fe4  1  0.00000300  0.00000100  0.49999900  1
+  Cu  Cu5  1  0.49999900  0.99999900  0.50000200  1
+  Cu  Cu6  1  0.50000200  0.50000000  0.99999900  1
+  Cu  Cu7  1  0.00000000  0.49999800  0.49999800  1
+  O  O8  1  0.83026800  0.51425400  0.31460800  1
+  O  O9  1  0.16973000  0.48574400  0.68539300  1
+  O  O10  1  0.82833900  0.14505000  0.68652900  1
+  O  O11  1  0.17166100  0.85495000  0.31347100  1
+  O  O12  1  0.68398400  0.16973400  0.14486500  1
+  O  O13  1  0.31601500  0.83026600  0.85513700  1
+  O  O14  1  0.31671000  0.17167300  0.51486400  1
+  O  O15  1  0.68329100  0.82832800  0.48513400  1
+  O  O16  1  0.48574900  0.31602900  0.82884500  1
+  O  O17  1  0.51425100  0.68397100  0.17115500  1
+  O  O18  1  0.85493100  0.68328600  0.83157800  1
+  O  O19  1  0.14506800  0.31671400  0.16842100  1

@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_Dy3Si2Ni
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.13404900
+_cell_length_b   11.24261200
+_cell_length_c   11.30627500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Dy3Si2Ni
+_chemical_formula_sum   'Dy12 Si8 Ni4'
+_cell_volume   525.48749689
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Dy  Dy0  1  0.25000000  0.06015300  0.88175500  1
+  Dy  Dy1  1  0.25000000  0.43984700  0.38175500  1
+  Dy  Dy2  1  0.75000000  0.93984700  0.11824500  1
+  Dy  Dy3  1  0.75000000  0.56015300  0.61824500  1
+  Dy  Dy4  1  0.25000000  0.12467200  0.55765300  1
+  Dy  Dy5  1  0.25000000  0.37532800  0.05765300  1
+  Dy  Dy6  1  0.75000000  0.87532800  0.44234700  1
+  Dy  Dy7  1  0.75000000  0.62467200  0.94234700  1
+  Dy  Dy8  1  0.25000000  0.80289300  0.71401600  1
+  Dy  Dy9  1  0.25000000  0.69710700  0.21401600  1
+  Dy  Dy10  1  0.75000000  0.19710700  0.28598400  1
+  Dy  Dy11  1  0.75000000  0.30289300  0.78598400  1
+  Si  Si12  1  0.25000000  0.81413300  0.97474100  1
+  Si  Si13  1  0.25000000  0.68586700  0.47474100  1
+  Si  Si14  1  0.75000000  0.18586700  0.02525900  1
+  Si  Si15  1  0.75000000  0.31413300  0.52525900  1
+  Si  Si16  1  0.25000000  0.49502300  0.80355300  1
+  Si  Si17  1  0.25000000  0.00497700  0.30355300  1
+  Si  Si18  1  0.75000000  0.50497700  0.19644700  1
+  Si  Si19  1  0.75000000  0.99502300  0.69644700  1
+  Ni  Ni20  1  0.25000000  0.36671200  0.62926200  1
+  Ni  Ni21  1  0.25000000  0.13328800  0.12926200  1
+  Ni  Ni22  1  0.75000000  0.63328800  0.37073800  1
+  Ni  Ni23  1  0.75000000  0.86671200  0.87073800  1

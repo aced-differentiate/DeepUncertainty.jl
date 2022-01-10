@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Ba2CeTaO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.10927442
+_cell_length_b   6.10927442
+_cell_length_c   6.15646344
+_cell_angle_alpha   60.03752378
+_cell_angle_beta   60.03752378
+_cell_angle_gamma   60.03865996
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba2CeTaO6
+_chemical_formula_sum   'Ba2 Ce1 Ta1 O6'
+_cell_volume   162.61796914
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.75163800  0.75163800  0.74474100  1
+  Ba  Ba1  1  0.24836200  0.24836200  0.25525900  1
+  Ce  Ce2  1  0.00000000  0.00000000  0.00000000  1
+  Ta  Ta3  1  0.50000000  0.50000000  0.50000000  1
+  O  O4  1  0.73005400  0.73005400  0.21651600  1
+  O  O5  1  0.26994600  0.26994600  0.78348400  1
+  O  O6  1  0.29481100  0.76125200  0.70176000  1
+  O  O7  1  0.23874800  0.70518900  0.29824000  1
+  O  O8  1  0.70518900  0.23874800  0.29824000  1
+  O  O9  1  0.76125200  0.29481100  0.70176000  1

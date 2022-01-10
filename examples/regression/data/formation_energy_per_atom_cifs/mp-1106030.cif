@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_TiMnGe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.43372900
+_cell_length_b   7.29637100
+_cell_length_c   7.37125192
+_cell_angle_alpha   119.66452884
+_cell_angle_beta   115.87484921
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TiMnGe
+_chemical_formula_sum   'Ti6 Mn6 Ge6'
+_cell_volume   260.00535806
+_cell_formula_units_Z   6
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ti  Ti0  1  0.89360500  0.94764300  0.39528500  1
+  Ti  Ti1  1  0.49831900  0.05235700  0.60471500  1
+  Ti  Ti2  1  0.50889800  0.52134000  0.54268000  1
+  Ti  Ti3  1  0.96621700  0.47866000  0.45732000  1
+  Ti  Ti4  1  0.08484500  0.74911300  0.99822500  1
+  Ti  Ti5  1  0.08662000  0.25088700  0.00177500  1
+  Mn  Mn6  1  0.26257800  0.91910300  0.75786300  1
+  Mn  Mn7  1  0.50471500  0.08089700  0.24213700  1
+  Mn  Mn8  1  0.26257800  0.33876000  0.75786300  1
+  Mn  Mn9  1  0.50471500  0.66124000  0.24213700  1
+  Mn  Mn10  1  0.74034200  0.50000000  0.00000000  1
+  Mn  Mn11  1  0.74034200  0.00000000  0.00000000  1
+  Ge  Ge12  1  0.17184600  0.67175800  0.33317700  1
+  Ge  Ge13  1  0.83866900  0.32824200  0.66682300  1
+  Ge  Ge14  1  0.17184600  0.16142000  0.33317700  1
+  Ge  Ge15  1  0.83866900  0.83858000  0.66682300  1
+  Ge  Ge16  1  0.45624500  0.71364800  0.92729700  1
+  Ge  Ge17  1  0.52894800  0.28635200  0.07270300  1

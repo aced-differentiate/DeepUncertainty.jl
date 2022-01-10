@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_YbSn2BiO7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.47523800
+_cell_length_b   7.47523800
+_cell_length_c   7.47523800
+_cell_angle_alpha   120.17595819
+_cell_angle_beta   119.66463691
+_cell_angle_gamma   90.13867324
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   YbSn2BiO7
+_chemical_formula_sum   'Yb2 Sn4 Bi2 O14'
+_cell_volume   295.71326181
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.50000000  0.00000000  0.00000000  1
+  Yb  Yb1  1  0.50000000  0.50000000  0.50000000  1
+  Sn  Sn2  1  0.50000000  0.50000000  0.00000000  1
+  Sn  Sn3  1  0.00000000  0.50000000  0.50000000  1
+  Sn  Sn4  1  0.00000000  0.50000000  0.00000000  1
+  Sn  Sn5  1  0.00000000  0.00000000  0.50000000  1
+  Bi  Bi6  1  0.00000000  0.00000000  0.00000000  1
+  Bi  Bi7  1  0.50000000  0.00000000  0.50000000  1
+  O  O8  1  0.63855000  0.88855000  0.75000000  1
+  O  O9  1  0.36145000  0.11145000  0.25000000  1
+  O  O10  1  0.08692800  0.83692800  0.25000000  1
+  O  O11  1  0.66440400  0.41440400  0.25000000  1
+  O  O12  1  0.08374700  0.83936100  0.67532600  1
+  O  O13  1  0.66403500  0.40842100  0.82467400  1
+  O  O14  1  0.66403500  0.83936100  0.25561300  1
+  O  O15  1  0.08374700  0.40842100  0.24438700  1
+  O  O16  1  0.91307200  0.16307200  0.75000000  1
+  O  O17  1  0.33559600  0.58559600  0.75000000  1
+  O  O18  1  0.91625300  0.16063900  0.32467400  1
+  O  O19  1  0.33596500  0.59157900  0.17532600  1
+  O  O20  1  0.33596500  0.16063900  0.74438700  1
+  O  O21  1  0.91625300  0.59157900  0.75561300  1

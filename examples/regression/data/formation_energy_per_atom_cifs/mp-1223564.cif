@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_KMg3AlSi3(HO6)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.36146700
+_cell_length_b   5.36375061
+_cell_length_c   10.57924437
+_cell_angle_alpha   79.10671227
+_cell_angle_beta   84.56679242
+_cell_angle_gamma   60.02136489
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   KMg3AlSi3(HO6)2
+_chemical_formula_sum   'K1 Mg3 Al1 Si3 H2 O12'
+_cell_volume   258.78193439
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.99900600  0.99529200  0.97864200  1
+  Mg  Mg1  1  0.33698400  0.82768100  0.50627100  1
+  Mg  Mg2  1  0.66610400  0.16023300  0.50526300  1
+  Mg  Mg3  1  0.99780400  0.50417800  0.50567900  1
+  Al  Al4  1  0.66582700  0.73456600  0.76830100  1
+  Si  Si5  1  0.33355600  0.39890000  0.77261900  1
+  Si  Si6  1  0.33168000  0.26748900  0.23459700  1
+  Si  Si7  1  0.66452800  0.59963100  0.23482500  1
+  H  H8  1  0.99938200  0.09773400  0.69090900  1
+  H  H9  1  0.01200200  0.90288100  0.30504600  1
+  O  O10  1  0.66456500  0.79634700  0.59980900  1
+  O  O11  1  0.33506200  0.45696000  0.61232300  1
+  O  O12  1  0.33134400  0.21301300  0.38955300  1
+  O  O13  1  0.66437200  0.53952800  0.38976600  1
+  O  O14  1  0.01265300  0.46742700  0.82746100  1
+  O  O15  1  0.99793500  0.46691600  0.17572000  1
+  O  O16  1  0.56475000  0.05811900  0.82851000  1
+  O  O17  1  0.42115400  0.61037200  0.82834500  1
+  O  O18  1  0.48682900  0.95540400  0.17606600  1
+  O  O19  1  0.50893100  0.44538200  0.17438000  1
+  O  O20  1  0.00005000  0.13288200  0.59792300  1
+  O  O21  1  0.00548200  0.86906400  0.39799300  1

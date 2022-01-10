@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_TlHgCl3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.49179200
+_cell_length_b   9.51238200
+_cell_length_c   14.15843600
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TlHgCl3
+_chemical_formula_sum   'Tl4 Hg4 Cl12'
+_cell_volume   604.95657575
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tl  Tl0  1  0.25000000  0.45062600  0.33280800  1
+  Tl  Tl1  1  0.25000000  0.95062600  0.16719200  1
+  Tl  Tl2  1  0.75000000  0.54937400  0.66719200  1
+  Tl  Tl3  1  0.75000000  0.04937400  0.83280800  1
+  Hg  Hg4  1  0.25000000  0.17452100  0.54596000  1
+  Hg  Hg5  1  0.25000000  0.67452100  0.95404000  1
+  Hg  Hg6  1  0.75000000  0.82547900  0.45404000  1
+  Hg  Hg7  1  0.75000000  0.32547900  0.04596000  1
+  Cl  Cl8  1  0.25000000  0.27119300  0.70411000  1
+  Cl  Cl9  1  0.25000000  0.77119300  0.79589000  1
+  Cl  Cl10  1  0.75000000  0.72880700  0.29589000  1
+  Cl  Cl11  1  0.75000000  0.22880700  0.20411000  1
+  Cl  Cl12  1  0.25000000  0.15551700  0.98451300  1
+  Cl  Cl13  1  0.25000000  0.65551700  0.51548700  1
+  Cl  Cl14  1  0.75000000  0.84448300  0.01548700  1
+  Cl  Cl15  1  0.75000000  0.34448300  0.48451300  1
+  Cl  Cl16  1  0.25000000  0.04295400  0.39834600  1
+  Cl  Cl17  1  0.25000000  0.54295400  0.10165400  1
+  Cl  Cl18  1  0.75000000  0.95704600  0.60165400  1
+  Cl  Cl19  1  0.75000000  0.45704600  0.89834600  1

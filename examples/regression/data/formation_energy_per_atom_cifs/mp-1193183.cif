@@ -1,0 +1,54 @@
+# generated using pymatgen
+data_Hf9Re4Ni
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.59908600
+_cell_length_b   8.59908606
+_cell_length_c   8.43278000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999975
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Hf9Re4Ni
+_chemical_formula_sum   'Hf18 Re8 Ni2'
+_cell_volume   540.01520855
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Hf  Hf0  1  0.19826600  0.80173400  0.44505100  1
+  Hf  Hf1  1  0.19826600  0.39653100  0.44505100  1
+  Hf  Hf2  1  0.60346900  0.80173400  0.44505100  1
+  Hf  Hf3  1  0.80173400  0.19826600  0.55494900  1
+  Hf  Hf4  1  0.80173400  0.60346900  0.55494900  1
+  Hf  Hf5  1  0.39653100  0.19826600  0.55494900  1
+  Hf  Hf6  1  0.80173400  0.19826600  0.94505100  1
+  Hf  Hf7  1  0.80173400  0.60346900  0.94505100  1
+  Hf  Hf8  1  0.39653100  0.19826600  0.94505100  1
+  Hf  Hf9  1  0.19826600  0.80173400  0.05494900  1
+  Hf  Hf10  1  0.19826600  0.39653100  0.05494900  1
+  Hf  Hf11  1  0.60346900  0.80173400  0.05494900  1
+  Hf  Hf12  1  0.54031000  0.45969000  0.25000000  1
+  Hf  Hf13  1  0.54031000  0.08062000  0.25000000  1
+  Hf  Hf14  1  0.91938000  0.45969000  0.25000000  1
+  Hf  Hf15  1  0.45969000  0.54031000  0.75000000  1
+  Hf  Hf16  1  0.45969000  0.91938000  0.75000000  1
+  Hf  Hf17  1  0.08062000  0.54031000  0.75000000  1
+  Re  Re18  1  0.88936600  0.11063400  0.25000000  1
+  Re  Re19  1  0.88936600  0.77873100  0.25000000  1
+  Re  Re20  1  0.22126900  0.11063400  0.25000000  1
+  Re  Re21  1  0.11063400  0.88936600  0.75000000  1
+  Re  Re22  1  0.11063400  0.22126900  0.75000000  1
+  Re  Re23  1  0.77873100  0.88936600  0.75000000  1
+  Re  Re24  1  0.00000000  0.00000000  0.50000000  1
+  Re  Re25  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni26  1  0.33333300  0.66666700  0.25000000  1
+  Ni  Ni27  1  0.66666700  0.33333300  0.75000000  1

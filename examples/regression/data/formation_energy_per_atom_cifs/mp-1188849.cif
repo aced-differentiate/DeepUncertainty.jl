@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_LiNdGe2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.99158600
+_cell_length_b   7.81551500
+_cell_length_c   10.67222900
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LiNdGe2
+_chemical_formula_sum   'Li4 Nd4 Ge8'
+_cell_volume   332.93406029
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.25000000  0.49046700  0.39061800  1
+  Li  Li1  1  0.25000000  0.99046700  0.10938200  1
+  Li  Li2  1  0.75000000  0.50953300  0.60938200  1
+  Li  Li3  1  0.75000000  0.00953300  0.89061800  1
+  Nd  Nd4  1  0.25000000  0.13998200  0.63531800  1
+  Nd  Nd5  1  0.25000000  0.63998200  0.86468200  1
+  Nd  Nd6  1  0.75000000  0.86001800  0.36468200  1
+  Nd  Nd7  1  0.75000000  0.36001800  0.13531800  1
+  Ge  Ge8  1  0.25000000  0.22286300  0.93292000  1
+  Ge  Ge9  1  0.25000000  0.72286300  0.56708000  1
+  Ge  Ge10  1  0.75000000  0.77713700  0.06708000  1
+  Ge  Ge11  1  0.75000000  0.27713700  0.43292000  1
+  Ge  Ge12  1  0.25000000  0.15515300  0.31600200  1
+  Ge  Ge13  1  0.25000000  0.65515300  0.18399800  1
+  Ge  Ge14  1  0.75000000  0.84484700  0.68399800  1
+  Ge  Ge15  1  0.75000000  0.34484700  0.81600200  1

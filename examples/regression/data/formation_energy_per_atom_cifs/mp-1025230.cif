@@ -1,0 +1,33 @@
+# generated using pymatgen
+data_U2Re2C3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.16849659
+_cell_length_b   6.16849659
+_cell_length_c   5.59072179
+_cell_angle_alpha   67.95033566
+_cell_angle_beta   67.95033566
+_cell_angle_gamma   29.24791821
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   U2Re2C3
+_chemical_formula_sum   'U2 Re2 C3'
+_cell_volume   95.79553491
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  U  U0  1  0.60204500  0.60204500  0.19321100  1
+  U  U1  1  0.39795500  0.39795500  0.80678900  1
+  Re  Re2  1  0.84553800  0.84553800  0.33537800  1
+  Re  Re3  1  0.15446200  0.15446200  0.66462200  1
+  C  C4  1  0.75114300  0.75114300  0.75306500  1
+  C  C5  1  0.24885700  0.24885700  0.24693500  1
+  C  C6  1  0.00000000  0.00000000  0.00000000  1

@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Fe3Sb2(BrO)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.42118901
+_cell_length_b   7.26733326
+_cell_length_c   14.93291201
+_cell_angle_alpha   90.00440106
+_cell_angle_beta   90.00069711
+_cell_angle_gamma   63.77598134
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Fe3Sb2(BrO)4
+_chemical_formula_sum   'Fe6 Sb4 Br8 O8'
+_cell_volume   625.11932060
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Fe  Fe0  1  0.74220500  0.01532300  0.75003500  1
+  Fe  Fe1  1  0.75766800  0.98482400  0.25002900  1
+  Fe  Fe2  1  0.00027800  0.99996600  0.99998200  1
+  Fe  Fe3  1  0.49970100  0.00006200  0.49997600  1
+  Fe  Fe4  1  0.25804600  0.98421900  0.24998700  1
+  Fe  Fe5  1  0.24212400  0.01552300  0.74996800  1
+  Sb  Sb6  1  0.60790500  0.78498700  0.05656800  1
+  Sb  Sb7  1  0.39222100  0.21504400  0.94345400  1
+  Sb  Sb8  1  0.89212000  0.21506200  0.55655600  1
+  Sb  Sb9  1  0.10779700  0.78491600  0.44346000  1
+  Br  Br10  1  0.11961600  0.76109000  0.83934100  1
+  Br  Br11  1  0.88061700  0.23892700  0.16064900  1
+  Br  Br12  1  0.38040300  0.23894400  0.33935600  1
+  Br  Br13  1  0.61940200  0.76107100  0.66064200  1
+  Br  Br14  1  0.15990300  0.67961100  0.11540100  1
+  Br  Br15  1  0.84054500  0.32040900  0.88458700  1
+  Br  Br16  1  0.34002100  0.32041600  0.61542600  1
+  Br  Br17  1  0.65943900  0.67963800  0.38455300  1
+  O  O18  1  0.30663200  0.99983200  0.00001500  1
+  O  O19  1  0.80632300  0.99987800  0.49997100  1
+  O  O20  1  0.69367900  0.00013300  0.99997100  1
+  O  O21  1  0.19342400  0.00012100  0.50003500  1
+  O  O22  1  0.54058400  0.91910800  0.17559400  1
+  O  O23  1  0.45960900  0.08091400  0.82442700  1
+  O  O24  1  0.95941600  0.08092000  0.67557500  1
+  O  O25  1  0.04032400  0.91906200  0.32444300  1

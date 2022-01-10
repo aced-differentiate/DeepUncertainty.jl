@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_MgZn2(AsO4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.58507100
+_cell_length_b   5.35266700
+_cell_length_c   9.02978875
+_cell_angle_alpha   60.23532503
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   MgZn2(AsO4)2
+_chemical_formula_sum   'Mg2 Zn4 As4 O16'
+_cell_volume   360.20297995
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Mg  Mg0  1  0.00000000  0.00000000  0.00000000  1
+  Mg  Mg1  1  0.50000000  0.00000000  0.50000000  1
+  Zn  Zn2  1  0.36085300  0.98174400  0.11170900  1
+  Zn  Zn3  1  0.63914700  0.01825600  0.88829100  1
+  Zn  Zn4  1  0.86085300  0.01825600  0.38829100  1
+  Zn  Zn5  1  0.13914700  0.98174400  0.61170900  1
+  As  As6  1  0.69339000  0.64863200  0.30672500  1
+  As  As7  1  0.30661000  0.35136800  0.69327500  1
+  As  As8  1  0.19339000  0.35136800  0.19327500  1
+  As  As9  1  0.80661000  0.64863200  0.80672500  1
+  O  O10  1  0.63697000  0.72687500  0.46041200  1
+  O  O11  1  0.36303000  0.27312500  0.53958800  1
+  O  O12  1  0.13697000  0.27312500  0.03958800  1
+  O  O13  1  0.86303000  0.72687500  0.96041200  1
+  O  O14  1  0.56716200  0.79330800  0.13590500  1
+  O  O15  1  0.43283800  0.20669200  0.86409500  1
+  O  O16  1  0.06716200  0.20669200  0.36409500  1
+  O  O17  1  0.93283800  0.79330800  0.63590500  1
+  O  O18  1  0.87174400  0.82329200  0.24509000  1
+  O  O19  1  0.12825600  0.17670800  0.75491000  1
+  O  O20  1  0.37174400  0.17670800  0.25491000  1
+  O  O21  1  0.62825600  0.82329200  0.74509000  1
+  O  O22  1  0.69647500  0.28422600  0.38449500  1
+  O  O23  1  0.30352500  0.71577400  0.61550500  1
+  O  O24  1  0.19647500  0.71577400  0.11550500  1
+  O  O25  1  0.80352500  0.28422600  0.88449500  1

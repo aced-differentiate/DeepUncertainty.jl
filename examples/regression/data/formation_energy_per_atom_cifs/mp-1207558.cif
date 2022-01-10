@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_YbGa2Ag
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.36401700
+_cell_length_b   6.98688300
+_cell_length_c   10.43753800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   YbGa2Ag
+_chemical_formula_sum   'Yb4 Ga8 Ag4'
+_cell_volume   318.24967888
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.25000000  0.77617700  0.82799800  1
+  Yb  Yb1  1  0.75000000  0.22382300  0.17200200  1
+  Yb  Yb2  1  0.75000000  0.72382300  0.32799800  1
+  Yb  Yb3  1  0.25000000  0.27617700  0.67200200  1
+  Ga  Ga4  1  0.25000000  0.70366500  0.53595300  1
+  Ga  Ga5  1  0.75000000  0.29633500  0.46404700  1
+  Ga  Ga6  1  0.75000000  0.79633500  0.03595300  1
+  Ga  Ga7  1  0.25000000  0.20366500  0.96404700  1
+  Ga  Ga8  1  0.25000000  0.92614500  0.14989700  1
+  Ga  Ga9  1  0.75000000  0.07385500  0.85010300  1
+  Ga  Ga10  1  0.75000000  0.57385500  0.64989700  1
+  Ga  Ga11  1  0.25000000  0.42614500  0.35010300  1
+  Ag  Ag12  1  0.25000000  0.54004900  0.09902800  1
+  Ag  Ag13  1  0.75000000  0.45995100  0.90097200  1
+  Ag  Ag14  1  0.75000000  0.95995100  0.59902800  1
+  Ag  Ag15  1  0.25000000  0.04004900  0.40097200  1

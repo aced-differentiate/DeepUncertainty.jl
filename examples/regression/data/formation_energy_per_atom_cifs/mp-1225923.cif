@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_CsSbTeO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.32879306
+_cell_length_b   7.32879306
+_cell_length_c   7.32879306
+_cell_angle_alpha   120.37355281
+_cell_angle_beta   119.75805570
+_cell_angle_gamma   89.88688956
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsSbTeO6
+_chemical_formula_sum   'Cs2 Sb2 Te2 O12'
+_cell_volume   278.05684012
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.37409300  0.62409300  0.75000000  1
+  Cs  Cs1  1  0.62590700  0.37590700  0.25000000  1
+  Sb  Sb2  1  0.00000000  0.00000000  0.50000000  1
+  Sb  Sb3  1  0.00000000  0.50000000  0.00000000  1
+  Te  Te4  1  0.00000000  0.00000000  0.00000000  1
+  Te  Te5  1  0.50000000  0.00000000  0.50000000  1
+  O  O6  1  0.32078500  0.07078500  0.25000000  1
+  O  O7  1  0.92609400  0.67609400  0.25000000  1
+  O  O8  1  0.32736900  0.68309300  0.25581900  1
+  O  O9  1  0.92727400  0.07155100  0.24418100  1
+  O  O10  1  0.32736900  0.07155100  0.64427700  1
+  O  O11  1  0.92727400  0.68309300  0.85572300  1
+  O  O12  1  0.67921500  0.92921500  0.75000000  1
+  O  O13  1  0.07390600  0.32390600  0.75000000  1
+  O  O14  1  0.67263100  0.31690700  0.74418100  1
+  O  O15  1  0.07272600  0.92844900  0.75581900  1
+  O  O16  1  0.67263100  0.92844900  0.35572300  1
+  O  O17  1  0.07272600  0.31690700  0.14427700  1

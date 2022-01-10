@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_CsNbNi(OF2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.50244000
+_cell_length_b   7.46336661
+_cell_length_c   7.55989279
+_cell_angle_alpha   59.91496979
+_cell_angle_beta   59.60618118
+_cell_angle_gamma   60.68120564
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsNbNi(OF2)2
+_chemical_formula_sum   'Cs2 Nb2 Ni2 O4 F8'
+_cell_volume   299.72300354
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.37392500  0.37607500  0.37392500  1
+  Cs  Cs1  1  0.62869100  0.62130900  0.62869100  1
+  Nb  Nb2  1  0.51631100  0.00825200  0.00262400  1
+  Nb  Nb3  1  0.00262400  0.97281300  0.51631100  1
+  Ni  Ni4  1  0.99775900  0.00132300  0.99946400  1
+  Ni  Ni5  1  0.99946400  0.50145400  0.99775900  1
+  O  O6  1  0.06399100  0.69012900  0.69248800  1
+  O  O7  1  0.69248800  0.05339200  0.06399100  1
+  O  O8  1  0.29732800  0.95267300  0.29732800  1
+  O  O9  1  0.68837400  0.06162600  0.68837400  1
+  F  F10  1  0.07484100  0.07690900  0.66930000  1
+  F  F11  1  0.07066100  0.67933900  0.07066100  1
+  F  F12  1  0.32646200  0.32524000  0.92098700  1
+  F  F13  1  0.66930000  0.67895100  0.07484100  1
+  F  F14  1  0.92822500  0.31658700  0.31949800  1
+  F  F15  1  0.31949800  0.93569000  0.92822500  1
+  F  F16  1  0.92907300  0.32092700  0.92907300  1
+  F  F17  1  0.92098700  0.92731000  0.32646200  1

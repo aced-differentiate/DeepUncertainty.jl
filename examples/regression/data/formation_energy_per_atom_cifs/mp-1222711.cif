@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_Li2GeTeO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.69151096
+_cell_length_b   5.69151096
+_cell_length_c   5.69151109
+_cell_angle_alpha   53.01510853
+_cell_angle_beta   53.01510853
+_cell_angle_gamma   53.01510204
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2GeTeO6
+_chemical_formula_sum   'Li2 Ge1 Te1 O6'
+_cell_volume   109.02474220
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.86678700  0.86678700  0.86678700  1
+  Li  Li1  1  0.13154100  0.13154100  0.13154100  1
+  Ge  Ge2  1  0.33991500  0.33991500  0.33991500  1
+  Te  Te3  1  0.65983900  0.65983900  0.65983900  1
+  O  O4  1  0.28464600  0.94008000  0.55090100  1
+  O  O5  1  0.55090100  0.28464600  0.94008000  1
+  O  O6  1  0.94008000  0.55090100  0.28464600  1
+  O  O7  1  0.70501700  0.06687100  0.45030200  1
+  O  O8  1  0.45030200  0.70501700  0.06687100  1
+  O  O9  1  0.06687100  0.45030200  0.70501700  1

@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_NaFe2PbF9
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.29744912
+_cell_length_b   7.29744912
+_cell_length_c   7.74486499
+_cell_angle_alpha   88.29483092
+_cell_angle_beta   88.29483092
+_cell_angle_gamma   118.72637030
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaFe2PbF9
+_chemical_formula_sum   'Na2 Fe4 Pb2 F18'
+_cell_volume   361.05786703
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.50000000  0.00000000  0.00000000  1
+  Na  Na1  1  0.00000000  0.50000000  0.50000000  1
+  Fe  Fe2  1  0.00000000  0.00000000  0.50000000  1
+  Fe  Fe3  1  0.00000000  0.00000000  0.00000000  1
+  Fe  Fe4  1  0.50000000  0.00000000  0.50000000  1
+  Fe  Fe5  1  0.00000000  0.50000000  0.00000000  1
+  Pb  Pb6  1  0.47326000  0.52674000  0.75000000  1
+  Pb  Pb7  1  0.52674000  0.47326000  0.25000000  1
+  F  F8  1  0.19358400  0.88989500  0.53835900  1
+  F  F9  1  0.80641600  0.11010500  0.46164100  1
+  F  F10  1  0.11010500  0.80641600  0.96164100  1
+  F  F11  1  0.88989500  0.19358400  0.03835900  1
+  F  F12  1  0.97463100  0.02536900  0.75000000  1
+  F  F13  1  0.02536900  0.97463100  0.25000000  1
+  F  F14  1  0.51361000  0.89413400  0.73012100  1
+  F  F15  1  0.48639000  0.10586600  0.26987900  1
+  F  F16  1  0.10586600  0.48639000  0.76987900  1
+  F  F17  1  0.89413400  0.51361000  0.23012100  1
+  F  F18  1  0.56918800  0.27569600  0.57851000  1
+  F  F19  1  0.43081200  0.72430400  0.42149000  1
+  F  F20  1  0.72430400  0.43081200  0.92149000  1
+  F  F21  1  0.27569600  0.56918800  0.07851000  1
+  F  F22  1  0.70852700  0.78478900  0.02368100  1
+  F  F23  1  0.29147300  0.21521100  0.97631900  1
+  F  F24  1  0.21521100  0.29147300  0.47631900  1
+  F  F25  1  0.78478900  0.70852700  0.52368100  1

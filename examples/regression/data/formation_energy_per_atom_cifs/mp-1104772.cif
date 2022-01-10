@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_Yb(MnGe)6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.18551996
+_cell_length_b   5.18656607
+_cell_length_c   8.13187800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99332858
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Yb(MnGe)6
+_chemical_formula_sum   'Yb1 Mn6 Ge6'
+_cell_volume   189.41872211
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.99999500  0.00000000  0.00000000  1
+  Mn  Mn1  1  0.49998800  0.00000000  0.25072200  1
+  Mn  Mn2  1  0.50000400  0.49998700  0.25063300  1
+  Mn  Mn3  1  0.00001600  0.50001300  0.25063300  1
+  Mn  Mn4  1  0.49998800  0.00000000  0.74927800  1
+  Mn  Mn5  1  0.50000400  0.49998700  0.74936700  1
+  Mn  Mn6  1  0.00001600  0.50001300  0.74936700  1
+  Ge  Ge7  1  0.33332500  0.66668100  0.00000000  1
+  Ge  Ge8  1  0.66664500  0.33331900  0.00000000  1
+  Ge  Ge9  1  0.33321300  0.66657100  0.50000000  1
+  Ge  Ge10  1  0.66664200  0.33342900  0.50000000  1
+  Ge  Ge11  1  0.99998200  0.00000000  0.34097100  1
+  Ge  Ge12  1  0.99998200  0.00000000  0.65902900  1

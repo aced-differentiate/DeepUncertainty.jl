@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_Eu3(Ga2Ge3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   12.13113490
+_cell_length_b   12.13113490
+_cell_length_c   10.85576438
+_cell_angle_alpha   88.45585606
+_cell_angle_beta   88.45585606
+_cell_angle_gamma   21.20956546
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Eu3(Ga2Ge3)2
+_chemical_formula_sum   'Eu6 Ga8 Ge12'
+_cell_volume   577.75646769
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.17327800  0.17327800  0.45612600  1
+  Eu  Eu1  1  0.82672200  0.82672200  0.54387400  1
+  Eu  Eu2  1  0.47697000  0.47697000  0.83162000  1
+  Eu  Eu3  1  0.52303000  0.52303000  0.16838000  1
+  Eu  Eu4  1  0.64481200  0.64481200  0.89957800  1
+  Eu  Eu5  1  0.35518800  0.35518800  0.10042200  1
+  Ga  Ga6  1  0.42372800  0.42372800  0.58315900  1
+  Ga  Ga7  1  0.57627200  0.57627200  0.41684100  1
+  Ga  Ga8  1  0.24023700  0.24023700  0.74254400  1
+  Ga  Ga9  1  0.75976300  0.75976300  0.25745600  1
+  Ga  Ga10  1  0.06629800  0.06629800  0.72588000  1
+  Ga  Ga11  1  0.93370200  0.93370200  0.27412000  1
+  Ga  Ga12  1  0.86206000  0.86206000  0.87822700  1
+  Ga  Ga13  1  0.13794000  0.13794000  0.12177300  1
+  Ge  Ge14  1  0.02490400  0.02490400  0.39705700  1
+  Ge  Ge15  1  0.97509600  0.97509600  0.60294300  1
+  Ge  Ge16  1  0.22846800  0.22846800  0.97889200  1
+  Ge  Ge17  1  0.77153200  0.77153200  0.02110800  1
+  Ge  Ge18  1  0.29067200  0.29067200  0.35638600  1
+  Ge  Ge19  1  0.70932800  0.70932800  0.64361400  1
+  Ge  Ge20  1  0.34804100  0.34804100  0.76336300  1
+  Ge  Ge21  1  0.65195900  0.65195900  0.23663700  1
+  Ge  Ge22  1  0.60381400  0.60381400  0.63753900  1
+  Ge  Ge23  1  0.39618600  0.39618600  0.36246100  1
+  Ge  Ge24  1  0.05216500  0.05216500  0.96545700  1
+  Ge  Ge25  1  0.94783500  0.94783500  0.03454300  1

@@ -1,0 +1,37 @@
+# generated using pymatgen
+data_Ca(B2Pt3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.12143816
+_cell_length_b   6.12143816
+_cell_length_c   5.35512500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000173
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ca(B2Pt3)2
+_chemical_formula_sum   'Ca1 B4 Pt6'
+_cell_volume   173.78295184
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.00000000  0.00000000  0.50000000  1
+  B  B1  1  0.33333300  0.66666700  0.43181400  1
+  B  B2  1  0.66666700  0.33333300  0.56818600  1
+  B  B3  1  0.66666700  0.33333300  0.93417300  1
+  B  B4  1  0.33333300  0.66666700  0.06582700  1
+  Pt  Pt5  1  0.51558900  0.48441100  0.24968800  1
+  Pt  Pt6  1  0.51558900  0.03117800  0.24968800  1
+  Pt  Pt7  1  0.96882200  0.48441100  0.24968800  1
+  Pt  Pt8  1  0.48441100  0.51558900  0.75031200  1
+  Pt  Pt9  1  0.48441100  0.96882200  0.75031200  1
+  Pt  Pt10  1  0.03117800  0.51558900  0.75031200  1

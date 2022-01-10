@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_TmAlFe
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.26674389
+_cell_length_b   5.34453940
+_cell_length_c   8.60749500
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.49529240
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TmAlFe
+_chemical_formula_sum   'Tm4 Al4 Fe4'
+_cell_volume   208.77123882
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tm  Tm0  1  0.66678400  0.33339700  0.55361100  1
+  Tm  Tm1  1  0.33774100  0.66887000  0.42605300  1
+  Tm  Tm2  1  0.33774100  0.66887000  0.07394700  1
+  Tm  Tm3  1  0.66678400  0.33339700  0.94638900  1
+  Al  Al4  1  0.98919100  0.99461300  0.48471700  1
+  Al  Al5  1  0.98919100  0.99461300  0.01528300  1
+  Al  Al6  1  0.17513000  0.34027400  0.75000000  1
+  Al  Al7  1  0.17508300  0.83484900  0.75000000  1
+  Fe  Fe8  1  0.66673000  0.83339400  0.75000000  1
+  Fe  Fe9  1  0.82445500  0.64451500  0.25000000  1
+  Fe  Fe10  1  0.82444500  0.17986500  0.25000000  1
+  Fe  Fe11  1  0.34672500  0.17334300  0.25000000  1

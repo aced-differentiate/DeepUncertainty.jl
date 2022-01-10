@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Ba4Tl13Hg3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.86471504
+_cell_length_b   6.86471504
+_cell_length_c   20.17954283
+_cell_angle_alpha   80.18365452
+_cell_angle_beta   80.18365452
+_cell_angle_gamma   45.37322125
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba4Tl13Hg3
+_chemical_formula_sum   'Ba4 Tl13 Hg3'
+_cell_volume   665.13159815
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.67923000  0.67923000  0.14669700  1
+  Ba  Ba1  1  0.17763800  0.17763800  0.64822900  1
+  Ba  Ba2  1  0.82261100  0.82261100  0.35394800  1
+  Ba  Ba3  1  0.32215600  0.32215600  0.85187700  1
+  Tl  Tl4  1  0.53048500  0.53048500  0.33424900  1
+  Tl  Tl5  1  0.03079300  0.03079300  0.83288300  1
+  Tl  Tl6  1  0.97523800  0.97523800  0.16718500  1
+  Tl  Tl7  1  0.46886000  0.46886000  0.66755100  1
+  Tl  Tl8  1  0.11054600  0.11054600  0.43739100  1
+  Tl  Tl9  1  0.60578100  0.60578100  0.93732200  1
+  Tl  Tl10  1  0.38909600  0.38909600  0.06107200  1
+  Tl  Tl11  1  0.89431600  0.89431600  0.56280100  1
+  Tl  Tl12  1  0.37293100  0.37293100  0.47733600  1
+  Tl  Tl13  1  0.87409300  0.87409300  0.97594600  1
+  Tl  Tl14  1  0.12798500  0.12798500  0.02216900  1
+  Tl  Tl15  1  0.62475500  0.62475500  0.52361800  1
+  Tl  Tl16  1  0.36407100  0.36407100  0.22406000  1
+  Hg  Hg17  1  0.86577800  0.86577800  0.72526900  1
+  Hg  Hg18  1  0.12938400  0.12938400  0.27510900  1
+  Hg  Hg19  1  0.63425200  0.63425200  0.77528600  1

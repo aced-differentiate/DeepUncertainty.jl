@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_EuZrO3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.79457100
+_cell_length_b   5.90763900
+_cell_length_c   8.24415900
+_cell_angle_alpha   90.00038857
+_cell_angle_beta   89.99936791
+_cell_angle_gamma   89.99937342
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   EuZrO3
+_chemical_formula_sum   'Eu4 Zr4 O12'
+_cell_volume   282.21597693
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Eu  Eu0  1  0.01255600  0.54444200  0.25000300  1
+  Eu  Eu1  1  0.51253900  0.95555100  0.75000200  1
+  Eu  Eu2  1  0.48746000  0.04445800  0.24999900  1
+  Eu  Eu3  1  0.98744100  0.45555000  0.74999500  1
+  Zr  Zr4  1  0.00000200  0.99999700  0.00000100  1
+  Zr  Zr5  1  0.49999900  0.50000300  0.50000000  1
+  Zr  Zr6  1  0.00000200  0.99999700  0.49999900  1
+  Zr  Zr7  1  0.49999900  0.50000400  0.99999900  1
+  O  O8  1  0.59325300  0.47226500  0.24999700  1
+  O  O9  1  0.90674100  0.97226100  0.25000500  1
+  O  O10  1  0.40674500  0.52773300  0.75000300  1
+  O  O11  1  0.09325900  0.02773900  0.74999500  1
+  O  O12  1  0.20911100  0.28932100  0.05003100  1
+  O  O13  1  0.29089600  0.78931900  0.44997300  1
+  O  O14  1  0.79089700  0.71067100  0.55003700  1
+  O  O15  1  0.70911300  0.21067300  0.94997300  1
+  O  O16  1  0.79089100  0.71067700  0.94996800  1
+  O  O17  1  0.70910700  0.21068300  0.55002600  1
+  O  O18  1  0.20910300  0.28933000  0.44996500  1
+  O  O19  1  0.29088800  0.78932700  0.05003000  1

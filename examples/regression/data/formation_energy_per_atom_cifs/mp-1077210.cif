@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_LuGa2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.71252401
+_cell_length_b   5.71252401
+_cell_length_c   5.71252401
+_cell_angle_alpha   136.62586828
+_cell_angle_beta   106.57730609
+_cell_angle_gamma   89.30134218
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LuGa2
+_chemical_formula_sum   'Lu2 Ga4'
+_cell_volume   117.18258083
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Lu  Lu0  1  0.18921300  0.43921300  0.75000000  1
+  Lu  Lu1  1  0.81078700  0.56078700  0.25000000  1
+  Ga  Ga2  1  0.39128400  0.83988600  0.55139800  1
+  Ga  Ga3  1  0.60871600  0.16011400  0.44860200  1
+  Ga  Ga4  1  0.21151300  0.16011400  0.05139800  1
+  Ga  Ga5  1  0.78848700  0.83988600  0.94860200  1

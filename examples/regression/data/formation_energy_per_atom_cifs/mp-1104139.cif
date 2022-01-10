@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_Ta5(NiP)4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.23232231
+_cell_length_b   7.23232231
+_cell_length_c   7.23232231
+_cell_angle_alpha   93.41078439
+_cell_angle_beta   93.41078439
+_cell_angle_gamma   151.76461832
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ta5(NiP)4
+_chemical_formula_sum   'Ta5 Ni4 P4'
+_cell_volume   173.56506335
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ta  Ta0  1  0.86957300  0.19468100  0.06425400  1
+  Ta  Ta1  1  0.13042700  0.80531900  0.93574600  1
+  Ta  Ta2  1  0.19468100  0.13042700  0.32510900  1
+  Ta  Ta3  1  0.80531900  0.86957300  0.67489100  1
+  Ta  Ta4  1  0.50000000  0.50000000  0.00000000  1
+  Ni  Ni5  1  0.61056900  0.08752200  0.69809100  1
+  Ni  Ni6  1  0.38943100  0.91247800  0.30190900  1
+  Ni  Ni7  1  0.08752200  0.38943100  0.47695200  1
+  Ni  Ni8  1  0.91247800  0.61056900  0.52304800  1
+  P  P9  1  0.75838200  0.44393600  0.20231800  1
+  P  P10  1  0.24161800  0.55606400  0.79768200  1
+  P  P11  1  0.44393600  0.24161800  0.68555500  1
+  P  P12  1  0.55606400  0.75838200  0.31444500  1

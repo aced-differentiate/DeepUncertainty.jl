@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_LaSiBO5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.92384554
+_cell_length_b   6.92384554
+_cell_length_c   6.80014200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999563
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LaSiBO5
+_chemical_formula_sum   'La3 Si3 B3 O15'
+_cell_volume   282.32112416
+_cell_formula_units_Z   3
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.74065000  0.07427000  0.16794800  1
+  La  La1  1  0.33362000  0.25935000  0.83461400  1
+  La  La2  1  0.92573000  0.66638000  0.50128100  1
+  Si  Si3  1  0.74906100  0.08235000  0.66744100  1
+  Si  Si4  1  0.33328900  0.25093900  0.33410700  1
+  Si  Si5  1  0.91765000  0.66671100  0.00077400  1
+  B  B6  1  0.34366800  0.77953300  0.85444300  1
+  B  B7  1  0.43586600  0.65633200  0.52110900  1
+  B  B8  1  0.22046700  0.56413400  0.18777600  1
+  O  O9  1  0.72665900  0.52678400  0.83982500  1
+  O  O10  1  0.80012400  0.27334100  0.50649200  1
+  O  O11  1  0.47321600  0.19987600  0.17315900  1
+  O  O12  1  0.93692500  0.12814600  0.83158700  1
+  O  O13  1  0.19122200  0.06307500  0.49825400  1
+  O  O14  1  0.87185400  0.80877800  0.16492100  1
+  O  O15  1  0.14193300  0.81102700  0.85682100  1
+  O  O16  1  0.66909400  0.85806700  0.52348800  1
+  O  O17  1  0.18897300  0.33090600  0.19015500  1
+  O  O18  1  0.52569900  0.01288200  0.80924900  1
+  O  O19  1  0.48718300  0.47430100  0.47591600  1
+  O  O20  1  0.98711800  0.51281700  0.14258200  1
+  O  O21  1  0.32693000  0.61526400  0.71132200  1
+  O  O22  1  0.28833400  0.67307000  0.37798900  1
+  O  O23  1  0.38473600  0.71166600  0.04465500  1

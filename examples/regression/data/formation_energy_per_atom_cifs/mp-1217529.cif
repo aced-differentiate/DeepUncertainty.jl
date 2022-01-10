@@ -1,0 +1,31 @@
+# generated using pymatgen
+data_TbGa3Ni
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.17628900
+_cell_length_b   4.17628900
+_cell_length_c   5.87887649
+_cell_angle_alpha   69.19464090
+_cell_angle_beta   69.19464090
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   TbGa3Ni
+_chemical_formula_sum   'Tb1 Ga3 Ni1'
+_cell_volume   88.66077611
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tb  Tb0  1  0.99025400  0.99025400  0.01949100  1
+  Ga  Ga1  1  0.73848400  0.23848400  0.52303200  1
+  Ga  Ga2  1  0.23848400  0.73848400  0.52303200  1
+  Ga  Ga3  1  0.40376500  0.40376500  0.19247100  1
+  Ni  Ni4  1  0.62901300  0.62901300  0.74197300  1

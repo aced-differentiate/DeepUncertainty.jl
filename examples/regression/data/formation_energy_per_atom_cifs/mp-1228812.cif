@@ -1,0 +1,39 @@
+# generated using pymatgen
+data_CsTi2(CuTe4)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.24326070
+_cell_length_b   10.24326070
+_cell_length_c   13.45251638
+_cell_angle_alpha   51.25184076
+_cell_angle_beta   51.25184076
+_cell_angle_gamma   22.70438927
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsTi2(CuTe4)2
+_chemical_formula_sum   'Cs1 Ti2 Cu2 Te8'
+_cell_volume   419.34443476
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.98949300  0.98949300  0.36877700  1
+  Ti  Ti1  1  0.70340400  0.70340400  0.80248000  1
+  Ti  Ti2  1  0.29795400  0.29795400  0.19251400  1
+  Cu  Cu3  1  0.75924100  0.75924100  0.06532800  1
+  Cu  Cu4  1  0.24162200  0.24162200  0.93613000  1
+  Te  Te5  1  0.63145700  0.63145700  0.05148700  1
+  Te  Te6  1  0.37047400  0.37047400  0.94414100  1
+  Te  Te7  1  0.67679100  0.67679100  0.31229800  1
+  Te  Te8  1  0.32401000  0.32401000  0.69059200  1
+  Te  Te9  1  0.91879400  0.91879400  0.14661500  1
+  Te  Te10  1  0.08165600  0.08165600  0.84859000  1
+  Te  Te11  1  0.68886600  0.68886600  0.60179000  1
+  Te  Te12  1  0.30573700  0.30573700  0.40245800  1

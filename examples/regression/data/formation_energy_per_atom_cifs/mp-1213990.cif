@@ -1,0 +1,47 @@
+# generated using pymatgen
+data_Ce11(Ni2Ge3)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.16313490
+_cell_length_b   9.16313490
+_cell_length_c   13.68981673
+_cell_angle_alpha   73.17683656
+_cell_angle_beta   73.17683656
+_cell_angle_gamma   26.69817687
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ce11(Ni2Ge3)2
+_chemical_formula_sum   'Ce11 Ni4 Ge6'
+_cell_volume   493.05598712
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.90358500  0.90358500  0.28300300  1
+  Ce  Ce1  1  0.09641500  0.09641500  0.71699700  1
+  Ce  Ce2  1  0.55007500  0.55007500  0.37209600  1
+  Ce  Ce3  1  0.44992500  0.44992500  0.62790400  1
+  Ce  Ce4  1  0.78378300  0.78378300  0.59978100  1
+  Ce  Ce5  1  0.21621700  0.21621700  0.40021900  1
+  Ce  Ce6  1  0.85755800  0.85755800  0.84862900  1
+  Ce  Ce7  1  0.14244200  0.14244200  0.15137100  1
+  Ce  Ce8  1  0.34161500  0.34161500  0.09274000  1
+  Ce  Ce9  1  0.65838500  0.65838500  0.90726000  1
+  Ce  Ce10  1  0.00000000  0.00000000  0.00000000  1
+  Ni  Ni11  1  0.94000100  0.94000100  0.47513900  1
+  Ni  Ni12  1  0.05999900  0.05999900  0.52486100  1
+  Ni  Ni13  1  0.75223200  0.75223200  0.04932100  1
+  Ni  Ni14  1  0.24776800  0.24776800  0.95067900  1
+  Ge  Ge15  1  0.73722700  0.73722700  0.23634700  1
+  Ge  Ge16  1  0.26277300  0.26277300  0.76365300  1
+  Ge  Ge17  1  0.62904900  0.62904900  0.54906800  1
+  Ge  Ge18  1  0.37095100  0.37095100  0.45093200  1
+  Ge  Ge19  1  0.51433900  0.51433900  0.15121800  1
+  Ge  Ge20  1  0.48566100  0.48566100  0.84878200  1

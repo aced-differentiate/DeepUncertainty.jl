@@ -1,0 +1,41 @@
+# generated using pymatgen
+data_Ba6Re2N6O
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.54988247
+_cell_length_b   7.54988247
+_cell_length_c   7.54988226
+_cell_angle_alpha   65.65509546
+_cell_angle_beta   65.65509546
+_cell_angle_gamma   65.65509396
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba6Re2N6O
+_chemical_formula_sum   'Ba6 Re2 N6 O1'
+_cell_volume   341.66137395
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ba  Ba0  1  0.33275500  0.18377000  0.73961900  1
+  Ba  Ba1  1  0.18377000  0.73961900  0.33275500  1
+  Ba  Ba2  1  0.73961900  0.33275500  0.18377000  1
+  Ba  Ba3  1  0.66724500  0.81623000  0.26038100  1
+  Ba  Ba4  1  0.81623000  0.26038100  0.66724500  1
+  Ba  Ba5  1  0.26038100  0.66724500  0.81623000  1
+  Re  Re6  1  0.24997300  0.24997300  0.24997300  1
+  Re  Re7  1  0.75002700  0.75002700  0.75002700  1
+  N  N8  1  0.23243300  0.03876700  0.48338400  1
+  N  N9  1  0.03876700  0.48338400  0.23243300  1
+  N  N10  1  0.48338400  0.23243300  0.03876700  1
+  N  N11  1  0.76756700  0.96123300  0.51661600  1
+  N  N12  1  0.96123300  0.51661600  0.76756700  1
+  N  N13  1  0.51661600  0.76756700  0.96123300  1
+  O  O14  1  0.50000000  0.50000000  0.50000000  1

@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_SmSbRh
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.62807100
+_cell_length_b   7.34898900
+_cell_length_c   7.88286300
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SmSbRh
+_chemical_formula_sum   'Sm4 Sb4 Rh4'
+_cell_volume   268.10912115
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.25000000  0.51398400  0.19781800  1
+  Sm  Sm1  1  0.75000000  0.48601600  0.80218200  1
+  Sm  Sm2  1  0.75000000  0.98601600  0.69781800  1
+  Sm  Sm3  1  0.25000000  0.01398400  0.30218200  1
+  Sb  Sb4  1  0.25000000  0.68646300  0.58974600  1
+  Sb  Sb5  1  0.75000000  0.31353700  0.41025400  1
+  Sb  Sb6  1  0.75000000  0.81353700  0.08974600  1
+  Sb  Sb7  1  0.25000000  0.18646300  0.91025400  1
+  Rh  Rh8  1  0.25000000  0.80339800  0.91605000  1
+  Rh  Rh9  1  0.75000000  0.19660200  0.08395000  1
+  Rh  Rh10  1  0.75000000  0.69660200  0.41605000  1
+  Rh  Rh11  1  0.25000000  0.30339800  0.58395000  1

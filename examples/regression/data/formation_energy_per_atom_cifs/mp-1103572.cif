@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_NdGaPt
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.52201600
+_cell_length_b   7.16031700
+_cell_length_c   7.90414100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NdGaPt
+_chemical_formula_sum   'Nd4 Ga4 Pt4'
+_cell_volume   255.92871923
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Nd  Nd0  1  0.25000000  0.02656900  0.68621100  1
+  Nd  Nd1  1  0.25000000  0.52656900  0.81378900  1
+  Nd  Nd2  1  0.75000000  0.97343100  0.31378900  1
+  Nd  Nd3  1  0.75000000  0.47343100  0.18621100  1
+  Ga  Ga4  1  0.25000000  0.15294800  0.06690300  1
+  Ga  Ga5  1  0.25000000  0.65294800  0.43309700  1
+  Ga  Ga6  1  0.75000000  0.84705200  0.93309700  1
+  Ga  Ga7  1  0.75000000  0.34705200  0.56690300  1
+  Pt  Pt8  1  0.25000000  0.28032100  0.38874600  1
+  Pt  Pt9  1  0.25000000  0.78032100  0.11125400  1
+  Pt  Pt10  1  0.75000000  0.71967900  0.61125400  1
+  Pt  Pt11  1  0.75000000  0.21967900  0.88874600  1

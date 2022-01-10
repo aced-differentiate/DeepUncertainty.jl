@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_NaDyCl4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.69487100
+_cell_length_b   6.78612318
+_cell_length_c   7.07919703
+_cell_angle_alpha   89.61303083
+_cell_angle_beta   88.07092828
+_cell_angle_gamma   78.46774277
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaDyCl4
+_chemical_formula_sum   'Na2 Dy2 Cl8'
+_cell_volume   314.95219654
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Na  Na0  1  0.23131100  0.19796300  0.53549700  1
+  Na  Na1  1  0.76868900  0.80203700  0.46450300  1
+  Dy  Dy2  1  0.78914100  0.29975100  0.05465600  1
+  Dy  Dy3  1  0.21085900  0.70024900  0.94534400  1
+  Cl  Cl4  1  0.61246500  0.20749800  0.36499200  1
+  Cl  Cl5  1  0.38753500  0.79250200  0.63500800  1
+  Cl  Cl6  1  0.09534700  0.00200400  0.20497600  1
+  Cl  Cl7  1  0.90465300  0.99799600  0.79502400  1
+  Cl  Cl8  1  0.04694300  0.50339000  0.24002100  1
+  Cl  Cl9  1  0.95305700  0.49661000  0.75997900  1
+  Cl  Cl10  1  0.56671800  0.68522400  0.11738500  1
+  Cl  Cl11  1  0.43328200  0.31477600  0.88261500  1

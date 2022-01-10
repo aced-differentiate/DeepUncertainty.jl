@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_Sr8Co3N8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.73236097
+_cell_length_b   9.73236097
+_cell_length_c   7.46021313
+_cell_angle_alpha   74.80167635
+_cell_angle_beta   74.80167635
+_cell_angle_gamma   31.83507668
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Sr8Co3N8
+_chemical_formula_sum   'Sr8 Co3 N8'
+_cell_volume   358.60902929
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sr  Sr0  1  0.97046600  0.97046600  0.26455200  1
+  Sr  Sr1  1  0.02953400  0.02953400  0.73544800  1
+  Sr  Sr2  1  0.66699100  0.66699100  0.52714700  1
+  Sr  Sr3  1  0.33300900  0.33300900  0.47285300  1
+  Sr  Sr4  1  0.59578500  0.59578500  0.04048700  1
+  Sr  Sr5  1  0.40421500  0.40421500  0.95951300  1
+  Sr  Sr6  1  0.20037300  0.20037300  0.19008500  1
+  Sr  Sr7  1  0.79962700  0.79962700  0.80991500  1
+  Co  Co8  1  0.50000000  0.50000000  0.50000000  1
+  Co  Co9  1  0.81319700  0.81319700  0.20586000  1
+  Co  Co10  1  0.18680300  0.18680300  0.79414000  1
+  N  N11  1  0.89369800  0.89369800  0.01148900  1
+  N  N12  1  0.10630200  0.10630200  0.98851100  1
+  N  N13  1  0.82291800  0.82291800  0.43183300  1
+  N  N14  1  0.17708200  0.17708200  0.56816700  1
+  N  N15  1  0.72426300  0.72426300  0.16687700  1
+  N  N16  1  0.27573700  0.27573700  0.83312300  1
+  N  N17  1  0.47420300  0.47420300  0.28521800  1
+  N  N18  1  0.52579700  0.52579700  0.71478200  1

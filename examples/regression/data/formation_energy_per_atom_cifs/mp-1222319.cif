@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_LuGaAu
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.63586660
+_cell_length_b   5.63586660
+_cell_length_c   6.95489378
+_cell_angle_alpha   52.61736542
+_cell_angle_beta   52.61736542
+_cell_angle_gamma   46.86342465
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LuGaAu
+_chemical_formula_sum   'Lu2 Ga2 Au2'
+_cell_volume   120.86420645
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Lu  Lu0  1  0.53736800  0.53736800  0.70535800  1
+  Lu  Lu1  1  0.46263200  0.46263200  0.29464200  1
+  Ga  Ga2  1  0.84109800  0.84109800  0.11073900  1
+  Ga  Ga3  1  0.15890200  0.15890200  0.88926100  1
+  Au  Au4  1  0.17677900  0.17677900  0.28224200  1
+  Au  Au5  1  0.82322100  0.82322100  0.71775800  1

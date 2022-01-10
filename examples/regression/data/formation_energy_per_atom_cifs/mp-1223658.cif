@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_KAl3Fe2Si2(HO6)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.38922700
+_cell_length_b   10.52835425
+_cell_length_c   5.40929839
+_cell_angle_alpha   100.42041127
+_cell_angle_beta   60.11523389
+_cell_angle_gamma   94.72076824
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   KAl3Fe2Si2(HO6)2
+_chemical_formula_sum   'K1 Al3 Fe2 Si2 H2 O12'
+_cell_volume   261.71034833
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  K  K0  1  0.98903400  0.00010800  0.00469100  1
+  Al  Al1  1  0.34326700  0.50048700  0.82654900  1
+  Al  Al2  1  0.32555700  0.23090900  0.41857100  1
+  Al  Al3  1  0.65772100  0.76845300  0.59496900  1
+  Fe  Fe4  1  0.66228500  0.49916200  0.17347600  1
+  Fe  Fe5  1  0.00301800  0.50053600  0.50000800  1
+  Si  Si6  1  0.65263700  0.22920600  0.74849900  1
+  Si  Si7  1  0.32975900  0.77032100  0.24835200  1
+  H  H8  1  0.04868600  0.31011600  0.05540900  1
+  H  H9  1  0.02599400  0.69134300  0.90794000  1
+  O  O10  1  0.04018700  0.40395600  0.09709600  1
+  O  O11  1  0.02588000  0.59749300  0.87621000  1
+  O  O12  1  0.42161100  0.17115200  0.64439400  1
+  O  O13  1  0.57316100  0.18135400  0.05086400  1
+  O  O14  1  0.56281600  0.81535900  0.35634200  1
+  O  O15  1  0.41189900  0.83047800  0.95779200  1
+  O  O16  1  0.32964800  0.40305100  0.49819400  1
+  O  O17  1  0.63303300  0.39194500  0.80363800  1
+  O  O18  1  0.64261700  0.59651100  0.56759700  1
+  O  O19  1  0.33619000  0.60790900  0.16581300  1
+  O  O20  1  0.97648700  0.18191100  0.49766700  1
+  O  O21  1  0.00851100  0.81824100  0.50593000  1

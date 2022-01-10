@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_LiCoNiF6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.70282400
+_cell_length_b   4.70282400
+_cell_length_c   9.05405800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LiCoNiF6
+_chemical_formula_sum   'Li2 Co2 Ni2 F12'
+_cell_volume   200.24455883
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.50000000  0.50000000  0.16581100  1
+  Li  Li1  1  0.00000000  0.00000000  0.66581100  1
+  Co  Co2  1  0.50000000  0.50000000  0.49870000  1
+  Co  Co3  1  0.00000000  0.00000000  0.99870000  1
+  Ni  Ni4  1  0.50000000  0.50000000  0.83643300  1
+  Ni  Ni5  1  0.00000000  0.00000000  0.33643200  1
+  F  F6  1  0.19261900  0.80738100  0.15905300  1
+  F  F7  1  0.80738100  0.19261900  0.15905300  1
+  F  F8  1  0.30738100  0.30738100  0.65905300  1
+  F  F9  1  0.69261900  0.69261900  0.65905300  1
+  F  F10  1  0.80506900  0.19493100  0.84131500  1
+  F  F11  1  0.19493100  0.80506900  0.84131500  1
+  F  F12  1  0.69493100  0.69493100  0.34131500  1
+  F  F13  1  0.30506900  0.30506900  0.34131500  1
+  F  F14  1  0.20470200  0.79529800  0.49916000  1
+  F  F15  1  0.79529800  0.20470200  0.49916000  1
+  F  F16  1  0.29529800  0.29529800  0.99916000  1
+  F  F17  1  0.70470200  0.70470200  0.99916000  1

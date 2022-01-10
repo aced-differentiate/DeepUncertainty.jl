@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_CeMnB4
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.50453000
+_cell_length_b   5.94100800
+_cell_length_c   11.49568100
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeMnB4
+_chemical_formula_sum   'Ce4 Mn4 B16'
+_cell_volume   239.34514533
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.50000000  0.37472700  0.15035700  1
+  Ce  Ce1  1  0.50000000  0.62527300  0.84964300  1
+  Ce  Ce2  1  0.50000000  0.12527300  0.65035700  1
+  Ce  Ce3  1  0.50000000  0.87472700  0.34964300  1
+  Mn  Mn4  1  0.50000000  0.37105600  0.41419000  1
+  Mn  Mn5  1  0.50000000  0.62894400  0.58581000  1
+  Mn  Mn6  1  0.50000000  0.12894400  0.91419000  1
+  Mn  Mn7  1  0.50000000  0.87105600  0.08581000  1
+  B  B8  1  0.00000000  0.11126400  0.04548000  1
+  B  B9  1  0.00000000  0.88873600  0.95452000  1
+  B  B10  1  0.00000000  0.38873600  0.54548000  1
+  B  B11  1  0.00000000  0.61126400  0.45452000  1
+  B  B12  1  0.00000000  0.14079800  0.46698100  1
+  B  B13  1  0.00000000  0.85920200  0.53301900  1
+  B  B14  1  0.00000000  0.35920200  0.96698100  1
+  B  B15  1  0.00000000  0.64079800  0.03301900  1
+  B  B16  1  0.00000000  0.02444000  0.18915300  1
+  B  B17  1  0.00000000  0.97556000  0.81084700  1
+  B  B18  1  0.00000000  0.47556000  0.68915300  1
+  B  B19  1  0.00000000  0.52444000  0.31084700  1
+  B  B20  1  0.00000000  0.22099500  0.31697100  1
+  B  B21  1  0.00000000  0.77900500  0.68302900  1
+  B  B22  1  0.00000000  0.27900500  0.81697100  1
+  B  B23  1  0.00000000  0.72099500  0.18302900  1

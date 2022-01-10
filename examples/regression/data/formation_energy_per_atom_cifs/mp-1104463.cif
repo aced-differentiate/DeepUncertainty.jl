@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_SmNiSn
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.57988100
+_cell_length_b   7.41680700
+_cell_length_c   7.60321800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SmNiSn
+_chemical_formula_sum   'Sm4 Ni4 Sn4'
+_cell_volume   258.26681962
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Sm  Sm0  1  0.75000000  0.47746700  0.20177900  1
+  Sm  Sm1  1  0.75000000  0.97746700  0.29822100  1
+  Sm  Sm2  1  0.25000000  0.52253300  0.79822100  1
+  Sm  Sm3  1  0.25000000  0.02253300  0.70177900  1
+  Ni  Ni4  1  0.75000000  0.19450700  0.92425200  1
+  Ni  Ni5  1  0.75000000  0.69450700  0.57574800  1
+  Ni  Ni6  1  0.25000000  0.80549300  0.07574800  1
+  Ni  Ni7  1  0.25000000  0.30549300  0.42425200  1
+  Sn  Sn8  1  0.75000000  0.30922200  0.59400800  1
+  Sn  Sn9  1  0.75000000  0.80922200  0.90599200  1
+  Sn  Sn10  1  0.25000000  0.69077800  0.40599200  1
+  Sn  Sn11  1  0.25000000  0.19077800  0.09400800  1

@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_CsVTeO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.19837693
+_cell_length_b   7.19837693
+_cell_length_c   7.19837693
+_cell_angle_alpha   120.73414734
+_cell_angle_beta   119.30518867
+_cell_angle_gamma   89.97039477
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsVTeO6
+_chemical_formula_sum   'Cs2 V2 Te2 O12'
+_cell_volume   263.61801294
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.87041700  0.62041700  0.25000000  1
+  Cs  Cs1  1  0.12958300  0.37958300  0.75000000  1
+  V  V2  1  0.50000000  0.00000000  0.00000000  1
+  V  V3  1  0.50000000  0.50000000  0.50000000  1
+  Te  Te4  1  0.50000000  0.00000000  0.50000000  1
+  Te  Te5  1  0.00000000  0.00000000  0.00000000  1
+  O  O6  1  0.82783400  0.07783400  0.75000000  1
+  O  O7  1  0.44942200  0.69942200  0.75000000  1
+  O  O8  1  0.81498300  0.67990000  0.74190500  1
+  O  O9  1  0.43799400  0.07307800  0.75809500  1
+  O  O10  1  0.81498300  0.07307800  0.13508400  1
+  O  O11  1  0.43799400  0.67990000  0.36491600  1
+  O  O12  1  0.17216600  0.92216600  0.25000000  1
+  O  O13  1  0.55057800  0.30057800  0.25000000  1
+  O  O14  1  0.18501700  0.32010000  0.25809500  1
+  O  O15  1  0.56200600  0.92692200  0.24190500  1
+  O  O16  1  0.18501700  0.92692200  0.86491600  1
+  O  O17  1  0.56200600  0.32010000  0.63508400  1

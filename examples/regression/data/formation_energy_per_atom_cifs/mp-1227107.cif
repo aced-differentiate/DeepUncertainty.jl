@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_CaGaBiB2O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.48629671
+_cell_length_b   7.48629671
+_cell_length_c   4.83304200
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.02889894
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CaGaBiB2O7
+_chemical_formula_sum   'Ca2 Ga2 Bi2 B4 O14'
+_cell_volume   270.86605682
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ca  Ca0  1  0.66264100  0.33735900  0.49405400  1
+  Ca  Ca1  1  0.33735900  0.66264100  0.49405400  1
+  Ga  Ga2  1  0.50000000  0.00000000  0.99700800  1
+  Ga  Ga3  1  0.00000000  0.50000000  0.99700800  1
+  Bi  Bi4  1  0.83278700  0.83278700  0.50097200  1
+  Bi  Bi5  1  0.16721300  0.16721300  0.50097200  1
+  B  B6  1  0.86525900  0.13474100  0.05268000  1
+  B  B7  1  0.36952200  0.36952200  0.94233700  1
+  B  B8  1  0.13474100  0.86525900  0.05268000  1
+  B  B9  1  0.63047800  0.63047800  0.94233700  1
+  O  O10  1  0.00000000  0.00000000  0.15143100  1
+  O  O11  1  0.50000000  0.50000000  0.83891500  1
+  O  O12  1  0.85203500  0.14796500  0.76077400  1
+  O  O13  1  0.35669400  0.35669400  0.23763100  1
+  O  O14  1  0.14796500  0.85203500  0.76077400  1
+  O  O15  1  0.64330600  0.64330600  0.23763100  1
+  O  O16  1  0.57801500  0.80632000  0.79082700  1
+  O  O17  1  0.07791800  0.69402600  0.20166000  1
+  O  O18  1  0.42198500  0.19368000  0.79082700  1
+  O  O19  1  0.92208200  0.30597400  0.20166000  1
+  O  O20  1  0.69402600  0.07791800  0.20166000  1
+  O  O21  1  0.19368000  0.42198500  0.79082700  1
+  O  O22  1  0.30597400  0.92208200  0.20166000  1
+  O  O23  1  0.80632000  0.57801500  0.79082700  1

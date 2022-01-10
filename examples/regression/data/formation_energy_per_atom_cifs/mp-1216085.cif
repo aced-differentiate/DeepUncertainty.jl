@@ -1,0 +1,35 @@
+# generated using pymatgen
+data_Y3(ZnAu2)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.72342000
+_cell_length_b   7.85049243
+_cell_length_c   7.65155427
+_cell_angle_alpha   120.86386105
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Y3(ZnAu2)2
+_chemical_formula_sum   'Y3 Zn2 Au4'
+_cell_volume   191.98732376
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Y  Y0  1  0.00000000  0.40933500  0.00000000  1
+  Y  Y1  1  0.00000000  0.60572900  0.62033500  1
+  Y  Y2  1  0.00000000  0.98539500  0.37966500  1
+  Zn  Zn3  1  0.50000000  0.27018700  0.26569200  1
+  Zn  Zn4  1  0.50000000  0.00449500  0.73430800  1
+  Au  Au5  1  0.50000000  0.66292300  0.34943300  1
+  Au  Au6  1  0.50000000  0.31349000  0.65056700  1
+  Au  Au7  1  0.00000000  0.02264900  0.00000000  1
+  Au  Au8  1  0.50000000  0.72589600  0.00000000  1

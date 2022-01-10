@@ -1,0 +1,52 @@
+# generated using pymatgen
+data_RbAlSi3O8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.36282200
+_cell_length_b   7.78695855
+_cell_length_c   8.10035764
+_cell_angle_alpha   111.21846937
+_cell_angle_beta   105.40450091
+_cell_angle_gamma   103.28747399
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   RbAlSi3O8
+_chemical_formula_sum   'Rb2 Al2 Si6 O16'
+_cell_volume   388.96387600
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Rb  Rb0  1  0.14615100  0.29633500  0.29326800  1
+  Rb  Rb1  1  0.85384900  0.70366500  0.70673200  1
+  Al  Al2  1  0.21932400  0.81736900  0.20300700  1
+  Al  Al3  1  0.78067600  0.18263100  0.79699300  1
+  Si  Si4  1  0.22947700  0.20143300  0.82457300  1
+  Si  Si5  1  0.77052300  0.79856700  0.17542700  1
+  Si  Si6  1  0.34268200  0.60433700  0.84684200  1
+  Si  Si7  1  0.35016700  0.84044600  0.60555200  1
+  Si  Si8  1  0.65731800  0.39566300  0.15315800  1
+  Si  Si9  1  0.64983300  0.15955400  0.39444800  1
+  O  O10  1  0.28411600  0.66420200  0.67077700  1
+  O  O11  1  0.71588400  0.33579800  0.32922300  1
+  O  O12  1  0.40714300  0.05154500  0.29712800  1
+  O  O13  1  0.41010300  0.29810700  0.03933200  1
+  O  O14  1  0.59285700  0.94845500  0.70287200  1
+  O  O15  1  0.58989700  0.70189300  0.96066800  1
+  O  O16  1  0.25793700  0.72604300  0.37336900  1
+  O  O17  1  0.27111400  0.36081800  0.73652600  1
+  O  O18  1  0.74206300  0.27395700  0.62663100  1
+  O  O19  1  0.72888600  0.63918200  0.26347400  1
+  O  O20  1  0.22257900  0.66745200  0.98345100  1
+  O  O21  1  0.23505400  0.99439200  0.67933600  1
+  O  O22  1  0.77742100  0.33254800  0.01654900  1
+  O  O23  1  0.76494600  0.00560800  0.32066400  1
+  O  O24  1  0.98317800  0.84605500  0.14932500  1
+  O  O25  1  0.01682200  0.15394500  0.85067500  1

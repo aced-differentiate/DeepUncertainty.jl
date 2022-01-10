@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_CsInCuF6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.72001905
+_cell_length_b   7.72001905
+_cell_length_c   7.72001905
+_cell_angle_alpha   122.37868239
+_cell_angle_beta   118.49613743
+_cell_angle_gamma   89.27735906
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CsInCuF6
+_chemical_formula_sum   'Cs2 In2 Cu2 F12'
+_cell_volume   322.69197236
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cs  Cs0  1  0.85956800  0.60956800  0.25000000  1
+  Cs  Cs1  1  0.14043200  0.39043200  0.75000000  1
+  In  In2  1  0.50000000  0.00000000  0.50000000  1
+  In  In3  1  0.00000000  0.00000000  0.00000000  1
+  Cu  Cu4  1  0.50000000  0.00000000  0.00000000  1
+  Cu  Cu5  1  0.50000000  0.50000000  0.50000000  1
+  F  F6  1  0.82762900  0.07762900  0.75000000  1
+  F  F7  1  0.44905400  0.69905400  0.75000000  1
+  F  F8  1  0.81976800  0.67093500  0.73242500  1
+  F  F9  1  0.43851000  0.08734200  0.76757500  1
+  F  F10  1  0.81976800  0.08734200  0.14883300  1
+  F  F11  1  0.43851000  0.67093500  0.35116700  1
+  F  F12  1  0.17237100  0.92237100  0.25000000  1
+  F  F13  1  0.55094600  0.30094600  0.25000000  1
+  F  F14  1  0.18023200  0.32906500  0.26757500  1
+  F  F15  1  0.56149000  0.91265800  0.23242500  1
+  F  F16  1  0.18023200  0.91265800  0.85116700  1
+  F  F17  1  0.56149000  0.32906500  0.64883300  1

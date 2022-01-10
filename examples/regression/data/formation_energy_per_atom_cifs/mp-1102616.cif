@@ -1,0 +1,38 @@
+# generated using pymatgen
+data_Co2Ge
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   3.82260200
+_cell_length_b   5.06209600
+_cell_length_c   7.21646000
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   90.00000000
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Co2Ge
+_chemical_formula_sum   'Co8 Ge4'
+_cell_volume   139.64123094
+_cell_formula_units_Z   4
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Co  Co0  1  0.75000000  0.17445900  0.56115900  1
+  Co  Co1  1  0.75000000  0.67445900  0.93884100  1
+  Co  Co2  1  0.25000000  0.82554100  0.43884100  1
+  Co  Co3  1  0.25000000  0.32554100  0.06115900  1
+  Co  Co4  1  0.75000000  0.53791700  0.28116300  1
+  Co  Co5  1  0.75000000  0.03791700  0.21883700  1
+  Co  Co6  1  0.25000000  0.46208300  0.71883700  1
+  Co  Co7  1  0.25000000  0.96208300  0.78116300  1
+  Ge  Ge8  1  0.75000000  0.20661000  0.89081200  1
+  Ge  Ge9  1  0.75000000  0.70661000  0.60918800  1
+  Ge  Ge10  1  0.25000000  0.79339000  0.10918800  1
+  Ge  Ge11  1  0.25000000  0.29339000  0.39081200  1

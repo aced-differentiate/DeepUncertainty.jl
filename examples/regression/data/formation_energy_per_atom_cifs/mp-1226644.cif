@@ -1,0 +1,32 @@
+# generated using pymatgen
+data_CeAl2Cu3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.16226800
+_cell_length_b   5.16226800
+_cell_length_c   4.18815800
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   118.15786832
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   CeAl2Cu3
+_chemical_formula_sum   'Ce1 Al2 Cu3'
+_cell_volume   98.40127069
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ce  Ce0  1  0.50000000  0.50000000  0.00000000  1
+  Al  Al1  1  0.00000000  0.50000000  0.50000000  1
+  Al  Al2  1  0.50000000  0.00000000  0.50000000  1
+  Cu  Cu3  1  0.16402400  0.83597600  0.00000000  1
+  Cu  Cu4  1  0.83597600  0.16402400  0.00000000  1
+  Cu  Cu5  1  0.00000000  0.00000000  0.50000000  1
