@@ -20,7 +20,7 @@ Zygote = "e88e6eb3-aa80-5325-afca-941959d7151f"
 
 [compat]
 CUDA = "3"
-CalibrationErrors = "0.5"
+CalibrationErrors = "0.5, 0.6"
 Distributions = "0.25"
 DistributionsAD = "0.6"
 Flux = "0.12"
