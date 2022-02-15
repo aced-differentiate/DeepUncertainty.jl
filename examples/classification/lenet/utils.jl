@@ -2,7 +2,7 @@ loss(ŷ, y) = logitcrossentropy(ŷ, y)
 
 num_params(model) = sum(length, Flux.params(model))
 
-round4(x) = round(x, digits=4)
+round4(x) = round(x, digits = 4)
 
 function accuracy(preds, labels)
     acc = sum(onecold(preds |> cpu) .== onecold(labels |> cpu))
@@ -20,11 +20,11 @@ function get_data(args)
 
     train_loader = DataLoader(
         (xtrain, ytrain),
-        batchsize=args.batchsize,
-        shuffle=true,
-        partial=false,
+        batchsize = args.batchsize,
+        shuffle = true,
+        partial = false,
     )
-    test_loader = DataLoader((xtest, ytest), batchsize=args.batchsize, partial=false)
+    test_loader = DataLoader((xtest, ytest), batchsize = args.batchsize, partial = false)
 
     # Fashion mnist for uncertainty testing 
     xtrain, ytrain = MLDatasets.FashionMNIST.traindata(Float32)
@@ -37,12 +37,12 @@ function get_data(args)
 
     ood_train_loader = DataLoader(
         (xtrain, ytrain),
-        batchsize=args.batchsize,
-        shuffle=true,
-        partial=false,
+        batchsize = args.batchsize,
+        shuffle = true,
+        partial = false,
     )
     ood_test_loader =
-        DataLoader((xtest, ytest), batchsize=args.batchsize, partial=false)
+        DataLoader((xtest, ytest), batchsize = args.batchsize, partial = false)
 
     return train_loader, test_loader, ood_train_loader, ood_test_loader
 end
@@ -55,7 +55,7 @@ function ensembles_evaluation(args, loader, model, device)
     mean_l = 0
     mean_acc = 0
     mean_ece = 0
-    mean_entropy = 0 
+    mean_entropy = 0
     for (x, y) in loader
         x = repeat(x, 1, 1, 1, args.ensemble_size)
         x, y = x |> device, y |> device
@@ -73,8 +73,8 @@ function ensembles_evaluation(args, loader, model, device)
                 expected_calibration_error(model_predictions, onecold(y)) * args.batchsize
         end
         # Get the mean predictions
-        mean_predictions = mean(reshaped_ŷ, dims=ndims(reshaped_ŷ))
-        mean_predictions = dropdims(mean_predictions, dims=ndims(mean_predictions))
+        mean_predictions = mean(reshaped_ŷ, dims = ndims(reshaped_ŷ))
+        mean_predictions = dropdims(mean_predictions, dims = ndims(mean_predictions))
         mean_l += loss(mean_predictions, y) * size(mean_predictions)[end]
         mean_acc += accuracy(mean_predictions, y)
         mean_ece +=
@@ -107,7 +107,7 @@ function ensembles_evaluation(args, loader, model, device)
         mean_l,
         mean_acc,
         mean_ece,
-        mean_entropy, 
+        mean_entropy,
     ))
     @info "========================="
     return nothing
@@ -130,8 +130,8 @@ function monte_carlo_evaluation(args, loader, model, device)
         end
         # Get the mean predictions
         predictions = Flux.batch(predictions)
-        mean_predictions = mean(predictions, dims=ndims(predictions))
-        mean_predictions = dropdims(mean_predictions, dims=ndims(mean_predictions))
+        mean_predictions = mean(predictions, dims = ndims(predictions))
+        mean_predictions = dropdims(mean_predictions, dims = ndims(mean_predictions))
         mean_l += loss(mean_predictions, y) * size(mean_predictions)[end]
         mean_acc += accuracy(mean_predictions, y)
         mean_ece +=

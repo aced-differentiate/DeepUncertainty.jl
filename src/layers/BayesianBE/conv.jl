@@ -72,7 +72,7 @@ function VariationalConvBE(
     ensemble_act = identity,
     alpha_init = TrainableMvNormal,
     gamma_init = TrainableMvNormal,
-    device = cpu, 
+    device = cpu,
 ) where {N}
     layer = Flux.Conv(
         k,

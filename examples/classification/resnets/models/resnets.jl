@@ -211,7 +211,7 @@ end
 
 function ResNet50(; pretrain = false, nclasses = 1000)
     model = ResNet(resnet_config[:resnet50]...; block = bottleneck, nclasses = nclasses)
-  
+
     pretrain && loadpretrain!(model, "ResNet50")
     return model
-  end
+end

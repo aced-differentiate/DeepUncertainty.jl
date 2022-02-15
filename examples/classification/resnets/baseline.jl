@@ -1,14 +1,14 @@
 using Flux, ParameterSchedulers
 using Flux: onehotbatch, onecold, flatten
-using Flux.Losses:logitcrossentropy
-using Flux.Data:DataLoader
+using Flux.Losses: logitcrossentropy
+using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
-using Parameters:@with_kw
-using Statistics:mean
+using Parameters: @with_kw
+using Statistics: mean
 using CUDA
-using ProgressMeter:@showprogress
+using ProgressMeter: @showprogress
 using Formatting
-using ParameterSchedulers:Scheduler
+using ParameterSchedulers: Scheduler
 
 using DeepUncertainty
 include("utils.jl")
@@ -26,7 +26,7 @@ end
     valsplit::Float64 = 0.1
     sample_size = 3
     complexity_constant = 1e-8
-    weight_decay = 5e-4 
+    weight_decay = 5e-4
 end
 
 function accuracy(preds, labels)
@@ -77,7 +77,7 @@ function train(; kws...)
     train_loader, test_loader, ood_test_loader = get_data(args)
 
     @info("Constructing Model")
-    m = ResNet50(nclasses=10) |> gpu
+    m = ResNet50(nclasses = 10) |> gpu
 
     ## Training
     # Defining the optimizer
@@ -88,7 +88,7 @@ function train(; kws...)
 
     steps_per_epoch = length(train_loader)
     steps = args.epochs .* steps_per_epoch
-    opt = Scheduler(Poly(λ=0.1, p=1, max_iter=steps), opt)
+    opt = Scheduler(Poly(λ = 0.1, p = 1, max_iter = steps), opt)
     ps = Flux.params(m)
 
     test(args, test_loader, m)
@@ -108,7 +108,7 @@ function train(; kws...)
             x, y = x |> gpu, y |> gpu
             # x = (x .- data_mean) ./ data_std
             gs = Flux.gradient(ps) do
-                loss_fn(x, y) 
+                loss_fn(x, y)
             end
             Flux.update!(opt, ps, gs)
         end

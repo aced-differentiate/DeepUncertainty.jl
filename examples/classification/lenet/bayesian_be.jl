@@ -1,12 +1,12 @@
 using Flux
-using Flux:Zygote
-using Flux.Data:DataLoader
+using Flux: Zygote
+using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
 using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
-using Flux.Losses:logitcrossentropy
+using Flux.Losses: logitcrossentropy
 using Statistics, Random
-using Logging:with_logger
-using ProgressMeter:@showprogress
+using Logging: with_logger
+using ProgressMeter: @showprogress
 import MLDatasets
 using CUDA
 using Formatting
@@ -14,18 +14,39 @@ using Formatting
 using DeepUncertainty
 include("utils.jl")
 
-function LeNet5(args; imgsize=(28, 28, 1), nclasses=10, device=cpu)
+function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10, device = cpu)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
 
     return Chain(
-        VariationalConvBE((5, 5), imgsize[end] => 6, args.rank, args.ensemble_size, relu, device=device),
+        VariationalConvBE(
+            (5, 5),
+            imgsize[end] => 6,
+            args.rank,
+            args.ensemble_size,
+            relu,
+            device = device,
+        ),
         MaxPool((2, 2)),
-        VariationalConvBE((5, 5), 6 => 16, args.rank, args.ensemble_size, relu, device=device),
+        VariationalConvBE(
+            (5, 5),
+            6 => 16,
+            args.rank,
+            args.ensemble_size,
+            relu,
+            device = device,
+        ),
         MaxPool((2, 2)),
         flatten,
-        VariationalDenseBE(prod(out_conv_size), 120, args.rank, args.ensemble_size, relu, device=device),
-        VariationalDenseBE(120, 84, args.rank, args.ensemble_size, relu, device=device),
-        VariationalDenseBE(84, nclasses, args.rank, args.ensemble_size, device=device),
+        VariationalDenseBE(
+            prod(out_conv_size),
+            120,
+            args.rank,
+            args.ensemble_size,
+            relu,
+            device = device,
+        ),
+        VariationalDenseBE(120, 84, args.rank, args.ensemble_size, relu, device = device),
+        VariationalDenseBE(84, nclasses, args.rank, args.ensemble_size, device = device),
     )
 end
 
@@ -41,7 +62,7 @@ Base.@kwdef mutable struct Args
     rank = 1
     ensemble_size = 3
     sample_size = 10
-    seed = 0 
+    seed = 0
     complexity_constant = 1e-5
 end
 
@@ -63,7 +84,7 @@ function train(; kws...)
     @info "Dataset MNIST: $(train_loader.nobs) train and $(test_loader.nobs) test examples"
 
     ## MODEL AND OPTIMIZER
-    model = LeNet5(args, device=device) |> device
+    model = LeNet5(args, device = device) |> device
     @info "LeNet5 model: $(num_params(model)) trainable params"
 
     ps = Flux.params(model)

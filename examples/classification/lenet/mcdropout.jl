@@ -1,11 +1,11 @@
 using Flux
-using Flux.Data:DataLoader
+using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
 using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
-using Flux.Losses:logitcrossentropy
+using Flux.Losses: logitcrossentropy
 using Statistics, Random
-using Logging:with_logger
-using ProgressMeter:@showprogress
+using Logging: with_logger
+using ProgressMeter: @showprogress
 import MLDatasets
 using CUDA
 using Formatting
@@ -28,7 +28,7 @@ include("utils.jl")
 #     )
 # end
 
-function LeNet5(args; imgsize=(28, 28, 1), nclasses=10)
+function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
     dropout = (x; k...) -> Flux.dropout(x, args.dropout; k...)
 
@@ -55,7 +55,7 @@ Base.@kwdef mutable struct Args
     checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
     dropout = 0.2
     sample_size = 25
-    seed = 0  
+    seed = 0
 end
 
 function train(; kws...)

@@ -1,3 +1,39 @@
+"""
+    SpectralConv(filter, in => out, σ = identity;
+                    stride = 1, pad = 0, dilation = 1, 
+                    groups = 1, 
+                    iterations = 1, 
+                    norm_multiplier=0.95, 
+                    [bias, weight, init])
+    SpectralConv(σ, weight, bias,
+                    stride, pad, dilation, groups, 
+                    spectralnormalizer)
+
+Creates a convolutional layer with spectral normalization applied 
+to it's weight matrix.
+
+Reference - https://arxiv.org/abs/1705.10941
+
+# Fields 
+- `σ`: Activation function, applies to logits after layer transformation 
+- `weight`: A trainable distribution from which weights are sampled 
+                    in every forward pass 
+- `bias`: A trainable distribution from which biases are sampled in 
+                    every forward pass 
+- `stride`: Convolution stride 
+- `pad`
+- `dilation`
+- `groups`
+- `spectral_normalizer`
+
+# Arguments 
+- `filter::NTuple{N,Integer}`: Kernel dimensions, eg, (5, 5) 
+- `ch::Pair{<:Integer,<:Integer}`: Input channels => output channels 
+- `σ::F=identity`: Activation of the dense layer, defaults to identity
+- `iterations::Integer=1`: Number of iterations for power approximation
+- `norm_multiplier::Float32=0.95`: Multiplicative constant for spectral norm term 
+
+"""
 struct SpectralConv{N,M,F,A,V,S}
     σ::F
     weight::A

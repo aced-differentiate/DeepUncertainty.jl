@@ -4,7 +4,7 @@ loss(ŷ, y) = logitcrossentropy(ŷ, y)
 
 num_params(model) = sum(length, Flux.params(model))
 
-round4(x) = round(x, digits=4)
+round4(x) = round(x, digits = 4)
 
 function get_data(args)
     x, y = CIFAR10.traindata()
@@ -18,14 +18,15 @@ function get_data(args)
     test_data = (test_x, test_y)
 
     # OOD dataset
-    ood_test_x, ood_test_y = SVHN2.testdata() 
+    ood_test_x, ood_test_y = SVHN2.testdata()
     ood_test_x = float(ood_test_x)
     ood_test_y = onehotbatch(ood_test_y, 1:10)
     ood_test_data = (ood_test_x, ood_test_y)
 
-    train_loader = DataLoader(train_data, batchsize=args.batchsize, shuffle=true, partial=false)
-    test_loader = DataLoader(test_data, batchsize=args.batchsize)
-    ood_test_loader = DataLoader(ood_test_data, batchsize=args.batchsize)
+    train_loader =
+        DataLoader(train_data, batchsize = args.batchsize, shuffle = true, partial = false)
+    test_loader = DataLoader(test_data, batchsize = args.batchsize)
+    ood_test_loader = DataLoader(ood_test_data, batchsize = args.batchsize)
 
     return train_loader, test_loader, ood_test_loader
 end

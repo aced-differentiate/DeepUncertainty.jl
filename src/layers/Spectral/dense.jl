@@ -1,3 +1,30 @@
+"""
+    SpectralDense(in, out, σ=identity;
+                    iterations=1,
+                    norm_multiplier=0.95, 
+                    bias=true)
+    SpectralDense(weight, bias, spectral_normalizer, act)
+
+Creates a dense layer with spectral normalization applied 
+to it's weight matrix.
+
+Reference - https://arxiv.org/abs/1705.10941
+
+# Fields 
+- `weight`
+- `bias`
+- `spectral_normalizer`
+- `act`: Activation function
+
+# Arguents 
+- `in::Integer`: Input dimension size 
+- `out::Integer`: Output dimension size 
+- `σ`: Acivation function, defaults to identity 
+- `init`: Distribution parameters Initialization, defaults to glorot_normal
+- `iterations::Integer=1`: Number of iterations for power approximation
+- `norm_multiplier::Float32=0.95`: Multiplicative constant for spectral norm term 
+
+"""
 struct SpectralDense{W,B,S,F}
     weight::W
     bias::B

@@ -1,12 +1,12 @@
 using Flux
-using Flux.Data:DataLoader
+using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
 using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
-using Flux.Losses:logitcrossentropy
+using Flux.Losses: logitcrossentropy
 using Statistics, Random
-using Logging:with_logger
+using Logging: with_logger
 using TensorBoardLogger: TBLogger, tb_overwrite, set_step!, set_step_increment!
-using ProgressMeter:@showprogress
+using ProgressMeter: @showprogress
 import MLDatasets
 import BSON
 using CUDA
@@ -15,7 +15,7 @@ using Formatting
 using DeepUncertainty
 include("utils.jl")
 
-function LeNet5(args; imgsize=(28, 28, 1), nclasses=10)
+function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
 
     return Chain(
@@ -41,7 +41,7 @@ Base.@kwdef mutable struct Args
     checktime = 5        # Save the model every `checktime` epochs. Set to 0 for no checkpoints.
     rank = 1
     ensemble_size = 3
-    seed = 0  
+    seed = 0
 end
 
 function train(; kws...)

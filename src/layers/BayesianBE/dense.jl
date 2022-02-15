@@ -71,7 +71,7 @@ function VariationalDenseBE(
     ensemble_act = identity,
     alpha_init = TrainableMvNormal,
     gamma_init = TrainableMvNormal,
-    device = cpu
+    device = cpu,
 )
 
     layer = Flux.Dense(in, out, σ; init = init, bias = bias)

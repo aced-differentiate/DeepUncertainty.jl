@@ -1,11 +1,11 @@
 using Flux
-using Flux.Data:DataLoader
+using Flux.Data: DataLoader
 using Flux.Optimise: Optimiser, WeightDecay
 using Flux: onehotbatch, onecold, glorot_normal, label_smoothing
-using Flux.Losses:logitcrossentropy
+using Flux.Losses: logitcrossentropy
 using Statistics, Random
-using Logging:with_logger
-using ProgressMeter:@showprogress
+using Logging: with_logger
+using ProgressMeter: @showprogress
 import MLDatasets
 using CUDA
 using Formatting
@@ -13,7 +13,7 @@ using Formatting
 using DeepUncertainty
 include("utils.jl")
 
-function LeNet5(args; imgsize=(28, 28, 1), nclasses=10)
+function LeNet5(args; imgsize = (28, 28, 1), nclasses = 10)
     out_conv_size = (imgsize[1] ÷ 4 - 3, imgsize[2] ÷ 4 - 3, 16)
 
     return Chain(

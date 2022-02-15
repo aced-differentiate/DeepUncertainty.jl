@@ -5,13 +5,8 @@
     output_dim = 5
     rank = 1
     inputs = rand(Float32, input_dim, samples_per_model) |> gpu
-    layer = VariationalDenseBE(
-        input_dim,
-        output_dim,
-        rank,
-        ensemble_size;
-        device = gpu
-    ) |> gpu
+    layer =
+        VariationalDenseBE(input_dim, output_dim, rank, ensemble_size; device = gpu) |> gpu
     batch_inputs = repeat(inputs, 1, ensemble_size) |> gpu
     batch_outputs = layer(batch_inputs) |> gpu
 
@@ -33,14 +28,8 @@ end
     output_dim = 10
     rank = 1
     inputs = rand(Float32, 10, 10, input_dim, samples_per_model)
-    layer = VariationalConvBE(
-        (5, 5),
-        5 => 10,
-        rank,
-        ensemble_size,
-        relu;
-        device = gpu
-    ) |> gpu
+    layer =
+        VariationalConvBE((5, 5), 5 => 10, rank, ensemble_size, relu; device = gpu) |> gpu
     batch_inputs = repeat(inputs, 1, 1, 1, ensemble_size) |> gpu
     batch_outputs = layer(batch_inputs)
 

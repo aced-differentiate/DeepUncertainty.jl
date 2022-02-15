@@ -5,7 +5,7 @@
                     weight_dist = TrainableMvNormal, 
                     bias_dist = TrainableMvNormal,
                     [bias, weight, init])
-    VariationalConvBE(σ, weight_sampler, bias_sampler,
+    VariationalConv(σ, weight_sampler, bias_sampler,
                     stride, pad, dilation, groups)
 
 Creates a variational conv layer. Computes variational bayesian 

@@ -7,9 +7,9 @@ using CalibrationErrors
 using BSON: @save, @load
 using BSON
 
-round4(x) = round(x, digits=4)
+round4(x) = round(x, digits = 4)
 
-function get_data(num_pts=100, data_dir=joinpath(@__DIR__, "data"), verbose=true)
+function get_data(num_pts = 100, data_dir = joinpath(@__DIR__, "data"), verbose = true)
     println("Setting things up...")
 
     # data-related options
@@ -47,22 +47,23 @@ function get_data(num_pts=100, data_dir=joinpath(@__DIR__, "data"), verbose=true
 
     # for r in eachrow(info)
     cifpaths = [
-        joinpath(data_dir, format("{}_cifs", prop), string(r[Symbol(id)], ".cif")) for r in eachrow(info)
+        joinpath(data_dir, format("{}_cifs", prop), string(r[Symbol(id)], ".cif")) for
+        r in eachrow(info)
     ]
 
     outputs = []
     inputs = []
     for (cifpath, label) in zip(cifpaths, output)
-        try 
+        try
             graph = AtomGraph.(cifpath)
             input = featurize(graph, featurization)
             push!(inputs, input)
             push!(outputs, label)
         catch
-            continue 
-        end 
-    end 
-    
+            continue
+        end
+    end
+
     println(length(inputs), length(outputs))
 
     # graphs = skipmissing(AtomGraph.(cifpaths))
@@ -71,12 +72,12 @@ function get_data(num_pts=100, data_dir=joinpath(@__DIR__, "data"), verbose=true
     # pick out train/test sets
     if verbose
         println("Dividing into train/test sets...")
-    end 
+    end
 
     train_output = output[1:num_train]
-    test_output = output[num_train + 1:end]
+    test_output = output[num_train+1:end]
     train_input = inputs[1:num_train]
-    test_input = inputs[num_train + 1:end]
+    test_input = inputs[num_train+1:end]
 
     # build the model
     if verbose

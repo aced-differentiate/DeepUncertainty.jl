@@ -24,7 +24,7 @@ end
     valsplit::Float64 = 0.1
     sample_size = 10
     complexity_constant = 1e-8
-    weight_decay = 5e-4 
+    weight_decay = 5e-4
 end
 
 function accuracy(preds, labels)
@@ -94,8 +94,7 @@ function train(; kws...)
     # opt = Nesterov(args.lr)
     steps_per_epoch = length(train_loader)
     steps = 5 .* steps_per_epoch
-    opt =
-        Scheduler(Cos(λ0 = 0.1, λ1 = 0., period = steps), Nesterov(args.lr))
+    opt = Scheduler(Cos(λ0 = 0.1, λ1 = 0.0, period = steps), Nesterov(args.lr))
     ps = Flux.params(m)
     sqnorm(x) = sum(abs2, x)
 

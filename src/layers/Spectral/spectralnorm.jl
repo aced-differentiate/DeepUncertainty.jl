@@ -1,3 +1,34 @@
+"""
+    SpectralConv(kernel_shape,
+                iterations, 
+                norm_multiplier, 
+                [init, device])
+    SpectralConv(left_singular_vector, 
+                right_singular_vector, 
+                iterations, 
+                norm_multiplier)
+
+Spectral normalization is a simple regularization technique that 
+prevents the weights in a neural network from having large spectral norms.
+High sensitivity to input data degrades model performance. Though we 
+can use existing regularization techniques to make the model robust against 
+perturbations in training data, robustness to perturbations in test data is 
+required. 
+
+Reference -- https://arxiv.org/abs/1705.10941
+
+# Fields 
+- `left_singular_vector`: Power iteration approximation of left singular vector 
+- `right_singular_vector`: Power iteration approximation of left singular vector 
+- `iterations`: Number of updates to left and right singular vectors 
+- `norm_multiplier`: Multiplication constant for the spectral norm term 
+
+# Arguments 
+- `kernel_shape::NTuple{N,Integer}`: weight matrix dimensions, eg, (5, 5) 
+- `iterations::Integer`: Number of iterations for power approximation 
+- `norm_multiplier`: Multiplicative constant for spectral norm term 
+
+"""
 struct SpectralNormalizer{U,V}
     left_singular_vector::U
     right_singular_vector::V

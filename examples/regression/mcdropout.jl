@@ -3,7 +3,7 @@
 using CSV, DataFrames
 using Random, Statistics
 using Flux
-using Flux:@epochs
+using Flux: @epochs
 using ChemistryFeaturization
 using AtomicGraphNets
 using Formatting
@@ -14,10 +14,10 @@ using CalibrationErrorsDistributions
 using CalibrationTests
 
 function train_formation_energy(;
-    num_pts=5000,
-    num_epochs=25,
-    data_dir=joinpath(@__DIR__, "data"),
-    verbose=true,
+    num_pts = 5000,
+    num_epochs = 25,
+    data_dir = joinpath(@__DIR__, "data"),
+    verbose = true,
 )
     println("Setting things up...")
 
@@ -63,29 +63,30 @@ function train_formation_energy(;
 
     # for r in eachrow(info)
     cifpaths = [
-        joinpath(data_dir, format("{}_cifs", prop), string(r[Symbol(id)], ".cif")) for r in eachrow(info)
+        joinpath(data_dir, format("{}_cifs", prop), string(r[Symbol(id)], ".cif")) for
+        r in eachrow(info)
     ]
 
     outputs = []
     for (cifpath, label) in zip(cifpaths, output)
-        try 
+        try
             graph = AtomGraph.(cifpath)
             input = featurize(graph, featurization)
             push!(inputs, input)
             push!(outputs, label)
         catch
-            continue 
-        end 
-    end 
+            continue
+        end
+    end
 
     # pick out train/test sets
     if verbose
         println("Dividing into train/test sets...")
     end
     train_output = outputs[1:num_train]
-    test_output = outputs[num_train + 1:end]
+    test_output = outputs[num_train+1:end]
     train_input = inputs[1:num_train]
-    test_input = inputs[num_train + 1:end]
+    test_input = inputs[num_train+1:end]
     train_data = zip(train_input, train_output)
     test_data = zip(test_input, test_output)
 
@@ -95,10 +96,10 @@ function train_formation_energy(;
     end
     model = MC_CGCNN(
         num_features,
-        num_conv=num_conv,
-        atom_conv_feature_length=crys_fea_len,
-        pooled_feature_length=(Int(crys_fea_len / 2)),
-        num_hidden_layers=num_hidden_layers,
+        num_conv = num_conv,
+        atom_conv_feature_length = crys_fea_len,
+        pooled_feature_length = (Int(crys_fea_len / 2)),
+        num_hidden_layers = num_hidden_layers,
     )
 
     # define loss function and a callback to monitor progress
@@ -125,7 +126,7 @@ function train_formation_energy(;
         targets = []
         samples = []
         for (x, y) in data
-            preds = model(x)    
+            preds = model(x)
             push!(predictions, preds[1])
             push!(targets, y)
         end
@@ -138,22 +139,22 @@ function train_formation_energy(;
 
     for epoch = 1:num_epochs
         train_loss = 0
-        n_tot = 0 
+        n_tot = 0
         # Flux.train!(loss, ps, train_data, opt)
         for (x, y) in train_data
             gs = Flux.gradient(ps) do
                 total_loss = loss(x, y)
                 train_loss += total_loss
                 return total_loss
-            end 
+            end
             Flux.Optimise.update!(opt, ps, gs)
-            n_tot += 1 
+            n_tot += 1
         end
         train_loss = train_loss / n_tot
         @info(format("Epoch {}", epoch))
         @info(format("Train Loss: {}", train_loss))
 
-        test_preds, test_targets = get_preds(test_data) 
+        test_preds, test_targets = get_preds(test_data)
         test_loss = mean(Flux.Losses.mse.(test_preds, test_targets))
 
         sigma = sqrt(train_loss)
@@ -163,8 +164,7 @@ function train_formation_energy(;
         skce = calibrationerror(unbiased_estimator, predictions, test_targets)
         # biased estimator of SKCE
         biased_estimator = BiasedSKCE(kernel)
-        biased_skce =
-            calibrationerror(biased_estimator, predictions, test_targets)
+        biased_skce = calibrationerror(biased_estimator, predictions, test_targets)
 
         @info(format("Epoch {}", epoch))
         @info(format("Train Loss: {}", train_loss))
@@ -172,7 +172,7 @@ function train_formation_energy(;
         @info(format("Unbiased SKCE: {}", skce))
         @info(format("Biased SKCE: {}", biased_skce))
         @info("===============")
-    end 
+    end
     return model
 end
 
